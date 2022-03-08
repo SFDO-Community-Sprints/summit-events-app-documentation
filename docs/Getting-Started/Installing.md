@@ -15,7 +15,7 @@ If your org does not already have a Salesforce “Site,” which is used to disp
 
 3. Click on the "Register My Salesforce Site Domain" button.
 
-![](/assets/images/Site%20Setup.png)
+![](/docs/images/Site%20Setup.png)
 
 Once your domain has been registered continue:
 
@@ -34,8 +34,8 @@ Once your domain has been registered continue:
 
 5. In that same section, right-click on the Site URL link and copy the URL to your clipboard. You will need the Site URL in the next stage of post-installation set-up steps.
 
-![](/assets/images/Site%20Configuration.png)
-![](/assets/images/Site%20URL%20Capture.png)
+![](/docs/images/Site%20Configuration.png)
+![](/docs/images/Site%20URL%20Capture.png)
 
 ## Set Custom Settings
 Since each installation can have a different site URL, we need to define that URL for the event application to use as its root web presence. This is used for feed URLs, allowing external sites to access it, among other things.
@@ -52,9 +52,9 @@ Since each installation can have a different site URL, we need to define that UR
 
 Once you hit "Save" the "New" button will be replaced with "Edit." (You will need to click the Edit button to make future adjustments to this setting.)
 
-![](/assets/images/Custom%20Settings%201.png)
-![](/assets/images/Custom%20Settings%202.png)
-![](/assets/images/Custom%20Settings%203.png)
+![](/docs/images/Custom%20Settings%201.png)
+![](/docs/images/Custom%20Settings%202.png)
+![](/docs/images/Custom%20Settings%203.png)
 
 ## Set Sharing Rules
 Salesforce Winter '20 and Spring '20 releases severely limited Guest User access to objects to ensure security. The Summit Events application requires the Guest User profile used by the event registrant to be able to read and upsert to the solution’s custom objects. To comply with these new security requirements, we need to create a sharing rule. Code has also been adjusted to allow for the required upserts. The following instructions will help you set up the required sharing rule. Unfortunately, we are not able to automate these steps yet due to limitations in SFDX.
@@ -88,7 +88,7 @@ Salesforce Winter '20 and Spring '20 releases severely limited Guest User access
 
 12. Click the "Save" button.
 
-![](/assets/images/Sharing%20Settings%20Config.png)
+![](/docs/images/Sharing%20Settings%20Config.png)
 
 
 ### Apply Permission Sets
@@ -116,10 +116,10 @@ There are two permission sets provided in this application:
 7. In the Available Permission Sets section, click on Summit Events Registrant and click the “Add” button. This will move it into the Enabled Permission Sets section.
 8. Click the “Save” button.
 
-![](/assets/images/Site%20Label%20Reference.png)
-![](/assets/images/Guest%20User%20Config%201.png)
-![](/assets/images/Guest%20User%20Config%202.png)
-![](/assets/images/Guest%20User%20Config%203.png)
+![](/docs/images/Site%20Label%20Reference.png)
+![](/docs/images/Guest%20User%20Config%201.png)
+![](/docs/images/Guest%20User%20Config%202.png)
+![](/docs/images/Guest%20User%20Config%203.png)
 
 
 Congrats! At this point you should have a functioning Summit Events Package.
