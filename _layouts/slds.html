@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.17.5/styles/salesforce-lightning-design-system.min.css"/>
+</head>
+<body>
+<div class="slds-scope">
+    <div class="slds-grid slds-grid_align-center">
+        <div class="slds-col slds-size_1-of-1 slds-p-around_large hide-padding whiteOpacityBackground" style="max-width:1024px;">
+            <div class="slds-brand-band slds-brand-band_large"></div>
+            <div class="slds-p-around_large minimize-padding">
+                <nav>
+                    <a href="/">Home</a>
+                    {% for item in site.documentation %}
+                    <br/><a href="{{ item.url }}">{{ item.title }}</a>
+                    {% endfor %}
+                </nav>
+                <h1>{{ page.title }}</h1>
+                <section>
+                    {{ content }}
+                </section>
+                <footer>
+                    &copy; to me
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
