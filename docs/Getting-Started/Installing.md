@@ -34,8 +34,8 @@ Once your domain has been registered continue:
 
 5. In that same section, right-click on the Site URL link and copy the URL to your clipboard. You will need the Site URL in the next stage of post-installation set-up steps.
 
-![](/images/Site%20Configuration.png)
-![](/images/Site%20URL%20Capture.png)
+![](_site/docs/images/Site%20Configuration.png)
+![](_site/docs/images/Site%20URL%20Capture.png)
 
 ## Set Custom Settings
 Since each installation can have a different site URL, we need to define that URL for the event application to use as its root web presence. This is used for feed URLs, allowing external sites to access it, among other things.
