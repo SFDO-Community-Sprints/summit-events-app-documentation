@@ -15,7 +15,7 @@ If your org does not already have a Salesforce “Site,” which is used to disp
 
 3. Click on the "Register My Salesforce Site Domain" button.
 
-![](/images/Site%20Setup.png)
+![](../images/Site%20Setup.png)
 
 Once your domain has been registered continue:
 
