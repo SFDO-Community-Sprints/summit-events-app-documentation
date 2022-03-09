@@ -1,8 +1,8 @@
 title: Summit Events App Documentation
 description: Documentation on how to install and use the Summit Events App
 timezone: America/Chicago
-baseurl: "" #the subpath of your site, e.g. /blog
-url: "https://sfdo-community-sprints.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" #the subpath of your site, e.g. /blog
+url: "https://sfdo-community-sprints.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Information on theme https://just-the-docs.github.io/just-the-docs/
 remote_theme: just-the-docs/just-the-docs
