@@ -34,7 +34,7 @@ Once your domain has been registered continue:
 
 5. In that same section, right-click on the Site URL link and copy the URL to your clipboard. You will need the Site URL in the next stage of post-installation set-up steps.
 
-![](../images/Site%20Configuration.png)
+![](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/images/Site%20Configuration.png)
 ![](../images/Site%20URL%20Capture.png)
 
 ## Set Custom Settings
@@ -52,8 +52,8 @@ Since each installation can have a different site URL, we need to define that UR
 
 Once you hit "Save" the "New" button will be replaced with "Edit." (You will need to click the Edit button to make future adjustments to this setting.)
 
-![](../images/Custom%20Settings%201.png)
-![](../images/Custom%20Settings%202.png)
+![Custom Setting 1](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/images/Custom%20Settings%201.png)
+![](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/images/Custom%20Settings%202.png)
 ![](../images/Custom%20Settings%203.png)
 
 ## Set Sharing Rules
