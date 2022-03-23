@@ -88,7 +88,7 @@ compress_html:
 # Aux links for the upper right navigation
 aux_links:
   "Documenation Repository":
-    - "//github.com/SFDO-Community-Sprints/sfdo-community-sprints.github.io"
+    - "//github.com/SFDO-Community-Sprints/summit-events-app-documentation/"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
