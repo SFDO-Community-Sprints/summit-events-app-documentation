@@ -4,9 +4,19 @@ parent: Getting Started
 nav_order: 2
 ---
 
+# Installing the Summit Events App
+
+The Summit Events App (SEA) is a managed package and has been security revied by Salesforce. Installation, along with many other great Salesforce.org Open Source Commons applications, is done through Salesforce.org's [MetaDeploy installer](https://github.com/SFDO-Tooling/MetaDeploy).
+
+[Install the latest managed pacakge](https://install.salesforce.org/products/SummitEventsApp/latest){: .btn .btn-green }
+
+## Post Installation Instructions
+
+There are a few steps after you install the SEA managed package to getting your Salesforce org configured to run SEA. Following along with this helpful post installation video and/org follow the steps below.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ph1LAh6FoQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Create a site subdomain
+### Create a site subdomain
 If your org does not already have a Salesforce “Site,” which is used to display public visual force pages, you will need to set up one. If your org has one set up, you may use the existing Site.
 
 1. In Setup, go to User Interface -> Sites and Domains -> Sites.
@@ -37,7 +47,7 @@ Once your domain has been registered continue:
 ![](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/images/Site%20Configuration.png)
 ![](../images/Site%20URL%20Capture.png)
 
-## Set Custom Settings
+### Set Custom Settings
 Since each installation can have a different site URL, we need to define that URL for the event application to use as its root web presence. This is used for feed URLs, allowing external sites to access it, among other things.
 
 1. In Setup go to User Custom Code -> Custom Settings.
@@ -56,10 +66,10 @@ Once you hit "Save" the "New" button will be replaced with "Edit." (You will nee
 ![](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/images/Custom%20Settings%202.png)
 ![](../images/Custom%20Settings%203.png)
 
-## Set Sharing Rules
+### Set Sharing Rules
 Salesforce Winter '20 and Spring '20 releases severely limited Guest User access to objects to ensure security. The Summit Events application requires the Guest User profile used by the event registrant to be able to read and upsert to the solution’s custom objects. To comply with these new security requirements, we need to create a sharing rule. Code has also been adjusted to allow for the required upserts. The following instructions will help you set up the required sharing rule. Unfortunately, we are not able to automate these steps yet due to limitations in SFDX.
 
-### Set Sharing Object Access
+#### Set Sharing Object Access
 
 1. In Setup, type "Sharing" in the quick-find box in Setup and click on "Sharing Settings".
 
@@ -91,7 +101,7 @@ Salesforce Winter '20 and Spring '20 releases severely limited Guest User access
 ![](../images/Sharing%20Settings%20Config.png)
 
 
-### Apply Permission Sets
+#### Apply Permission Sets
 There are two permission sets provided in this application.  These permission sets should be cloned so that changes can be made to them as needed by your organization:  
 1. Summit Events Admin - allows users to create and maintain events
 2. Summit Events Registrant - allows unauthenticated users to register for an event by giving the guest user access
