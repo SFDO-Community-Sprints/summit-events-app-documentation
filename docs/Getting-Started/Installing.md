@@ -92,7 +92,11 @@ Salesforce Winter '20 and Spring '20 releases severely limited Guest User access
 
 
 ### Apply Permission Sets
-There are two permission sets provided in this application:
+There are two permission sets provided in this application.  These permission sets should be cloned so that changes can be made to them as needed by your organization:  
+1. Summit Events Admin - allows users to create and maintain events
+2. Summit Events Registrant - allows unauthenticated users to register for an event by giving the guest user access
+
+Once the permission sets have been cloned, they can be applied to users.  See Cloning Permission Sets section for details on cloning a permission set.
 
 **Summit Events Admin:** Apply to admin users that need to create and maintain events.
 * Note: Users who are not system administrators but who will administer Summit Events will need this permission set. You do not need to add the Permission Set at this time, but follow the steps bulleted below if/when you need a user to administer Summit Events.
@@ -121,5 +125,14 @@ There are two permission sets provided in this application:
 ![](../images/Guest%20User%20Config%202.png)
 ![](../images/Guest%20User%20Config%203.png)
 
+### Cloning a Permission Set
+1. Clone a Permission Set(s)
+2. Click the Gear and select Setup.
+3. From the Quick Find search textbox, enter Permission Sets. ...
+4. Under the Action column, click Clone for the first Permission Set Label name that you want to clone. ...
+5. Enter a new Label name, API Name and Description for the clone permission set. ...
+6. Click Save.
 
 Congrats! At this point you should have a functioning Summit Events Package.
+
+
