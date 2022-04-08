@@ -1,3 +1,0 @@
-# Heading
-
-This a paragraph
