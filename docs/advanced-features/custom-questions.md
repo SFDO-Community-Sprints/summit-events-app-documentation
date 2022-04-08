@@ -16,15 +16,21 @@ There are a few components required for custom questions.
 * A matching question on the Summit Event that references the field on the Summit Events Registration Object.  Care should be used to make sure that the fields accept the same type of data.  For example, you would not write text to a number field.
 
 ## Create new question field on Summit Events registration object
-This is where the answer the registrant provides will be stored.
-* From Setup, select the Object Manager tab.
-* Search for and select the Summit Events registration object.
-* Follow the process to create the new field.
-* Note the API name of your newly created field, you will need this later.  
-* Give access to the question to the Guest User.   See the section labeled “Custom Questions - Guest User Access “
+This is where the answer the registrant provides will be stored.  
+To create a new field on the Summit Events registration object:
+1. From Setup, select the Object Manager tab.
+2. Search for and select the Summit Events registration object.
+3. Follow the process to create the new field.
+4. Note the API name of your newly created field, you will need this later.  
+5. Give access to the question to the Guest User.   See the section labeled “Custom Questions - Guest User Access “
 
 ## Create a new question on your Summit Event 
-This is what tells the registration form to display the question.  Once you have created your Summit Event record, navigate to the Summit Events Questions related list.  Click the New button and add the new question. 
+This is what tells the registration form to display the question.  
+To create a new question for use on your Summit Event:
+1. Once you have created your Summit Event record, navigate to the Summit Events Questions related list.  
+2. Click the New button and add the new question. 
+3. Complete the appropriate fields in the sections for the type of information you want to capture.
+4. Save the new question.  Repeat this process for each additional question needed.
 
 ### Information Section
 * __Summit Events Question Name__ - the backend name for the question.
