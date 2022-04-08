@@ -11,9 +11,9 @@ Summit Events comes with standard questions that can be asked during the registr
 Standard questions are predefined questions that can be enabled to show during the registration process.   The fields default to Do not ask, meaning they will not display.  By selecting Ask from the drop-down, the question will display on the registration page.  If the field should be required, select Ask and require.  The label of the question can also be changed if needed.   Standard questions appear on the first page of the registration process.
 
 # Custom Questions
-There are several components required for custom questions.
-1. A field on the Summit Events Registration object to house the information entered by the registrant.
-2. A matching question on the Summit Event that references the field on the Summit Events Registration Object.  Care should be used to make sure that the fields accept the same type of data.  For example, you would not write text to a number field.
+There are a few components required for custom questions.
+* A field on the Summit Events Registration object to house the information entered by the registrant.
+* A matching question on the Summit Event that references the field on the Summit Events Registration Object.  Care should be used to make sure that the fields accept the same type of data.  For example, you would not write text to a number field.
 
 ## Create new question field on Summit Events registration object
 This is where the answer the registrant provides will be stored.
