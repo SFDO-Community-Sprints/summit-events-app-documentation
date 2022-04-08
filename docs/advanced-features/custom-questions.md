@@ -12,16 +12,16 @@ Standard questions are predefined questions that can be enabled to show during t
 
 # Custom Questions
 There are several components required for custom questions.
-A field on the Summit Events Registration object to house the information entered by the registrant.
-A matching question on the Summit Event that references the field on the Summit Events Registration Object.  Care should be used to make sure that the fields accept the same type of data.  For example, you would not write text to a number field.
+1. A field on the Summit Events Registration object to house the information entered by the registrant.
+2. A matching question on the Summit Event that references the field on the Summit Events Registration Object.  Care should be used to make sure that the fields accept the same type of data.  For example, you would not write text to a number field.
 
 ## Create new question field on Summit Events registration object
 This is where the answer the registrant provides will be stored.
-From Setup, select the Object Manager tab.
-Search for and select the Summit Events registration object.
-Follow the process to create the new field.
-Note the API name of your newly created field, you will need this later.  
-Give access to the question to the Guest User.   See the section labeled “Custom Questions - Guest User Access “
+* From Setup, select the Object Manager tab.
+* Search for and select the Summit Events registration object.
+* Follow the process to create the new field.
+* Note the API name of your newly created field, you will need this later.  
+* Give access to the question to the Guest User.   See the section labeled “Custom Questions - Guest User Access “
 
 ## Create a new question on your Summit Event 
 This is what tells the registration form to display the question.  Once you have created your Summit Event record, navigate to the Summit Events Questions related list.  Click the New button and add the new question. 
