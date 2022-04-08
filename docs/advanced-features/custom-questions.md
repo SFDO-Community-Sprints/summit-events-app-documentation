@@ -32,6 +32,9 @@ To create a new question for use on your Summit Event:
 3. Complete the appropriate fields in the sections for the type of information you want to capture.
 4. Save the new question.  Repeat this process for each additional question needed.
 
+![](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Advanced-Features/images/AdvancedQs-ExamplesScreenshot.PNG)
+![](../images/AdvancedQs-ExamplesScreenshot.PNG)
+
 ### Information Section
 * __Summit Events Question Name__ - the backend name for the question.
 * __Event__ - the event for which the registration question should apply.  The Event should default to the Event from where you started the process.  If it does not, search for and select the event here.
