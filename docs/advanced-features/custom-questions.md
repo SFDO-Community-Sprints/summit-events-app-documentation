@@ -17,6 +17,9 @@ Some considerations to keep in mind when creating custom questions:
 * If creating a Lookup Field, asharing rule needs to be set up to the object used for the lookup.   Sharing rules can also limit the types of records that are available during lookup.  For example, you may only want to include Accounts that have a specific record type or that are coded in some manner.
 * The guest user must have read permission on the Lookup object as well as to the fields on the lookup-to object (In our example, Account) to any fields that are listed as “Lookup fields”
 
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/IsFGoQRQOQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Create new question field on Summit Events registration object
 This is where the answer the registrant provides will be stored.  
 To create a new field on the Summit Events registration object:
@@ -68,5 +71,4 @@ The record lookup section is only to be completed if looking up values from anot
 * __Lookup Secondary Input Link Text__ - The link text that invites a user not to use the record lookup but rather fill in a value manually.
 * __Lookup Secondary Input Question__ - If the lookup query is opted out of these instructions will appear below a blank text box for manual entry.
   
- <iframe width="560" height="315" src="https://www.youtube.com/embed/IsFGoQRQOQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
