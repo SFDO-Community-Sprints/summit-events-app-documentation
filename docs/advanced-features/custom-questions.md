@@ -67,4 +67,6 @@ The record lookup section is only to be completed if looking up values from anot
 * __Lookup Secondary Value Field__ - This is required if using the Lookup Object feature.  The API name for the field to land manual, registrant inputs when the registrant opts out of looking up a record.
 * __Lookup Secondary Input Link Text__ - The link text that invites a user not to use the record lookup but rather fill in a value manually.
 * __Lookup Secondary Input Question__ - If the lookup query is opted out of these instructions will appear below a blank text box for manual entry.
+  
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/IsFGoQRQOQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
