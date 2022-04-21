@@ -1,6 +1,7 @@
 ---
 title: Page Placeholder
 parent: Sprints
+grand_parent: Getting Involved
 nav_order: 1
 ---
 
