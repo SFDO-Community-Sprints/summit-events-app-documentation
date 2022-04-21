@@ -1,8 +1,7 @@
 ---
 title: Page Placeholder
 parent: Getting Involved
-nav_order: 
-has_children: true
+nav_order:
 ---
 
 # Placeholder page for 1st page in this section
