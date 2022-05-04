@@ -1,6 +1,6 @@
 ---
 title: Feature Requests
-parent: Process & Repo Definitions
+parent: Process and Repo Definitions
 grand_parent: Project Info
 nav_order: 1
 ---
