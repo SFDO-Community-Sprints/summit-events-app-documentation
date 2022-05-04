@@ -1,5 +1,5 @@
 ---
-title: Process & Repo Definitions
+title: Process and Repo Definitions
 parent: Project Info
 nav_order: 1
 ---
