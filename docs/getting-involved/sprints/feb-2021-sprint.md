@@ -5,7 +5,6 @@ grand_parent: Getting Involved
 nav_order: 4
 ---
 
-##February Virtual 2021
 
 ### Project Team
 Help us give you the thanks you deserve and ensure future contributors know who to contact if they have questions! Please ensure that all contributing members of the team are included.
