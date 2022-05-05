@@ -1,3 +1,10 @@
+---
+title: Montly Meetings
+parent: Process and Repo Definitions
+grand_parent: Project Info
+nav_order: 3
+---
+
 # Standing Agenda Items for Monthly Meetings
 - Review what's new in the Main Repo and Assign Testing/Tasks
 - Review what's in the development pipeline, reviewing open branches and submitted issues
