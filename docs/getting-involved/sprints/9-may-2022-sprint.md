@@ -11,7 +11,8 @@ Thank you to the volunteers who contributed and engaged during this sprint!
 * GitHub Scribe(s): All Contributors below!
 * List of all Contributors: 
   - [Krishna Y](https://github.com/skrishna243)
-  - [Jaydeep Godara](https://github.com/JaydeepGo) 
+  - [Jaydeep Godara](https://github.com/JaydeepGo)
+  - [Ibrahim Adeyemi](https://github.com/adevash07)
 
 
 ### Project Resources
