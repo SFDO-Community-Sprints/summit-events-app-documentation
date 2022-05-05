@@ -1,5 +1,5 @@
 ---
-title: Page Placeholder
+title: Standard Registration Questions
 parent: Standard Features
 nav_order: 1
 ---
