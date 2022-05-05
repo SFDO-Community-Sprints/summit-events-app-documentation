@@ -1,5 +1,5 @@
 ---
-title: September 2020 - Virtual AMER Mini-Sprint
+title: September 2020 - Virtual AMER Sprint
 parent: Sprints
 grand_parent: Getting Involved
 nav_order: 2
