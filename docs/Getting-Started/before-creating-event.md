@@ -1,6 +1,6 @@
 ---
 title: Before Creating an Event
-parent: Standard Features
+parent: Getting Started
 nav_order: 3
 ---
 
