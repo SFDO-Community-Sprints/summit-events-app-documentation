@@ -1,5 +1,5 @@
 ---
-title: Standard Features
+title: Developers Wanted
 nav_order: 6
 has_children: true
 ---
