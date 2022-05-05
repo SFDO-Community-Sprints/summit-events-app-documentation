@@ -3,8 +3,9 @@ title: Objects and Field Resources
 nav_order: 5
 has_children: true
 ---
+## Core Foundation of Summit Events
+![image](https://user-images.githubusercontent.com/60475518/167001579-1a30422f-f78d-4dde-87db-4678030cb03d.png)
 
-# Placeholder page for 1st page in this section
+## Object Architecture
+![image](https://user-images.githubusercontent.com/60475518/167001115-eb31431f-363e-41d2-b8f5-aa8c6774b23a.png)
 
-This is just a sample page to demonstrate what the child meta-data will look like
-for a page in this section.
