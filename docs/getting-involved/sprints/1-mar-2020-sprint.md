@@ -5,10 +5,6 @@ grand_parent: Getting Involved
 nav_order: 1
 ---
 
-## Sprint One - March/April 2020
-
-Hope to see you virtually March 31 - April 1 at the [Salesforce.org Open Source Community Sprint - Virtual](https://quip.com/CyI6AWvRrw7O)!
-
 ### Project Team
 Help us give you the thanks you deserve and ensure future contributors know who to contact if they have questions! Please ensure that all contributing members of the team are included.
 * Team Leader(s): Ryan Blake, Thad Dahlberg
