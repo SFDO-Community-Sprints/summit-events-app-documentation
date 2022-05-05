@@ -2,7 +2,7 @@
 title: November 2021 - Virtual APAC Sprint
 parent: Sprints
 grand_parent: Getting Involved
-nav_order: 6
+nav_order: 8
 ---
 
 ### Project Team
