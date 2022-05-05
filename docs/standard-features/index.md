@@ -1,9 +1,9 @@
 ---
 title: Standard Features
-nav_order: 4
+nav_order: 6
 has_children: true
 ---
 
-# Summit Events Project Information
+# Developers Wanted!
 
 Getting involved section description here
