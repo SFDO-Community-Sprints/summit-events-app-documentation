@@ -31,18 +31,18 @@ Summit Events is delivered  with sample values for institution/organization base
 * Appointment Type
 * Auto Add Building *(should match "Building" on the Summit Events object)*
 
-<ins>Summit Events Registration object</ins> *(Registrant will see these picklist values)*
-* Applicant Type 
-* Campus Tour Location
-* Preferred Visit Time
-* Registrant Gender
-* Registrant Program Interest
-* Registrant Pronouns
-* Relationship to Institution
-
-<ins>Summit Events Registration object</ins> *(Admin/Event Management)*
-* Presentation Location *(should match "Building" on the Summit Events object)*
-* Participation Type
+<ins>Summit Events Registration object</ins>
+* *Registrant will see these picklist values*
+  - Applicant Type
+  - Campus Tour Location
+  - Preferred Visit Time
+  - Registrant Gender
+  - Registrant Program Interest
+  - Registrant Pronouns
+  - Relationship to Institution
+* *Admin/Event Management*
+  - Presentation Location *(should match "Building" on the Summit Events object)*
+  - Participation Type
 
 
 <ins>Summit Events Questions object</ins>
