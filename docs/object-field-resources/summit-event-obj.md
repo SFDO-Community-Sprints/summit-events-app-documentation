@@ -1,6 +1,6 @@
 ---
 title: Summit Events
-parent: Object and Field Resources
+parent: Objects and Field Resources
 nav_order: 1
 ---
 
