@@ -15,6 +15,12 @@ Thank you to the volunteers who contributed and engaged during this sprint!
   - [Ibrahim Adeyemi](https://github.com/adevash07)
   - [Thaddaeus Dahlberg](https://github.com/tcdahlberg)
   - [Jeff Hilyard](https://github.com/jhilyard)
+  - [Robert Wynter](https://github.com/robertwynter)
+  - [Mike Walter](https://github.com/walt0019)
+  - [Donna Whitig](https://github.com/dwhitig)
+  - [Ryan Blake](https://github.com/rdblake21)
+  - [Tania Ortiz-Ashby](https://github.com/taniadoa)
+  - [Healey Sutton](https://github.com/helix1027)
 
 
 ### Project Resources
