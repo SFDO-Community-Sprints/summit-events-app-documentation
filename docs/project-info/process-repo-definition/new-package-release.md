@@ -1,3 +1,10 @@
+---
+title: New Package Releases
+parent: Process and Repo Definitions
+grand_parent: Project Info
+nav_order: 4
+---
+
 # Making a new Package/Release:
 To create a new package accessible on [MetaDeploy](https://install.salesforce.org/products/SummitEventsApp/latest), the following 3 questions need to be answered:
 - Do we have the minimum viable documentation for all new elements being packaged?
