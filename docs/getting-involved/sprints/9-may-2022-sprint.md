@@ -26,7 +26,7 @@ Thank you to the volunteers who contributed and engaged during this sprint!
 * Secondary Goals: Create new functionality documentation, Capture Issues in expected functionality.
 * Tasks: Walk-through and update/improve existing documentation; Create pages for new documentation site; Call out “issues” 
 or bugs
-* [May 2022 Sprint Goals](https://user-images.githubusercontent.com/60475518/166988112-d0b4720c-4e23-4ece-a64e-ed3053f7f952.png)
+* ![image](https://user-images.githubusercontent.com/60475518/166988112-d0b4720c-4e23-4ece-a64e-ed3053f7f952.png)
 
 
 ### Project Team Accomplishments
