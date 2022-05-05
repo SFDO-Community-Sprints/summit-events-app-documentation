@@ -1,6 +1,6 @@
 ---
 title: Creating a Basic Event
-parent: Standard Features
+parent: Getting Started
 nav_order: 4
 ---
 
