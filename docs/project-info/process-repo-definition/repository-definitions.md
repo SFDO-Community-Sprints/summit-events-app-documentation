@@ -20,7 +20,7 @@ The Summit Events App repo will be the primary source for development utilizing 
 
 ### [Development/Review of Branches](https://github.com/SFDO-Community/Summit-Events-App/branches)
 Branches are intended to capture project development prior to any updates being added to the Main Repo. The following are expectations as part of the Development and Review processes:
-- **A new branch is reuquired** when working on fixing a bug or creating new functionality based on a feature request.
+- **A new branch is required** when working on fixing a bug or creating new functionality based on a feature request.
 - Each branch should have associated Issues as to what is being worked on to ensure efforts are maximized.
 - When development is complete, the developer/bug fixer will need to create a pull request prior to being merged into the Main Branch. 
 - The Summit Events App Team will review the Pull Request, making appropriate comments and requests for changes/updates. 
