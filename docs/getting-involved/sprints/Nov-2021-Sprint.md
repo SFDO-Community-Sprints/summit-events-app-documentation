@@ -4,7 +4,6 @@ parent: Sprints
 grand_parent: Getting Involved
 nav_order: 6
 ---
-November Virtual APAC Sprint 2021
 
 ### Project Team
 Thank you to the volunteers who contributed and engaged during this sprint!
