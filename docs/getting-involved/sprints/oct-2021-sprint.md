@@ -2,7 +2,7 @@
 title: October 2021 - Virtual AMER Sprint
 parent: Sprints
 grand_parent: Getting Involved
-nav_order: 5
+nav_order: 7
 ---
 
 ### Project Team
