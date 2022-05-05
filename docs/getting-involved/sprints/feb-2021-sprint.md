@@ -2,7 +2,7 @@
 title: February 2021 - Virtual AMER Sprint
 parent: Sprints
 grand_parent: Getting Involved
-nav_order: 3
+nav_order: 4
 ---
 
 ##February Virtual 2021
