@@ -11,7 +11,7 @@ Below are repositories associated to Summit Events and how the are to be utilize
 
 # A collapsible section with markdown
 <details>
-  <summary>Click to expand!</summary>
+  <summary>[Summit Events Repo](https://github.com/SFDO-Community/Summit-Events-App)</summary>
 
 ## [Summit Events Repo](https://github.com/SFDO-Community/Summit-Events-App)
 The Summit Events App is a part of the Salesforce Open Source Commons, which means that Salesforce.org is the direct owner of the repository. This repository is the primary development repo and will have the latest features and updates, so it will commonly be ahead of the packaged release. This is intentional for meaningful testing and community collaboration.
