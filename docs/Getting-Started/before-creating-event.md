@@ -1,7 +1,7 @@
 ---
 title: Before Creating an Event
 parent: Standard Features
-nav_order: 2
+nav_order: 3
 ---
 
 # Placeholder page for 1st page in this section
