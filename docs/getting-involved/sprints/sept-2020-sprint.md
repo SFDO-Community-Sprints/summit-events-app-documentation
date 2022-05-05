@@ -2,7 +2,7 @@
 title: September 2020 - Virtual AMER Mini-Sprint
 parent: Sprints
 grand_parent: Getting Involved
-nav_order: 4
+nav_order: 2
 ---
 
 ### Project Team
