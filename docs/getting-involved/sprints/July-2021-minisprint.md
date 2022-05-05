@@ -1,5 +1,5 @@
 ---
-title: November 2021 - Virtual APAC Sprint
+title: July 2021 - Virtual AMER Mini-Sprint
 parent: Sprints
 grand_parent: Getting Involved
 nav_order: 4
