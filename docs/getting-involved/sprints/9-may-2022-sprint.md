@@ -9,7 +9,7 @@ nav_order: 9
 Thank you to the volunteers who contributed and engaged during this sprint!
 * Team Leader(s): Thad Dahlberg, Donna Whitig, Mike Walter, Ryan Blake
 * GitHub Scribe(s): All Contributors below!
-* List of all Contributors: 
+* List of all Contributors: Krishna Y
 
 
 ### Project Resources
