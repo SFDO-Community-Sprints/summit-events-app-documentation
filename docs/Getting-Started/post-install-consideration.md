@@ -31,8 +31,7 @@ Summit Events is delivered  with sample values for institution/organization base
 * Appointment Type
 * Auto Add Building *(should match "Building" on the Summit Events object)*
 
-<ins>Summit Events Registration object</ins>
-*Registrant will see these picklist values*
+<ins>Summit Events Registration object</ins> *(Registrant will see these picklist values)*
 * Applicant Type 
 * Campus Tour Location
 * Preferred Visit Time
@@ -41,7 +40,7 @@ Summit Events is delivered  with sample values for institution/organization base
 * Registrant Pronouns
 * Relationship to Institution
 
-*Admin/Event Management*
+<ins>Summit Events Registration object</ins> *(Admin/Event Management)*
 * Presentation Location *(should match "Building" on the Summit Events object)*
 * Participation Type
 
@@ -51,6 +50,7 @@ Summit Events is delivered  with sample values for institution/organization base
 
 
 ---to be continued---
+
 3. Other Customizations You Can Make:
 
 * We include all fields for an object on the page layout so you know everything that is included.  You likely will not use all of these fields, so you should customize the page layouts so your users only see the fields you will be using.
