@@ -13,6 +13,7 @@ Thank you to the volunteers who contributed and engaged during this sprint!
   - [Krishna Y](https://github.com/skrishna243)
   - [Jaydeep Godara](https://github.com/JaydeepGo)
   - [Ibrahim Adeyemi](https://github.com/adevash07)
+  - [Thaddaeus Dahlberg](https://github.com/tcdahlberg)
 
 
 ### Project Resources
