@@ -6,7 +6,7 @@ nav_order: 4
 ---
 
 # Making a new Package/Release:
-To create a new package accessible on [MetaDeploy](https://install.salesforce.org/products/SummitEventsApp/latest), the following 3 questions need to be answered:
+To create a new package accessible in the [Open Source Commons](https://install.salesforce.org/products/SummitEventsApp/latest), the following 3 questions need to be answered:
 - Do we have the minimum viable documentation for all new elements being packaged?
 - Do we have any critical features or bugs that need to be packaged?
 - Is there enough there to create a package? (This will be based on conversation and a review of what’s in Main)
