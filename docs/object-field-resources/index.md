@@ -1,5 +1,5 @@
 ---
-title: Project Info
+title: Objects and Field Resources
 nav_order: 5
 has_children: true
 ---
