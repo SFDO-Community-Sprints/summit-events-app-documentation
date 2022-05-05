@@ -1,7 +1,6 @@
 ---
-title: Before Creating an Event
-parent: Standard Features
-nav_order: 2
+title: Project Info
+nav_order: 5
 has_children: true
 ---
 
