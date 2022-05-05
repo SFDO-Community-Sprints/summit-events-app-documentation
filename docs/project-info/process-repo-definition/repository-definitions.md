@@ -42,7 +42,7 @@ The Summit Events App has regularly been represented at the SFDO Open Source Com
 
 This Repo will capture all of the documentation related to Summit Events based on the latest packaged release. The repo [leverages Github Pages](https://sfdo-community-sprints.github.io/summit-events-app-documentation/) for a more user friendly experience, which you're likely experiencing right now.
 
-As a SFDO Community Member, you're held to a certain ethical standard and updates to this repo can be committed to main directly.
+As a SFDO Community Member, you're held to a certain ethical standard and updates to this repo can be committed to directly to the main branch.
 
 ### [Issues on SFDO Community Sprint Summit Events Repo](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/issues)
 The goal of issues on the SFDO Community Spring Summit Events Repo is to capture documentation needs as well as requests. We are still encouraing that Summit Events users connect on such items in the [Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE).
