@@ -9,8 +9,6 @@ nav_order: 2
 
 Below are repositories associated to Summit Events and how the are to be utilized for the overall project development.
 
-<details>
-  <summary>Summit Events Repo</summary>
 
 ## [Summit Events Repo](https://github.com/SFDO-Community/Summit-Events-App)
 The Summit Events App is a part of the Salesforce Open Source Commons, which means that Salesforce.org is the direct owner of the repository. This repository is the primary development repo and will have the latest features and updates, so it will commonly be ahead of the packaged release. This is intentional for meaningful testing and community collaboration.
@@ -39,7 +37,6 @@ Issues are intended to capture bugs as well as feature request. There are pre-bu
 - They will be reviewed, at minimum, during standing Summit Events Team meetings, which happen monthly.
 - Summit Event Users are encouraged to engage in the [Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE) to ask questions about expected functionality as well as feature requests before submitting a formal issue.
 
-</details>
 
 ## [SFDO Community Sprint Summit Events Repo](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation)
 The Summit Events App has regularly been represented at the SFDO Open Source Community Sprints since March 2020. Because Summit Events is a part of the Salesforce Open Source Commons, we want to sure that collaboration on documentation is easy to access, particularly during the Community Sprints.
