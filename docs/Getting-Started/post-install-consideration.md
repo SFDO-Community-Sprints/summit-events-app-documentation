@@ -1,6 +1,6 @@
 ---
 title: Post-Installation Considerations
-parent: Standard Features
+parent: Getting Started
 nav_order: 2
 ---
 
