@@ -73,7 +73,7 @@ There are some additional considerations to make Summit Events more personalized
     - Changing the field display name to better match your organizations jargon may be helpful to users.
     - The following instructions [how to change field label for managed package fields](https://www.greytrix.com/blogs/salesforce/2017/10/06/how-to-rename-the-field-label-in-salesforce-for-managed-package/).
     - **Note:** Doing this may create challenges in leverage some of the documentation, so be mindful on what fields you're updating.
-* **Creating Record Type and Custom Page Layouts
+* **Creating Record Type and Custom Page Layouts**
     - Create Record Type and Custom Page layouts can help guide users based on their specific use cases. 
     - In Higher Education, you may have different layouts for Admissions and Advancements based on their needs and processes.
     - You can leverage Salesforce resources on [how to create Record Types](https://trailhead.salesforce.com/en/content/learn/projects/customize-a-salesforce-object/create-record-types).
