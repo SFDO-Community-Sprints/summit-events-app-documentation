@@ -12,4 +12,4 @@ The following reflects the ideal feature request process:
 3. The Feature Request is reviewed by the Summit Events App team and technical specs are created, adding to the Issue created.
 4. The Feature Request Issue is assigned to an individual or a request is made to the community for support on development of the Feature Request.
 5. The assigned “Developer” will document and articulate their solution as part of their process, ensuring testers can recreate it and working as expected to based on the initial request and technical specs.
-6. Once developlment is complete and ready for a Pull Request, the rest of the Review Process will follow.
+6. Once developlment is complete and ready for a Pull Request, the rest of the [Review Process](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/project-info/process-repo-definition/repository-definitions/#developmentreview-of-branches) will follow.
