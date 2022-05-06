@@ -19,8 +19,8 @@ Summit Events is delivered  with sample values for institution/organization base
 * Location Type
 
 <ins>Summit Events Instance object</ins>
-*  Building Override *(should match "Building" on the Summit Events object)*
-*  Category
+* Building Override *(should match "Building" on the Summit Events object)*
+* Category
 * Location Type Override *(should match "Location Type" on the Summit Events object)*
 
 <ins>Summit Events Appointment object</ins>
@@ -51,34 +51,43 @@ Summit Events is delivered  with sample values for institution/organization base
 
 ---to be continued---
 
-3. Other Customizations You Can Make:
+## Summit Events Page Layout Considerations
+The Summit Events App was original created for Higher Education institutions. You'll notice there are some fields that are specifically related to Admissions, like "Applicant Type". Based on your organization/institution, you may want to remove fields from the page layout to avoid confustion from your Users. We add the most commonly used fields that highlight exisiting functionality to the page layouts on install for visibility.
 
-* We include all fields for an object on the page layout so you know everything that is included.  You likely will not use all of these fields, so you should customize the page layouts so your users only see the fields you will be using.
+Here are some suggested fields to review based on some industry intentions:
+* Applicant Type
+* ...
 
- [How to create and edit page layouts](https://help.salesforce.com/articleView?id=customize_layoutcreate.htm&type=5)
+For support in creating new or editting your page layouts, we encourage you review Salesforce documentation: [How to create and edit page layouts](https://help.salesforce.com/articleView?id=customize_layoutcreate.htm&type=5)
 
-* Add the Summit Events Registrant" related list to the Contact page layout so your users can easily see the events that your contacts have registered for.
+## Summit Events Visibility (Objects and Search) 
+Because Summit Events is intended to integrate with your existing Salesforce org, you'll want to consider exposing records on related objects. The Contact record is a good example as you may want to create visibility to an individuals registration records from that object. Consider the following for visibility and clarity within your Salesforce org:
 
-* Configure the fields that display in the "Default" Search Layouts for [each of the Summit Events objects](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/ERD) by following these instructions on [How to configure Search Layouts](https://help.salesforce.com/articleView?id=search_results_setup_lex.htm&type=5). Configuring the default search layouts also helps you see more details on records in the 'Recently Viewed' list view for each object.
+* Add the Summit Events Registrant related list to the Contact page layout
+* Configure the fields that display in the "Default" Search Layouts for [each of the Summit Events objects](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/object-field-resources/). You can leverage Salesforce resources to learn [how to configure Search Layouts](https://help.salesforce.com/articleView?id=search_results_setup_lex.htm&type=5).
 
-* If you need to change the display name of a field to better match your your organization works you can do that by following these instructions [How to change field label for managed package fields](https://www.greytrix.com/blogs/salesforce/2017/10/06/how-to-rename-the-field-label-in-salesforce-for-managed-package/)
-  + Example:  The "Ask Applicant Type" field on Summit Events object could be renamed to "Ask Registrant Type" and the "Applicant Type" field on the Summit Events Registration object could be renamed to the "Registrant Type" field if your organization doesn't have applications but you want to use this field to categorize people registering for events.
+## Additional Considerations
+There are some additional considerations to make Summit Events more personalized for your Organization/Institution. Consider the following and check out the provided resources:
 
-* Add Record Types and custom page layouts on objects such as "Summit Events Host" and Summit Events to provide custom page layouts and picklist values to users based on their departments or roles in the organization
-  + Example - add custom Record Types of "Admissions" and "Advancement" on the Summit Events object so each area sees fields and picklist values that are relevant to their department instead of showing them all fields and field values.
+* **Changing field Display Names**
+    - Changing the field display name to better match your organizations jargon may be helpful to users.
+    - The following instructions [how to change field label for managed package fields](https://www.greytrix.com/blogs/salesforce/2017/10/06/how-to-rename-the-field-label-in-salesforce-for-managed-package/).
+    - **Note:** Doing this may create challenges in leverage some of the documentation, so be mindful on what fields you're updating.
+* **Creating Record Type and Custom Page Layouts
+    - Create Record Type and Custom Page layouts can help guide users based on their specific use cases. 
+    - In Higher Education, you may have different layouts for Admissions and Advancements based on their needs and processes.
+    - You can leverage Salesforce resources on [how to create Record Types](https://trailhead.salesforce.com/en/content/learn/projects/customize-a-salesforce-object/create-record-types).
+* **Add the Summit Events Calendar to your website**
+    - There are a couple ways to do this and it may depend on your organization/institutions website resources.
+    - You can following these instructions on getting the full calendar to a web page - [Insturctions Need]()
+    - You can follow these insturction for more advanced calendaring functionality leverage the Summit Events Feed - [Insturctions Need]()
+* **Setup Contact and Lead Matching** 
+    - Ideally, you'll want Event Registrants to be added to your Salesforce org in a meaningful way. You may want to create Lead or Contacts. Review the following to create a process that supports your organizations/institution:
+    - [Contact Matching/Creation]()
+    - [Lead Matching/Creation]()
+* **Create a Custom Template**
+    - A custom template will allow for the registration form and pages to be branded for your organization/institution.
+    - The "General SLDS" is standard and will allow for a professional looking form, but you may want more branding.
+    - You can follow these instructions on [how to create a custom template]()
 
-![Selecting a record type](images/1.2%20-%20Record%20type.png?raw=true)
 
-   Optional: If you will only be using one record type, you can skip the step of selecting the record type each time by using these instructions to [set a default record type](https://help.salesforce.com/articleView?id=user_recordtype.htm&type=5).
-
-[How to create Record Types](https://trailhead.salesforce.com/en/content/learn/projects/customize-a-salesforce-object/create-record-types)
-
-* Add the Summit Events calendar to your website using these instructions [Add Event Calendar to Your Web Page](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/How-to-add-the-Event-Calendar-to-Any-Web-Page)
-
-* If you want event Registrants to be matched with Contacts in Salesforce please use these instructions to setup this functionality [Contact Matching](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/0c--%E2%80%93-Setup-Contact-Matching)
-
-__Future__
-
-* Add your custom parking pass for use with the "UG Parking Pass Link" on the the Summit Events Registration object 
-
-* Template - customize the "General SLDS" template or create a custom template
