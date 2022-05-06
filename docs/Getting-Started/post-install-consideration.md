@@ -11,27 +11,27 @@ After you install Summit Events in your org there are some additional considerat
 
 Summit Events is delivered  with sample values for institution/organization based picklist fields. Some picklist fields are standard and should not be editted, like Status values on each object. To provide some guidance, review the below objects picklist fields, updating the values to meet your instutions/organizations needs. For information on updating picklist values, be sure to contact your Salesforce Administrator and follow Salesforce's [guided insturctions](https://trailhead.salesforce.com/en/content/learn/modules/picklist_admin/picklist_admin_manage). We encourage that you deactivate unused values rather than delete or rename.
 
-<ins>Summit Events object</ins>
+**Summit Events object**
 * Audience
 * Building 
 * Event Sponsor
 * Event Type
 * Location Type
 
-<ins>Summit Events Instance object</ins>
+**Summit Events Instance object**
 * Building Override *(should match "Building" on the Summit Events object)*
 * Category
 * Location Type Override *(should match "Location Type" on the Summit Events object)*
 
-<ins>Summit Events Appointment object</ins>
+**Summit Events Appointment object**
 * Building *(should match "Building" on the Summit Events object)*
 
-<ins>Summit Events Appointment Type object</ins>
+**Summit Events Appointment Type object**
 * Appointment Category
 * Appointment Type
 * Auto Add Building *(should match "Building" on the Summit Events object)*
 
-<ins>Summit Events Registration object</ins>
+**Summit Events Registration object**
 * *Registrant will see these picklist values*
   - Applicant Type
   - Campus Tour Location
@@ -45,7 +45,7 @@ Summit Events is delivered  with sample values for institution/organization base
   - Participation Type
 
 
-<ins>Summit Events Questions object</ins>
+**Summit Events Questions object**
 * Exisiting Picklist Values *(Note: this will be based on any custom picklist fields on the Summit Events Registration object)*
 
 
