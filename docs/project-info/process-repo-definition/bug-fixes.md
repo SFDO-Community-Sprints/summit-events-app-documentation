@@ -12,4 +12,4 @@ The following reflects the ideal Bug Fix process:
 3. The Bug Report Issue will be reviewed by the Summit Events App team and technical specs are created, adding to the Issue created.
 4. The Bug Report Issue will be assigned to an individual or a request is made to the community for support on development of the Bug Report Issue.
 5. The assigned “Developer” will document and articulate their fix as part of their process, ensuring testers can recreate it and meet expected outcomes based on the initial issue and technical specs.
-6. Once developlment is complete and ready for a Pull Request, the rest of the Review Process will follow.
+6. Once developlment is complete and ready for a Pull Request, the rest of the [Review Process](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/project-info/process-repo-definition/repository-definitions/#developmentreview-of-branches) will follow.
