@@ -51,7 +51,7 @@ Summit Events is delivered  with sample values for institution/organization base
 
 ---to be continued---
 
-## Summit Events Page Layout Considerations
+## Page Layout Considerations
 The Summit Events App was original created for Higher Education institutions. You'll notice there are some fields that are specifically related to Admissions, like "Applicant Type". Based on your organization/institution, you may want to remove fields from the page layout to avoid confustion from your Users. We add the most commonly used fields that highlight exisiting functionality to the page layouts on install for visibility.
 
 Here are some suggested fields to review based on some industry intentions:
@@ -60,7 +60,7 @@ Here are some suggested fields to review based on some industry intentions:
 
 For support in creating new or editting your page layouts, we encourage you review Salesforce documentation: [How to create and edit page layouts](https://help.salesforce.com/articleView?id=customize_layoutcreate.htm&type=5)
 
-## Summit Events Visibility (Objects and Search) 
+## Visibility (Objects and Search) 
 Because Summit Events is intended to integrate with your existing Salesforce org, you'll want to consider exposing records on related objects. The Contact record is a good example as you may want to create visibility to an individuals registration records from that object. Consider the following for visibility and clarity within your Salesforce org:
 
 * Add the Summit Events Registrant related list to the Contact page layout
