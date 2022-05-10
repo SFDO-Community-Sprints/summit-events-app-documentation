@@ -13,6 +13,7 @@ Summit Events is delivered  with sample values for institution/organization base
 
 **Summit Events object**
 * Audience
+* Ask Applicant Type
 * Building 
 * Event Sponsor
 * Event Type
