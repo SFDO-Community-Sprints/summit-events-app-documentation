@@ -8,11 +8,11 @@ nav_order: 1
 
 Once you have set up your Event Details, you may find that you want to further customize your event registration page to capture additional information. First Name, Last Name, and Email are default required registration questions for all events. Standard Questions are predefined questions that can be enabled to show during the registration process.  You can also change the prompts that display for these fields by overriding it with the text you add in the corresponding Label field.  
 
-Standard Questions, by default are set to “Do not ask” and will not appear on the event’s registration page.  
+Standard Questions, by default are set to _Do not ask_ and will not appear on the event’s registration page.  
 In most cases, there are three options for Standard Questions:
-1. Do Not Ask: question will not appear on the registration form
-2. Ask: enables the phone field so that the question will appear on the registration form as optional field
-3. Ask and Require: enables the phone field so that the question will appear on the registration form with a red asterisk, indicating it is required.
+1. _Do Not Ask_: question will not appear on the registration form
+2. _Ask_: enables the phone field so that the question will appear on the registration form as optional field
+3. _Ask and Require_: enables the phone field so that the question will appear on the registration form with a red asterisk, indicating it is required.
 
 ## Required Field Labels
 The standard fields First Name, Last Name and Email  are all required fields.  The required fields labels section lets you rename the labels for these required fields as needed.  
