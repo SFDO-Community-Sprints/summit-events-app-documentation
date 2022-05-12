@@ -60,15 +60,15 @@ Summit Event Setup
 ![Ask Preferred First Name Image](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs1.png)
 
 When the person registers, they see the prompt of Nickname but the answer they provide is stored in the standard Ask Preferred First Name field.
-![Ask Preferred First Name Reg View](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/imagesStandardQs2.png)
+![Ask Preferred First Name Reg View](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs2.png)
 
 There are a couple standard question fields that have additional functionality or behavior.  The Ask Applicant Type includes additional options of _Do not ask but assign First-Year, Do not ask but assign Transfer,_ and _Do not ask but assign Graduate_.  These options are educational institution centric and can be used to automatically set the Type field to one of the three predefined options without having to ask the registrant. If this is not a feature your organization needs, your administrator can remove these options by disabling the picklist item.
 
-![Ask Applicant Type Image](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/StandardQs-AskType.png)
+![Ask Applicant Type Image](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-AskType.png)
 
 The Ask Third Party Registrant standard question allows the individual completing the registration to complete registration for someone else.   To enable this field, simply move desired values in the Available column to the Chosen column.  This enables this field and makes the Chosen items available during the registration process.
 
-![Ask Third Party Reg Image](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-ThirdPartyReg.PNG)
+![Ask Third Party Reg Image](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-ThirdPartyReg.png)
 
 # Modifying Standard Questions Picklist Values
 The standard questions and labels fields are located on the Summit Event Registration object and can be modified there.  If you do not have access to do this, your system administrator can update them for you.  
