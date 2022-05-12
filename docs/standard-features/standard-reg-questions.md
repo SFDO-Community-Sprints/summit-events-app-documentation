@@ -23,8 +23,9 @@ The standard fields First Name, Last Name and Email  are all required fields.  T
 ## Phone Options | Label
 Use this section to enable the phone question and change the labels/text associated with the phone question.  Ask Phone field, if enabled, will prompt registrants to provide a phone number and depending on the setting, prompt the registrant to choose the type of phone and indicate if they want to receive text messages about the event.    The standard phone question supports home and mobile phone types.  If more complexity is needed, additional or custom questions can be used.
 
-**Let’s see how this works**  
-We want to ask our registrant to enter their phone number and we want to know the type of number they are entering.  If they enter a mobile number, we want to get consent to be able to text them.  We’ll set the standard question field Ask Phone to Ask with type require.  We add instructional text into the Registrant Receive Texts Label field to enable this checkbox field to capture consent to text.
+**Let's take at how it works** 
+
+We want to ask our registrant to enter their phone number and we want to know the type of number they are entering.  If they enter a mobile number, we want to get consent to be able to text them.  We’ll set the standard question field Ask Phone to _Ask with type require_.  We add instructional text into the Registrant Receive Texts Label field.  This will enable the checkbox field with the instructional text we entered to capture the registrant's consent.
 
 Summit Event Setup
 
@@ -53,8 +54,9 @@ Preferred Class Year
 Last Name As Student
 Ask Third Party Registrant
 
-**Let’s look at how this works**
-We want to ask our registrant if they prefer to go by a nickname.  We can use a standard question to accomplish this.  We set the Ask Preferred First Name standard question field to Ask and change the prompt to read Nickname.
+**Let's take at how it works**  
+
+We want to ask our registrant if they prefer to go by a nickname.  We can use a standard question to accomplish this.  We set the Ask Preferred First Name standard question field to _Ask_ and change the prompt to read _Nickname_.
 
 Summit Event Setup
 
@@ -63,7 +65,7 @@ Summit Event Setup
 When the person registers, they see the prompt of Nickname but the answer they provide is stored in the standard Ask Preferred First Name field.
 ![Ask Preferred First Name Reg View](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/imagesStandardQs2.png)
 
-There are a couple standard question fields that have additional functionality or behavior.  The Ask Applicant Type includes additional options of Do not ask but assign First-Year, Do not ask but assign Transfer, and Do not ask but assign Graduate.  These options are educational institution centric and can be used to automatically set the Type field to one of the three predefined options without having to ask the registrant. If this is not a feature your organization needs, your administrator can remove these options by disabling the picklist item.
+There are a couple standard question fields that have additional functionality or behavior.  The Ask Applicant Type includes additional options of _Do not ask but assign First-Year, Do not ask but assign Transfer,_ and _Do not ask but assign Graduate_.  These options are educational institution centric and can be used to automatically set the Type field to one of the three predefined options without having to ask the registrant. If this is not a feature your organization needs, your administrator can remove these options by disabling the picklist item.
 
 ![Ask Applicant Type Image](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/StandardQs-AskType.png)
 
@@ -76,7 +78,8 @@ The standard questions and labels fields are located on the Summit Event Registr
 
 Let’s look at an example of how they can be updated.  We are asking for gender and we want to add the value “Non-binary” to the available choices.
 
-**Let's take at how this works**
+**Let's take at how it works**
+
 We’ll click on the Gear Icon and choose Setup to go to the Setup area.
 
 ![Setup Gear Icon](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-SetupGearIcon.png)
@@ -93,14 +96,14 @@ In the Values section, the New button allows us to add our additional item.
 
 ![Picklist New Button](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-PickListNewbutton.png)
 
-We’ll add the new options and click Save.
+We’ll add the new options and click Save.  
 
 ![Adding Picklist Item Screen](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-PickListAddItem.png)
 
 ![Picklist Item Added Screen](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-PickListItemAdded.png)
 
 
-The new item appears in the Values area and will appear as an option for our registrant to select.
+If we've enabled the field to display on our form, the new items will appear as an option for our registrant to select.
 
 ![New Item Displays](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-GenderDisplays.png)
 
