@@ -2,7 +2,6 @@
 title: Bug Fixes
 parent: Process and Repo Definitions
 grand_parent: Project Info
-nav_order: 2
 ---
 
 # Bug Fixes Process
