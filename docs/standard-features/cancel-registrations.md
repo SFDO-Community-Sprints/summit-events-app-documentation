@@ -4,7 +4,5 @@ parent: Standard Features
 nav_order: 4
 ---
 
-# Placeholder page for 1st page in this section
+*This page is still needing some content. If you're interest in contributing to the Summit Events App and what to help provide support by creating this page, comment below and let us know!*
 
-This is just a sample page to demonstrate what the child meta-data will look like
-for a page in this section.
