@@ -8,6 +8,9 @@ nav_order: 1
 
 Once you have set up your Event Details, you may find that you want to further customize your event registration page to capture additional information. First Name, Last Name, and Email are default required registration questions for all events. Standard Questions are predefined questions that can be enabled to show during the registration process.  You can also change the prompts that display for these fields by overriding it with the text you add in the corresponding Label field.  
 
+Standard Questions are configured on the Summit Events record in the Standard Options & Labels area.
+![Standard Options and Labels Pic](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-StandardOpsTab.PNG)
+
 Standard Questions, by default are set to _Do not ask_ and will not appear on the event’s registration page.  
 In most cases, there are three options for Standard Questions:
 1. _Do Not Ask_: question will not appear on the registration form
