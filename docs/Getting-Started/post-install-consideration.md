@@ -83,9 +83,8 @@ There are some additional considerations to make Summit Events more personalized
     - You can following these instructions on getting the full calendar to a web page - [Insturctions Need]()
     - You can follow these insturction for more advanced calendaring functionality leverage the Summit Events Feed - [Insturctions Need]()
 * **Setup Contact and Lead Matching** 
-    - Ideally, you'll want Event Registrants to be added to your Salesforce org in a meaningful way. You may want to create Lead or Contacts. Review the following to create a process that supports your organizations/institution:
-    - [Contact Matching/Creation]()
-    - [Lead Matching/Creation]()
+    - Ideally, you'll want Event Registrants to be added to your Salesforce org in a meaningful way. You may want to create and match Leads and/or Contacts. Review the following to create a process that supports your organizations/institution:
+      - [Contact and Lead Matching/Creation](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/contact-and-lead-matching/)
 * **Create a Custom Template**
     - A custom template will allow for the registration form and pages to be branded for your organization/institution.
     - The "General SLDS" is standard and will allow for a professional looking form, but you may want more branding.
