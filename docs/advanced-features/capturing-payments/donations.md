@@ -1,6 +1,7 @@
 ---
 title: Donations
 parent: Capturing Payments
+grand_parent: Advanced Features
 nav_order: 2
 ---
 
