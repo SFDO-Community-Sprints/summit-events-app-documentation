@@ -1,7 +1,6 @@
 ---
 title: Appointments/Options
 parent: Advanced Features
-nav_order: 6
 ---
 
 
