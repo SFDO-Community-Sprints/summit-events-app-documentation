@@ -1,7 +1,6 @@
 ---
 title: Custom Templates
 parent: Advanced Features
-nav_order: 2
 ---
 **In Progress**
 
