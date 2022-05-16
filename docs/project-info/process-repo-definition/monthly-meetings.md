@@ -2,7 +2,6 @@
 title: Montly Meetings
 parent: Process and Repo Definitions
 grand_parent: Project Info
-nav_order: 4
 ---
 
 # Standing Agenda Items for Monthly Meetings
