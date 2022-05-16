@@ -1,7 +1,6 @@
 ---
 title: Add to Calendar Links
 parent: Standard Features
-nav_order: 7
 ---
 
 
