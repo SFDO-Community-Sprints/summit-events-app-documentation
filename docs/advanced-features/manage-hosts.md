@@ -1,7 +1,6 @@
 ---
 title: Managing Hosts
 parent: Advanced Features
-nav_order: 5
 ---
 
 
