@@ -2,7 +2,7 @@
 title: Capturing Payments
 parent: Advanced Features
 nav_order: 4
-had_children: true
+has_children: true
 ---
 
 
