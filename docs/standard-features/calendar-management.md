@@ -1,7 +1,6 @@
 ---
 title: Calendar Management
 parent: Standard Features
-nav_order: 9
 ---
 
 
