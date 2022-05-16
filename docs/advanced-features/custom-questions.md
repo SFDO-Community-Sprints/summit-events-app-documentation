@@ -1,7 +1,6 @@
 ---
 title: Custom Questions
 parent: Advanced Features
-nav_order: 1
 ---
 
 # Registrant and Guest Questions
