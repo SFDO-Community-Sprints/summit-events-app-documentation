@@ -7,6 +7,22 @@ nav_order: 2
 
 After you install Summit Events in your org there are some additional considerations you'll want to make to ensure there is alignment with your organization. Before you begin, be sure that you've completed all of the steps to [Install and Configure](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/) Summmit Events.
 
+## Page Layout Considerations
+The Summit Events App was original created for Higher Education institutions. You'll notice there are some fields that are specifically related to Admissions, like "Applicant Type". Based on your organization/institution, you may want to remove fields from the page layout to avoid confustion from your Users. We add the most commonly used fields that highlight exisiting functionality to the page layouts on install for visibility.
+
+Here are some suggested fields to review based on some industry intentions:
+* Applicant Type
+* ...
+
+For support in creating new or editting your page layouts, we encourage you review Salesforce documentation: [How to create and edit page layouts](https://help.salesforce.com/articleView?id=customize_layoutcreate.htm&type=5)
+
+## Visibility (Objects and Search) 
+Because Summit Events is intended to integrate with your existing Salesforce org, you'll want to consider exposing records on related objects. The Contact record is a good example as you may want to create visibility to an individuals registration records from that object. Consider the following for visibility and clarity within your Salesforce org:
+
+* Add the Summit Events Registrant related list to the Contact page layout
+* Configure the fields that display in the "Default" Search Layouts for [each of the Summit Events objects](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/object-field-resources/). You can leverage Salesforce resources to learn [how to configure Search Layouts](https://help.salesforce.com/articleView?id=search_results_setup_lex.htm&type=5).
+
+
 ## Picklist Considerations
 
 Summit Events is delivered  with sample values for institution/organization based picklist fields. Some picklist fields are standard and should not be editted, like Status values on each object. To provide some guidance, review the below objects picklist fields, updating the values to meet your instutions/organizations needs. For information on updating picklist values, be sure to contact your Salesforce Administrator and follow Salesforce's [guided insturctions](https://trailhead.salesforce.com/en/content/learn/modules/picklist_admin/picklist_admin_manage). We encourage that you deactivate unused values rather than delete or rename.
@@ -52,20 +68,6 @@ Summit Events is delivered  with sample values for institution/organization base
 
 ---to be continued---
 
-## Page Layout Considerations
-The Summit Events App was original created for Higher Education institutions. You'll notice there are some fields that are specifically related to Admissions, like "Applicant Type". Based on your organization/institution, you may want to remove fields from the page layout to avoid confustion from your Users. We add the most commonly used fields that highlight exisiting functionality to the page layouts on install for visibility.
-
-Here are some suggested fields to review based on some industry intentions:
-* Applicant Type
-* ...
-
-For support in creating new or editting your page layouts, we encourage you review Salesforce documentation: [How to create and edit page layouts](https://help.salesforce.com/articleView?id=customize_layoutcreate.htm&type=5)
-
-## Visibility (Objects and Search) 
-Because Summit Events is intended to integrate with your existing Salesforce org, you'll want to consider exposing records on related objects. The Contact record is a good example as you may want to create visibility to an individuals registration records from that object. Consider the following for visibility and clarity within your Salesforce org:
-
-* Add the Summit Events Registrant related list to the Contact page layout
-* Configure the fields that display in the "Default" Search Layouts for [each of the Summit Events objects](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/object-field-resources/). You can leverage Salesforce resources to learn [how to configure Search Layouts](https://help.salesforce.com/articleView?id=search_results_setup_lex.htm&type=5).
 
 ## Additional Considerations
 There are some additional considerations to make Summit Events more personalized for your Organization/Institution. Consider the following and check out the provided resources:
