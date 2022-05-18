@@ -6,6 +6,9 @@ nav_order: 1
 
 # Setting Up Standard Questions
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IysJ8RT3U0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 Once you have set up your Event Details, you may find that you want to further customize your event registration page to capture additional information. First Name, Last Name, and Email are default required registration questions for all events. Standard Questions are predefined questions that can be enabled to show during the registration process.  You can also change the prompts that display for these fields by overriding it with the text you add in the corresponding Label field.  
 
 Standard Questions are configured on the Summit Events record in the Standard Options & Labels area.
@@ -17,7 +20,6 @@ In most cases, there are three options for Standard Questions:
 2. _Ask_: enables the phone field so that the question will appear on the registration form as optional field
 3. _Ask and Require_: enables the phone field so that the question will appear on the registration form with a red asterisk, indicating it is required.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IysJ8RT3U0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Required Field Labels
 The standard fields First Name, Last Name and Email  are all required fields.  The required fields labels section lets you rename the labels for these required fields as needed.  
