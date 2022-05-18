@@ -2,7 +2,6 @@
 title: Repository Definitions
 parent: Process and Repo Definitions
 grand_parent: Project Info
-nav_order: 3
 ---
 
 # Repository Definitions:

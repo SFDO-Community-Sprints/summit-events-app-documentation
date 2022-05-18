@@ -1,7 +1,6 @@
 ---
 title: Contributing to Summit Events
 parent: Project Info
-nav_order: 2
 ---
 
 # Contributing to Summit Events
