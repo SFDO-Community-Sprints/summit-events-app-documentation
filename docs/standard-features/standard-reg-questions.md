@@ -17,6 +17,8 @@ In most cases, there are three options for Standard Questions:
 2. _Ask_: enables the phone field so that the question will appear on the registration form as optional field
 3. _Ask and Require_: enables the phone field so that the question will appear on the registration form with a red asterisk, indicating it is required.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IysJ8RT3U0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Required Field Labels
 The standard fields First Name, Last Name and Email  are all required fields.  The required fields labels section lets you rename the labels for these required fields as needed.  
 
@@ -73,7 +75,7 @@ The Ask Third Party Registrant standard question allows the individual completin
 
 ![Ask Third Party Reg Image](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-ThirdPartyReg.png)
 
-# Modifying Standard Questions Picklist Values
+## Modifying Standard Questions Picklist Values
 The standard questions and labels fields are located on the Summit Event Registration object and can be modified there.  If you do not have access to do this, your system administrator can update them for you.  
 
 Let’s look at an example of how they can be updated.  We are asking for gender and we want to add the value “Non-binary” to the available choices.
