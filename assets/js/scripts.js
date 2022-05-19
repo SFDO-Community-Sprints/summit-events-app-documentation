@@ -57,8 +57,10 @@ function getContentWidth(element) {
 
 function setModifiedDate() {
     if (document.getElementById('last-modified')) {
-        fetch("https://api.github.com/repos/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}")
+        let api_link = "https://api.github.com/repos/{{site.github.owner_name}}/{{site.github.repository_name}}/commits?path={{page.path}}";
+        fetch(api_link)
             .then((response) => {
+                console.log(response.json());
                 return response.json();
             })
             .then((commits) => {
