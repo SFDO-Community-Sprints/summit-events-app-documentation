@@ -54,21 +54,3 @@ function getContentWidth(element) {
     let styles = getComputedStyle(element)
     return element.clientWidth - parseFloat(styles.paddingLeft) - parseFloat(styles.paddingRight)
 }
-
-function setModifiedDate() {
-    if (document.getElementById('last-modified')) {
-        let api_link = "https://api.github.com/repos/{{site.github.owner_name}}/{{site.github.repository_name}}/commits?path={{page.path}}";
-        fetch(api_link)
-            .then((response) => {
-                console.log(response.json());
-                return response.json();
-            })
-            .then((commits) => {
-                console.log(JSON.stringify(commits[0]));
-                let modified = commits[0]['commit']['committer']['date'].slice(0,10);
-                if(modified != '{{ page.date | date: "%Y-%m-%d" }}') {
-                    document.getElementById('last-modified').textContent = "Last Modified: " + modified;
-                }
-            });
-    }
-}
