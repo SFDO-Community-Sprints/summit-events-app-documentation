@@ -62,8 +62,8 @@ function setModifiedDate() {
                 return response.json();
             })
             .then((commits) => {
-                var modified = commits[0]['commit']['committer']['date'].slice(0,10);
-                if(modified != "{{ page.date | date: "%Y-%m-%d" }}") {
+                let modified = commits[0]['commit']['committer']['date'].slice(0,10);
+                if(modified != '{{ page.date | date: "%Y-%m-%d" }}') {
                     document.getElementById('last-modified').textContent = "Last Modified: " + modified;
                 }
             });
