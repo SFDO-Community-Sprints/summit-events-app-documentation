@@ -64,6 +64,7 @@ gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into t
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-github-metadata
 
 kramdown:
   syntax_highlighter_opts:
