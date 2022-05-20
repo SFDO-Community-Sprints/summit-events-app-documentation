@@ -1,4 +1,3 @@
-
 ---
 title: Standard Features
 nav_order: 8
