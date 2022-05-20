@@ -1,5 +1,5 @@
 ---
-title: Standard Features
+title: Recipes
 nav_order: 8
 has_children: true
 ---
