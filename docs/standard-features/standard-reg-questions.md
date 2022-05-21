@@ -78,7 +78,7 @@ The Ask Third Party Registrant standard question allows the individual completin
 ![Ask Third Party Reg Image](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-ThirdPartyReg.png)
 
 ## Modifying Standard Questions Picklist Values
-The standard questions and labels fields are located on the Summit Event Registration object and can be modified there.  If you do not have access to do this, your system administrator can update them for you.  
+The standard questions and labels fields on the Summit Event Object have a corresponding field on the Summit Event Registration object and can be modified there.  If you do not have access to do this, your system administrator can update them for you. See the [full list](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/object-field-resources/summit-event-obj/field-mappings/#summit-events-object-to-the-event-registration-object-mappings) of Summit Event Object Field Mappings for Standard Questions.
 
 Let’s look at an example of how they can be updated.  We are asking for gender and we want to add the value “Non-binary” to the available choices.
 
