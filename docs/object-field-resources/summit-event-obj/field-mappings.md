@@ -1,6 +1,7 @@
 ---
 title: Field Mappings
 parent: Summit Events
+grandparent: Objects and Field Resources
 ---
 
 
