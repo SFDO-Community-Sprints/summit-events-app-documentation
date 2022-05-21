@@ -15,9 +15,9 @@ The Summit Events object is the umbrella objects capturing the registration expe
 
 |Event Object Field   |Registration Object Field   | Notes   |
 |:--------------------|:---------------------------|:--------|
-|First Name|Registrant First Name||
-|Last Name|Registrant Last Name||
-|Email|Registrant Email|||
+|First Name|Registrant First Name|   |
+|Last Name|Registrant Last Name|   |
+|Email|Registrant Email|  |
 |	Ask Applicant Type	|	Registrant Applicant Type	|		|
 |	Ask Company/Organization	|	Registrant Company/Organization	|		|
 |	Ask Date Of Birth	|	Registrant Date of Birth	|		|
