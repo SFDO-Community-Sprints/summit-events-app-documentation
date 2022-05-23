@@ -7,7 +7,10 @@ nav_exclude: true
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
 <script src="https://cdn.jsdelivr.net/combine/npm/fullcalendar@5.11.0,npm/tippy.js@6.3.7"></script>
 
-<div id="audienceDD"></div><br/>
+<select id="audienceDD" name="audienceDD" title="Select an audience that matches you.">
+    <option default="true" selected="selected">Select...</option>
+</select>
+<br/>
 <div id="fullCalendarView"></div>
 <p>&nbsp;</p>
 
