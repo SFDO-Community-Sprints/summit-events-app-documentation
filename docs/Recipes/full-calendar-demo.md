@@ -119,6 +119,7 @@ const initCalendar = function() {
             let wrap;
             let titleWrap = document.createElement("span");
             titleWrap.classList.add("summitEventsTitle");
+            console.log(JSON.stringify(info.event));
             console.log(info.event.eventClosed);
             if (!info.event.eventClosed) {
                 wrap = document.createElement("a");
