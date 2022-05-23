@@ -9,6 +9,7 @@ nav_exclude: true
 
 <div id="audienceDD"></div><br/>
 <div id="fullCalendarView"></div>
+<p>&nbsp;</p>
 
 <script>
 let ready = (callback) => {
@@ -23,7 +24,7 @@ ready(() => {
 /*  feedURL:
     This should be the site URL of the salesforce site where Summit Events App is installed
  */
-let feedURL = "https://crown.secure.force.com/";
+let feedURL = "https://summiteventsappteam.secure.force.com/";
 
 /* HIDE CALENDAR OPTION:
    hideCalendarUntilAudience set to true will hide the calendar of events until an audience is selected.
