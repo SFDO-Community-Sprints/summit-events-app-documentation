@@ -1,6 +1,6 @@
 ---
 title: Using CumulusCI
-Parent: Developers Wanted
+parent: Developers Wanted
 ---
 
 # Developing the Summit Events App with CumulusCI
