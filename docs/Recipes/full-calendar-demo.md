@@ -132,6 +132,7 @@ const initCalendar = function() {
                 titleWrap.innerHTML = info.event.title + "<br><em>Event is closed.</em>";
             }
             wrap.classList.add("SummitEventsItem");
+            wrap.classList.add(info.event.className);
             let descWrap = document.createElement("span");
             descWrap.classList.add("summitEventsDesc");
             descWrap.innerHTML = info.event.extendedProps.description;
