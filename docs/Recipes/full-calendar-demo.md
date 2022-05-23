@@ -3,17 +3,19 @@ title: Calendar
 parent: Recipes
 nav_exclude: true
 ---
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css">
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
+
 <p>
     <select id="audienceDD" name="audienceDD" title="Select an audience that matches you.">
         <option default="true" selected="selected">Select...</option>
     </select>
 </p>
 <p>
-    <div id="fullCalendarView"></div>
+    <div id="fullCalendarView">&nbsp;</div>
 </p>
 
 <script>
@@ -120,8 +122,6 @@ const initCalendar = function() {
             let wrap;
             let titleWrap = document.createElement("span");
             titleWrap.classList.add("summitEventsTitle");
-            console.log(JSON.stringify(info.event));
-            console.log(info.event.extendedProps.eventClosed);
             if (!info.event.extendedProps.eventClosed) {
                 wrap = document.createElement("a");
                 titleWrap.innerHTML = info.event.title;
@@ -132,6 +132,7 @@ const initCalendar = function() {
                 titleWrap.innerHTML = info.event.title + "<br><em>Event is closed.</em>";
             }
             wrap.classList.add("SummitEventsItem");
+            wrap.classList.add(className);
             let descWrap = document.createElement("span");
             descWrap.classList.add("summitEventsDesc");
             descWrap.innerHTML = info.event.extendedProps.description;
@@ -278,7 +279,6 @@ const initCalendar = function() {
         createCookie(name, "", -1);
     }
 }
-
 
 </script>
 
