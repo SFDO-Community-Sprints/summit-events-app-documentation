@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
     }
 
     setIframeVideo();
-    setModifiedDate();
 });
 
 function setIframeVideo() {
