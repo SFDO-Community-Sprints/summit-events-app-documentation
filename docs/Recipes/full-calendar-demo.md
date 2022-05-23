@@ -111,7 +111,7 @@ const initCalendar = function() {
                 end: rawEventData.end.replace("Z", ""),
                 description: rawEventData.description,
                 className: rawEventData.className,
-                eventClosed: rawEventData.eventClosed
+                eventClosed: "'" + rawEventData.eventClosed + "'"
             };
         },
         eventDisplay: "auto",
