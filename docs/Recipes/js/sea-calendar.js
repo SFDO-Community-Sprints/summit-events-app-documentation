@@ -92,22 +92,26 @@ const initCalendar = function() {
                 end: rawEventData.end.replace("Z", ""),
                 description: rawEventData.description,
                 className: rawEventData.className,
+                eventClosed: rawEventData.eventClosed.toString()
             };
         },
         eventDisplay: "auto",
         eventTextColor: "#000",
         eventContent: function (info) {
-            let wrap = document.createElement("a");
-            wrap.classList.add("SummitEventsItem");
+            let wrap;
             let titleWrap = document.createElement("span");
             titleWrap.classList.add("summitEventsTitle");
-            if (!info.event.eventClosed) {
+            if (!info.event.extendedProps.eventClosed) {
+                wrap = document.createElement("a");
                 titleWrap.innerHTML = info.event.title;
                 wrap.href = info.event.url;
                 wrap.target = "_blank";
             } else {
+                wrap = document.createElement("div");
                 titleWrap.innerHTML = info.event.title + "<br><em>Event is closed.</em>";
             }
+            wrap.classList.add("SummitEventsItem");
+            wrap.classList.add(info.event.className);
             let descWrap = document.createElement("span");
             descWrap.classList.add("summitEventsDesc");
             descWrap.innerHTML = info.event.extendedProps.description;
