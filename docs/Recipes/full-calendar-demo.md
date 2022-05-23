@@ -93,6 +93,7 @@ const initCalendar = function() {
         initialView: getCalView(),
         handleWindowResize: true,
         textColor: "#000",
+        contentHeight: "auto",
         events: {
             url: feedURL,
             extraParams: function () {
