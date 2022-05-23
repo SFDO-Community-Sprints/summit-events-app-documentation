@@ -110,7 +110,7 @@ const initCalendar = function() {
                 start: rawEventData.start.replace("Z", ""),
                 end: rawEventData.end.replace("Z", ""),
                 description: rawEventData.description,
-                className: rawEventData.className,
+                className: rawEventData.className.join(','),
                 eventClosed: rawEventData.eventClosed.toString()
             };
         },
@@ -121,8 +121,8 @@ const initCalendar = function() {
             let titleWrap = document.createElement("span");
             titleWrap.classList.add("summitEventsTitle");
             console.log(JSON.stringify(info.event));
-            console.log(info.event.eventClosed);
-            if (!info.event.eventClosed) {
+            console.log(info.event.extendedProps.eventClosed);
+            if (!info.event.extendedProps.eventClosed) {
                 wrap = document.createElement("a");
                 titleWrap.innerHTML = info.event.title;
                 wrap.href = info.event.url;
