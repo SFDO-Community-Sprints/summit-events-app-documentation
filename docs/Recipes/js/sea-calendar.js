@@ -1,7 +1,7 @@
 let ready = (callback) => {
     if (document.readyState !== "loading") callback();
     else document.addEventListener("DOMContentLoaded", callback);
-}
+};
 
 ready(() => {
     initCalendar();
@@ -10,7 +10,7 @@ ready(() => {
 /*  feedURL:
     This should be the site URL of the salesforce site where Summit Events App is installed
  */
-let feedURL = "https://crown.secure.force.com/";
+let feedURL = "https://summiteventsappteam.secure.force.com/";
 
 /* HIDE CALENDAR OPTION:
    hideCalendarUntilAudience set to true will hide the calendar of events until an audience is selected.
@@ -76,6 +76,7 @@ const initCalendar = function() {
         initialView: getCalView(),
         handleWindowResize: true,
         textColor: "#000",
+        contentHeight: "auto",
         events: {
             url: feedURL,
             extraParams: function () {
@@ -100,7 +101,7 @@ const initCalendar = function() {
             wrap.classList.add("SummitEventsItem");
             let titleWrap = document.createElement("span");
             titleWrap.classList.add("summitEventsTitle");
-            if (info.event.classNames !== "eventClosed") {
+            if (!info.event.eventClosed) {
                 titleWrap.innerHTML = info.event.title;
                 wrap.href = info.event.url;
                 wrap.target = "_blank";
