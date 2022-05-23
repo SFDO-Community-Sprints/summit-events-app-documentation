@@ -110,7 +110,7 @@ const initCalendar = function() {
                 start: rawEventData.start.replace("Z", ""),
                 end: rawEventData.end.replace("Z", ""),
                 description: rawEventData.description,
-                className: rawEventData.className.join(','),
+                className: rawEventData.className,
                 eventClosed: rawEventData.eventClosed.toString()
             };
         },
