@@ -146,7 +146,7 @@ Once the permission sets have been cloned, they can be applied to users.  See Cl
 Once you've cloned the Permission set, you'll need to edit your custom permission set so it has the following new permissions:
 - Give read-access to all fields within the Summit Events object
 - Give read and create access to the Summit Events Fees object and assign read-access to all of the fields within the Summit Events Fees object.
-- Give read access to the Summit Events Question object and assign read-access to all fields within the Summit Events oObject.
+- Give read access to the Summit Events Question object and assign read-access to all fields within the Summit Events object.
 
 Congrats! At this point you should have a functioning Summit Events Package.
 
