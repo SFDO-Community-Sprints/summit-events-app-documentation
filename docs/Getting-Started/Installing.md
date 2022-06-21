@@ -143,6 +143,11 @@ Once the permission sets have been cloned, they can be applied to users.  See Cl
 5. Enter a new Label name, API Name and Description for the clone permission set. ...
 6. Click Save.
 
+Once you've cloned the Permission set, you'll need to edit your custom permission set so it has the following new permissions:
+- Add read-access to all fields for Summit Events object
+- Add object read and create access for Summit Events Fees object as well as read-only field access
+- Add object read access and read-access to all fields on the Summit Events Questions object
+
 Congrats! At this point you should have a functioning Summit Events Package.
 
 
