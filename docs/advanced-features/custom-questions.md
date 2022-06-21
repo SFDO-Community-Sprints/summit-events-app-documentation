@@ -13,7 +13,7 @@ Standard questions are predefined questions that can be enabled to show during t
 Some considerations to keep in mind when creating custom questions:
 * A field is needed on the Summit Events Registration object to house the information entered by the registrant.
 * A matching question is needed on the Summit Event that references the field on the Summit Events Registration Object.  Care should be used to make sure that the fields accept the same type of data.  For example, you would not write text to a number field.
-* If creating a Lookup Field, asharing rule needs to be set up to the object used for the lookup.   Sharing rules can also limit the types of records that are available during lookup.  For example, you may only want to include Accounts that have a specific record type or that are coded in some manner.
+* If creating a Lookup Field, a sharing rule needs to be set up to the object used for the lookup.   Sharing rules can also limit the types of records that are available during lookup.  For example, you may only want to include Accounts that have a specific record type or that are coded in some manner.
 * The guest user must have read permission on the Lookup object as well as to the fields on the lookup-to object (In our example, Account) to any fields that are listed as “Lookup fields”
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/IsFGoQRQOQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
