@@ -5,10 +5,9 @@ nav_order: 1
 ---
 
 # Setting Up Standard Questions
+<font color="red">Note:  Screens and screen shots in this section apply to new installations beginning with Version 0.27.0.1.  If you have upgraded from a previous version, your screens may look different.</font>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IysJ8RT3U0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<font color="red">Note:  Screenshots apply to new installations beginning with Version 0.27.0.1.  If you have upgraded from a previous version, your screens may look different.</font>
 
 Once you have set up your Event Details, you may find that you want to further customize your event registration page to capture additional information. First Name, Last Name, and Email are default required registration questions for all events. Standard Questions are predefined questions that can be enabled to show during the registration process.  You can also change the prompts that display for these fields by overriding it with the text you add in the corresponding Label field.  
 
