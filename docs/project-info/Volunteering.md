@@ -4,7 +4,7 @@
 - Contributing to the community
 - Expanding your network and engaging with others
 - Opportunities to learn and grow
-- Fun
+- Fun!
 
 **Roles needed**
 
