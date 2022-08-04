@@ -1,37 +1,45 @@
 # Create an Event Email
-Summit Events makes it easy to send an automated email to your registrant based on their registration action status.  This feature is a transactional based feature meaning that it sends emails based on changes to the registrant's action status.  It is not meant for bulk messaging.
+Summit Events makes it easy to send an automated email to your registrant based on their registration action status.  This feature is a transactional based feature meaning that it sends emails based on changes to the registrant's status.  It is not meant for bulk messaging.
 
-Sarah, Assistant Director of Career Services is having a company recuritment event.  She has created her event in Summit Events and wants to setup a simple email that the registrant will receive when they've completed the registration process.  Let's take a look at the steps she took to create the email message.
+Sarah Whitman, Assistant Director of Career Services, is having a career services event.  She has created her event in Summit Events and wants to setup a simple email that the registrant will receive when they've completed the registration process.  Let's take a look at the steps she took to create the email message.
 
-Step 1 - Click the New button
+**Step 1 - Click the New button**
 Starting from the existing Summit Event record, locate the Summit Events Emails related list and click the New button.  
 Depending upon how your system is configured, the related list may be found in the Related List Quick Links area at the top of the event, along the right-side of the event screen or bottom of the event page with other related lists. In the example below, we started at the Related List Quick Links, hovered the cursor over the “Summit Event Emails” related list and clicked the new Summit Event Email button.
 
+The event name populated automatically, this is because the creation of the email started from the event.  
+
 [INSERT IMAGE 1]
 
-Step 2 - Choose the Action and Sub Actions that triggers the sending of the Email
-The event name populated automatically, this is because we started creating the template from the event.  Next we'll choose Registered from the Action Status drop-down. We chose this because we want the person to receive the email when they complete the registration process. We are not using sub statuses for this event so we can leave that blank.
+**Step 2 - Action and Sub Actions - choose the Action and Sub Actions that triggers the sending of the Email**
+Choose Registered from the Action Status drop-down. This was chosen because the person should receive the email when they complete the registration process. Sub statuses are not being used for this event so it has been left blank.
 
-Step 3 - Fill in the Subject and Message
-We'll enter a meaningful subject for the email.  This is what shows as the subject to the person receiving the email message.  
-We'll use the Email Content field to add the content of our email.  This is what will appear in the body of the email message.  You can put the API names of the Salesforce fields so that the email content can be dynamic based on the registration information.  See Advanced Features for more information [INCLUDE LINK]  
+**Step 2 - Subject**
+Using the Subject field, enter a meaningful subject for the email. This is what shows as the subject to the person receiving the email message.
+
+**Step 3 - Email Content**
+Using the rich text editor, enter the deails of the email into the Email Content Field.  This is what will appear in the body of the email message.  API names of the Salesforce fields can be used within the email content can be dynamic based on the registration information.  See Advanced Features for more information on this feature. [INCLUDE LINK]  
 
 QUESTION - WITH THE MERGE FEILDS, ARE THEY RESTRICTED TO FIELDS ON A SPECIFIC OBJECT?
 
 [INSERT IMAGE 2]
 
-STEP 4 - Configure sender mail and blind copy emails
-In the Org Email, we've entered the general email address that we want to use for this email.  This is the email address that shows as the sender address and will be the address to which the email is sent should they reply to the email. 
-In the BCC Email field, we can enter any addtional email addresses that should be blind carbon copy on the message. If you enter multiple email addresses, you will use a comma to separate the email addresses. The text area allows value that has no more than 1000 characters.  The blind copy individuals will receive a copy each time one is sent.
+**STEP 4 - Org Email**
+In the Org Email, enter the email address that should be used for this email. This is the email address that shows as the sender address and will be the address to which the email is sent should they reply to the email. 
 
-STEP 5 - Letterhead Name
+**STEP 5 -BCC Email (optional)**
+The BCC Email field, is used for any addtional email addresses that should be blind carbon copy on the message. When entering multiple email addresses, a comma should be used to separate the email addresses.  The blind copy individuals will receive a copy of each message sent.  Note, this text area field allows value that has no more than 1000 characters.  
+
+**STEP 6 - Letterhead Name**
 If using a specific Letterhead, enter the namee of the selected/assigned letterhead.  QUESTION - IS THIS THE API NAME OR WHAT?  How is this different from the Letterhead drop-down in the Sytem Information Section.
 
 ## System Information Section
 
-**Letterhead HTML**: The letterhead of the email in which the content will be placed. The content should be HTML code.
+**STEP 7 - Letterhead HTML**: The letterhead of the email in which the content will be placed. The content should be HTML code.
 
-**Org Email Id**: ID of the organizational email that allows for external sending out of Salesforce.
+**STEP 8 - Org Email Id**: ID of the organizational email that allows for external sending out of Salesforce.
+
+**STEP 9 - Save the new email**
 
 _Note: Other Salesforce products such as Pardot and Markting Cloud have much more emailing and engagement features._
 
@@ -68,13 +76,6 @@ This field has the following picklist values:
 * Pending Appointments
 * Unavailable
 
-**Email Subject**: The subject of the email.
-
-**Email Content**: The content of the email. For advanced users, you can put the API names of the Salesforce fields so that the email content can be dynamic based on the registration information. 
-
-**Org Email**: The email address that the email is sent from. You will need to put in a value that is in a valid email format
-
-**BCC Email**: Blind carbon copy. If you enter multiple email addresses, you will use a comma to separate the email addresses. The text area allows value that has no more than 1000 characters. 
 
 **Letterhead Name**: The name of the selected/assigned letterhead.
 
@@ -83,4 +84,3 @@ This field has the following picklist values:
 
 **Org Email Id**: ID of the organizational email that allows for external sending out of Salesforce.
 
-_Note: Other Salesforce products such as Pardot and Markting Cloud have much more emailing and engagement features._
