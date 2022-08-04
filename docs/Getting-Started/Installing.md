@@ -40,7 +40,7 @@ Once your domain has been registered continue:
 
 3. Click "Save".
 
-4. Upon save, you will see the Site under the Sites section. Under the Action column, click the "Activate" link (next to the site you just created).
+4. Upon save, you will see the Site under the Sites section. Click the "Activate" at the top of the page.
 
 5. In that same section, right-click on the Site URL link and copy the URL to your clipboard. You will need the Site URL in the next stage of post-installation set-up steps.
 
