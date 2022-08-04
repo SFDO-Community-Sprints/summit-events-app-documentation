@@ -124,7 +124,7 @@ Once the permission sets have been cloned, they can be applied to users.  See Cl
 1. In Setup, go to User Interface -> Sites and Domains -> Sites.
 2. Under the Sites section, click on the words Summit Events in the "Site Label" field.
 3. Click on the "Public Access Settings" button at the top of the site definition page.
-4. On the Summit Events Profile page, click on the "View Users" button.
+4. On the Summit Events Profile page, click the Assigned Users button.
 5. Under the Full Name column, click on the Site Guest User name (which is a link).
 6. On the Summit Events Site Guest User page, scroll down to Permission Set Assignment and click the “Edit Assignments” button.
 7. In the Available Permission Sets section, click on Summit Events Registrant and click the “Add” button. This will move it into the Enabled Permission Sets section.
