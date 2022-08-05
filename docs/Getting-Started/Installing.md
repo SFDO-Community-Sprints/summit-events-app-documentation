@@ -92,11 +92,13 @@ Salesforce Winter '20 and Spring '20 releases severely limited Guest User access
 > * Operator = "not equal to"
 > * Value = null (type the word 'null' for the value).
 
-10. In the "Step 4: Select the users to share with" section, click the Share With drop-down arrow and select "Summit Events Site Guest User" (the only option).
+10. In the "Step 4: Select the users to share with" section, click the Share With drop-down arrow and select the *Event Site Guest User, Summit Events Site Guest User, in our example.
 
 11. Set Access Level to "Read Only".
 
 12. Click the "Save" button.
+
+*Note:  The guest user gets created when the site is created and is named after the site name so your guest user may be named slightly different for example it may be called “Event Guest User”. There is usually only one guest user for the site so it’s pretty safe to assume the one you see is the one for which you should assign the Guest Registrant permissions set.*
 
 ![](../images/Sharing%20Settings%20Config.png)
 
@@ -126,7 +128,7 @@ Once the permission sets have been cloned, they can be applied to users.  See Cl
 3. Click on the "Public Access Settings" button at the top of the site definition page.
 4. On the Summit Events Profile page, click the Assigned Users button.
 5. Under the Full Name column, click on the Site Guest User name (which is a link).
-6. On the Summit Events Site Guest User page, scroll down to Permission Set Assignment and click the “Edit Assignments” button.
+6. On your Summit Events Site Guest User page, scroll down to Permission Set Assignment and click the “Edit Assignments” button.
 7. In the Available Permission Sets section, click on Summit Events Registrant and click the “Add” button. This will move it into the Enabled Permission Sets section.
 8. Click the “Save” button.
 
