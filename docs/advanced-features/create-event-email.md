@@ -4,36 +4,43 @@ nav_order: 5
 
 
 # Create an Event Email
-Summit Events makes it easy to send an automated email to your registrant based on their registration action status.  This feature is a transactional based feature meaning that it sends emails based on changes to the registrant's status.  It is not meant for bulk messaging.  This post will cover the basic features that will work for most simple event.  
+Summit Events makes it easy to send an automated email to your registrant based on their registration action status.  This feature is a transactional based feature meaning that it sends emails based on changes to the registrant's status.  It is not meant for bulk messaging.  This post will cover the basic features that will work for most simple events.  
 
 In our scenario, Sarah Whitman, Assistant Director of Career Services, is having a career services event.  She has created her event in Summit Events and wants to setup a simple email that the registrant will receive when they've completed the registration process.  Let's take a look at the steps she took to create the email message.
 
-**Step 1 - Click the New button**
+**1. Click the New button**
+
 Starting from the existing Summit Event record, locate the Summit Events Emails related list and click the New button.  Depending upon how your system is configured, the related list may be found in the Related List Quick Links area at the top of the event, along the right-side of the event screen or bottom of the event page with other related lists. In the example below, we started at the Related List Quick Links, hovered the cursor over the “Summit Event Emails” related list and clicked the new Summit Event Email button.
 
 Because we are starting from the event, the event name populated automatically.
 
-**Step 2 - Select the appropriate Action and Sub Action Status**
+**2. Select the appropriate Action and Sub Action Status**
+
 Choose the Action Registered from the Action Status drop-down. This is chosen because the person should receive the email when they complete the registration process. Sub Action Status is optional.  No Sub Action Statuses are being used for this event so this is left blank.
 
-**Step 2 - Subject**
+**3. Subject**
+
 Using the Subject field, enter a meaningful subject for the email. This is what shows as the subject to the person receiving the email message.
 
-**Step 3 - Email Content**
+**4. Email Content**
+
 Using the rich text editor, enter the deails of the email into the Email Content Field.  This is what will appear in the body of the email message.  API names of the Salesforce fields can be used within the email content can be dynamic based on the registration information.  See Advanced Features for more information on this feature. [INCLUDE LINK]  
 
 [QUESTION - WITH THE MERGE FEILDS, ARE THEY RESTRICTED TO FIELDS ON A SPECIFIC OBJECT?]
 
-**STEP 4 - Org Email**
+**5. Org Email**
+
 In the Org Email, enter the email address that should be used for this email. This is the email address that shows as the sender address and will be the address to which the email is sent should they reply to the email.  [I THINK THERE IS MORE TO THIS FOR EXAMPLE, DOES THIS NEED TO BE ONE OF THE ORG WIDE EMAIL ADDRESSES SETUP IN SALESFORCE, IS IT TIED TO A DOMAIN OR SMTP SERVER?]
 
-**STEP 5 -BCC Email (optional)**
+**6. BCC Email (optional)**
+
 The BCC Email field, is used for any addtional email addresses that should be blind carbon copy on the message. When entering multiple email addresses, a comma should be used to separate the email addresses.  The blind copy individuals will receive a copy of each message sent.  Note, this text area field allows value that has no more than 1000 characters. 
 
-**STEP 6 - Letterhead**
+**7. Letterhead**
+
 Choose the Letterhead in which your email should be wrapped.  [QUESTION - WHERE DO THESE COME FROM?  ARE THEY CLASSIC OR LIGHTNING?  IS THERE OTHER SETUP THAT NEEDS TO HAPPEN TO HAVE THEM APPEAR HERE?]
 
-**STEP 9 - Save the new email**
+**8. Save the new email**
 
 These are all the fields we need to complete for our simple event.  For information about all of the fields, see the Field list below.
 _Note: Other Salesforce products such as Pardot and Markting Cloud have much more emailing and engagement features._
@@ -43,6 +50,7 @@ _Note: We recommend creating an event email from the Event as this will automati
 
 
 ## Event Email Fields and Descriptions ##
+
 **Summit  Event Email Name**: An identification number of each event email. It is a standard Salesforce field and displays in a format of Email-{0000}. The system will automatically generate and assign a number to this field once an event email is created. No need for any user input and this field cannot be edited.
 
 **Event**: The event name that the email is defined for. It is a lookup field that pulls the Event Label value from the Summit Event object. As mentioned above, the value must be matched with a record in the Summit Event object. When you hover the cursor over to the Event field on the View page, a mini page of the contact will show up. 
