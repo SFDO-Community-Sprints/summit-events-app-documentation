@@ -6,11 +6,11 @@ nav_order: 10
 
 
 ## Create an Event Email ##
-Summit Events makes it easy to send an automated email to your registrant based on their registration action status.  This feature is a transactional based feature meaning that it sends emails based on changes to the registrant's status.  It is not meant for bulk messaging.  For example, the Director of Career Services could use this feature to send an email to the registrant when they register for her career services event.  Let's take a look at the steps it taks to create the email message.  This post will cover the basic features that will work for most simple events.  
+Summit Events makes it easy to send an automated email to your registrant based on their registration action status.  This feature is a transactional based feature meaning that it sends emails based on changes to the registrant's status.  It is not meant for bulk messaging.  For example, the Director of Career Services could use this feature to send an email to the registrant when they register for her career services event.  Let's take a look at the steps it takes to create the email message.  This post will cover the basic features that will work for most simple events.  
 
 **1. Click the New button**
 
-Starting from the existing Summit Event record, locate the Summit Events Emails related list and click the New button.  Depending upon how your system is configured, the related list may be found in the Related List Quick Links area at the top of the event, if that is the case, hover over the link to access the New button.  If it is found along the right-side of the event screen or bottom of the event page with other related lists, click on the drop-down arrow and choose New. Because she started from the event, the event name populated automatically.
+Starting from the existing Summit Event record, locate the Summit Events Emails related list and click the New button.  Depending upon how your system is configured, the related list may be found in the Related List Quick Links area at the top of the event, if that is the case, hover over the link to access the New button.  If it is found along the right-side of the event screen or bottom of the event page with other related lists, click on the drop-down arrow and choose New. When creating a new email from the event, the event name populated automatically.
 
 **2. Select the appropriate Action and Sub Action Status**
 
