@@ -1,6 +1,8 @@
+---
 title: Create an Event Email
 parent: Standard Features
-nav_order: 5
+nav_order: 10
+---
 
 
 # Create an Event Email
