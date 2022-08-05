@@ -1,3 +1,8 @@
+title: Create an Event Email
+parent: Standard Features
+nav_order: 5
+
+
 # Create an Event Email
 Summit Events makes it easy to send an automated email to your registrant based on their registration action status.  This feature is a transactional based feature meaning that it sends emails based on changes to the registrant's status.  It is not meant for bulk messaging.  This post will cover the basic features that will work for most simple event.  
 
