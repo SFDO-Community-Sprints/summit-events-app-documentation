@@ -6,17 +6,15 @@ nav_order: 10
 
 
 ## Create an Event Email ##
-Summit Events makes it easy to send an automated email to your registrant based on their registration action status.  This feature is a transactional based feature meaning that it sends emails based on changes to the registrant's status.  It is not meant for bulk messaging.  This post will cover the basic features that will work for most simple events.  
-
-In our scenario, Sarah Whitman, Assistant Director of Career Services, is having a career services event.  She has created her event in Summit Events and wants to setup a simple email that the registrant will receive when they've completed the registration process.  Let's take a look at the steps she took to create the email message.
+Summit Events makes it easy to send an automated email to your registrant based on their registration action status.  This feature is a transactional based feature meaning that it sends emails based on changes to the registrant's status.  It is not meant for bulk messaging.  For example, the Director of Career Services could use this feature to send an email to the registrant when they register for her career services event.  Let's take a look at the steps it taks to create the email message.  This post will cover the basic features that will work for most simple events.  
 
 **1. Click the New button**
 
-Starting from the existing Summit Event record, locate the Summit Events Emails related list and click the New button.  Depending upon how your system is configured, the related list may be found in the Related List Quick Links area at the top of the event, along the right-side of the event screen or bottom of the event page with other related lists. In the example below, we started at the Related List Quick Links, hovered the cursor over the “Summit Event Emails” related list and clicked the new Summit Event Email button.  Because we are starting from the event, the event name populated automatically.
+Starting from the existing Summit Event record, locate the Summit Events Emails related list and click the New button.  Depending upon how your system is configured, the related list may be found in the Related List Quick Links area at the top of the event, if that is the case, hover over the link to access the New button.  If it is found along the right-side of the event screen or bottom of the event page with other related lists, click on the drop-down arrow and choose New. Because she started from the event, the event name populated automatically.
 
 **2. Select the appropriate Action and Sub Action Status**
 
-Choose the Action Registered from the Action Status drop-down. This is chosen because the person should receive the email when they complete the registration process. Sub Action Status is optional.  No Sub Action Statuses are being used for this event so this is left blank.
+Choose the Action Registered from the Action Status drop-down. Registered is chosen because the person should receive the email when they complete the registration process. Sub Action Status is optional.  No Sub Action Statuses are being used for this event so this is left blank.
 
 **3. Enter the Subject**
 
