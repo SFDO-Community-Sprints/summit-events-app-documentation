@@ -43,6 +43,7 @@ Choose the Letterhead in which your email should be wrapped.  [QUESTION - WHERE 
 **8. Save the new email**
 
 These are all the fields we need to complete for our simple event.  For information about all of the fields, see the Field list below.
+
 *Note: Other Salesforce products such as Pardot and Markting Cloud have much more emailing and engagement features.*
   
 *Note: We recommend creating an event email from the Event as this will automatically associate the event with the email. If you go to the Summit Event Emails object and create an event email, you will need to assign an existing event record to the Event field. If the value you input does not match with an existing record, an error will be triggered.*
