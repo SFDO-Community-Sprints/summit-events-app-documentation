@@ -29,7 +29,7 @@ Using the Subject field, enter a meaningful subject for the email. This is what 
 
 ### 6. Enter the Email Content
 
-Using the rich text editor, enter the deails of the email into the Email Content Field.  This is what will appear in the body of the email message.  API names of the Salesforce fields can be used within the email so content can be dynamic based on the registration information.  See Advanced Features for more information on this feature. [INCLUDE LINK]  
+Using the rich text editor, enter the deails of the email into the Email Content Field.  This is what will appear in the body of the email message.  API names of the Salesforce fields can be used within the email so content can be dynamic based on the registration information.  See Advanced Features for more information on this feature.
 
 Note: Only fields on the Summit Event Registration objects can be merged into the email content. All API field names should be encopassed with merge brackets, often seen in the classic email template builder. Example: {!summit__First_Name__c} 
 
