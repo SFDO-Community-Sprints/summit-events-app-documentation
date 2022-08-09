@@ -5,7 +5,7 @@ parent: Standard Features
 
 
 ## Create an Event Email
-Summit Events makes it easy to send an automated email to your registrant based on their registration status. This feature is a transactional based feature, meaning that it sends emails based on changes to the registrants' status to the email provided. It is not intended for bulk messaging.  For example, the Director of Career Services could use this feature to send an email to the registrant when they register for her career services event.  Let's take a look at the steps it takes to create the email message.  This post will cover the basic features that will work for most simple events.  
+Summit Events makes it easy to send an automated email to your registrant based on their registration status. This feature is a transactional based feature, meaning that it sends emails based on changes to the registrant's status to the email provided. It is not intended for bulk messaging.  For example, the Director of Career Services could use this feature to send an email to the registrant when they register for her career services event.  Let's take a look at the steps it takes to create the email message.  This post will cover the basic features that will work for most simple events.  
 
 ### 1. Click the "New" button
 
@@ -31,7 +31,7 @@ Using the Subject field, enter a meaningful subject for the email. This is what 
 
 Using the rich text editor, enter the deails of the email into the Email Content Field.  This is what will appear in the body of the email message.  API names of the Salesforce fields can be used within the email so content can be dynamic based on the registration information.  See Advanced Features for more information on this feature.
 
-Note: Only fields on the Summit Event Registration objects can be merged into the email content. All API field names should be encopassed with merge brackets, often seen in the classic email template builder. Example: {!summit__First_Name__c} 
+Note: Only fields on the Summit Event Registration objects can be merged into the email content. All API field names should be encompassed with merge brackets, often seen in the classic email template builder. Example: {!summit__First_Name__c} 
 
 ### 7. Provide a BCC Email (optional)
 
