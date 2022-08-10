@@ -11,7 +11,7 @@ There are two ways to contribute to the Summit Events App.
 
 2. [Metecho](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/Contribute-to-Summit-Events-with-Metecho) 
 
-We encourage the community to contribute with their thoughts and ideas, whether they are a developer, admin or a user.  For those that are a User or Admin and not comfortable with Salesforce CLI, we encourage you to connect with us in the Power of Us Hub so we can get you setup with [Metecho](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/Contribute-to-Summit-Events-with-Metecho). Metecho is all about the "clicks", so no Github or Salesforce CLI experience needed!
+We encourage the community to contribute with their thoughts and ideas, whether they are a developer, admin or a user.  For those that are a User or Admin and not comfortable with Salesforce CLI, we encourage you to connect with us in the [Power of Us Hub] (https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE?tab=discussion&sort=LAST_MODIFIED_DATE_DESC) so we can get you setup with [Metecho](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/Contribute-to-Summit-Events-with-Metecho). Metecho is all about the "clicks", so no Github or Salesforce CLI experience needed!
 
 ## Process and Governance
 
