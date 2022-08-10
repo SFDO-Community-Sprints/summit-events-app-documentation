@@ -1,5 +1,5 @@
 ---
-title: Create an Event Email
+title: Creating an Event Email
 parent: Standard Features
 ---
 
