@@ -1,4 +1,3 @@
-
 ---
 title: Creating an Event Host
 parent: Standard Features
