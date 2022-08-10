@@ -28,5 +28,5 @@ Salesforce is an Open-Source Community Application. While Open-Source, we try to
 ## Packaging Updates
 * With the managed package, we will work to have Quarterly updates.
 * The master branch will have regular updates added to it.
-* Communication on updates will appear in the [Power of Us Hub](https://powerofus.force.com/s/group/0F91E000000bo8OSAQ/sprint-project-summit-events-app)
+* Communication on updates will appear in the [Power of Us Hub](https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE?tab=discussion&sort=LAST_MODIFIED_DATE_DESC)
 
