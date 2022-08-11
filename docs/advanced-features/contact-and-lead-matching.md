@@ -3,8 +3,9 @@ title: Contact and Lead Matching
 parent: Advanced Features
 ---
 
-Contact Matching Rules
-Lead Matching Rules
+[Contact Matching Rules](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/contact-and-lead-matching/#contact-matching-rules)
+
+[Lead Matching Rules](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/contact-and-lead-matching/#lead-matching-rules)
 
 *These pages are a work in progress and still needing reviewing/ additional content. If you're interested in contributing to the Summit Events App and want to help provide support by creating this page, comment below and let us know!*
 
