@@ -50,7 +50,7 @@ To setup your custom field mappings:
       + If you are mapping field values from Summit Events Registration make sure you use the field API name, not the field label.
 
 Here is an example of what the Custom Metadata records look like for Contacts:
-![Contact Custom Metadata Example](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Advanced-Features/images/ContactMatchingCustomMetadataMappingExample.png)
+![Contact Custom Metadata Example](https://github.com/SFDO-Community-Sprints/Summit-Events-App/blob/master/images/3.9_Contact_Matching _Custom_Metadata_Mapping_Example.png)
 
 
 
