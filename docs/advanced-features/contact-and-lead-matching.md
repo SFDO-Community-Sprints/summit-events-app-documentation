@@ -22,8 +22,11 @@ Contact Matching Rules in Summit Events utilizes native Salesforce Duplicate Rul
 _Note that any fields mapped using Custom Metadata (as detailed in the "Adding Additional Field Values When Matching Rules Create New Contacts" section below) are also available to be included in your Salesforce Duplicate Rule._
 
 _Note that when using a Salesforce Duplicate Rule it is important that you set the "Record-Level Security" field value to "Bypass sharing rules" so the guest user profile used for registration can see the Contacts in the org, and also that the "Alert" checkboxes are unchecked so the registrant does not receive alert messages:_
+
+
+![Duplicate Rule Settings](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/contact-and-lead-matching/images/Duplicate%20Rule%20settings%20screenshot%20for%20Summit%20Events%20matching.png)
   
-![Duplicate Rule Settings](images/Duplicate%20Rule%20settings%20screenshot%20for%20Summit%20Events%20matching.png)
+(images/Duplicate%20Rule%20settings%20screenshot%20for%20Summit%20Events%20matching.png)
 
 ## How to Set Fields on Summit Events record to Use Contact Matching Rules
 
