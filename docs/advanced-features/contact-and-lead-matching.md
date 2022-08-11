@@ -51,7 +51,7 @@ To setup your custom field mappings:
 
 Here is an example of what the Custom Metadata records look like for Contacts:
 
-![Contact Custom Metadata Example](https://github.com/SFDO-Community/Summit-Events-App/blob/master/images/3.9_Contact_Matching _Custom_Metadata_Mapping_Example.png)
+![Contact Custom Metadata Example](https://github.com/SFDO-Community-Sprints/Summit-Events-App/blob/master/images/3.9_Contact_Matching%20_Custom_Metadata_Mapping_Example.png)
 
 
 
