@@ -3,6 +3,9 @@ title: Post-Installation Considerations
 parent: Getting Started
 nav_order: 2
 ---
+This content is a work in progress. If you're interested in contributing to the Summit Events App and want to help provide support by reviewing or adding to this page, comment below and let us know!
+
+
 # Post-Installation Considerations
 
 After you install Summit Events in your org there are some additional considerations you'll want to make to ensure there is alignment with your organization. Before you begin, be sure that you've completed all of the steps to [Install and Configure](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/) Summmit Events.
