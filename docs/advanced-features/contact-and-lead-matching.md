@@ -23,11 +23,6 @@ _Note that any fields mapped using Custom Metadata (as detailed in the "Adding A
 
 _Note that when using a Salesforce Duplicate Rule it is important that you set the "Record-Level Security" field value to "Bypass sharing rules" so the guest user profile used for registration can see the Contacts in the org, and also that the "Alert" checkboxes are unchecked so the registrant does not receive alert messages:_
 
-
-![Duplicate Rule Settings](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/contact-and-lead-matching/images/Duplicate%20Rule%20settings%20screenshot%20for%20Summit%20Events%20matching.png)
-  
-(images/Duplicate%20Rule%20settings%20screenshot%20for%20Summit%20Events%20matching.png)
-
 ## How to Set Fields on Summit Events record to Use Contact Matching Rules
 
 ### Option 1:  Contact Matching only
@@ -40,7 +35,7 @@ _Note that when using a Salesforce Duplicate Rule it is important that you set t
 
 When a new Contact is created by the Contact Matching Rule the following fields from the Summit Events Registration record are automatically added to the Contact record:
 
-![Hardcoded values mapped from Summit Events Registration to Contact](images/Contact%20Matching%20Rule%20hardcoded%20fields%20v2.png)
+![Hardcoded values mapped from Summit Events Registration to Contact](../images/Contact%20Matching%20Rule%20hardcoded%20fields%20v2.png)
 
 ## Adding Additional Field Values When Matching Rules Create New Contacts
 If you want additional field values to be added to the Contact record you can use the "Custom Metadata Contact Matching Method" on Summit Events to do this.  Custom Metadata Types is the Salesforce tool that allows an admin to create field mappings that are read by the code in the managed package - for details take a look at [More Info On Custom Metadata Types](https://help.salesforce.com/articleView?id=custommetadatatypes_about.htm&type=5).
