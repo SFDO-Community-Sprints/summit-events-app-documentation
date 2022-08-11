@@ -18,6 +18,7 @@ After you install Summit Events in your org there are some setup steps that you 
 
 We deliver sample values for the picklist fields, but you will want to edit these fields to create your own values and deactivate some or all of our sample values.  You can do this following the instructions here that show [how to edit and create picklist values](https://trailhead.salesforce.com/en/content/learn/modules/picklist_admin/picklist_admin_manage).
 
+## Review and Personalize Picklists
 Here are the picklist fields that need to be reviewed and personalized for your organization:
 
 <ins>Summit Events object</ins>
@@ -51,7 +52,7 @@ Here are the picklist fields that need to be reviewed and personalized for your 
 * Participation Type
 
 
-3. Other Customizations You Can Make:
+## Other Customizations You Can Make:
 
 * We include all fields for an object on the page layout so you know everything that is included.  You likely will not use all of these fields, so you should customize the page layouts so your users only see the fields you will be using.
 
