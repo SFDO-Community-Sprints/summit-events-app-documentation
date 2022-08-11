@@ -12,7 +12,7 @@ nav_order: 3
 
 After you install Summit Events in your org there are some setup steps that you need do before you start using it:
 
-1. Make sure you do the steps listed in the [Setting Up Summit Events after installing package](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/0a-%E2%80%93-Setting-Up-Summit-Events-After-Installing-Package) instructions.
+1. Make sure you do the steps listed in the [Post Installation Section of Installing the Summit Events App](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/).
 
 2. Edit and Create Picklist Values
 
