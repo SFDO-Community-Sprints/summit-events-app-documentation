@@ -25,7 +25,7 @@ Because Summit Events is intended to integrate with your existing Salesforce org
 
 ## Picklist Considerations
 
-Summit Events is delivered  with sample values for institution/organization based picklist fields. Some picklist fields are standard and should not be editted, like Status values on each object. To provide some guidance, review the below objects picklist fields, updating the values to meet your instutions/organizations needs. For information on updating picklist values, be sure to contact your Salesforce Administrator and follow Salesforce's [guided insturctions](https://trailhead.salesforce.com/en/content/learn/modules/picklist_admin/picklist_admin_manage). We encourage that you deactivate unused values rather than delete or rename.
+Summit Events is delivered  with sample values for institution/organization based picklist fields. Some picklist fields are standard and should not be editted, like Status values on each object. To provide some guidance, review the below objects picklist fields, updating the values to meet your instutions/organizations needs. For information on updating picklist values, be sure to contact your Salesforce Administrator and follow Salesforce's [guided instructions](https://trailhead.salesforce.com/en/content/learn/modules/picklist_admin/picklist_admin_manage). We encourage that you deactivate unused values rather than delete or rename.
 
 **Summit Events object**
 * Audience
