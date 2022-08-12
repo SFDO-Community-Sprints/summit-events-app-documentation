@@ -72,4 +72,8 @@ The first step in setting up a brand new event is to create a Summit Event recor
 9. Navigate to the registration page and confirm registration fields are displaying and editable.  
 ![CreateBasicEventInstanceRegistrationPage](images/CreateBasicEvent_EventInstanceScreen3.png)
 
+**Congratulations, you've just created a basic event!**
 
+See [Standard Registration Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/standard-reg-questions/) for information on adding questions to the event registration screen.
+
+See [Creating an Event Email](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/) for information on creating a confirmation email for the event.
