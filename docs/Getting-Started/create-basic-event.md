@@ -14,15 +14,15 @@ The first step in setting up a brand new event is to create a Summit Event recor
 
 ## Create the Event and related Event Instance
 
-1. Navigate to the Summit Events Application in the App Selector.
+Navigate to the Summit Events Application in the App Selector.
 
 ![SearchforApp](images/SearchforSummitEventsApp.png)
 
-2. Navigate to the Summit Event tab and click on New.
+Navigate to the Summit Event tab and click on New.
 
 ![EventTabNewButton](images/CreateBasicEvent_NewEventButton.png)
 
-3. Fill out the following fields on the Summit Event record.  Many of the fields listed below are not required but drive functionality and appear on the registration page.
+Fill out the following fields on the Summit Event record.  Many of the fields listed below are not required but drive functionality and appear on the registration page.
 
 | Object       | Field        | Section       | Purpose    |     
 | :---         | :---         | :---          | :---       |
@@ -38,15 +38,15 @@ The first step in setting up a brand new event is to create a Summit Event recor
 ![CreateBasicEventScreen2](images/CreateBasicEvent_Screen2.png)
 ![CreateBasicEventScreen3](images/CreateBasicEvent_Screen3.png)
 
-4. **Save** Summit Event record.
+**Save** Summit Event record.
 
-5. Navigate to the Summit Event Instance Related List on the Event record and create a New Summit Event Instance
+Navigate to the Summit Event Instance Related List on the Event record and create a New Summit Event Instance
 
 ![CreateBasicEventInstanceButton](images/CreateBasicEvent_NewInstanceButton.png)
 
 <br/>
 
-6. Fill out the following fields on the Summit Event Instance record. Many of the fields listed below are not required but drive functionality and appear on the registration page.
+Fill out the following fields on the Summit Event Instance record. Many of the fields listed below are not required but drive functionality and appear on the registration page.
 
 
 | Object       | Field        | Purpose    |     
@@ -64,12 +64,12 @@ The first step in setting up a brand new event is to create a Summit Event recor
 
 <br/>
 
-7. **Save** Summit Event Instance record.
+**Save** Summit Event Instance record.
 
-8. On the newly created Event Instance record,  click the *Register* link under the Registration Link in the record heading.  
+On the newly created Event Instance record,  click the *Register* link under the Registration Link in the record heading.  
 ![CreateBasicEventInstanceRegisterLink](images/CreateBasicEvent_EventInstanceScreen2.png)
 
-9. Navigate to the registration page and confirm registration fields are displaying and editable.  
+9 Navigate to the registration page and confirm registration fields are displaying and editable.  
 ![CreateBasicEventInstanceRegistrationPage](images/CreateBasicEvent_EventInstanceScreen3.png)
 
 **Congratulations, you've just created a basic event!**
