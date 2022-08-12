@@ -16,11 +16,11 @@ The first step in setting up a brand new event is to create a Summit Event recor
 
 1. Navigate to the Summit Events Application in the App Selector.
 
-![SearchforApp](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/3701b74807c43d864275de6bff49bc7ca4e414fb/docs/Getting-Started/images/CreateBasicEvent_NewEventButton.png)
+![SearchforApp](images/SearchforSummitEventsApp.png)
 
 2. Navigate to the Summit Event tab and click on New.
 
-![EventTabNewButton](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_NewEventButton.png)
+![EventTabNewButton](images/CreateBasicEvent_NewEventButton.png)
 
 3. Fill out the following fields on the Summit Event record.  Many of the fields listed below are not required but drive functionality and appear on the registration page.
 
@@ -34,15 +34,15 @@ The first step in setting up a brand new event is to create a Summit Event recor
 | Summit Event | Event Confirmation Title| Page Details | Title on the confirmation page after the registration was submitted. |
 | Summit Event | Event Confirmation Description | Page Details | Additional details on the confirmation page.|
 
-![CreateBasicEventScreen1](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_Screen1.png)
-![CreateBasicEventScreen2](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_Screen2.png)
-![CreateBasicEventScreen3](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_Screen3.png)
+![CreateBasicEventScreen1](images/CreateBasicEvent_Screen1.png)
+![CreateBasicEventScreen2](images/CreateBasicEvent_Screen2.png)
+![CreateBasicEventScreen3](images/CreateBasicEvent_Screen3.png)
 
 4. **Save** Summit Event record.
 
 5. Navigate to the Summit Event Instance Related List on the Event record and create a New Summit Event Instance
 
-![CreateBasicEventInstanceButton](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_NewInstanceButton.png)
+![CreateBasicEventInstanceButton](images/CreateBasicEvent_NewInstanceButton.png)
 
 <br/>
 
@@ -60,16 +60,16 @@ The first step in setting up a brand new event is to create a Summit Event recor
 | Summit Events Instance | Instance End Date | End Date appears on the registration page|
 | Summit Events Instance | Instance End Time | End Time appears on the registration page.|
 
-![CreateBasicEventNewInstance](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_EventInstanceScreen1.png)
+![CreateBasicEventNewInstance](images/CreateBasicEvent_EventInstanceScreen1.png)
 
 <br/>
 
 7. **Save** Summit Event Instance record.
 
 8. On the newly created Event Instance record,  click the *Register* link under the Registration Link in the record heading.  
-![CreateBasicEventInstanceRegisterLink](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_EventInstanceScreen2.png)
+![CreateBasicEventInstanceRegisterLink](images/CreateBasicEvent_EventInstanceScreen2.png)
 
 9. Navigate to the registration page and confirm registration fields are displaying and editable.  
-![CreateBasicEventInstanceRegistrationPage](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_EventInstanceScreen3.png)
+![CreateBasicEventInstanceRegistrationPage](images/CreateBasicEvent_EventInstanceScreen3.png)
 
 
