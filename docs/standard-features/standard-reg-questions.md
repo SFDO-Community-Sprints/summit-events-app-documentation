@@ -112,6 +112,9 @@ If we've enabled the field to display on our form, the new items will appear as 
 ![New Item Displays](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/images/StandardQs-GenderDisplays.png)
 
 
+If you have additional requirements around questions also see:
+- [Additional Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-questions/)
+- [Custom Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/additional-reg-questions/)
 
 
 _Updated 05/12/2022_
