@@ -42,15 +42,34 @@ The first step in setting up a brand new event is to create a Summit Event recor
 
 5. Navigate to the Summit Event Instance Related List on the Event record and create a New Summit Event Instance
 
-| Object       | Field        | Section       | Purpose    |     
-| :---         | :---         | :---          | :---       |
-| Summit Events Instance | Active Status | Event Instance Page | Instance needs to be “Active” for registration fields to be available |
-| Summit Events Instance | Instance Title | Event Instance Page | Instance title appears under the Event Title on the Registration page. |
-| Summit Events Instance | Capacity | Event Instance Page | Capacity field needs to be greater than 1 in order to see the registration fields and create a registration record.|
-| Summit Events Instance |  Instance Start Date |  Summit Events Instance | Needs to be in the future or possibly day of to register. |
-| Summit Events Instance | Instance Start Time |  Summit Events Instance | Time Event is starting, appears on the registration page. |
-| Summit Events Instance | Instance End Date | Event Instance Page | End Date appears on the registration page|
-| Summit Events Instance | Instance End Time | Event Instance Page | End Time appears on the registration page.|
+![CreateBasicEventInstanceButton](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_NewInstanceButton.png)
+
+<br/>
+
+6. Fill out the following fields on the Summit Event Instance record. Many of the fields listed below are not required but drive functionality and appear on the registration page.
 
 
-6. On the Summit Event Instance record, click the Register link under the Registration Link in the record heading.  Navigate to the registration page and confirm registration fields are displaying and editable.  Screenshot
+| Object       | Field        | Purpose    |     
+| :---         | :---         |  :---       |
+| Summit Events Instance | Instance Title | Instance title appears under the Event Title on the Registration page |
+| Summit Events Instance | Active Status | Instance needs to be “Active” for registration fields to be available. |
+| Summit Events Instance | Event | Event to which this Instance is related. |
+| Summit Events Instance | Capacity Control | Capacity field needs to be greater than 1 in order to see the registration fields and create a registration record.|
+| Summit Events Instance | Instance Start Date | Needs to be in the future or possibly day of to register. |
+| Summit Events Instance | Instance Start Time | Time Event is starting, appears on the registration page. |
+| Summit Events Instance | Instance End Date | End Date appears on the registration page|
+| Summit Events Instance | Instance End Time | End Time appears on the registration page.|
+
+![CreateBasicEventNewInstance](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_EventInstanceScreen1.png)
+
+<br/>
+
+7. **Save** Summit Event Instance record.
+
+8. On the newly created Event Instance record,  click the *Register* link under the Registration Link in the record heading.  
+![CreateBasicEventInstanceRegisterLink](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_EventInstanceScreen2.png)
+
+9. Navigate to the registration page and confirm registration fields are displaying and editable.  
+![CreateBasicEventInstanceRegistrationPage](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_EventInstanceScreen3.png)
+
+
