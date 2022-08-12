@@ -16,7 +16,7 @@ The first step in setting up a brand new event is to create a Summit Event recor
 
 1. Navigate to the Summit Events Application in the App Selector.
 
-![SearchforApp](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/Getting-Started/images/SearchforSummitEventsApp.png)
+![SearchforApp](../images/SearchforSummitEventsApp.png)
 
 2. Navigate to the Summit Event tab and click on New.
 
