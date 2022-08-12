@@ -6,9 +6,7 @@ nav_order: 4
 
 <br/>
 
-The first step in setting up a brand new event is to create a Summit Event record.  Summit Events are parent records to Summit Event Instance records.  You cannot have a summit event instance without it being tied to a parent summit event record.  Summit event instance records inherit much of the information from the parent Summit Event record.  There is an Overrides section on the event instance which will allow for overriding some of the parent Summit Event record configurations.  
-
-Some events, that are one off events held only once, will have one Summit Event record related to one Summit Event Instance record.  Other events, like a monthly webinar series may have one Summit Event record with 12 Summit Event Instance records tied to it, one for each month's webinar.  This document covers creating a basic event.
+The first step in setting up a brand new event is to create a Summit Event record and an Event Instance record.  Summit Events are parent records to Summit Event Instance records.  You cannot have a summit event instance without it being tied to a parent summit event record.  Summit event instance records inherit much of the information from the parent Summit Event record.  This document covers the fields needed when creating a basic event.
 <br/>
 <br/>
 
@@ -18,7 +16,11 @@ Some events, that are one off events held only once, will have one Summit Event 
 
 1. Navigate to the Summit Events Application in the App Selector.
 
+![SearchforApp](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/SearchforSummitEventsApp.png)
+
 2. Navigate to the Summit Event tab and click on New.
+
+![EventTabNewButton](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_NewEventButton.png)
 
 3. Fill out the following fields on the Summit Event record.  Many of the fields listed below are not required but drive functionality and appear on the registration page.
 
@@ -32,8 +34,11 @@ Some events, that are one off events held only once, will have one Summit Event 
 | Summit Event | Event Confirmation Title| Page Details | Title on the confirmation page after the registration was submitted. |
 | Summit Event | Event Confirmation Description | Page Details | Additional details on the confirmation page.|
 
+![CreateBasicEventScreen1](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_Screen1.png)
+![CreateBasicEventScreen2](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_Screen2.png)
+![CreateBasicEventScreen3](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/images/CreateBasicEvent_Screen3.png)
 
-4. Save Summit Event record.
+4. **Save** Summit Event record.
 
 5. Navigate to the Summit Event Instance Related List on the Event record and create a New Summit Event Instance
 
