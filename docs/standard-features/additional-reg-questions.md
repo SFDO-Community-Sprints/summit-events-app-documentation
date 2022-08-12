@@ -4,7 +4,7 @@ parent: Standard Features
 nav_order: 2
 ---
 
-## Registrant and Guest Additional Questions
+## Registrant Additional Questions
 Standard questions are predefined questions that can be enabled to show during the registration process.  These fields have specific preconfigured field types (e.g. text, picklist, etc.). The standard questions are configured on the Summit Events event pages. You can select which ones you want to display, if the field should be required, you can even change the label of the question. These may be all that is needed for most of your events. If you have more advanced needs, Summit Events also provides the ability to create your own [custom questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-questions/).
 
 The “Additional Configuration” section can be used to define up to 5 additional questions for appearance on your registration page.  For each question, you select the type of question from a predefined list of options.  
