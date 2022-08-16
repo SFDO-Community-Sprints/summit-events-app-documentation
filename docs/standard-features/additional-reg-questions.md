@@ -23,9 +23,9 @@ The available type options are:
 | Text box | optional for the registrant, free single line text textbox of up to 255 characters |
 | Text box required | required for the registrant, free single line text textbox of up to 255 characters |
 
-3. Enter the prompt text to appear with the question in the “Add Info Question Text”field. 
+3. Enter the prompt text to appear with the question in the “Add Info Question Text” field. 
 4. If the Type of the question chosen is picklist, add the options in the “Add Info Question Pick List” field.  Multiple items are entered with a hard return in between each.  The items will only appear if you have selected Pick-list or Pick-list required as the question type.
-5. Repeat for questions 2-5, if necessary. If you need more than five questions proceed to the custom questions section.
+5. Repeat for questions 2-5, if necessary. If you need more than five questions proceed to the [custom questions section](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-questions/).
 
 ![AdditionalQuestions](images/Additional_Questions_Screen1.png)
 
