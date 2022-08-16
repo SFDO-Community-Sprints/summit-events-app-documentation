@@ -13,7 +13,7 @@ Starting from the existing Summit Event record, locate the Summit Events Emails 
 
 ### 2. Provide an Org Email
 
-This feature is based on utilizing an Org-Wide Email address. The email address utilized will need to be accessible to All Profiles. Once the email address is established, from the drop down selection on "Select Organization Wide Email", select an approved and appropriate Org-Wide Email address. This is the email address that shows as the sender address and will be the address to which the email is sent should they reply to the email. Hit "Save Letterhead Settings".
+This feature is based on utilizing an [Organization-Wide Email address](https://help.salesforce.com/s/articleView?id=sf.orgwide_email.htm&type=5). The email address utilized will need to be accessible to All Profiles. Once the email address is established, from the drop down selection on "Select Organization Wide Email", select an approved and appropriate Org-Wide Email address. This is the email address that shows as the sender address and will be the address to which the email is sent should they reply to the email. Hit "Save Letterhead Settings".
 
 ### 3. Choose a Letterhead
 
