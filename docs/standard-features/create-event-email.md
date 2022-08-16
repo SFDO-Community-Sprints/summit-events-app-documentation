@@ -83,7 +83,7 @@ This field has the following picklist values:
 
 **Email Content**: The content of the email. For advanced users, you can put the API names of the Salesforce fields so that the email content can be dynamic based on the registration information. 
 
-**Org Email**: The email address that the email is sent from. This value will populate automatically when an email address is selected from the drop down menu on "Select Organization Wide Email".
+**Org Email**: The email address that the email is sent from. This value will populate automatically when an email address is selected from the drop down menu on "Select Organization Wide Email".  Also see Salesforce's documentation on [Organization-Wide Email Addresses] (https://help.salesforce.com/s/articleView?id=sf.orgwide_email.htm&type=5)
 
 **BCC Email**: Blind carbon copy. If you enter multiple email addresses, you will use a comma to separate the email addresses. The text area allows value that has no more than 1000 characters. 
 
