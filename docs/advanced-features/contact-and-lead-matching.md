@@ -8,8 +8,8 @@ parent: Advanced Features
 [Lead Matching Rules](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/contact-and-lead-matching/#lead-matching-rules)
 
 *These pages are a work in progress and still needing reviewing/ additional content. If you're interested in contributing to the Summit Events App and want to help provide support by creating this page, comment below and let us know!*
-
-_Note:  This is optional functionality, if your organization does not want to match Summit Events Registration records with Contacts or Leads then you can stop reading and skip this step_
+<br/>
+Note:  This is optional functionality, if your organization does not want to match Summit Events Registration records with Contacts or Leads then you can stop reading and skip this step
 
 When a Summit Events Registration record is created several fields about the person registering are populated.   These values only exist in the Summit Events Registration object unless you select a Contact or Lead Matching Rule on the Summit Events record.  If you select a Contact Matching Rule on the Summit Events record this rule will check to see if a Contact record exists in Salesforce for this person:
 * If the Contact Matching Rule finds a Contact record that matches the rule logic, it matches this Contact with the Summit Events Registration record.
