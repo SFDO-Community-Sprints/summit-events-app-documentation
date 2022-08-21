@@ -11,7 +11,7 @@ There are multiple way to contribute to the Summit Events App!  Below outlines a
 
 When contributing to the [Summit Events Repository](https://github.com/SFDO-Community/Summit-Events-App), we are encouraging you utilize one of the following two tools:
 
-1. [CumulusCI](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/Contribute-to-Summit-Events-using-CumulusCI)
+1. [CumulusCI](https://cumulusci.readthedocs.io/en/latest/get-started.html#work-on-an-existing-cumulusci-project)
 
 2. [Metecho](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/Contribute-to-Summit-Events-with-Metecho) 
 
