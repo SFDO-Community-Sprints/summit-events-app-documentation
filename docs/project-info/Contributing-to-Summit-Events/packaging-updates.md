@@ -1,5 +1,5 @@
 ---
-title: Metecho
+title: Packaging Updates
 parent: Contributing to Summit Events
 grand_parent: Project Info
 ---
