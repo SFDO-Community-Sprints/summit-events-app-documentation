@@ -1,7 +1,7 @@
 ---
 title: Metecho
 parent: Contributing to Summit Events
-grandparent: Project Info
+grand_parent: Project Info
 ---
 
 # Metecho 
