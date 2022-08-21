@@ -13,7 +13,7 @@ When contributing to the [Summit Events Repository](https://github.com/SFDO-Comm
 
 1. [CumulusCI](https://cumulusci.readthedocs.io/en/latest/get-started.html#work-on-an-existing-cumulusci-project)
 
-2. [Metecho](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/project-info/metecho/) 
+2. [Metecho](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/project-info/Contributing-to-Summit-Events/metecho/) 
 
 We encourage the community to contribute with their thoughts and ideas, whether they are a developer, admin or a user.  For those that are a User or Admin and not comfortable with Salesforce CLI, we encourage you to connect with us below or in the [Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE?tab=discussion&sort=LAST_MODIFIED_DATE_DESC).
 
