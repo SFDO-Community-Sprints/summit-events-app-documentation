@@ -1,6 +1,7 @@
 ---
 title: Contributing to Summit Events
 parent: Project Info
+has_children: true
 ---
 
 # Contributing to Summit Events
