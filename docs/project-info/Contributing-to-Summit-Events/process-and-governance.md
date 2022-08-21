@@ -1,4 +1,8 @@
-
+---
+title: Process and Governance
+parent: Contributing to Summit Events
+grand_parent: Project Info
+---
 
 # Getting Setup to Contribute
 **Please read carefully to ensure any contributions made to the Summit Events Repo happens smoothly and as quickly as possible**
