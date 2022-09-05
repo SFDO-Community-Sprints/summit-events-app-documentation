@@ -14,7 +14,7 @@ The first step in setting up a brand new event is to create a Summit Event recor
 
 # Creating a Basic Event
 
-## Create the Event and related Event Instance
+## Create the Event
 
 Navigate to the Summit Events Application in the App Selector.
 
@@ -42,6 +42,7 @@ Fill out the following fields on the Summit Event record.  Many of the fields li
 
 **Save** Summit Event record.
 
+## Create the Related Event Instance
 Navigate to the Summit Event Instance Related List on the Event record and create a New Summit Event Instance
 
 ![CreateBasicEventInstanceButton](images/CreateBasicEvent_NewInstanceButton.png)
@@ -68,15 +69,16 @@ Fill out the following fields on the Summit Event Instance record. Many of the f
 
 **Save** Summit Event Instance record.
 
+## Review the Basic Event
 On the newly created Event Instance record,  click the *Register* link under the Registration Link in the record heading.  
 ![CreateBasicEventInstanceRegisterLink](images/CreateBasicEvent_EventInstanceScreen2.png)
 
-9 Navigate to the registration page and confirm registration fields are displaying and editable.  
+Navigate to the registration page and confirm registration fields are displaying and editable.  
 ![CreateBasicEventInstanceRegistrationPage](images/CreateBasicEvent_EventInstanceScreen3.png)
 
 **Congratulations, you've just created a basic event!**
 
+## Additional Features
+- To add questions to an event registration form, see [Standard Registration Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/standard-reg-questions/).
 
-To add questions to an event registration form, see [Standard Registration Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/standard-reg-questions/).
-
-To generate a confirmation email for the event, see [Creating an Event Email](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/).
+- To generate a confirmation email for the event, see [Creating an Event Email](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/).
