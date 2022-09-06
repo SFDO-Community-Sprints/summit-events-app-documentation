@@ -19,7 +19,7 @@ The below are steps in utilizing the Virtual Meeting Link field and sharing it w
 
   3) Save the Instance record.
 
-  4) Create a [Event Email](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/) record, entering all appropriate details. Keep in mind that as you're entering your [email content](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/#6-enter-the-email-content), the email is for all instances.
+  4) Create an [Event Email](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/) record, entering all appropriate details. Keep in mind that as you're entering your [email content](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/#6-enter-the-email-content), the email is for all instances.
 
   5) Where appropriate in your email content, you'll enter the merge field {summit__Virtual_Meeting_URL__c}.
 
