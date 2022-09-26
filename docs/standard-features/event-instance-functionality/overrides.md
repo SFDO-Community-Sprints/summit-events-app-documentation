@@ -19,8 +19,8 @@ You should expect that the ovveride fields utilized will update on the registrat
 
 | |Admin View | Registrant View |
 |:-----|:-----------------|:------|
-| Event |![image](https://user-images.githubusercontent.com/60475518/192381056-0d9efe87-8c99-4604-a0b6-a7d4d241c0c3.png)| ![image](https://user-images.githubusercontent.com/60475518/192383071-919057ba-a61f-4139-883e-5506c8d3d8c0.png)
-|Instance Override | ![image](https://user-images.githubusercontent.com/60475518/192381811-d97573f6-97c0-403e-b8db-0b1824627d4c.png) | ![image](https://user-images.githubusercontent.com/60475518/192382985-352cdbe7-0217-492d-9287-b66fa57e3a89.png)
+| Event w/out Overrides |![image](https://user-images.githubusercontent.com/60475518/192381056-0d9efe87-8c99-4604-a0b6-a7d4d241c0c3.png)| ![image](https://user-images.githubusercontent.com/60475518/192383071-919057ba-a61f-4139-883e-5506c8d3d8c0.png)
+| Event w/ Instance Overrides  | ![image](https://user-images.githubusercontent.com/60475518/192381811-d97573f6-97c0-403e-b8db-0b1824627d4c.png) | ![image](https://user-images.githubusercontent.com/60475518/192382985-352cdbe7-0217-492d-9287-b66fa57e3a89.png)
 
 
 
