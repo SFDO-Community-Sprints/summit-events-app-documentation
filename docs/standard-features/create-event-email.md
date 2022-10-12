@@ -1,6 +1,7 @@
 ---
 title: Creating an Event Email
 parent: Standard Features
+has_children: true
 ---
 
 
