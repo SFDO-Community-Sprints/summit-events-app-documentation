@@ -8,5 +8,3 @@ has_children: true
 
 ## Object Architecture
 ![image](https://user-images.githubusercontent.com/60475518/167001115-eb31431f-363e-41d2-b8f5-aa8c6774b23a.png)
-
-![image]()
