@@ -1,6 +1,7 @@
 ---
 title: Appointments/Options
 parent: Advanced Features
+has_children: true
 ---
 
 
