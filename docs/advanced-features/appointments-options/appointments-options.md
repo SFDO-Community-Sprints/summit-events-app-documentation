@@ -26,7 +26,7 @@ These will appear above the Appointments on the registration screen.
 
 ## Create Appointments
 Starting on the Summit Event page, from Appointment type related list, choose New.
-![](../appointments-options/images/CreateNewAppointmentRec1.PNG)
+![](../mages/CreateNewAppointmentRec1.PNG)
 
 
 Since we started from the Event page, the Event field should default to the correct event.  If not, use the search feature to search for and select the correct event.
