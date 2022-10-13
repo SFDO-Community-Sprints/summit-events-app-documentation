@@ -12,7 +12,7 @@ Go to the Event Fees, Event Fee Configuration to set up an:
 * Event Fee Allocation
 * Event Fee Additional Allocation
 
-![event fee configuration](/docs/advanced-features/images/sea_eventfee_configuration.png)
+![event fee configuration](../images/sea_eventfee_configuration.png)
 
 The Event Fee and Event Fee Additional fields allow you to set and can be useful for internal processing, if you need split fees for event cost and a donation, for example. Your registrants will see the full cost of the event on the first page of registration. See image below.
 
