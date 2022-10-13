@@ -25,3 +25,4 @@ Go to Labels, to set up:
 * Event Fee Submit List Label - appears on the first page of registration and the Submit Registration page - appears on the Submit Registration page
 * Event Fee Total Label - appears on the Submit Registration page
 
+![event fee submit registration](/docs/advanced-features/images/sea_submit_registration_eventfee.png)
