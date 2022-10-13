@@ -16,7 +16,7 @@ Go to the Event Fees, Event Fee Configuration to set up an:
 
 The Event Fee and Event Fee Additional fields allow you to set and can be useful for internal processing, if you need split fees for event cost and a donation, for example. Your registrants will see the full cost of the event on the first page of registration. See image below.
 
-![event fee registratin](/docs/advanced-features/images/sea_label_eventfee.png)
+![event fee registratin](../images/sea_label_eventfee.png)
 
 Event Fee Allocation and Additional Allocation allows your organization to designate where event fees should be allocated when fees are processed. This is an optional feature that can be left blank if not needed. See image above
 
@@ -25,4 +25,4 @@ Go to Labels, to set up:
 * Event Fee Submit List Label - appears on the first page of registration and the Submit Registration page - appears on the Submit Registration page
 * Event Fee Total Label - appears on the Submit Registration page
 
-![event fee submit registration](/docs/advanced-features/images/sea_submit_registration_eventfee.png)
+![event fee submit registration](../images/sea_submit_registration_eventfee.png)
