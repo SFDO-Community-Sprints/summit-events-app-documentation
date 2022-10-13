@@ -11,6 +11,8 @@ parent: Standard Features
 
 TODO:  Screenshot
 
+TODO:  Business case -- cancel
+
 1. Change their status to "Cancelled"
 
 ### Externally
@@ -31,6 +33,8 @@ All count-related fields adjust as if the person had never registered in the fir
 
 _(The [Event Registration](../object-field-resources/summit-event-reg-obj/) record, however, remains a child object of the [Event Instance](./event-instance-functionality/) record, to facilitate historical analysis you might want to explore.)_
 
-## Considerations for a cancelled registration
+## Cautions and considerations
 
-TODO:  ask others
+1. Unique cancellation links are **personal** to each [Event Registration](../object-field-resources/summit-event-reg-obj/) record on which they appear.<br/>**CAUTION:**  Do not copy one person's link to your clipboard and send it to to a lot of other people, lest registrants accidentally cancel each others' registrations.
+    * This is different from registration links, which are found one level of data "up" on the [Event Instance](./event-instance-functionality/) record and can be shared with the whole world at once.
+1. If someone calls to cancel over the phone, and you're confident it's really the registrant, you'll want to have someone with appropriate Salesforce data-editing permissions manually follow the internal cancellation instructions above as quickly as possible so that you make room for someone else to register for your event.
