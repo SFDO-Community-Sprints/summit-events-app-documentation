@@ -5,33 +5,30 @@ parent: Standard Features
 
 *This page is still needing some content. If you're interested in contributing to the Summit Events App and want to help provide support by creating this page, comment below and let us know!*
 
-## How a registration can be cancelled
+## How to cancel a registration
 
-### Internally
+### External (for registrants)
 
-TODO:  Screenshot
+1. Provide the registrant with the link stored in the "**Event Registration Cancel Link**" field on their [Event Registration](../../object-field-resources/summit-event-reg-obj/) record.  It is personalized to them and them only, so be sure that it is the correct Event Registration record's link within an Event Instance.
+    * The most common way to do this is to ensure that the [Event Instance](../event-instance-functionality/)'s parent [Event](../../Getting-Started/create-basic-event/) record is configured to send [Event Emails](../create-event-email/) to registrants when they register.
+2. The registrant clicks the cancellation link.
+3. If the registrant's [Event Registration](../../object-field-resources/summit-event-reg-obj/) record is already in "Cancelled" status, the registrant's web browser simply displays a message telling them that they're cancelled.
+4. Otherwise, the link offers a button for the registrant to click.  When they do:
+    * In the background, the corresponding [Event Registration](../../object-field-resources/summit-event-reg-obj/)'s "**Status**" field value flips to "Cancelled."
+    * The registrant's web browser will then display a message telling them that they're cancelled.
 
-TODO:  Business case -- cancel
+### Internal (for staff)
 
-1. Change their status to "Cancelled"
-
-### Externally
-
-TODO:  Screenshot
-
-1. Get the person their "unique cancellation link" off their [Event Registration](../../object-field-resources/summit-event-reg-obj/) record.
-    * TODO:  _(Most likely by making sure before you start using Summit Events, you turn on e-mail confirmations when people register.  This is not built into the scratch orgs by default.)_
-2. They click it.
-3. If their [Event Registration](../../object-field-resources/summit-event-reg-obj/) record is already in "cancelled" status, it tells them they're cancelled.
-4. Otherwise, it offers a button for them to click, which then will take them to a page telling them they're cancelled.
+1. Inside of Salesforce, open the appropriate [Event Registration](../../object-field-resources/summit-event-reg-obj/) record and change its "**Status**" field value to "Cancelled."
+2. Save the edited record.
 
 ## What happens to registration counts on the instance
 
-TODO:  Screenshot / flesh out with API names and better business examples
+All auto-counted fields on the parent [Event Instance](../event-instance-functionality/) record adjust as if the primary attendees, guests, etc. attached to the now-cancelled [Event Registration](../../object-field-resources/summit-event-reg-obj/) record had never registered in the first place.
 
-All count-related fields adjust as if the person had never registered in the first place.
+_(Current Available Capacity, Count of Attendees, Confirmed Attendees, Primary Attendees, Primary Confirmed Attendees, etc.)_
 
-_(The [Event Registration](../../object-field-resources/summit-event-reg-obj/) record, however, remains a child object of the [Event Instance](../event-instance-functionality/) record, to facilitate historical analysis you might want to explore.)_
+For recordkeeping, the now-cancelled [Event Registration](../../object-field-resources/summit-event-reg-obj/) record remains in existence and remains a child object of its parent [Event Instance](../event-instance-functionality/) record.
 
 ## Cautions and considerations
 
