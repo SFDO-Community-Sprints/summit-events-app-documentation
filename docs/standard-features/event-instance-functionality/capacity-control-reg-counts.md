@@ -26,7 +26,7 @@ The selected the value will control the number represented on the "Current Avail
 
 > **Registrant plus Guests** - When selected, this is going to count each registration record as 1 PLUS the "Number of Guests", which is on the registration record. This is dependent on the status of those registrations being in a status equal to "Registered", "In Progress", "Confirmed", "Attended" and "No-Show". The number of Registrant plus Guests meeting the criteria is reflected on the "Count of Attendees" field on the Instance record.
 
-When selecting Registrant Plus Guest, this is typically used when "Allow Other Attendees" is marked as TRUE on the related Event record. See the note below about Guest counts related to utilizing the [Guest Feature]().
+When selecting Registrant Plus Guest, this is typically used when "Allow Other Attendees" is marked as TRUE on the related Event record. See the note below about Guest counts related to utilizing the [Custom Questions Feature](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-questions/).
 
 As these are selected and changed, you'll see the "Current Available Capacity" updating to reflect the counts appropriately.
 
@@ -47,9 +47,9 @@ Summit Events has a number or fields that rollup the count of registration recor
     + Logic: Status EQUALS Confirmed
 
 ## Expectations
-+ **Exceeding Event Capacity**
+
 
 ## Additional Notes
-+ **Guest Counts** - Within Summit Events, there is a [Guest Feature]() that allows you to input Registration details. When utilizing the feature, a new registration record is created and link to the original registrant. With the feature each attendee gets their own registration record and counted as a Primary Attendee.
++ **Guest Counts** - Within Summit Events, there is a [Custom Question Feature](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-questions/) that allows you to input additional Registrant details. When utilizing the feature, a new registration record is created and link to the original registrant. With the feature each attendee gets their own registration record and counted as a Primary Attendee.
 
-
++ **Exceeding Event Capacity** - There are times when the event capacity may be exceeded.  This will happen if the available capacity is less then the last registrations total number of attendees. For example, the Current Available Capacity reflect "1" and the next Registrants indicated they are bringing a guest, for a total of 2 attendees. This will reflect the Current Available capacity as a negative number.
