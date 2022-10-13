@@ -10,7 +10,7 @@ parent: Standard Features
 ### External (for registrants)
 
 1. Provide the registrant with the link stored in the "**Event Registration Cancel Link**" field on their [Event Registration](../../object-field-resources/summit-event-reg-obj/) record.  It is personalized to them and them only, so be sure that it is the correct Event Registration record's link within an Event Instance.
-    * The most common way to do this is to ensure that the [Event Instance](../event-instance-functionality/)'s parent [Event](../../Getting-Started/create-basic-event/) record is configured to send [Event Emails](../create-event-email/) to registrants when they register.
+    * The most common way to do this is to ensure that the [Event Instance](../event-instance-functionality/)'s parent [Event](../../Getting-Started/create-basic-event/) record is configured to send [Event Emails](../create-event-email/create-event-email/) to registrants when they register.
 2. The registrant clicks the cancellation link.
 3. If the registrant's [Event Registration](../../object-field-resources/summit-event-reg-obj/) record is already in "Cancelled" status, the registrant's web browser simply displays a message telling them that they're cancelled.
 4. Otherwise, the link offers a button for the registrant to click.  When they do:
