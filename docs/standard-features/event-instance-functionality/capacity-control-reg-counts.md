@@ -46,8 +46,6 @@ Summit Events has a number or fields that rollup the count of registration recor
     + Captures: The number of Registrations records PLUS the number indicated on the "Number of Guests" when the records are in a status of "Confirmed"
     + Logic: Status EQUALS Confirmed
 
-## Expectations
-
 
 ## Additional Notes
 + **Guest Counts** - Within Summit Events, there is a [Custom Question Feature](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-questions/) that allows you to input additional Registrant details. When utilizing the feature, a new registration record is created and link to the original registrant. With the feature each attendee gets their own registration record and counted as a Primary Attendee.
