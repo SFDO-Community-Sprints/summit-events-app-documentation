@@ -26,5 +26,23 @@ The selected the value will control the number represented on the "Current Avail
 
 > **Registrant plus Guests** - When selected, this is going to count each registration record as 1 PLUS the "Number of Guests", which is on the registration record. This is dependent on the status of those registrations being in a status equal to "Registered", "In Progress", "Confirmed", "Attended" and "No-Show". The number of Registrant plus Guests meeting the criteria is reflected on the "Count of Attendees" field on the Instance record.
 
+As these are selected and changed, you'll see the "Current Available Capacity" updating to reflect the counts appropriately.
+
+## Registrant Counts
+Summit Events has a number or fields that rollup the count of registration records and some of the fields associated to it. There are 4 fields on the Event Instance that capture counts for the specific instance. The below highlights those fields and what they present (and the logic behind it!):
+
++ **Primary Attendees**
+    + Captures: The number of Registration records associted to the instance that are not in a "Cancelled" or "Rescheduled" status
+    + Logic: Status NOT EQUAL to Cancelled or Rescheduled
++ **Primary Confirmed Attendees**
+    + Captures: The number of Registration records associated to the 
+    + Logic: Status EQUALS Confirmed
++ **Count of Attendees**
+    + Captures: The number of Registrations records PLUS the number indicated on the "Number of Guests" when the records are in a status or "Registered", "In Progress", "Confirmed", "Attended" or "No-Show"
+    + Logic: 
++ **Confirmed Attendees**
+    + Captures: 
+    + Logic: 
+
 
 
