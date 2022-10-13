@@ -31,18 +31,17 @@ Thank you to the volunteers who contributed and engaged during this mini-sprint!
 * Primary Goal: Transition and Create site documentation highlighting functionality for an Users of Summit Events (not just Admins)
 * Tasks: Assign Issues to contributors and get "pencil to paper"
 
-![Sprint Theme and Goals](../images/oct-22-theme-goals.png)
-
-
+![Sprint Theme and Goals](../sprints/images/oct-22-theme-goals.png)
 
 ### Project Team Accomplishments
-* Created a draft page structure
-* Allowed new(er) users to articulate what's confusing and needs better explainations
-* Welcomed new project members and oriented them to the project
-* Reviewed Github Pages and how to create/update them for the primary documentation repo
-* Meaningful conversation around end-user guidance on create events
-* Created, Transitioned and updated pages on the Docuementation Site/Repo
-* Created Issues for bugs and/or feature enhancements
+* [Donations Overview](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/capturing-payments/donations/) thanks to [Sue Kolles]()
+* [Event Fees Overview](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/capturing-payments/events-fees/) thanks to [Tania Ortiz-Ashby](https://github.com/taniadoa)
+* [Cancelling Registrations](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/cancel-registrations/) thanks to [Katie Gumpertz]()
+* [Event Instance Functionality](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/event-instance-functionality/) thanks to [Ryan Blake](https://github.com/rdblake21)
+* *in progress* [Creating and Management Appointments/Options](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/appointments-options/appointments-options/) thanks to [Donna Whitig](https://github.com/dwhitig)
+* *Review and Cleanup of* [Contact and Lead Matching](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/contact-and-lead-matching/) thanks to [Mike Walter](https://github.com/walt0019)
+* *Started* drafting documentation on connecting Summit Events to a Payment Gateway thanks to [Thaddaeus Dahlberg](https://github.com/tcdahlberg)
+
 
 ### Future Contributions (AKA what were you unable to finish at the Sprint)
 * Fix the Issues submitted
