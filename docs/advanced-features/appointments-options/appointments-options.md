@@ -10,9 +10,8 @@ has_children: true
 Appointments are extremely flexible and can be used for a number of different scenarios.  Appointments allow the registrant to select multiple options during the registration process.  They also allow for time based options which is one way they differ from questions.   This document is going to walk through a simple example of at how to set up Appointments for a student's Admissions Visit assuming that the student can choose a couple of options during the visit.
 
 Basic steps needed to set up appointments:
-1. Create the event
-2. Create the event instance
-3. Create the appointments for selection on the event page
+1. [Create an event with an event instance](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/create-basic-event/)
+2. Create the appointments for selection on the event page
 
 
 Once the event and event instance have been created, the next step is to set the Appointment Option details on the Event page and create the appointments.
