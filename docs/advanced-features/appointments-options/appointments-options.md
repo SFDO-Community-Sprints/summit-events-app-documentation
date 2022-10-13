@@ -7,7 +7,7 @@ has_children: true
 
 # Creating and Managing Event Appointments
 
-Appointments are extremely flexible and can be used for a number of different scenarios.  Appointments allow the registrant to select multiple options during the registration process.  They also allow for time based options which is one way they differ from questions.   W are going to walk through a simple example of at how to set up Appointments for a student's Admissions Visit assuming that the student can choose a couple of options during the visit.
+Appointments are extremely flexible and can be used for a number of different scenarios.  Appointments allow the registrant to select multiple options during the registration process.  They also allow for time based options which is one way they differ from questions.   This document is going to walk through a simple example of at how to set up Appointments for a student's Admissions Visit assuming that the student can choose a couple of options during the visit.
 
 Basic steps needed to set up appointments:
 1. Create the event
