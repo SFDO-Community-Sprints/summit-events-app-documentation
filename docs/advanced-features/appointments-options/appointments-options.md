@@ -37,8 +37,8 @@ The Appointment Type Status will default to Active.  Leave this default.
 Change the Sort Order to reflect the order in which the item should appear (optional).
 
 In the Appointment Options section, set the following fields:
--Registrant Input - choose the type of information being collected for this appointment -(custom picklist, custom picklist required, text, text required).
--Custom Picklist - if using custom picklist as the registrant input, add the picklist values for selection.  Multiple items should be entered with a hard return in between each.
+* Registrant Input - choose the type of information being collected for this appointment (custom picklist, custom picklist required, text, text required).
+* Custom Picklist - if using custom picklist as the registrant input, add the picklist values for selection.  Multiple items should be entered with a hard return in between each.
 ![](../images/AppointSetup_NewApp_P1.PNG)
 
 Click Save to save the new appointment.
