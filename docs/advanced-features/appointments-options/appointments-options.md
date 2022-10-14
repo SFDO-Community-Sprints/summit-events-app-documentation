@@ -11,12 +11,13 @@ Appointments are extremely flexible and can be used for a number of different sc
 
 Basic steps needed to set up appointments:
 1. [Create an event with an event instance](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/create-basic-event/)
-2. Create the appointments for selection on the event page
+2. Configure the appointment option details
+3. Create the appointment
 
 
-Once the event and event instance have been created, the next step is to set the Appointment Option details on the Event page and create the appointments.
+Once the event and event instance have been created, you'll be able to configure the Appointment Option details on the Event page and create the appointments.
 
-## Set the Appointment Option Details
+## Configure the Appointment Option Details
 When creating or editing an Event page, use the Appointment Page Option section to configure the Event Appointment Title and Event Appointment Description.  
 ![](../images/AppointOptionHeader.PNG)
 
