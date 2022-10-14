@@ -21,11 +21,11 @@ When creating or editing an Event page, use the Appointment Page Option section 
 ![](../images/AppointOptionHeader.PNG)
 
 These will appear above the Appointments on the registration screen.
-![](../images/appointments-options/images/AppointOptionHeaderRegScreen.PNG)
+![](../images/AppointOptionHeaderRegScreen.PNG)
 
 ## Create Appointments
 Starting on the Summit Event page, from Appointment type related list, choose New.
-![](../images/appointments-options/images/CreateNewAppointmentRec1.PNG)
+![](../images/CreateNewAppointmentRec1.PNG)
 
 
 Since we started from the Event page, the Event field should default to the correct event.  If not, use the search feature to search for and select the correct event.
@@ -39,7 +39,7 @@ Change the Sort Order to reflect the order in which the item should appear (opti
 In the Appointment Options section, set the following fields:
 -Registrant Input - choose the type of information being collected for this appointment -(custom picklist, custom picklist required, text, text required).
 -Custom Picklist - if using custom picklist as the registrant input, add the picklist values for selection.  Multiple items should be entered with a hard return in between each.
-![](/docs/advanced-features/appointments-options/images/AppointSetup_NewApp_P1.PNG)
+![](../images/AppointSetup_NewApp_P1.PNG)
 
 Click Save to save the new appointment.
 
