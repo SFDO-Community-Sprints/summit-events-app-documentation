@@ -10,7 +10,7 @@ The Summit Event App allows you to control capacity to your events at the instan
 ## Controlling Event Capacity
 When creating an Event instance, you're requred to indicate "Capacity Control" and "Capacity". 
 
-[image of new Instance]()
+![New Instance Screen Shot](../images/)
 
 ### Capacity
 Starting with the Capacity field, you'll need to indicate the number of total people you will max your event at.  If there is no capacity limit, you can enter a number much larger than your anticipated attendance.
