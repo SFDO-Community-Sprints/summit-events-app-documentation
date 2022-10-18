@@ -32,8 +32,8 @@ In the Appointment Options section, set the following fields:
 
 Click Save to save the new appointment.
 
-This is how the Appointments page appears during the registration process.  The Appointment Page Options appear above the Appointments on the registration screen and the appointments appear below.
-![Appointment Options Details Screenshot](../images/AppointOptionHeaderRegScreenv3.PNG)
+This is how the Appointments page appears during the registration process.  The Appointment Page Options appear above the Appointments on the registration screen and the appointments appear below on the left.  As the registrant expands the appointment and selects options, they appear on the right-side.
+![Appointment Options Details Screenshot](../images/AppointOptionHeaderRegScreenv4.PNG)
 
 Repeat this process for each appointment needed.  
 
