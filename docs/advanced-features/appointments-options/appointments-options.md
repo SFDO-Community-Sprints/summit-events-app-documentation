@@ -46,7 +46,7 @@ Click Save to save the new appointment.
 
 Repeat this process for each appointment needed.  
 
-The appointment selections appear on the Summit Events Appointments related list of the Summit Events Registration record.
+The registrant's appointment selections appear on the Summit Events Appointments related list of the person's Summit Events Registration record.
 
 ![](../images/Appoint-RegRec.PNG)
 
