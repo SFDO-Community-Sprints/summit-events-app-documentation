@@ -28,7 +28,6 @@ These will appear above the Appointments on the registration screen.
 Starting on the Summit Event page, from Appointment type related list, choose New.
 ![](../images/CreateNewAppointmentRec1.PNG)
 
-
 Since we started from the Event page, the Event field should default to the correct event.  If not, use the search feature to search for and select the correct event.
 
 Give the appointment a Title.  This appears as the title of the appointment from which the registrant will select.
