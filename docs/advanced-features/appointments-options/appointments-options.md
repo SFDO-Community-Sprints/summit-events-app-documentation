@@ -18,17 +18,17 @@ Basic steps needed to set up appointments:
 Once the event and event instance have been created, you'll be able to configure the Appointment Option details on the Event page and create the appointments.
 
 ## Configure the Appointment Option Details
-When creating or editing an Event page, use the Appointment Page Option section to configure the Event Appointment Title and Event Appointment Description.  
+When creating a new event or editing an existing event you'll use the Appointment Page Option section to configure the Event Appointment Title and Event Appointment Description.  These are the text above the appointments give the registrant context about what they are completing.
 ![Appointment Option Details fields](../images/AppointOptionHeader.PNG)
 
-These will appear above the Appointments on the registration screen.
+Once configured the Appointment Page Options appear above the Appointments on the registration screen.
 ![Appointment Options Details Screenshot](../images/AppointOptionHeaderRegScreenv3.PNG)
 
 ## Create Appointments
-Starting on the Summit Event page, from Appointment type related list, choose New.
+Next you'll create the appointments for the registrant to choose.  Starting on the Summit Event page, from Appointment type related list, choose New.
 ![New Appointment Button](../images/CreateNewAppointmentRec1.PNG)
 
-Since we started from the Event page, the Event field should default to the correct event.  If not, use the search feature to search for and select the correct event.
+Since the appointment is being created from the Event page, the Event field should default to the correct event.  If not, use the search feature to search for and select the correct event.
 
 Give the appointment a Title.  This appears as the title of the appointment item.
 
