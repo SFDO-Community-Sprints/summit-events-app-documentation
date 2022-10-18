@@ -19,7 +19,7 @@ Once the event and event instance have been created, you'll be able to configure
 
 ## Configure the Appointment Option Details
 When creating or editing an Event page, use the Appointment Page Option section to configure the Event Appointment Title and Event Appointment Description.  
-![](../images/AppointOptionHeader.PNG)
+![](../images/AppointOptionHeaderv2.PNG)
 
 These will appear above the Appointments on the registration screen.
 ![](../images/AppointOptionHeaderRegScreen.PNG)
