@@ -19,14 +19,14 @@ Once the event and event instance have been created, you'll be able to configure
 
 ## Configure the Appointment Option Details
 When creating or editing an Event page, use the Appointment Page Option section to configure the Event Appointment Title and Event Appointment Description.  
-![](../images/AppointOptionHeader.PNG)
+![Appointment Option Details fields](../images/AppointOptionHeader.PNG)
 
 These will appear above the Appointments on the registration screen.
-![](../images/AppointOptionHeaderRegScreenv3.PNG)
+![Appointment Options Details Screenshot](../images/AppointOptionHeaderRegScreenv3.PNG)
 
 ## Create Appointments
 Starting on the Summit Event page, from Appointment type related list, choose New.
-![](../images/CreateNewAppointmentRec1.PNG)
+![New Appointment Button](../images/CreateNewAppointmentRec1.PNG)
 
 Since we started from the Event page, the Event field should default to the correct event.  If not, use the search feature to search for and select the correct event.
 
@@ -41,7 +41,7 @@ Most of the time, you will use the Registrant Input field to set up your appoint
 In the Appointment Options section, set the following fields:
 * Registrant Input - choose the type of information being collected for this appointment (custom picklist, custom picklist required, text, text required).
 * Custom Picklist - if using custom picklist as the registrant input, add the picklist values for selection.  Multiple items should be entered with a hard return in between each.
-![](../images/AppointSetup_NewApp_P1.PNG)
+![Appointment Options Fields](../images/AppointSetup_NewApp_P1.PNG)
 
 Click Save to save the new appointment.
 
@@ -49,6 +49,9 @@ Repeat this process for each appointment needed.
 
 The registrant's appointment selections appear on the Summit Events Appointments related list of the person's Summit Events Registration record.
 
-![](../images/Appoint-RegRec.PNG)
+![Summit Events Appointment Reg Relate dList](../images/Appoint-RegRec.PNG)
+
+On the appointment page, the item selected appears in the Description field.  The appointment type name appears in the Appointment Title field.
+![Appointment Screen Items](../images/CreateNewAppointmentRegData.PNG)
 
 
