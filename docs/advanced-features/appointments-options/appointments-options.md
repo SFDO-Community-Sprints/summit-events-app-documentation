@@ -51,7 +51,7 @@ The registrant's appointment selections appear on the Summit Events Appointments
 
 ![Summit Events Appointment Reg Relate dList](../images/Appoint-RegRec.PNG)
 
-On the appointment page, the item selected appears in the Description field.  The appointment type name appears in the Appointment Title field.
+On the registrants specific appointment page, the item they selected appears in the Description field.  The appointment type name appears in the Appointment Title field.
 ![Appointment Screen Items](../images/CreateNewAppointmentRegData.PNG)
 
 
