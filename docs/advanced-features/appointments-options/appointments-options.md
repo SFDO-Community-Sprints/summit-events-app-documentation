@@ -7,26 +7,21 @@ has_children: true
 
 # Creating and Managing Event Appointments
 
-Appointments are extremely flexible and can be used for a number of different scenarios.  Appointments allow the registrant to select multiple options during the registration process.  They also allow for time based options which is one way they differ from questions.   This documentation is going to cover all the basic fields needed to setup new event appointments.   In this scenario, appointments are being used to let students choose options they will be attending during the event.
+There are many scenarios where registrants might need to select from various options.  Appointments are extremely flexible and can be used for a number of different purposes.  Appointments allow the registrant to select multiple options during the registration process.  They also allow for time based options which is one way they differ from questions.   Appointments are configurable per event and used by event instances related to the event.  
 
-Basic steps needed to set up appointments:
+Most events that utilize appointments will use these basic steps:
 1. [Create an event with an event instance](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/create-basic-event/)
 2. Configure the appointment option details
 3. Create the appointment
 
-
-Once the event and event instance have been created, you'll be able to configure the Appointment Option details on the Event page and create the appointments.
+Once the event and event instance have been created, you are able to configure the appointment page header and title using the Appointment Option Details section of the Event page.
 
 ## Configure the Appointment Option Details
-When creating a new event or editing an existing event you'll use the Appointment Page Option section to configure the Event Appointment Title and Event Appointment Description.  These are the text above the appointments give the registrant context about what they are completing.
+When creating a new event or editing an existing event you'll use the Appointment Page Option section to configure the Event Appointment Title and Event Appointment Description.  These are the text above the appointments that gives the registrant context about what they are choosing.
 ![Appointment Option Details fields](../images/AppointOptionHeader.PNG)
 
-Once configured the Appointment Page Options appear above the Appointments on the registration screen.
-![Appointment Options Details Screenshot](../images/AppointOptionHeaderRegScreenv3.PNG)
-
 ## Create Appointments
-Next you'll create the appointments for the registrant to choose.  Starting on the Summit Event page, from Appointment type related list, choose New.
-![New Appointment Button](../images/CreateNewAppointmentRec1.PNG)
+Next you'll create the appointments for the registrant to choose.  Starting on the Summit Event page, located the Appointment type related list and choose New.  Depending upon your page layout, the New option may appear as a button or in a drop-down on the related list.
 
 Since the appointment is being created from the Event page, the Event field should default to the correct event.  If not, use the search feature to search for and select the correct event.
 
@@ -45,13 +40,16 @@ In the Appointment Options section, set the following fields:
 
 Click Save to save the new appointment.
 
+This is how the Appointments page appears during the registration process.  The Appointment Page Options appear above the Appointments on the registration screen and the appointments appear below.
+![Appointment Options Details Screenshot](../images/AppointOptionHeaderRegScreenv3.PNG)
+
 Repeat this process for each appointment needed.  
 
-The registrant's appointment selections appear on the Summit Events Appointments related list of the person's Summit Events Registration record.
+The registrant's appointment selections can be viewed on the Summit Events Appointments related list of the person's Summit Events Registration record.
 
 ![Summit Events Appointment Reg Relate dList](../images/Appoint-RegRec.PNG)
 
-On the registrants specific appointment page, the item they selected appears in the Description field.  The appointment type name appears in the Appointment Title field.
+On the registrant's appointment page, the item they selected appears in the Description field.  The appointment type name appears in the Appointment Title field.
 ![Appointment Screen Items](../images/CreateNewAppointmentRegData.PNG)
 
 
