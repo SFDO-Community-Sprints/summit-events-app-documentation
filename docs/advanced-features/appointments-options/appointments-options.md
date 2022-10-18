@@ -7,7 +7,7 @@ has_children: true
 
 # Creating and Managing Event Appointments
 
-There are many scenarios where registrants might need to select from various options.  Appointments are extremely flexible and can be used for a number of different purposes.  Appointments allow the registrant to select multiple options during the registration process.  They also allow for time based options which is one way they differ from questions.   Appointments are configurable per event and used by event instances related to the event.  
+There are scenarios where a registrant might need to select various options during the registration process.  This is where appointments come in handy.  Appointments are extremely flexible and can be used for a number of different purposes.  They also allow for time based options which is one way in which they differ from questions.   Appointments are configurable per event and used by event instances related to the event.  
 
 Most events that utilize appointments will use these basic steps:
 1. [Create an event with an event instance](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/create-basic-event/)
