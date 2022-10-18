@@ -44,6 +44,10 @@ In the Appointment Options section, set the following fields:
 
 Click Save to save the new appointment.
 
-Repeat this process for each appointment needed.
+Repeat this process for each appointment needed.  
+
+The appointment selections appear on the Summit Events Appointments related list of the Summit Events Registration record.
+
+![](../images/Appoint-RegRec.PNG)
 
 
