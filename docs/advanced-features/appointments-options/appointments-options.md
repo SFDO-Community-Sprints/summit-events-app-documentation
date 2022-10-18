@@ -30,12 +30,11 @@ In the Appointment Options section, set the following fields:
 * Custom Picklist - if using custom picklist as the registrant input, add the picklist values for selection.  Multiple items should be entered with a hard return in between each.
 ![Appointment Options Fields](../images/AppointSetup_NewApp_P1.PNG)
 
-Click Save to save the new appointment.
+Click Save to save the new appointment.  Repeat this process for each appointment needed.  
 
 This is how the Appointments page appears during the registration process.  The Appointment Page Options appear above the Appointments on the registration screen and the appointments appear below on the left.  As the registrant expands the appointment and selects options, they appear on the right-side.
 ![Appointment Options Details Screenshot](../images/AppointOptionHeaderRegScreenv4.PNG)
 
-Repeat this process for each appointment needed.  
 
 ## Viewing a Registrant's Appointments
 
