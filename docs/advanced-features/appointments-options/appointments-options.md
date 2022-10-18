@@ -22,7 +22,7 @@ When creating or editing an Event page, use the Appointment Page Option section 
 ![](../images/AppointOptionHeader.PNG)
 
 These will appear above the Appointments on the registration screen.
-![](../images/AppointOptionHeaderRegScreenv2.PNG)
+![](../images/AppointOptionHeaderRegScreenv3.PNG)
 
 ## Create Appointments
 Starting on the Summit Event page, from Appointment type related list, choose New.
