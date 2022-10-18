@@ -21,17 +21,9 @@ When creating a new event or editing an existing event you'll use the Appointmen
 ![Appointment Option Details fields](../images/AppointOptionHeader.PNG)
 
 ## Create Appointments
-Next you'll create the appointments for the registrant to choose.  Starting on the Summit Event page, located the Appointment type related list and choose New.  Depending upon your page layout, the New option may appear as a button or in a drop-down on the related list.
+Next you'll create the appointments for the registrant to choose.  Starting on the Summit Event page, locate the Appointment type related list and choose New.  Depending upon your page layout, the New option may appear as a button or in a drop-down on the related list.
 
-Since the appointment is being created from the Event page, the Event field should default to the correct event.  If not, use the search feature to search for and select the correct event.
-
-Give the appointment a Title.  This appears as the title of the appointment item.
-
-The Appointment Type Status will default to Active.  Leave the default value.
-
-Change the Sort Order to reflect the order in which the item should appear (optional).
-
-Most of the time, you will use the Registrant Input field to set up your appointment options as this gives the greatest flexibility.
+Since the appointment is being created from the Event page, the Event field should default to the correct event.  If not, use the search feature to search for and select the correct event.  Give the appointment a Title.  This appears as the title of the appointment item.   The Appointment Type Status will default to Active.  Leave the default value.  Change the Sort Order to reflect the order in which the item should appear (optional).  Most of the time, you will use the Registrant Input field in the Appointment Options section to set up your appointment options as this gives the greatest flexibility.
 
 In the Appointment Options section, set the following fields:
 * Registrant Input - choose the type of information being collected for this appointment (custom picklist, custom picklist required, text, text required).
@@ -45,7 +37,9 @@ This is how the Appointments page appears during the registration process.  The 
 
 Repeat this process for each appointment needed.  
 
-The registrant's appointment selections can be viewed on the Summit Events Appointments related list of the person's Summit Events Registration record.
+## Viewing a Registrant's Appointments
+
+The registrant's appointments can be viewed on the Summit Events Appointments related list of the person's Summit Events Registration record.
 
 ![Summit Events Appointment Reg Relate dList](../images/Appoint-RegRec.PNG)
 
