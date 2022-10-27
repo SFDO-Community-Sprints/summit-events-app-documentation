@@ -1,11 +1,16 @@
 # Summit Events App Documentation Repo
 
-This is a sample README.md file you can use to update your project. New project repos will use this template when they are created.
 
 # Project Name
-Please replace with your projects name
+The Summit Events App
 
 # Project Overview
+The Summit Events App is a sustainable open source community events app that serves a broad variety of needs for EDUs and NGOs. The event solution has the flexibility needed to offer events of different types: paid, free, group, guests, and individual. The solution will include the full life cycle of the event: registration, receipting, confirmation, reporting and web faced exposure. This solution facilitates a Salesforce connected campus and will be compatible with Salesforce.org’s Data Architectures.
+
+Summit Events is in the Open Source Commons and able to be accessed on the [Salesforce.org product installation page](https://install.salesforce.org/products#open-source-commons). This repository is specifically to host and manage documentation to allow for more community engagement, input, and sprint participation. The [applications repository is hosted by Salesforce](https://github.com/SFDO-Community/Summit-Events-App).
+
+This repository is reflected in a more [user friendly documentation site](https://sfdo-community-sprints.github.io/summit-events-app-documentation/).
+
 ## Vision & Goals
 Please replace with your projects vision.
 * Goal 1
