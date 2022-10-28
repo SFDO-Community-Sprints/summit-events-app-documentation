@@ -17,10 +17,15 @@ Please replace with your projects vision.
 * Goal 2
 
 ## Project Vertical
-Please replace with Nonprofit, Education, or Other (if Other, explain further)
+- Education
+- Nonprofit
+- Other, Summit Events is not architecture dependent so any area that has events has ability to leverage the tool.
 
 ## Trailblazer Group or Slack Channel Link (access required)
-Please replace with the URL for your Trailblazer Community group and/or Slack channel issued by the Commons program team.
+- [Trailblazer Group](https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE?tab=discussion&sort=LAST_MODIFIED_DATE_DESC)
+- [Slack](https://salesforce-external.slack.com/archives/C0292EN0423)
+- [Documentation Site](https://sfdo-community-sprints.github.io/summit-events-app-documentation/)
+
 
 ## How to Contribute:
 - Way 1.
