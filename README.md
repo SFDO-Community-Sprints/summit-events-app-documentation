@@ -12,9 +12,8 @@ Summit Events is in the Open Source Commons and able to be accessed on the [Sale
 This repository is reflected in a more [user friendly documentation site](https://sfdo-community-sprints.github.io/summit-events-app-documentation/).
 
 ## Vision & Goals
-Please replace with your projects vision.
-* Goal 1
-* Goal 2
+* Create a sustainable open source event application that servces a broad variety of needs for EDUs and NGOs
+* An enterprise level application that can be leveraged across the entire organization or institution.
 
 ## Project Vertical
 - Education
@@ -28,9 +27,11 @@ Please replace with your projects vision.
 
 
 ## How to Contribute:
-- Way 1.
-- Way 2. 
-- Way 3. 
+- Engage in the community sprints for insights into an Events Management Tool
+- Documentation support and validation
+- Quality Assurance testing
+- Use case development
+- Development of LWCs and enhanced functionality
 
 # Project Resources and Documentation
-Documentation can be found in the repository [wiki] (URL for wiki where docs are stored)
+Documentation can be found our [Documentation Site](https://sfdo-community-sprints.github.io/summit-events-app-documentation/) which is based on this repository.
