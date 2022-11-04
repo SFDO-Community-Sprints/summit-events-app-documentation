@@ -44,9 +44,9 @@ Thank you to the volunteers who contributed and engaged during this sprint!
 * Started drafting the update of the [Summit Events V2MOM](https://docs.google.com/document/d/135wpVAaDBLrilpF1CI6V0Y4Nu0GoefHatxMiwaSe1ek/edit?usp=sharing)
 * Got feedback and insight from new community members who were unfamiliar with the tool that support the feature list creation, what's missing and the marketing plan development. 
 * Completed the Marketing Plan Development exercise as seen below:
-![What is Summit Events?](.../sprints/images/What%20is%20Summit%20Events.png)
-![Who is the audience?](.../sprints/images/Identify%20the%20SEA%20Audience.png)
-![Opportunities and Outcomes](.../sprints/images/Opportunities%20and%20Outcomes.png)
+![What is Summit Events?]()
+![Who is the audience?]()
+![Opportunities and Outcomes]()
 
 
 
