@@ -17,7 +17,7 @@ Thank you to the volunteers who contributed and engaged during this sprint!
 * List of all Contributors: 
   - [Thaddaeus Dahlberg](https://github.com/tcdahlberg)
   - [Mike Walter](https://github.com/walt0019)
-  - [Ryan Blake](https://github.com/rdblake21)
+  - [Ryan Blake](https://github.com/rdblake21) (Virtual)
   - [Junette Tan]()
   - [Clair Lam]()
   - [Susan Lipsey]()
@@ -33,16 +33,27 @@ Thank you to the volunteers who contributed and engaged during this sprint!
 ## Project Theme & Goals
 * **Theme:** Market Planning and Roadmap (Re)Development
 * **Primary Goal:** Step back from creating solutions and squashing bugs and evaluate where Summit Events is in the marketplace, develop a Marketing Plan and outline a roadmap for transprancy on where Summit Events is today and where it's going.
-* **Tasks:** Complete the Marketing Plan development "worksheet"; highlight the foundational features and what's missing from SEA; Review and update the V2MOM
+* **Tasks:** 
+  * Complete the Marketing Plan development "worksheet"
+  * Highlight the foundational features and what's missing from SEA
+  * Review and update the V2MOM
 
 ## Project Team Accomplishments
-* ![What is Summit Events](/docs/getting-involved/sprints/images/What%20is%20Summit%20Events.png)
+* Outlined the [Features and Missing Items](https://docs.google.com/document/d/15aNoF0RdD4b2yPovkC6z4ChxbV4tthYLYgsxKTdqWno/edit?usp=sharing), prioritizing what type of functionality is needed in Summit Events to enhance user adoption and attract a greater audience.
+* Submitted the form to be added to the Trailblazer Communities [Event Management Comparison](https://docs.google.com/spreadsheets/d/1fqK2XHr6tdF_vZWI5BFmRvZDWucMekoBVqJKowV6RCA/edit#gid=0) spreadsheet.
+* Started drafting the update of the [Summit Events V2MOM](https://docs.google.com/document/d/135wpVAaDBLrilpF1CI6V0Y4Nu0GoefHatxMiwaSe1ek/edit?usp=sharing)
+* Got feedback and insight from new community members who were unfamiliar with the tool that support the feature list creation, what's missing and the marketing plan development. 
+* Completed the Marketing Plan Development exercise as seen below:
+![What is Summit Events?](/docs/getting-involved/sprints/images/What%20is%20Summit%20Events.png)
+![Who is the audience?](/docs/getting-involved/sprints/images/Identify%20the%20SEA%20Audience.png)
+![Opportunities and Outcomes](/docs/getting-involved/sprints/images/Opportunities%20and%20Outcomes.png)
 
 
-## Future Contributions (AKA what was unable to be finish at the Mini-Sprint)
-* Complete the *Started* and *In Progress* Issues
-* Add images to pages that are all text (as appropriate)
-* Continue to close open issues and complete the Summit Events current state documentation
+
+## Future Contributions (AKA what was unable to be finish at the Sprint)
+* Take action on the opportunities outlines in the marketing plan development exercise
+* Finish drafting the revised V2MOM and have the core team review and approve.
+* Create a readable roadmap that outlines the current plan for future development and order of release development.
 
 
 ## Team Needs:
