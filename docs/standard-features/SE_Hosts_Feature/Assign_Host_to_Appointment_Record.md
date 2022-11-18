@@ -10,16 +10,18 @@ Event Hosts work in conjunction with registrant's appointment records to allow e
 **Step 1:** Locate the Summit Event Appointments in the individual's registration.  This could be located at the bottom of the page, on the registrations related tab or on the side of the registration record depending upon your page layout.  Choose the appointment to which you want to relate the host by clicking the value/hyperlink of the Event Appointments Name field. You will be directed to the Summit Event Appointment page.  
 
 ![Registrant Appointments Related List Image](../images/EventHost_SelectRegistrantsAppointment.PNG)
-
+<br>
+<br>
  
 **Step 2:** Edit the registrant's Summit Event Appointment page and use the lookup to select the desired Host.  <br>
 ![Registrant Appointments Related List Image](../images/EventHost-HostOnLookupScreen.PNG)
 <br>
-**Save** the record.
+**Step3:** Save the record.
+<br>
 <br>
 <br>
 
-##TIPS AND TROUBLESHOOTING##
+## TIPS AND TROUBLESHOOTING ##
 The host lookup feild, returns hosts regardless of instance.  To make it easier to find the correct host, [create a calculated field on the Host object](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/standard-features/SE_Hosts_Feature/Host_object_Calc_Field.md) and add that to the Search Layout options as the first field.
 
 
