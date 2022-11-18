@@ -28,9 +28,10 @@ Click on the drop-down to the left of the Default Layout and choose Edit.
 
 ![Event Host Search Layout Page](../images/EventHost-SearchLayoutP1.PNG)
 
-Move your new formula field from the Available Fields side to the Selected Field side.  Use the up and down arrows to make sure it is the first field listed.  
-Save the layout.<br>
+Move your new formula field from the Available Fields side to the Selected Field side.  Use the up and down arrows to make sure it is the first field listed.  <br>
 ![Event Host Search Layout Page2](../images/EventHost-SearchLayoutP2.PNG)
+Save the layout.<br>
+<br>
 
 When searching for the Host on the registrant's appointment record, you will now see the additional field.
 ![Event Host Formula Lookup](../images/EventHost-FormulaOnLookupScreen.PNG)
