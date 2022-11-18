@@ -2,12 +2,18 @@
 title: Creating an Event Host
 parent: Standard Features
 ---
+The event host feature, is a backend feature which allows the event manager to create event hosts that can later be assigned by the event manager to specific registrants appointments.  Some use cases for event hosts would be assigning a host to:
+a group of registrants for a campus tour
+a group of reistrants to a classroom visit
+
+![Event Host Process Flow Image](../images/EventHostProcessFlow.PNG)
 
 
 # Create an Event Host
 Event hosts allows the registrant to be paired with a host during the appointment selection process.  Hosts are things like visiting with a coach or admission counselor or even a housing host for an overnigh visit.  You can create an event host for a specific event instance and it can be applied to appointments on an event registration record.
 
 1.	To create an event host from an event instance, hover the cursor to the “Summit Event Hosts” on the Summit Event Instance page. A lookup list of all related event hosts will show up. Click the New Summit Event Host to create a new event host.  
+![Create Event Host_New_Button](../images/SE_Events_CreateHostNewButton.PNG)
  
 2.	Then you will need to choose an event host record type and click Continue.
 The record type has the following picklist values:
