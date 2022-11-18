@@ -33,7 +33,7 @@ Our setup is complete!  Now the Event Manager can assign host's to the registran
 
 
 
-## Summit Event Host Detail (Information)
+## Summit Event Host Detail (Field Informaton)
 **Summit Event Host Name**: An identification number of each event host. It is a standard Salesforce field and displays in a format of HOST-{0000}. The system will automatically generate and assign a number to this field once an event host is created. No need for any user input and this field cannot be edited.
 
 **Summit Event Instance**: The event instance that the event host belongs to. It is a lookup field that relates to the Summit Event Instance object. As mentioned above, the value must be matched with a record in the Summit Event Instance object. When you hover the cursor over to the Summit Event Instance field on the View page, a mini page of the event instance will show up.
@@ -76,30 +76,4 @@ _Note: For overnight hosting, the last and first name is usually the name of the
 
 **Remaining**: The remaining amount of spaces left in the max capacity of registrants a host can take. Remaining=Max Available-Assigned. 
 
-4.	Click Save or Save & New to save the record
 
-_Note: How to assign an event host?_
-
-_Please note the end-user/registrant does not have any permission to assign an event host. So you won’t see any impacts from the event host on the event registration page that the end users/registrants can view. The event host is assigned from the admin side(salesforce users). An event host can only be assigned to a specific appointment of a registration for an event instance. Before assigning an event host to a registered appointment, please make sure you have set up an event host for the event instance, a registrant has registered for that event instance and the registration includes an appointment._
-
-Step 1: 
-Go to the Summit Event Appointments in a registration. Click the Summit Event Appointments button at the top to go to the list at the bottom of the registration page. Or you can hover the cursor to the Summit Event Appointments button to open up a lookup list. Choose an appointment in the list by clicking the value/hyperlink of the Event Appointments Name field. You will be directed to the Summit Event Appointment page.
- 
-Step 2: 
-When you are in the Summit  Event Appointment page, click the Assign/Unassign Host button. 
- 
-A window will pop up and let you choose a Host Type.
- 
-Step 3:
-Select the Host type that you have set up for the event host record of the event host of the event instance that the registration and appointment belong to. If the value of the Remaining field of the event host is larger than 0, the Host List should show records of the available hostings for you to choose. Choose a hosting and click the Assign… button to assign the event host to the appointment. 
-
-_Note: If the value of the Remaining field is 0 or below, there will be no records showed up under the Host List._
- 
-Step 4:
-Once you click the Assign… button, the window will exit and you can find that the fields of Host Name, Host Location, and Event Host in the Summit Event Appointments page are automatically filled in with the event hosting info. That means you have successfully assigned an event host to the appointment. The number in the Assigned field and Remaining field of the event host will be updated accordingly as well. 
-
-If the Appointment Status is changed to Confirmed, you will find the hosting information in the Generated Itineraries section on the event registration page.
-
-_Note: When the Appointment Status is changed to Confirmed, an email of the appointment and hosting information will be sent to the registrant._
- 
-_Note: Please note that the Location value in the Generated Itineraraies is not the value of the Host Location, it actually pulls the value from the Building field in the related appointment. Since it is the location of the appointment, not of the hosting._
