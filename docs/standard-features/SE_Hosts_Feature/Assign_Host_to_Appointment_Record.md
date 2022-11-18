@@ -13,7 +13,7 @@ Event Hosts work in conjunction with registrant's appointment records to allow e
 
  
 **Step 2:** Edit the registrant's Summit Event Appointment page and use the lookup to select the desired Host.  <br>
-![Registrant Appointments Related List Image](../images/EventHost-FormulaOnLookupScreen.PNG)
+![Registrant Appointments Related List Image](../images/EventHost-HostOnLookupScreen.PNG)
 <br>
 **Save** the record.
  
