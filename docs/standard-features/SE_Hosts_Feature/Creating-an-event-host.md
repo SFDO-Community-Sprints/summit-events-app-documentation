@@ -2,32 +2,36 @@
 title: Creating an Event Host
 parent: Standard Features
 ---
-The event host feature, is a backend feature which allows the event manager to create event hosts that can later be assigned by the event manager to specific registrants appointments.  Some use cases for event hosts would be assigning a host to:
-a group of registrants for a campus tour
-a group of reistrants to a classroom visit
+The event host feature, is a backend feature which allows the event manager to create event hosts that can later be assigned by the event manager to specific registrants appointments.  Hosts are things like visiting with a coach or admission counselor or even a housing host for an overnigh visit.  You can create an event host for a specific event instance and it can be applied to appointments on an event registration record.
 
 ![Event Host Process Flow Image](../images/EventHostProcessFlow.PNG)
 
 
 # Create an Event Host
-Event hosts allows the registrant to be paired with a host during the appointment selection process.  Hosts are things like visiting with a coach or admission counselor or even a housing host for an overnigh visit.  You can create an event host for a specific event instance and it can be applied to appointments on an event registration record.
 
 1.	To create an event host from an event instance, hover the cursor to the “Summit Event Hosts” on the Summit Event Instance page. A lookup list of all related event hosts will show up. Click the New Summit Event Host to create a new event host.  
 ![Create Event Host_New_Button](../images/SE_Events_CreateHostNewButton.PNG)
- 
-2.	Then you will need to choose an event host record type and click Continue.
-The record type has the following picklist values:
-* Class: Visit a class
-* Coach: Visit with a coach
-* Counselor: Admission Counselor Visit
-* Faculty: Visit with a faculty member
-* Housing: A housing host (dorm room overnight)
 
-_Note: Housing is the most common use of the record type._
- 
-_Note: Since the event host is created from an event instance, the event instance’s identification number(Event Instance field of the Summit Event Instance object) is automatically filled into the field of Summit Event Instance in the event host edit page. If you do not create an event host from an event instance, but by going to the Summit Event Hosts object and clicking New, you will need to manually put in the event instance number that matches an existing event instance record. We recommend creating an event host from an event instance._
+2. Complete the fields related to your new Host and save the record.  In our example, Jasmine is going to do the morning campus tour during our event.  At minimum, you'll want to enter the hosts name information.  If they are a contact in Salesforce, you can also link to their contact record.  We've specified the 25 as the Max Available as each campus tour guide should have no more than 25 people assigned to their group.
 
-3.	You will need to enter information to the fields in the Summit Event Host Detail section. The fields are shown and described below.
+INSERT PIC
+
+3. Next we'll create an Appointment Type record for our Campus tour that our registrant can select during the registration process.  Starting from the Event Instance, well select the New button from the Summit Events Appointment Type related list.  Depending upon how your page layout is setup, this may be a button directly on the related list or you may need to click on the drop-down arrow and choose New as shown in this example.
+
+INSERT NEW APPT REC PIC
+
+
+INSERT APP PIC P1
+
+Since our Use Case is a campus tour, we can select Campus Tour from the predefined options Appointment Category drop-down.  If none of the options here meet your needs, you can use the custom picklist feature to create your own.  We'll want to make sure that the proper Event and Event Instance are chosen and complete any other desired information.  Once complete save the new Appointment Type record.
+
+Our setup is complete!  Now the Event Manager can assign host's to the registrants Appointment records.   See Assigning Host's to Registrant Appointmenst for additional details.
+
+
+
+
+
+
 
 ## Summit Event Host Detail (Information)
 **Summit Event Host Name**: An identification number of each event host. It is a standard Salesforce field and displays in a format of HOST-{0000}. The system will automatically generate and assign a number to this field once an event host is created. No need for any user input and this field cannot be edited.
