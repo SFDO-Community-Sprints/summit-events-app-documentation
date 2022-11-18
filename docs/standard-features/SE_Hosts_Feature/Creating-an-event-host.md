@@ -20,7 +20,7 @@ The event host feature, is a backend feature which allows the event manager to c
 
 ![Create Event Appointment Type Record](../images/EventHost_CreateAppointmentRecord.PNG)
 
-![Create Event Appointment Type Record_Screen](../images/EventHost_CreateAppointmentRecord.PNG)
+![Create Event Appointment Type Record_Screen](../images/EventHost_CreateAppointmentRecordP1.PNG)
 
 
 Since our Use Case is a campus tour, we can select Campus Tour from the predefined options Appointment Category drop-down.  If none of the options here meet your needs, you can use the custom picklist feature to create your own.  We'll want to make sure that the proper Event and Event Instance are chosen and complete any other desired information.  Once complete save the new Appointment Type record.
