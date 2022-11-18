@@ -3,12 +3,15 @@ title: Assigning a Hosts to Registration Appointments
 parent: Standard Features
 ---
 
+Event Hosts work in conjunction with registrant's appointment records to allow event managers to assign host to appointments.  This can be helpful to understand how many people are assgined to each campus tour guide or how many students may be visiting with a particular coach.  To [Create an Event Host](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/standard-features/SE_Hosts_Feature/Creating-an-event-host.md) understand how to setup host information.
+
 # Assign Host to Registration Appointment Record
 
 Step 1: 
-Go to the Summit Event Appointments in a registration. Click the Summit Event Appointments button at the top to go to the list at the bottom of the registration page. Or you can hover the cursor to the Summit Event Appointments button to open up a lookup list. Choose an appointment in the list by clicking the value/hyperlink of the Event Appointments Name field. You will be directed to the Summit Event Appointment page.
+Locate the Summit Event Appointments in the individual's registration.  This could be located at the bottom of the page, on the registrations related tab or on the side of the registration record depending upon your page layout.  Choose the appointment to which you want to relate the host by clicking the value/hyperlink of the Event Appointments Name field. You will be directed to the Summit Event Appointment page.  Edit the appointment record.
 
-INSERT EventHost_SelectRegistrantsAppointment.PNG
+![Registrant Appointments Related List Image](../images/EventHost_SelectRegistrantsAppointment.PNG)
+
  
 Step 2: 
 When you are in the Summit  Event Appointment page, click the Assign/Unassign Host button. 
