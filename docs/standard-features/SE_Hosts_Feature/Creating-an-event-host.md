@@ -20,17 +20,17 @@ The event host feature, is a backend feature which allows the event manager to c
 
 ![Create Event Appointment Type Record](../images/EventHost_CreateAppointmentRecord.PNG)
 
-Since our Use Case is a campus tour, we can select Campus Tour from the predefined options Appointment Category drop-down.  If none of the options here meet your needs, you can use the custom picklist feature to create your own.  We'll want to make sure that the proper Event and Event Instance are chosen and complete any other desired information.  Once complete save the new Appointment Type record.
+4. Complete the desired fields.  Since our Use Case is a campus tour, we can select Campus Tour from the predefined options Appointment Category drop-down.  If none of the options here meet your needs, you can use the custom picklist feature to create your own.  We'll want to make sure that the proper Event and Event Instance are chosen and complete any other desired information.  Once complete save the new Appointment Type record.
 
 ![Create Event Appointment Type Record_Screen](../images/EventHost_CreateAppointmentRecordP1.PNG)
 
 
 Our setup is complete!  Now the Event Manager can assign host's to the registrants Appointment records.   See Assigning Host's to Registrant Appointmenst for additional details.
 
-
-
-
-
+</br>
+</br>
+</br>
+</br>
 
 
 ## Summit Event Host Detail (Field Informaton)
