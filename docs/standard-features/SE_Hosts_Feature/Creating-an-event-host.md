@@ -25,7 +25,7 @@ The event host feature, is a backend feature which allows the event manager to c
 ![Create Event Appointment Type Record_Screen](../images/EventHost_CreateAppointmentRecordP1.PNG)
 
 
-**Our setup is complete!**  Now the Event Manager can assign host's to the registrants Appointment records.   See Assigning Host's to Registrant Appointmenst for additional details.
+**Our setup is complete!**  Now the Event Manager can assign host's to the registrants Appointment records.   See [Assigning Host's to Registrant Appointments](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/SE_Hosts_Feature/Creating-an-event-host/) for additional details.
 
 </br>
 </br>
