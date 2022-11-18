@@ -1,3 +1,8 @@
+---
+title: Creating an Event Host
+parent: Standard Features
+---
+
 # Assign Host to Registration Appointment Record
 
 Step 1: 
