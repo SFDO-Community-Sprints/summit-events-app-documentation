@@ -1,4 +1,4 @@
-#Create Calculated Field on Host Object#
+# Create Calculated Field on Host Object #
 
 From Setup, open the Object Manager and search for the Summit Events Host object.
 In the left sidebar, click Fields & Relationships.
@@ -33,7 +33,7 @@ Save the layout.<br>
 ![Event Host Search Layout Page2](../images/EventHost-SearchLayoutP2.PNG)
 
 When searching for the Host on the registrant's appointment record, you will now see the additional field.
-![Event Host Formula Lookup](../images/EentHost-FormulaOnLookupScreen.PNG)
+![Event Host Formula Lookup](../images/EventHost-FormulaOnLookupScreen.PNG)
 
 
 
