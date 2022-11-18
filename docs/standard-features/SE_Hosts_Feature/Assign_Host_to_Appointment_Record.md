@@ -1,9 +1,9 @@
-_Note: How to assign an event host?_
-
-_Please note the end-user/registrant does not have any permission to assign an event host. So you won’t see any impacts from the event host on the event registration page that the end users/registrants can view. The event host is assigned from the admin side(salesforce users). An event host can only be assigned to a specific appointment of a registration for an event instance. Before assigning an event host to a registered appointment, please make sure you have set up an event host for the event instance, a registrant has registered for that event instance and the registration includes an appointment._
+# Assign Host to Registration Appointment Record
 
 Step 1: 
 Go to the Summit Event Appointments in a registration. Click the Summit Event Appointments button at the top to go to the list at the bottom of the registration page. Or you can hover the cursor to the Summit Event Appointments button to open up a lookup list. Choose an appointment in the list by clicking the value/hyperlink of the Event Appointments Name field. You will be directed to the Summit Event Appointment page.
+
+INSERT EventHost_SelectRegistrantsAppointment.PNG
  
 Step 2: 
 When you are in the Summit  Event Appointment page, click the Assign/Unassign Host button. 
