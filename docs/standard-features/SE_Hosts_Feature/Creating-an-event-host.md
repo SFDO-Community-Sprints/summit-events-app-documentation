@@ -14,14 +14,14 @@ The event host feature, is a backend feature which allows the event manager to c
 
 2. Complete the fields related to your new Host and save the record.  In our example, Jasmine is going to do the morning campus tour during our event.  At minimum, you'll want to enter the hosts name information.  If they are a contact in Salesforce, you can also link to their contact record.  We've specified the 25 as the Max Available as each campus tour guide should have no more than 25 people assigned to their group.
 
-INSERT PIC
+![Create Event Host_Record](../images/EventHost_CreateHostRecord.PNG)
 
 3. Next we'll create an Appointment Type record for our Campus tour that our registrant can select during the registration process.  Starting from the Event Instance, well select the New button from the Summit Events Appointment Type related list.  Depending upon how your page layout is setup, this may be a button directly on the related list or you may need to click on the drop-down arrow and choose New as shown in this example.
 
-INSERT NEW APPT REC PIC
+![Create Event Appointment Type Record](../images/EventHost_CreateAppointmentRecord.PNG)
 
+![Create Event Appointment Type Record_Screen](../images/EventHost_CreateAppointmentRecord.PNG)
 
-INSERT APP PIC P1
 
 Since our Use Case is a campus tour, we can select Campus Tour from the predefined options Appointment Category drop-down.  If none of the options here meet your needs, you can use the custom picklist feature to create your own.  We'll want to make sure that the proper Event and Event Instance are chosen and complete any other desired information.  Once complete save the new Appointment Type record.
 
