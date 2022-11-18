@@ -15,22 +15,25 @@ Contact__r.LastName + ' '+ Contact__r.FirstName + '-'+  Event_Instance__r.Event_
 TEXT(DAY(Event_Instance__r.Instance_Start_Date__c))+'/'+
 TEXT(YEAR(Event_Instance__r.Instance_Start_Date__c))
 
+<br>
+![Formula Field Creation](../images/EventHost-FormulaFieldCreation.PNG)
 
-
-Add image EventHost-FormulaFieldCreation.PNG
-
+<br>
 Once you have your formula field created, you can add it as the first item in your Search Layouts screen.
 
 From Setup, open the Object Manager and search for the Summit Events Host object.
 In the left sidebar, click on Search Layouts. 
 Click on the drop-down to the left of the Default Layout and choose Edit.
-INSERT PIC EventHost-SearchLayoutP1.PNG
+<br>
+
+![Event Host Search Layout Page](../images/EventHost-SearchLayoutP1.PNG)
+
 Move your new formula field from the Available Fields side to the Selected Field side.  Use the up and down arrows to make sure it is the first field listed.  
-Save the layout.
-INSERT PIC EventHost-SearchLayoutP2.PNG
+Save the layout.<br>
+![Event Host Search Layout Page2](../images/EventHost-SearchLayoutP2.PNG)
 
 When searching for the Host on the registrant's appointment record, you will now see the additional field.
-INSERT PIC EventHost-FormulaOnLookupScreen.PNG
+![Event Host Formula Lookup](../images/EentHost-FormulaOnLookupScreen.PNG)
 
 
 
