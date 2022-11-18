@@ -17,7 +17,7 @@ Event Hosts work in conjunction with registrant's appointment records to allow e
 
 
 **TIPS AND TROUBLESHOOTING**
-The host lookup feild, returns hosts regardless of instance.  To make it easier to find the correct host, follow these steps to create a calculated field on the Host object and add that to the Search Layout options as the first field.
+The host lookup feild, returns hosts regardless of instance.  To make it easier to find the correct host, [create a calculated field on the Host object](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/standard-features/SE_Hosts_Feature/Host_object_Calc_Field.md) and add that to the Search Layout options as the first field.
 
 
 Select the Host type that you have set up for the event host record of the event host of the event instance that the registration and appointment belong to. If the value of the Remaining field of the event host is larger than 0, the Host List should show records of the available hostings for you to choose. Choose a hosting and click the Assign… button to assign the event host to the appointment. 
