@@ -1,5 +1,5 @@
 ---
-title: Creating an Event Host
+title: Assigning a Hosts to Registration Appointments
 parent: Standard Features
 ---
 
