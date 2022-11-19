@@ -1,3 +1,8 @@
+---
+title: Create Calculated Field on Host Object
+parent: Advanced Features
+---
+
 # Create Calculated Field on Host Object #
 
 From Setup, open the Object Manager and search for the Summit Events Host object.
