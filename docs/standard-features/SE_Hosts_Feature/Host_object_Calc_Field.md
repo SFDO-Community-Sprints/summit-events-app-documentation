@@ -27,9 +27,8 @@ Once you have your formula field created, you can add it as the first item in yo
 2. In the left sidebar, click on Search Layouts. 
 3. Click on the drop-down to the left of the Default Layout and choose Edit.
 4. Move your new formula field from the Available Fields side to the Selected Field side.  Use the up and down arrows to make sure it is the first field listed. 
-5. Save the layout.
- <br>
-![Event Host Search Layout Page2](../images/EventHost-SearchLayoutP2.PNG)
+5.  ![Event Host Search Layout Page2](../images/EventHost-SearchLayoutP2.PNG)
+6. Save the layout.
 <br>
 <br>
 
