@@ -33,4 +33,5 @@ See [Create and Event Host](https://github.com/SFDO-Community-Sprints/summit-eve
 Select the Host type that you have set up for the event host record of the event host of the event instance that the registration and appointment belong to. If the value of the Remaining field of the event host is larger than 0, the Host List should show records of the available hostings for you to choose. Choose a hosting and click the Assign… button to assign the event host to the appointment. 
 
 _Note: If the value of the Remaining field is 0 or below, there will be no records showed up under the Host List._
+
  
