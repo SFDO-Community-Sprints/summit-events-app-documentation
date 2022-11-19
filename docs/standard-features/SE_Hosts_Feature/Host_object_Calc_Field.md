@@ -26,13 +26,12 @@ Once you have your formula field created, you can add it as the first item in yo
 1. From Setup, open the Object Manager and search for the Summit Events Host object.
 2. In the left sidebar, click on Search Layouts. 
 3. Click on the drop-down to the left of the Default Layout and choose Edit.
-4. Move your new formula field from the Available Fields side to the Selected Field side.  Use the up and down arrows to make sure it is the first field listed. 
-5.  ![Event Host Search Layout Page2](../images/EventHost-SearchLayoutP2.PNG)
-6. Save the layout.
-<br>
-<br>
+4. Move your new formula field from the Available Fields side to the Selected Field side.  Use the up and down arrows to make sure it is the first field listed.  When finished, save the layout.
+ ![Event Host Search Layout Page2](../images/EventHost-SearchLayoutP2.PNG)
+ 
 
 When searching for the Host on the registrant's appointment record, you will now see the additional field.
+
 ![Event Host Formula Lookup](../images/EventHost-FormulaOnLookupScreen.PNG)
 
 
