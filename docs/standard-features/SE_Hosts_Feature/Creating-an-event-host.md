@@ -2,24 +2,24 @@
 title: Creating an Event Host
 parent: Standard Features
 ---
-The event host feature, is a backend feature which allows the event manager to create event hosts that can later be assigned by the event manager to specific registrants appointments.  Hosts are used for things like visiting with a coach or admission counselor or even a housing host for an overnigh visit.  You can create an event host for a specific event instance and it can be applied to appointments on an event registration record.
+The event host feature, is a backend feature which allows the event manager to create event hosts that can later be assigned by the event manager to specific registrants appointments.  Hosts are used for things like visiting with a coach or admission counselor or even a housing host for an overnigh visit.  You can create an event host for a specific event instance and it can be applied to appointments on an event registration record.  For our Use Case, students are going to sign up for a campus tour.  They can select a morning or afternoon tour.  After they register, the event manager will assign the appropriate event host to their registration appointment record.
 
 ![Event Host Process Flow Image](../images/EventHostProcessFlow.PNG)
 
 
 # Create an Event Host
-Step 1: To create an event host from an event instance, hover the cursor to the “Summit Event Hosts” on the Summit Event Instance page. A lookup list of all related event hosts will show up. Click the New Summit Event Host to create a new event host.  
+1. To create an event host from an event instance, begin at the Summit Event Hosts related list on the Summit Event Instance page and use the New button to create a New Event Host.  Depending upon your page layout, this could be on the right-hand side of the page, at the bottom of the page or in the Related tab on the page. In our example, the Summit Events Hosts related list is on the right side of the page so we'll click on the drop-down from the list and choose New to create a new event host.  
 ![Create Event Host_New_Button](../images/SE_Events_CreateHostNewButton.PNG)
 
-Step 2:  Complete the fields related to your new Host and save the record.  In our example, Jasmine is going to do the morning campus tour during our event.  At minimum, you'll want to enter the hosts name information.  If they are a contact in Salesforce, you can also link to their contact record.  We've specified the 25 as the Max Available as each campus tour guide should have no more than 25 people assigned to their group.
-
+2. The next step is to complete the fields related to your new Host and save the record. In our example, Jasmine is going to do the morning campus tour during our event so we've entered Jasmine's name in the hosts name fields.  If our host is a contact in Salesforce, we could also link to their contact record.  We've specified 25 as the Max Available as each campus tour guide should have no more than 25 people assigned to their group. 
 ![Create Event Host_Record](../images/EventHost_CreateHostRecord.PNG)
 
-Step 3: Next we'll create an Appointment Type record for our Campus tour that our registrant can select during the registration process.  Starting from the Event Instance, well select the New button from the Summit Events Appointment Type related list.  Depending upon how your page layout is setup, this may be a button directly on the related list or you may need to click on the drop-down arrow and choose New as shown in this example.
+3. Next we'll create an Appointment Type record for our Campus Tour that our registrant can select during the registration process.  
+Starting from the Event Instance, well select the New button from the Summit Events Appointment Type related list.  Depending upon how your page layout is setup, this may be a button directly on the related list or you may need to click on the drop-down arrow and choose New as shown in this example.
 
 ![Create Event Appointment Type Record](../images/EventHost_CreateAppointmentRecord.PNG)
 
-Step 4: Complete the desired fields.  Since our Use Case is a campus tour, we can select Campus Tour from the predefined options Appointment Category drop-down.  If none of the options here meet your needs, you can use the custom picklist feature to create your own.  We'll want to make sure that the proper Event and Event Instance are chosen and complete any other desired information.  Once complete save the new Appointment Type record.
+4. Enter the details related to the appointment.  Since our Use Case is a campus tour, we can select Campus Tour from the predefined options Appointment Category drop-down.  If none of the options here meet your needs, you can use the custom picklist feature to create your own.  We'll want to make sure that the proper Event and Event Instance are chosen and complete any other desired information.  Once complete Save the new Appointment Type record.
 
 ![Create Event Appointment Type Record_Screen](../images/EventHost_CreateAppointmentRecordP1.PNG)
 
