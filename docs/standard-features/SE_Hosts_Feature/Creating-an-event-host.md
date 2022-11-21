@@ -12,14 +12,13 @@ The event host feature, is a backend feature which allows the event manager to c
 2. Complete the fields related to the new Host and save the record. In our example, Jasmine is going to do the morning campus tour during our event so we've entered Jasmine's name in the hosts name fields.  If our host is a contact in Salesforce, we could also link to their contact record.  We've specified 25 as the Max Available as each campus tour guide should have no more than 25 people assigned to their group. 
 ![Create Event Host_Record](../images/EventHost_CreateHostRecord.PNG)
 
-3. Next create an Appointment Type record.   In our example we'll create an Appointment Type for our Campus Tour that The registrant selects during the registration process.   Starting from the Event Instance, select the New button from the Summit Events Appointment Type related list.  Depending upon how your page layout is setup, this may be a button directly on the related list or you may need to click on the drop-down arrow and choose New.
+3. Next create an Appointment Type record.   In our example we'll create an Appointment Type for our Campus Tour that The registrant selects during the registration process.   Starting from the Event Instance, select the New button from the Summit Events Appointment Type related list.  Depending upon how your page layout is setup, this may be a button directly on the related list or you may need to click on the drop-down arrow and choose New.  Click [here](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/appointments-options/appointments-options/) for more information on Appointment Types.  
 4. Enter the details related to the appointment.  We selected Campus Tour from the predefined options Appointment Category drop-down but we could also use the custom picklist feature to create any type of appointment type needed.  We'll want to make sure that the proper Event and Event Instance are chosen and complete any other desired information.  Click Save to save the new Appointment Type record.  
 5. **Our setup is complete!**  Now the Event Manager can assign host's to the registrants Appointment records. See [Assigning Host's to Registrant Appointments](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/SE_Hosts_Feature/Assign_Host_to_Appointment_Record/) for additional details.
 
 ![Create Event Appointment Type Record_Screen](../images/EventHost_CreateAppointmentRecordP1.PNG)
 <br>
 <br>
-Click [here](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/appointments-options/appointments-options/) for more information on Appointment Types.  
 <br>
 <br>
 
