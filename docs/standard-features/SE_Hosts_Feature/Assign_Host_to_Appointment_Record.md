@@ -13,10 +13,10 @@ Event Hosts work in conjunction with registrant's appointment records to allow e
 ![Registrant Appointments Related List Image](../images/EventHost_SelectRegistrantsAppointment.PNG)
 3. Edit the registrant's Summit Event Appointment page and use the lookup to select the desired Host.  <br>
 *Tip: The host lookup feild, returns hosts regardless of instance.  To make it easier to find the correct host, you can [create a calculated field on the Host object](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/standard-features/SE_Hosts_Feature/Host_object_Calc_Field.md) to display more information in the lookup field.*
+4. Save the record.
 
 ![Registrant Appointments Related List Image](../images/EventHost-HostOnLookupScreen.PNG)
-4. Save the record.
- 
+
 <br>
 See [Create an Event Host](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/standard-features/SE_Hosts_Feature/Creating-an-event-host.md) for information on setting up an Event Host.
 <br>
