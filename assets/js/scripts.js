@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function (event) {
+    //get last modified
+    setModifiedDate();
+
     //create the modal
     //Add modal to the document
     const imageModal = document.createElement('div');
@@ -40,7 +43,7 @@ function setIframeVideo() {
     const contentIFrames = document.querySelectorAll('#main-content iframe');
     let mainContentWidth = getContentWidth(document.getElementById('main-content'));
     contentIFrames.forEach(function (frame) {
-        if (frame.src.includes('youtube.com')) {
+        if (frame.src.includes('youtube.com') || frame.src.includes('vimeo.com')) {
             frame.width = mainContentWidth + 'px';
             frame.height = mainContentWidth * 9 / 16 + 'px';
         }
@@ -52,4 +55,19 @@ window.onresize = setIframeVideo;
 function getContentWidth(element) {
     let styles = getComputedStyle(element)
     return element.clientWidth - parseFloat(styles.paddingLeft) - parseFloat(styles.paddingRight)
+}
+
+function setModifiedDate() {
+    if (document.getElementById('last-modified')) {
+        fetch("https://api.github.com/repos/" + ownerName + "/" + repoName + "/commits?path=" + pagePath)
+            .then((response) => {
+                return response.json();
+            })
+            .then((commits) => {
+                console.log(JSON.stringify(commits[0]));
+                let modified = commits[0]['commit']['committer']['date'].slice(0, 10);
+                let author = commits[0]['commit']['author']['name'];
+                document.getElementById('last-modified').textContent = "Last Modified: " + modified + ' by ' + author;
+            });
+    }
 }

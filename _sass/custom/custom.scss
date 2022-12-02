@@ -2,17 +2,112 @@
   .site-nav, .site-header, .site-footer {
     width: 260px;
   }
+  .side-bar {
+    width: 26%;
+  }
+  .main {
+    margin-left: 26%;
+    max-width: 60%;
+  }
+  .site-header {
+    border-bottom: none;
+  }
+}
+
+
+@media (min-width: 50rem) {
+  .side-bar {
+    width: 30%;
+  }
+  .main {
+    margin-left: 30%;
+  }
+  .site-header {
+    border-bottom: none;
+  }
+  .nav-list {
+    margin-left: 10px;
+  }
+}
+
+body, html {
+  font-size: 1.1rem;
 }
 
 a {
-  color: #abcfff;
+  color: #032D60;
 }
 
 .site-header {
-  min-height: 160px;
-  max-height: 160px;
-  background-color: #27262B;
+  min-height: 200px;
+  max-height: 260px;
+  height: 260px;
+  border-bottom: none;
 }
+
+.site-logo {
+  background-position: center;
+}
+
+.site-nav {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.site-title {
+  padding: 0;
+}
+
+.main-content a {
+  white-space: normal;
+}
+
+.main-content img {
+  max-width: 100%;
+}
+
+.side-bar {
+  background-color: #D7ECF3;
+}
+
+.nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active {
+  background-image: linear-gradient(-90deg, #fff 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%);
+}
+
+.nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active, .nav-list .nav-list-item .nav-list-link {
+  padding-left: 0;
+}
+
+#globalFooter {
+  padding: 10px;
+  background-color: #D7ECF3;
+  border-radius: 14px;
+}
+
+#globalFooter img {
+  float: left;
+  margin: 5px 20px 5px 5px;
+  max-width: 200px;
+  width: 30%;
+}
+
+footer .utterances {
+  max-width: 100%;
+}
+
+footer.site-footer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*
 
 .search-input {
   color: #fff;
@@ -31,10 +126,10 @@ a {
 }
 
 .main-content-wrap, .main-header {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#261f4f+0,3e3d44+100 */
-  background: #201c38; /* Old browsers */
-  background: -moz-linear-gradient(left, #201c38 0%, #222128 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #201c38 0%, #222128 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #201c38 0%, #222128 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#201c38', endColorstr='#222128', GradientType=1); /* IE6-9 */
-}
+  !* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#261f4f+0,3e3d44+100 *!
+  background: #201c38; !* Old browsers *!
+  background: -moz-linear-gradient(left, #201c38 0%, #222128 100%); !* FF3.6-15 *!
+  background: -webkit-linear-gradient(left, #201c38 0%, #222128 100%); !* Chrome10-25,Safari5.1-6 *!
+  background: linear-gradient(to right, #201c38 0%, #222128 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#201c38', endColorstr='#222128', GradientType=1); !* IE6-9 *!
+}*/
