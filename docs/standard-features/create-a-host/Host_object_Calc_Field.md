@@ -1,7 +1,7 @@
 ---
 title: Calculated Fields on Host Object
 parent: Creating a Host
-grandparent: Standard Features
+grand_parent: Standard Features
 --- 
 
 # Create Calculated Field on Host Object #
