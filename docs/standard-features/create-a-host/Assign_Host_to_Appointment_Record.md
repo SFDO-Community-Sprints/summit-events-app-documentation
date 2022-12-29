@@ -1,12 +1,15 @@
 ---
-title: Assigning a Host to a Registration Appointment
-parent: Standard Features
----
+title: Assinging Hosts
+parent: Creating a Host
+grandparent: Standard Features
+--- 
+
+# Assigning Hosts
 
 Event Hosts work in conjunction with registrant's appointment records to allow event managers to assign hosts to appointments.  This can be help the event manager understand how many people are assgined to each campus tour guide or how many students may be visiting with a particular coach.  
 
 
-# Assigning a Host to a Registrant's Appointment Record
+## Assigning a Host to a Registrant's Appointment Record
 
 1. Locate the Summit Event Appointments related list in the individual's registration.  This could be located at the bottom of the page, on the registrations related tab or on the side of the registration record depending upon your page layout.  
 2. Choose the appointment to which you want to relate the host by clicking the value/hyperlink of the Event Appointments Name field. You will be directed to the Summit Event Appointment page.   
