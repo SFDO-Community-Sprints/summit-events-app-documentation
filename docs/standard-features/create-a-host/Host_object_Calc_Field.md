@@ -1,7 +1,8 @@
 ---
-title: Create Calculated Field on Host Object
-parent: Advanced Features
----
+title: Calculated Fields on Host Object
+parent: Creating a Host
+grandparent: Standard Features
+--- 
 
 # Create Calculated Field on Host Object #
 
