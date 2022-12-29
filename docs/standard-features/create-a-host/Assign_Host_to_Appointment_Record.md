@@ -25,7 +25,7 @@ Event Hosts work in conjunction with registrant's appointment records to allow e
 ![Registrant Appointments Related List Image](../images/EventHost-HostOnLookupScreen.PNG)
 
 <br>
-See [Create an Event Host](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/standard-features/SE_Hosts_Feature/Creating-an-event-host.md) for information on setting up an Event Host.
+See [Creating a Host](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-a-host/creating-a-host/) for information on setting up an Event Host.
 <br>
 <br>
 
