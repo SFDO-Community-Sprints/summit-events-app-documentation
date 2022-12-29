@@ -1,7 +1,7 @@
 ---
 title: Assinging Hosts
 parent: Creating a Host
-grandparent: Standard Features
+grand_parent: Standard Features
 --- 
 
 # Assigning Hosts
