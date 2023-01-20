@@ -11,10 +11,10 @@ Additional Configuration and Options offers additional functionality and expande
 
 ### Configuration Option Fields
 
-| Option    | Purpose/Behavior |
-| :---      | :---         |
-| Close Event Days Before | Number - the amount of days before the event that you want the registration to close (e.g. accept no new registrations).  If this field is left blank, the registration will automatically close (need to confirm behavior) the event instance. |
-| Allow Other Attendees | Checkbox - used in conjunction with Max Other Attendees, when checked, gives the primary registrant an area to enter the number of additional guests coming with them. <br/> ![Add'l Guests Reg Screen](images/Addtl_Guests.png) <br/> This is useful for Using this option, does not require any additional details about the other attendees.  If additional details are needed, the (add link)guest registration process should be used. |
+| Option         | Purpose/Behavior |
+| :---           | :---             |
+| Close Event Days Before | Number - the amount of days before the event that you want the registration to close (e.g. accept no new registrations).  If this field is left blank, the registration will automatically close (need to confirm behavior) the event instance according to the number you enter. |
+| Allow Other Attendees | Checkbox - used in conjunction with Max Other Attendees, when checked, gives the primary registrant an area to enter the number of additional guests coming with them. <br/> ![Add'l Guests Reg Screen](images/Addtl_Guests.png) <br/> Using this option, does not require any additional details about the other attendees.  If additional details are needed, the (add link)guest registration process should be used. |
 | Registration Email Restriction | Drop-down - when set validates other registrations either in the same event  or same event instance to see if the same email was used ignoring “Canceled” or “Started” status registrations.  A message will display to the registrant telling them that there is an exsiting registration with that email.  They will not be able to register using that email address.  No limit - no email restriction,  One registration per instance - email must be unique per event instance, One registration per event - email must be unique between registrations across all instances. |
 | Include Timeframe list | Checkbox - controls whether the Preferred visit time displays on the registration page.  The values displayed are controlled by the Include Time frame List feild on the Summit Events object.  Default values are Morning, Afternoon, All Day <br/> ![Timeframe List Image](images/Timeframe-List-Image.PNG) |
 | Keep Registration Open During Event | Checkbox - when checked, keeps the registration open during the duration of the event (needs confirmation of behavior) |
