@@ -31,6 +31,6 @@ See [Creating a Host](https://sfdo-community-sprints.github.io/summit-events-app
 
 ## TROUBLESHOOTING ##
 
-When hosts are assigned to appointments, the max available field on the host record is decremented.  If the value of the Remaining field of the event host is larger than 0, the Host List should show records of the available hostings for you to choose.  If the value of the Remaining field is 0 or below, the host will not show up for selection in the Lookup field.
+When hosts are assigned to appointments, the max available field on the host record is decremented.  If the value of the Remaining field of the event host is larger than 0, the Host List will show records of the available hostings for you to choose.  If the value of the Remaining field is 0 or below, no host records will be available.
 
  
