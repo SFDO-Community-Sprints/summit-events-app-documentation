@@ -6,7 +6,7 @@ grand_parent: Standard Features
 
 # Assigning Hosts
 
-Event Hosts work in conjunction with registrant's appointment records to allow event managers to assign hosts to appointments.  This can be help the event manager understand how many people are assgined to each campus tour guide or how many individuals are assigned to a table.  
+Event Hosts work in conjunction with registrant's appointment records to allow event managers to assign hosts to appointments.  This is helpful in that it allows the event manager to understand how many people are assgined to each campus tour guide or how many individuals are assigned to a table.  
 
 
 ## Assigning a Host to a Registrant's Appointment Record
