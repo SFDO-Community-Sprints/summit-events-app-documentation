@@ -5,7 +5,7 @@ has_children: true
 --- 
 
 # Utilizing Hosts
-The event host feature, is a backend feature which allows the event manager to create event hosts that can later be assigned by the event manager to specific registrant's appointments. Hosts can be used for things such as student employee assignments for overnight visit or tours as well as table "hosts" for banquets or workshops.  You can create an event host for a specific event instance and it can be applied to an appointment on an event registration record.  For our Use Case, students are going to sign up for a campus tour.  They can select a morning or afternoon tour.  After they register, the event manager will assign the appropriate tour guide (host) to their registration appointment record.
+The event host feature, is a backend feature which allows the event manager to create event hosts that can later be assigned by the event manager to specific registrant's appointments. Hosts can be used for things such as student employee assignments for overnight visit or tours as well as table "hosts" for banquets or workshops.  You can create an event host for a specific event instance and it can be applied to an appointment on an event registration record.  In our example, students are going to sign up for a campus tour.  They can select a morning or afternoon tour.  After they register, the event manager will assign the appropriate tour guide (host) to their registration appointment record.
 
 ![Event Host Process Flow Image](../images/EventHostProcessFlow.PNG)
 
