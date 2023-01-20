@@ -5,7 +5,7 @@ parent: Standard Features
 
 ## Configuring Event Additional Options
 Additional Configuration and Options offers additional functionality and expanded Registration Form options after the initial event is created.  The event Additional Configuration And Options, depending upon when you initially installed Summit Events, will appear on the Addt'l Configuration & Options tab of the Event page.
-![Add'l Config And Options Tab](/images/Event-Addl-Config-And-Options.md)
+![Add'l Config And Options Tab](/Event-Addl-Config-And-Options.md)
 
 ### Configuration Option Fields
 
