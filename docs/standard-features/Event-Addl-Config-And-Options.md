@@ -1,6 +1,7 @@
 ---
 title: Event Additional Configuration And Options
 parent: Standard Features
+nav_order: 1
 ---
 
 ## Configuring Event Additional Options
