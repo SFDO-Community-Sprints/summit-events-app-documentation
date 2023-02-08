@@ -7,7 +7,7 @@ nav_exclude: true
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js'></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
-<script src="js/full-calendar-demo.js"></script>
+<script src="../js/full-calendar-demo.js"></script>
 
 <script>
 
