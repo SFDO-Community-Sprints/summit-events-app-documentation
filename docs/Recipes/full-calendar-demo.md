@@ -14,7 +14,7 @@ nav_exclude: true
 /*  feedURL:
     This should be the site URL of the salesforce site where Summit Events App is installed
  */
-let feedURL = "https://summiteventsappteam.secure.force.com/";
+let feedURL = "https://summit-events-ldo.my.salesforce-sites.com/";
 
 /* HIDE CALENDAR OPTION:
    hideCalendarUntilAudience set to true will hide the calendar of events until an audience is selected.
