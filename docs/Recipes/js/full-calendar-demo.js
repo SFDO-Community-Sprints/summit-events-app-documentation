@@ -248,3 +248,5 @@ function eraseCookie(name) {
     createCookie(name, "", -1);
 }
 
+const SESettings = JSON.parse(readCookie("SummitEvents"));
+

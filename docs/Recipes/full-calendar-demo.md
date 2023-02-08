@@ -31,8 +31,6 @@ const hideCalendarUntilAudience = false;
  */
 const hardCodeAudience = {};
 
-const SESettings = JSON.parse(readCookie("SummitEvents"));
-
 /* OMIT AUDIENCE IN DROPDOWN:
    This option lets you define a list of audiences you wish to omit from the audience dropdown generated from Salesforce.
    If not used this variable must still be defined with no values (const hideAudiences = [];).
