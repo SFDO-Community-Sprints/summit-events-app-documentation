@@ -10,7 +10,6 @@ nav_exclude: true
 <script src="js/full-calendar-demo.js"></script>
 
 <script>
-let urlParams = getUrlVars();
 
 /*  feedURL:
     This should be the site URL of the salesforce site where Summit Events App is installed

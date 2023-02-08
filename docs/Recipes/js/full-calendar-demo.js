@@ -4,6 +4,7 @@ let ready = (callback) => {
 };
 
 ready(() => {
+    let urlParams = getUrlVars();
     if (urlParams['audienceList']) {
         audienceList = decodeURIComponent(urlParams['audienceList']).split(',');
     }
