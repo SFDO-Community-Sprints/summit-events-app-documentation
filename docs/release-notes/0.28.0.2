@@ -4,29 +4,27 @@ parent: Release Notes
 ---
 
 # Version 0.28.0.2 Release Notes
-Below are the highlights to the latest release.  Please review the release notes on [Github](https://github.com/SFDO-Community/Summit-Events-App/releases/tag/release%2F0.27.0.1) for references to bug fixes.
+Below are the highlights to the latest release.  Please review the release notes on [Github](https://github.com/SFDO-Community/Summit-Events-App/releases/tag/release%2F0.28.0.2) for comments related to updates and changes. Documentation should be updated accordingly, but if you find an error in documentation, please make a comment below or on the respective page.
 
-- New Documentation Site for Summit Events (you're on it right now!)
-- Additional Questions Object that facilitates event registration questions for the registrant and guests registrants. [Learn More](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-questions/)
-- Additional Questions page displays additional questions for the registrant.
-- Guest Registrant page allows registrant to add multiple guest registrants.
-- Snowfakery recipe for Education accounts in scratch org.
-- Payment gateway picklist that allows SEA to hook to a page outside it's package for payment processing.
-- Label fields added to event object for user changeable wording of previously hard-coded labels on visual force pages.
-- Visualforce page for email letterhead and org-wide email selection has been updated and now is included at the top of the email object layout. Event admins still have to create the record first before the visualforce page can be displayed.
-- Unit tests of new features (question object and guest registration) now have full coverage in namespaced environment.
-- Updated Page Layout on the Summit Events object for a better user experience.
+## Summary
+
+- Itineraries are generated in conjuction with Appointments records on the Registration. Fields displayed on the itinerary are captured on the Event level record.
+- "Lookup Picklist" is a new option on the Question object. Rather than a looking for a record by typing, a picklist is generated reflecting a full list of records in a single picklist.
+- Appointment Type and Appointment functionality has been cleaned of bugs and meeting base standards for functionality.
+- Enhancements have been made to the API Feed, allowing for a additional filtering, multiple variables and a key to view all parameters.
 
 
-## Issues Closed:
+
+
+## Comprehensive List of Issues Closed:
 
 - [86:](https://github.com/SFDO-Community/Summit-Events-App/issues/86) Developers - Itinerary generation in base package 
 - [#366:](https://github.com/SFDO-Community/Summit-Events-App/issues/366) Multi-day events has timezone formatted oddly in breadcrumb
 - [#372:](https://github.com/SFDO-Community/Summit-Events-App/issues/372) Instance Short Description on Calednar
 - [#374:](https://github.com/SFDO-Community/Summit-Events-App/issues/374) Enhancement Request - If no Summit Events Appointment Types are active, remove Appointment Options Page
-- [#401:](https://github.com/SFDO-Community/Summit-Events-App/issues/401) [BUG]] If optional question set to None, labels should not appear on registration page.
-- [#402:](https://github.com/SFDO-Community/Summit-Events-App/issues/402) Additional Information heading should not show if no additional info is configured [BUG]
-- [#403:](https://github.com/SFDO-Community/Summit-Events-App/issues/403) Additional Questions:  Text area and Text box fields look the same on reg page
+- [#401:](https://github.com/SFDO-Community/Summit-Events-App/issues/401) [BUG] If optional question set to None, labels should not appear on registration page.
+- [#402:](https://github.com/SFDO-Community/Summit-Events-App/issues/402) [BUG] Additional Information heading should not show if no additional info is configured 
+- [#403:](https://github.com/SFDO-Community/Summit-Events-App/issues/403) [BUG] Additional Questions:  Text area and Text box fields look the same on reg page
 - [#405:](https://github.com/SFDO-Community/Summit-Events-App/issues/405) [BUG] - Appointments - Appointment Type - Chosen State
 - [#406:](https://github.com/SFDO-Community/Summit-Events-App/issues/406) [BUG] - Appointment Type - Required Appointment (and Input)
 - [#407:](https://github.com/SFDO-Community/Summit-Events-App/issues/407) [BUG] - Appointment - Event Registration Date
