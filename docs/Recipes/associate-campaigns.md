@@ -3,7 +3,7 @@ title: Associate Campaigns to Summit Events
 parent: Recipes
 ---
 
-# Associating Campaigns to Summit Events
+# Associate Campaigns to Summit Events
 This recipe is intended to all Event Manager align their Campaigns Members with Summit Event Records and/or Summit Event Instance Records. Please read though the documentation to ensure it meets your needs and you make the appropriate updates to align with your business processes.
 
 ## Prerequisites
