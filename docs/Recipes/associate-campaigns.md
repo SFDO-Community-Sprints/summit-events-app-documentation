@@ -20,7 +20,7 @@ For this recipe to work, please ensure you've meet the following prerequisites:
   - Auto-Launch Flow: "summit_Campaign_Flow_Recipe"
 
 ## Installable Unlocked Package
-You can install this recipe. With this being an unlocked packed, you can edit it and make all appropriate updates to meet your needs.
+You can install this recipe. With this being an unlocked package, you can edit it and make all appropriate updates to meet your needs.
 
 - Sandbox: https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000rM5DAAU
 - Production: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000rM5DAAU
