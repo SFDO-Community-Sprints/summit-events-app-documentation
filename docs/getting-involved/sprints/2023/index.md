@@ -1,7 +1,7 @@
 ---
 grand_parent: Getting Involved
 parent: sprints
-title: 2022
+title: 2023
 has_children: true
 ---
 
