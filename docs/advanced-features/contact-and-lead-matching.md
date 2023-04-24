@@ -51,7 +51,7 @@ To setup your custom field mappings:
 
 Here is an example of what the Custom Metadata records look like for Contacts:
 
-![Contact Custom Metadata Example](https://github.com/SFDO-Community-Sprints/Summit-Events-App/blob/master/images/3.9_Contact_Matching%20_Custom_Metadata_Mapping_Example.png)
+![Contact Custom Metadata Example](https://github.com/SFDO-Community-Sprints/Summit-Events-App/blob/master/images/3.9_Contact_Matching%20_Custom_Metadata_Mapping_Example.png?raw=true)
 
 
 
@@ -86,7 +86,7 @@ _Note that when using a Salesforce Duplicate Rule it is important that you set t
 
 When a new Lead is created by the Lead Matching Rule the following fields from the Summit Events Registration record are automatically added to the Lead record:
 
-![Hardcoded values mapped from Summit Events Registration to Lead](https://raw.githubusercontent.com/SFDO-Community-Sprints/Summit-Events-App/master/images/Lead%20Matching%20Rule%20hardcoded%20fields.png)
+![Hardcoded values mapped from Summit Events Registration to Lead](https://raw.githubusercontent.com/SFDO-Community-Sprints/Summit-Events-App/master/images/Lead%20Matching%20Rule%20hardcoded%20fields.png?raw=true)
 
 ## Adding Additional Field Values When Matching Rules Create New Leads
 If you want additional field values to be added to the Lead record you can use the "Custom Metadata Lead Matching Method" on Summit Events to do this.  Custom Metadata Types is the Salesforce tool that allows an admin to create field mappings that are read by the code in the managed package - for details take a look at [More Info On Custom Metadata Types](https://help.salesforce.com/articleView?id=custommetadatatypes_about.htm&type=5).
