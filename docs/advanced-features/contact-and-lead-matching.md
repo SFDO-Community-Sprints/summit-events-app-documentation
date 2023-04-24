@@ -35,7 +35,7 @@ _Note that when using a Salesforce Duplicate Rule it is important that you set t
 
 When a new Contact is created by the Contact Matching Rule the following fields from the Summit Events Registration record are automatically added to the Contact record:
 
-![Hardcoded values mapped from Summit Events Registration to Contact](https://github.com/SFDO-Community/Summit-Events-App/blob/master/images/Contact%20Matching%20Rule%20hardcoded%20fields%20v2.png)
+![Contact Matching Rule hardcoded fields v2](https://user-images.githubusercontent.com/60475518/234095301-13f54e07-a68a-4a1c-9136-c04d2d935baf.png)
 
 ## Adding Additional Field Values When Matching Rules Create New Contacts
 If you want additional field values to be added to the Contact record you can use the "Custom Metadata Contact Matching Method" on Summit Events to do this.  Custom Metadata Types is the Salesforce tool that allows an admin to create field mappings that are read by the code in the managed package - for details take a look at [More Info On Custom Metadata Types](https://help.salesforce.com/articleView?id=custommetadatatypes_about.htm&type=5).
