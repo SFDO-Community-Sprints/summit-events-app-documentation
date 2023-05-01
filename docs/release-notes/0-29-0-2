@@ -3,13 +3,59 @@ title: 0.29.0.2
 parent: Release Notes
 ---
 
-# 0.29.0.2 Release Notes
+# Version 0.29.0.2 Release Notes
+Below are the highlights of this release. With the changes in this release, be sure to read the Important Items before installing in a Sandbox or Production.
+- Appointment
+- Itinerary Generation (for Appointments)
+- Google Analytics taging and utm tracking
 
-## Important Items to Note
+
+
+## Important Items and Upgrade Action Steps
+Below are important items to note prior to upgrading to 0.29.0.2.
+
 *Guest User Access*
- - The Guest User is required to have READ access to the Account Object. There is no additional field access necessary.
-- It is recommended and encouraged that upon installation or prior to upgrading, you create a custom permission set, granting READ access to the Account Object and add that to the Guest User. While previous documentation encourages cloning the Guest Permission set, we’re adjusting that thought to create a custom permission set (not clone) and have the Guest User have the packaged permission set (Summit Event Registrant). This will allow for a more seamless upgrade process while then allow you to manage your own customization on a single permission set. 
-- 
+There were several updates in this package that impact the Summit Event Registant Permission Set and access needed for the Guest User. Below outlines what access is needed to avoid disruption as well as a new standard for Summit Evnets App and how to configure and manage Guest User Access.
+- The Guest User is required to have READ access to the Account Object. No additional field access necessary.
+  - A lookup to the Account Object on the Summit Event Record prompted this update.  
+- It is recommended and encouraged that upon installation or prior to upgrading, you create a custom permission set, granting READ access to the Account Object and add that to the Guest User. While previous documentation encourages cloning the Guest Permission set, we’re adjusting those instructions to create a custom permission set (not clone) in addition tothe Guest User having the packaged permission set (Summit Event Registrant). This will allow for a more seamless upgrade process while then allow you to manage your own customization on a single permission set. 
+  - While in the code base, the Summit Event Registrant has READ access to the Account object. Upon install we found that the permission was removed, likely due to Salesforce Security protocols being enforced.
+
+*Page Layouts and Picklists to Update*
+The following Lightning Layouts and Page Layouts need to be updated to expose new fields that leverage some new functionality/updates. Below we're sharing the API name, which has a matching label:
+- Layout: Summit Event Lightning Layout:
+  - Edit Lightning Record Pages
+  - Add Event_Appointment_Submit_List_Label__c to Page Details for Submit
+  - Add Event_Guest_Submit_List_Label__c to Guest Registration Details
+
+- Layout: Summit Events Registration
+  - Edit Page Layout 
+  - Add BCC_Transactional_Emails__c
+  - Add BCC_Transactional_Email_Statuses__c
+
+- Layout: Create a new section in the layout called "Analytics" to that new section add the following fields
+  - Event_Website_Referrer__c
+  - Event_Website__c
+  - gclid__c
+  - utm_campaign__c
+  - utm_content__c
+  - utm_creative_format__c
+  - utm_id__c
+  - utm_marketing_tactic__c
+  - utm_medium__c
+  - utm_source__c
+  - utm_source_platform__c
+  - utm_term__c
+
+- Layout: Go to Edit Object for Summit Events Question
+  - Edit Page Layouts
+  - Add Display_Style__c
+
+- Picklist Field: Go to Summit Event object, 
+  - Edit Ask_Phone__c field
+  - Add "Ask mobile" and "Ask mobile and require" to picklist
+
+
 ## Known Issues
 *Summary*
 The Open Registration field formula isn’t calculating the same way the Registrant will experience. Currently there is more confidence in what the registrant experiences than what may display on the Instance to the Event Manager. The registrant experiences what the Event Manager would expect, causing confusion as to why an event may appear open, but isn’t (or vice versa).
