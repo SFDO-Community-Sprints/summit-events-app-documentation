@@ -1,0 +1,177 @@
+---
+title: 0.29.0.2
+parent: Release Notes
+---
+
+# 0.29.0.2 Release Notes
+
+## Important Items to Note
+*Guest User Access*
+ - The Guest User is required to have READ access to the Account Object. There is no additional field access necessary.
+- It is recommended and encouraged that upon installation or prior to upgrading, you create a custom permission set, granting READ access to the Account Object and add that to the Guest User. While previous documentation encourages cloning the Guest Permission set, we’re adjusting that thought to create a custom permission set (not clone) and have the Guest User have the packaged permission set (Summit Event Registrant). This will allow for a more seamless upgrade process while then allow you to manage your own customization on a single permission set. 
+- 
+## Known Issues
+*Summary*
+The Open Registration field formula isn’t calculating the same way the Registrant will experience. Currently there is more confidence in what the registrant experiences than what may display on the Instance to the Event Manager. The registrant experiences what the Event Manager would expect, causing confusion as to why an event may appear open, but isn’t (or vice versa).
+*Reproduce*
+*Workaround*
+
+
+## Technical Features and Updates
+- A data layer for google tag manager has been added to each page within Summit Events. The following Fields on the Summit Event record can be utilized:
+* Account
+* Audience
+* Event label
+* Category
+* Sponsor
+- Updated several apex unit tests to reflect newly required fields through Summit Events App.
+- Updated Salesforce API to 56.0
+- Added identifier to xml for flexi pages (required for the 56.0 update
+- Updated FullCallendar.io javascript package to v6.0.1
+- Updated moment.js javascript package to v2.29.4
+- Fixed data loading in cumulusci to follow new dev.dataset.sql naming conventions in dev folder
+- Removed deploy event records task from culumlus.yml because it is now automated with new naming conventions
+- Added a new feature to calendar page that allows for a comma separated list of audiences to define what audiences will be shown on the page (example ?audienceList=General%20Public,Current%20Students). When utilizing this feature, it’ll display instances on the calendar that meet the multiple audiences in the URL. This should make this page useful for more general use, especially if the dropdown menu is not something users want to display.
+- In the Summit Event Feed, there is a new “feedtype” called “parameterKey”. When used in a feed url it will display all available parameters that can be sent to a feed with a short description.
+- There are stronger checks in the registration experience page flow method to determine appropriate pages (questions for guests, custom registrant questions (based on Summit Event Question records), and appointment questions ).
+- There is a new trigger to produce a list of requested appointments and a separate list of confirmed appointments, with details that run based on the Appointment record (related to the registration record).
+- With the new Itinerary Generation trigger and automation, a newly created unit test class has been added.
+- The Itinerary display page will use an extension class to avoid namespace issues where objects on visualforce pages don't show unless defined in a class. This was done based on the experience with letterhead lookup for the Summit Event Email functionality.
+- With the addition of a lookup on the Account object on the Summit Event Record, a check for the Account object has been added for accessibility to avoid errors if Admins don't put read privileges on Account.
+- Added close date to instance query on the donation page for updated shared method checking for when an event is closed.
+
+
+
+
+
+
+## Technical Bug Fixes
+- A Unit test was failing during package validation, but not during development. Adjusted logic for identifying available textareas to not test isCreatable since just being a textarea is sufficient on the registration record. Unit tests still run correctly in scratch orgs.
+- Added two data fields to event data feed returned by REST API: title_event__c, title_instance__c. This splits out the combined title previously existed. The previous field still exists
+- When leveraging the Summit Event Email functionality for transactional emails, if they fail, they will now fail gracefully. Previously the registration process was interrupted, and the registration was not full captured or recorded with a “Registered” status. This failure is now recorded on the activity record. User may experience this if they’ve reached their daily org limit of 5000 emails (or 15 in scratch orgs).
+- Calculations have been improved for event closure, utilizing the Instance Close Date and Time for the event. Also, system time is set to the time zone of the instance for event relative time comparison. Note that this is separate from the formula utilized for the “Open Registration” field on the Instance.
+- Updated the question controller (for the Summit Events Question object/functionality) with a list of packaged picklist values to namespace allowing users to add additional values to packaged picklist fields. Previously this was causing issues in how items would display.
+- Remove "UG" from a related list label that was lingering from when Summit Events evolved from what as originally UST Events.
+- The styles utilized for the registration pages have been cleaned and tightened up.
+- There are null check errors on new itinerary trigger on its Unit Test. These had been failing, but functioning as expected.
+
+
+
+
+## Functional Bug Fixes
+Fixed issue #425 by making the calculations only care about the end date if the "Keep Registration Open During Event" checkbox is checked (instead of caring about both start and end dates)
+- When utilizing Summit Events with an Experience Site and the registrant is logged, the associated contact record is recognized and pre-fills with the contact information. If a field was empty and required, like Birthdate, the user could not progress because the field was locked, and validation would not allow any fields to be empty. Now registrants can fill in the blank information. Fields with existing information are still locked.
+- When utilizing Summit Events with an Experience Site and the registrant is logged, the associated contact record is recognized. Now the contact record is automatically connected to the registration. previously this was not happening and Contact matching had to be configured. 
+- The overall Appointment Type functionality has improved to meet expectations. The primary feature of receiving registrant input, when asked for, is now recorded on registrant related appointment record.
+- The “Appointment Date” field is now populated with improved formula.
+- If an Appointment Type configured to be Required, the appointment option no longer highlights an error when the input is not required.  Previously, if the appointment type was required, but the registration wasn’t required to input anything, it would error. Now Appointment Types can be required with optional input. If both are required they will work as anticipated.
+- On the Appointment Type record, users and Event Managers can set a sort Order. When the Once the Appointments are selected by the registrant and they see a summary on the Submit page, the appointment type sort order is respected. Previously this was not the case and it sorted alphabetically.
+- Appointments/Sessions with a value of Do Not Show, with the field “Auto Confirm” set to True, will now have the Appointment record status set to “Confirmed” if the appointment page is skipped. This was previously not working as expected. 
+
+- Auto Add Building and Auto Add Time configured on the Appointment Type record will now also flow to the Appointment record, associated to the Registrant. This was previously not working as expected.
+- There was a minor issue with the “Admin Open Registration” link where the registration would not fully complete. This has been fixed and the Admin Open Registration link is functioning as expected.
+- Appointment type records leveraging the “Chosen State” field, where values of “Added”, “Added and Required”, and “Added and Not Shown” are being recorded earlier in the registration process than before. This previously happened later in the process and was causing errors. These appointments are working and being captured as expected.
+- Appointment Type records that only have an Appointment Category will no longer create a registration error. This is also the case is there is a single value on the Appointment Type field.
+- On the Appointment Type record, If an Appointment Category AND Appointment Type are established they will be added to the registrants related appointment record without asking the registrant for a selection. Similarly, if the registrant is asked for a selection based on the Appointment Category, the Appointment Type value selected by the registrant will be recorded on the registrant related appointment record.
+- The template on the Summit Event record is no longer automatically defaulting to GeneralSLDS when another template is configured to be the default. The Default label of GeneralSLDS was removed and marked the value as Default within the picklist. (#408)
+- Updated the Help Text and Description for “Event is Full Display Text” to better clearly articulate when the information in the field will display. The previous assumption was it would only display if capacity has been met, when in reality it would display if capacity was met, the event instance was in a status other than active or the event date had passed (#411)
+- The Summit Event Email record wasn’t appropriately displaying the visualforce page, allowing the user to select an Org Wide Email Address or Classic Letterhead Template. This essentially made the functionality unusable in a production environment. The visualforce page has been fixed and working as expected.
+- Additional question (not Summit Event Question) heading on the primary registration page does not appear when no questions are defined on the Summit Events object record. 
+- Additional questions are now shown only if question text and question type are both defined on the Summit Event object record. Previously, if one of them had a value, it would display to the registrant, but may not allow the registrant to input an answer.
+- The registration experience now takes into account if the Summit Event Questions records are set to "Registrant and Guest". Previously the Guest page would not display. It is working as expected now.
+- The Registrant Guest page will now only show if Summit Event Question records exist while defined accordingly AND the "Display Guest Registration" is checked on the Summit Event object record. Previously it would show a blank page if no Summit Event Question records were created but the "Display Guest Registration" was checked.
+
+
+
+
+
+# Functional Features and Updates
+
+- Added two additional fields on the Summit Events record to support more complex needs for filter in the Event Feed. This may also help in reporting.
+* Field: Where to Display (API Name: Filter_Where_To_Display__c)
+* Field: Category (API Name: Filter_Category__c)
+- On the registration record, an Event Manager can manually add a(n) email(s) to the BCC Email field while selecting a status (BCC Status) to allow for unique individuals to be added on triggered email communications to that specific registrant. A higher education use case may involve adding a coach or faculty member on a confirmation email that has the registrant’s itinerary on it.
+- To allow for enhance Marketing reporting on registration records, utm tracking codes can be recorded on registration. The following utm parameters can be captured:
+* Event_Website_Referrer__c
+* Event_Website__c
+* gclid__c
+* utm_campaign__c
+* utm_content__c
+* utm_creative_format__c
+* utm_id__c
+* utm_marketing_tactic__c
+* utm_medium__c
+* utm_source__c
+* utm_source_platform__c
+* utm_term__c
+- User will now have control over how Summit Event Questions are displayed on the registration page. You can select from display options to show the question full width, half width and third width with the default setting being half width. You can control this on each Summit Event Question record by utilizing the Display field. This feature will adjust on mobile devices to full width as well as adjust to browser size changes. 
+- “Ask Phone” field on the Event Registration record now supports “Ask Mobile” and “Ask Mobile and Require”. The work “Mobile” is stripped off the front of the label when this option is selected and intended SMS consent message questions appear. In addition, the SMS Consent message is no longer bolded.
+- Additional Label fields have been added on the Summit Events object to allow for Event Managers to control values displaying on the submit page. The follow fields have been added:
+* Event Appointment Submit List Label
+* Event Guest Submit List Label
+- Changed the word “Additional” to “Custom” on the Page Details Tab on Summit Event Lightning Page. Also updated the field label on the Summit Events Object changing Additional to Custom to reflect the use of Custom Questions (#419)
+- On the Summit Event Question Object, Event Manager can now create a picklist based on a list of registration records. This is in addition to the value “Lookup” which allows for type ahead and an option to enter something that doesn’t exist. “Lookup Picklist” will display all appropriate records (based on the query, similar to that of the Lookup functionality) and have the registrant select a value.
+- On the Summit Event Question object, a validation rule has added to ensure all appropriate fields are utilized when leveraging Lookup or Lookup Picklist.
+- Updated the Summit Event Question object to have specific required fields for the functionality to work appropriately. This is supported by additional validation rules based on the type of question being asked.
+- User can now control the default Country in custom settings. This value will default your country picklist if the value you entered in custom setting is in the global picklist packaged with SEA
+- Country/state are now dependent picklists if mapped in the global picklist value packaged with SEA. This should allow for additional mapping of other countries by SEA users.
+- Introduce an Itinerary Generation feature. This captures the related appointments and details from the appointment record to create a schedule or itinerary. There are two that may be generated and are based off of status. If an Appointment record has a status that is NOT “Confirmed”, they will generate in the Generated Itinerary field. If the Status is Confirmed, the itinerary will gradually build as each appointment record is changed to Confirmed.
+- Event Mangers can control what fields will display on the generated itinerary through fields on the Summit Event Object. They will also be able to determine what the headers are. Those fields are:
+* 
+* 
+- The packaged calendar has been updated to reflect the Instance Short Description. If the Instance Short Description is blank, the Event Description will be utilized. Previously the calendar only reflected the Event Description, not leaving opportunity for different instance description on events that have multiple instances. 
+- When utilizing th Guest Registration feature along with transactional emails within Summit Events, previously it would send an email to all who were registered. So if a registrant registered themselves and 5 guests, 6 emails would send. In an effort to stay compliant, because the guest didn’t voluntarily give their email address (someone else other than themselves did), Summit Events App will now check for whether the email address on the registration record is for a hosted registrant before adding to list of emails to send. The hosted registrant is the individual who submitted the registration for themselves and guests.
+
+
+
+
+Still reviewing
+- Ordered and unordered lists display correctly in description elements of page
+- Registration close time now evaluated for closing the event
+
+
+# Issues Closed
+#86: Developers - Itinerary generation in base package
+#366: Multi-day events has timezone formatted oddly in breadcrumb
+#372: Instance Short Description on Calednar
+#374: Enhancement Request - If no Summit Events Appointment Types are active, remove Appointment Options Page
+#395: Enhancement: Ask Mobile and Ask Require Mobile options within Ask Phone field
+#401: [BUG] If optional question set to None, labels should not appear on registration page.
+#402: Additional Information heading should not show if no additional info is configured [BUG]
+#403: Additional Questions:  Text area and Text box fields look the same on reg page
+#405: [BUG] - Appointments - Appointment Type - Chosen State
+#406: [BUG] - Appointment Type - Required Appointment (and Input)
+#407: [BUG] - Appointment - Event Registration Date
+#408: [BUG] Can't set default Summit Event template
+#409: [BUG] Lists in Rich Text Fields not displaying properly in delivered template (GeneralSLDS)
+#411: [BUG] "Event is full display text" has misleading label
+#412: [BUG] Not clear to user when registration page is unavailable/closed
+#413: [BUG] - Global Picklist Values on Question Object
+#414: [BUG] - Custom Questions Object - selecting "Registrant and Guest" is skipping pages entirely
+#415: [BUG] - Instance Capacity Control Calculation error on "Individual Registrant"
+#417: [BUG] "Map to Field" on Summit Events Question needs to be required
+#418: [BUG] Validation rules need to be made on Summit Event Question
+#419: [BUG] Rename "Additional Question" fields
+#422: [BUG] Misspelled Word on Summit Events Email Screen
+#425: [BUG] "Keep Registration Open During Event" checkbox does not work for multi-day Event Instances
+#431: [BUG] Summit Event Registrations created from "New" button in Salesforce don't have needed validation
+#435: [BUG] - Email Visualforce Page
+#437: [FEATURE] Appointments - Summary page should respect sort order of appointment
+#438: [BUG] Additional Question Existing Picklist Values Only Map to namespaced fields
+#441: [BUG] Appointment Type - Remove Appointment Type field from Pagelayout
+#449: [BUG] Country picklist has to have United States
+#455: [BUG] - Appt Type - Required Custom Pick List Validation and Selection Option 
+#463: [BUG] - Email Trigger and Guest Registrations
+#464: [BUG] - Hardcoded values on the Submit Page
+#465: [BUG] Donation page errors
+#467: The Registration Page errors when an Appointment Type has a picklist with only one value.  IE, the Appointment Category only has one Appointment Type value tied to it.
+#468: Ask mobile and require as part of the Ask Phone question.
+#469: Receiving Error when registering with the Admin Open Registration link
+#472: [FEATURE] Custom Question display style
+#473: [FEATURE] Add Google Analytics campaign tracking codes to registration
+#474: Add BCC Transactional Email feature into Summit Events
+#476: [FEATURE] Google data layer script
+#479: [BUG] Auto confirm appointments do not work when appointment page is not visited
+#480: [BUG] Community logged in user can't progress because of locked fields
+#482: [FEATURE] Add data lines for event and instance title
+#484: [BUG] Close Event Days Before not closing correctly
