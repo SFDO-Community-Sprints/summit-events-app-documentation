@@ -4,7 +4,7 @@ parent: Release Notes
 ---
 
 # Version 0.29.0.2 Release Notes
-Below are the highlights of this release. With the changes in this release, be sure to read the Important Items before installing in a Sandbox or Production.
+Below are the highlights of this release. With the features, updates and bug fixes in this release, be sure to read the Important Items before installing in a Sandbox or Production.
 - Appointment
 - Itinerary Generation (for Appointments)
 - Google Analytics taging and utm tracking
@@ -14,98 +14,63 @@ Below are the highlights of this release. With the changes in this release, be s
 ## Important Items and Upgrade Action Steps
 Below are important items to note prior to upgrading to 0.29.0.2.
 
-*Guest User Access*
+### Guest User Access
+
 There were several updates in this package that impact the Summit Event Registant Permission Set and access needed for the Guest User. Below outlines what access is needed to avoid disruption as well as a new standard for Summit Evnets App and how to configure and manage Guest User Access.
 - The Guest User is required to have READ access to the Account Object. No additional field access necessary.
   - A lookup to the Account Object on the Summit Event Record prompted this update.  
 - It is recommended and encouraged that upon installation or prior to upgrading, you create a custom permission set, granting READ access to the Account Object and add that to the Guest User. While previous documentation encourages cloning the Guest Permission set, we’re adjusting those instructions to create a custom permission set (not clone) in addition tothe Guest User having the packaged permission set (Summit Event Registrant). This will allow for a more seamless upgrade process while then allow you to manage your own customization on a single permission set. 
   - While in the code base, the Summit Event Registrant has READ access to the Account object. Upon install we found that the permission was removed, likely due to Salesforce Security protocols being enforced.
 
-*Page Layouts and Picklists to Update*
+### Page Layouts and Picklists to Update
+
+
 The following Lightning Layouts and Page Layouts need to be updated to expose new fields that leverage some new functionality/updates. Below we're sharing the API name, which has a matching label:
-- Layout: Summit Event Lightning Layout:
-  - Edit Lightning Record Pages
-  - Add Event_Appointment_Submit_List_Label__c to Page Details for Submit
-  - Add Event_Guest_Submit_List_Label__c to Guest Registration Details
+- Layout: Summit Events Lightning Record Page Layout
+  - Edit Lightning Record Pages and add the following fields:
+    - Add Event_Appointment_Submit_List_Label__c to Page Details Tab in the Submit Page section
+    - Add Event_Guest_Submit_List_Label__c to Guest Registration Tab in the Guest Registration Details section
 
 - Layout: Summit Events Registration
-  - Edit Page Layout 
-  - Add BCC_Transactional_Emails__c
-  - Add BCC_Transactional_Email_Statuses__c
+  - Edit Page Layout and add the following fields to the top section:
+    - Add BCC_Transactional_Emails__c
+    - Add BCC_Transactional_Email_Statuses__c
 
-- Layout: Create a new section in the layout called "Analytics" to that new section add the following fields
-  - Event_Website_Referrer__c
-  - Event_Website__c
-  - gclid__c
-  - utm_campaign__c
-  - utm_content__c
-  - utm_creative_format__c
-  - utm_id__c
-  - utm_marketing_tactic__c
-  - utm_medium__c
-  - utm_source__c
-  - utm_source_platform__c
-  - utm_term__c
+- Layout: Summit Events Registration
+  - Create a new section in the layout called "Analytics" and add the following fields:
+    - Event_Website_Referrer__c
+    - Event_Website__c
+    - gclid__c
+    - utm_campaign__c
+    - utm_content__c
+    - utm_creative_format__c
+    - utm_id__c
+    - utm_marketing_tactic__c
+    - utm_medium__c
+    - utm_source__c
+    - utm_source_platform__c
+    - utm_term__c
 
-- Layout: Go to Edit Object for Summit Events Question
-  - Edit Page Layouts
-  - Add Display_Style__c
+- Layout: Summit Events Question
+  - Edit Page Layout and add the following fields to the top section:
+    - Add Display_Style__c
 
-- Picklist Field: Go to Summit Event object, 
-  - Edit Ask_Phone__c field
-  - Add "Ask mobile" and "Ask mobile and require" to picklist
+- Picklist Field: Summit Events object 
+  - Edit Ask_Phone__c field and add the following values:
+    - Ask mobile
+    - Ask mobile and require
 
-
+---
 ## Known Issues
+
 *Summary*
 The Open Registration field formula isn’t calculating the same way the Registrant will experience. Currently there is more confidence in what the registrant experiences than what may display on the Instance to the Event Manager. The registrant experiences what the Event Manager would expect, causing confusion as to why an event may appear open, but isn’t (or vice versa).
 *Reproduce*
 *Workaround*
-
-
-## Technical Features and Updates
-- A data layer for google tag manager has been added to each page within Summit Events. The following Fields on the Summit Event record can be utilized:
-* Account
-* Audience
-* Event label
-* Category
-* Sponsor
-- Updated several apex unit tests to reflect newly required fields through Summit Events App.
-- Updated Salesforce API to 56.0
-- Added identifier to xml for flexi pages (required for the 56.0 update
-- Updated FullCallendar.io javascript package to v6.0.1
-- Updated moment.js javascript package to v2.29.4
-- Fixed data loading in cumulusci to follow new dev.dataset.sql naming conventions in dev folder
-- Removed deploy event records task from culumlus.yml because it is now automated with new naming conventions
-- Added a new feature to calendar page that allows for a comma separated list of audiences to define what audiences will be shown on the page (example ?audienceList=General%20Public,Current%20Students). When utilizing this feature, it’ll display instances on the calendar that meet the multiple audiences in the URL. This should make this page useful for more general use, especially if the dropdown menu is not something users want to display.
-- In the Summit Event Feed, there is a new “feedtype” called “parameterKey”. When used in a feed url it will display all available parameters that can be sent to a feed with a short description.
-- There are stronger checks in the registration experience page flow method to determine appropriate pages (questions for guests, custom registrant questions (based on Summit Event Question records), and appointment questions ).
-- There is a new trigger to produce a list of requested appointments and a separate list of confirmed appointments, with details that run based on the Appointment record (related to the registration record).
-- With the new Itinerary Generation trigger and automation, a newly created unit test class has been added.
-- The Itinerary display page will use an extension class to avoid namespace issues where objects on visualforce pages don't show unless defined in a class. This was done based on the experience with letterhead lookup for the Summit Event Email functionality.
-- With the addition of a lookup on the Account object on the Summit Event Record, a check for the Account object has been added for accessibility to avoid errors if Admins don't put read privileges on Account.
-- Added close date to instance query on the donation page for updated shared method checking for when an event is closed.
-
-
-
-
-
-
-## Technical Bug Fixes
-- A Unit test was failing during package validation, but not during development. Adjusted logic for identifying available textareas to not test isCreatable since just being a textarea is sufficient on the registration record. Unit tests still run correctly in scratch orgs.
-- Added two data fields to event data feed returned by REST API: title_event__c, title_instance__c. This splits out the combined title previously existed. The previous field still exists
-- When leveraging the Summit Event Email functionality for transactional emails, if they fail, they will now fail gracefully. Previously the registration process was interrupted, and the registration was not full captured or recorded with a “Registered” status. This failure is now recorded on the activity record. User may experience this if they’ve reached their daily org limit of 5000 emails (or 15 in scratch orgs).
-- Calculations have been improved for event closure, utilizing the Instance Close Date and Time for the event. Also, system time is set to the time zone of the instance for event relative time comparison. Note that this is separate from the formula utilized for the “Open Registration” field on the Instance.
-- Updated the question controller (for the Summit Events Question object/functionality) with a list of packaged picklist values to namespace allowing users to add additional values to packaged picklist fields. Previously this was causing issues in how items would display.
-- Remove "UG" from a related list label that was lingering from when Summit Events evolved from what as originally UST Events.
-- The styles utilized for the registration pages have been cleaned and tightened up.
-- There are null check errors on new itinerary trigger on its Unit Test. These had been failing, but functioning as expected.
-
-
-
-
+---
 ## Functional Bug Fixes
-Fixed issue #425 by making the calculations only care about the end date if the "Keep Registration Open During Event" checkbox is checked (instead of caring about both start and end dates)
+
+- Fixed issue #425 by making the calculations only care about the end date if the "Keep Registration Open During Event" checkbox is checked (instead of caring about both start and end dates)
 - When utilizing Summit Events with an Experience Site and the registrant is logged, the associated contact record is recognized and pre-fills with the contact information. If a field was empty and required, like Birthdate, the user could not progress because the field was locked, and validation would not allow any fields to be empty. Now registrants can fill in the blank information. Fields with existing information are still locked.
 - When utilizing Summit Events with an Experience Site and the registrant is logged, the associated contact record is recognized. Now the contact record is automatically connected to the registration. previously this was not happening and Contact matching had to be configured. 
 - The overall Appointment Type functionality has improved to meet expectations. The primary feature of receiving registrant input, when asked for, is now recorded on registrant related appointment record.
@@ -126,9 +91,6 @@ Fixed issue #425 by making the calculations only care about the end date if the 
 - Additional questions are now shown only if question text and question type are both defined on the Summit Event object record. Previously, if one of them had a value, it would display to the registrant, but may not allow the registrant to input an answer.
 - The registration experience now takes into account if the Summit Event Questions records are set to "Registrant and Guest". Previously the Guest page would not display. It is working as expected now.
 - The Registrant Guest page will now only show if Summit Event Question records exist while defined accordingly AND the "Display Guest Registration" is checked on the Summit Event object record. Previously it would show a blank page if no Summit Event Question records were created but the "Display Guest Registration" was checked.
-
-
-
 
 
 # Functional Features and Updates
@@ -176,7 +138,46 @@ Still reviewing
 - Registration close time now evaluated for closing the event
 
 
-# Issues Closed
+---
+## Technical Features and Updates
+- A data layer for google tag manager has been added to each registrant page within Summit Events App. The following fields on the Summit Events record can be utilized for additional reporting within Google Analytics:
+  - Account
+  - Audience
+  - Event label
+  - Category
+  - Sponsor
+- Updated several apex unit tests to reflect newly required fields throughout Summit Events App
+- Updated Salesforce API to 56.0
+- Added identifier to xml for flexi pages (required for the 56.0 update)
+- Updated FullCallendar.io javascript package to v6.0.1
+- Updated moment.js javascript package to v2.29.4
+- Fixed data loading in cumulusci to follow new dev.dataset.sql naming conventions in dev folder
+- Removed "deploy event records" task from culumlus.yml because it is now automated with new naming conventions
+- Added a new feature to the calendar page and feed allowing for a comma separated list of audiences to define what audiences will be shown on the page
+  - Example: ...my.salesforce-sites.com/?audienceList=General%20Public,Current%20Students
+  - When utilizing this feature, it’ll display instances on the calendar that meet the multiple audiences in the URL. This should make the calendar page useful for more general use, especially if the dropdown menu is not something users want to display. Even with the dropdown, it will be limited to those within the URL
+- In the Summit Event Feed, there is a new “feedtype” called “parameterKey”. When used in a feed url it will display all available parameters that can be sent to a feed with a short description
+  - Example: ...my.salesforce-sites.com/services/apexrest/summit/summiteventsfeed?feedType=parameterkey
+- There are stronger checks in the "registration experience page flow" method to determine appropriate pages (questions for guests, custom registrant questions (based on Summit Event Question records), and appointment questions)
+- There is a new trigger to produce a list of requested appointments and a separate list of confirmed appointments, with details that run based on the Appointment record (related to the registration record)
+- With the new Itinerary Generation trigger and automation, a newly created unit test class has been added
+- The Itinerary display page will use an extension class to avoid namespace issues where objects on visualforce pages don't show unless defined in a class. This was done based on the experience with letterhead lookup for the Summit Event Email functionality
+- With the addition of a lookup on the Account object on the Summit Event Record, a check for the Account object has been added for accessibility to avoid errors if Admins don't put read privileges on Account
+- Added close date to instance query on the donation page for updated shared method checking for when an event is closed
+- Added two data fields to event data feed returned by REST API: title_event__c, title_instance__c. This splits out the combined title previously existed. The previous field still exists
+
+## Technical Bug Fixes
+- A Unit test was failing during package validation, but not during development. Adjusted logic for identifying available textareas to not test isCreatable since just being a textarea is sufficient on the registration record. Unit tests still run correctly in scratch orgs.
+- When leveraging the Summit Events Email functionality for transactional emails, if they fail, they will now fail gracefully. Previously the registration process was interrupted, and the registration was not full captured or recorded with a “Registered” status. This failure is now recorded on the activity record. User may experience this if they’ve reached their daily org limit of 5000 emails (or 15 in scratch orgs).
+- Calculations have been improved for event closure, utilizing the Instance Close Date and Time for the event. Also, system time is set to the time zone of the instance for event relative time comparison.
+  - Note that this is separate from the formula utilized for the “Open Registration” field on the Instance.
+- Updated the question controller (for the Summit Events Question object/functionality) with a list of packaged picklist values to namespace allowing users to add additional values to packaged picklist fields. Previously this was causing issues in how items would display.
+- Remove "UG" from a related list label that was lingering from when Summit Events evolved from what as originally UST Events.
+- The styles utilized for the registration pages have been cleaned and tightened up.
+- There are null check errors on new itinerary trigger on its Unit Test. These had been failing, but functioning as expected.
+
+---
+## Issues Closed
 #86: Developers - Itinerary generation in base package
 #366: Multi-day events has timezone formatted oddly in breadcrumb
 #372: Instance Short Description on Calednar
