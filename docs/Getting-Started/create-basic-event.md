@@ -11,7 +11,7 @@ nav_order: 4
 The first step in setting up a brand new event is to create a Summit Event record and an Event Instance record.  Summit Events are parent records to Summit Event Instance records.  You cannot have a summit event instance without it being tied to a parent summit event record.  Summit event instance records inherit much of the information from the parent Summit Event record.  This document covers the fields needed when creating a basic event.
 <br/>
 <br/>
-
+<br/>
 # Creating a Basic Event
 
 ## Create the Event
@@ -82,3 +82,4 @@ Navigate to the registration page and confirm registration fields are displaying
 - To add questions to an event registration form, see [Standard Registration Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/standard-reg-questions/).
 
 - To generate a confirmation email for the event, see [Creating an Event Email](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/).
+- 
