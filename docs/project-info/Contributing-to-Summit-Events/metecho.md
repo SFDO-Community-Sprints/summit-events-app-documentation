@@ -18,7 +18,7 @@ Metecho is a Heroku app that works with the Summit Events GitHub repository.  It
  > Go to GitHub [Teams page](https://github.com/orgs/SFDO-Community/teams/summit-read-only-for-metecho):, then start a discussion here to request access. Someone from the team will set up your access and notify you. 
 
 ### Log into Metecho
-1. [Metecho](https://metecho.herokuapp.com/repositories)
+1. [Metecho](https://metecho.herokuapp.com/projects)
 1. Log in using your GitHub account
 1. Authorize Metecho & Salesforce to access your GitHub account.
 1. Agree to the terms of service.
