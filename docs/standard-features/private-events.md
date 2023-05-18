@@ -7,8 +7,7 @@ parent: Standard Features
 
 # Private Events Overview
 
-Creating a Private Event is a way to control who has access to the event registration link. The event can be made private at both the Event level and at the Event Instance level; however, making an Event private at the Event level overrides the Event Instance privacy setting.
+Creating a Private Event blocks it from appearing on event lists/calendars. This allows for control over access to the event registration link since anyone with the link can register for the event. You can make the event private at both the Event and Event Instance levels, but setting it as private at the Event level overrides the Event Instance privacy setting.
 
-To get started, log in to your Salesforce account. Navigate to the Salesforce App Launcher by clicking on the App Launcher icon (grid icon) located at the top-left corner of the Salesforce homepage. Search for "Summit Events" and click on the application to launch it.
 
 
