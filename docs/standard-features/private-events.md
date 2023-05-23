@@ -12,6 +12,7 @@ Creating a Private Event blocks it from appearing on event lists/calendars. This
 To create a Private Event, go to the Summit Events tab and select New.
 <br>**Remember that you can make the event private on this page, but making the Event private will override subsequent Event instances' privacy settings.*
 
+![Private Event Checkbox](images/Private_Events_Add_New_Event.png)
 
 
 
