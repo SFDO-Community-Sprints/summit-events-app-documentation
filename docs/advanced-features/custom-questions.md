@@ -67,6 +67,8 @@ The record lookup section is only to be completed if looking up values from anot
 * __Lookup Secondary Input Link Text__ - The link text that invites a user not to use the record lookup but rather fill in a value manually.
 * __Lookup Secondary Input Question__ - If the lookup query is opted out of these instructions will appear below a blank text box for manual entry.
 
+ See [Lookup and Lookup Picklist](Custom_Qs_LookupFeature.md) for detailed information on using these features.
+ 
  
 # Troubleshooting
 __Receive error message:__ "Question setup issue(s): Map to field: Field Your_Custom_Field__c is not accessible by guest user.Map To Field: Field Your_Custom_Field__c is not accessible by guest user.
