@@ -49,6 +49,7 @@ To create a new question for use on your Summit Event:
 * __Default Value__ -  Can be used to set the default value for the field.  This is especially helpful if you want to store a default value in a field but not display the field on the form.  
 * __Error Assist Text__ - text that can be displayed if the answer provided is not valid.
 * __Display Order__ - order in which this question should display on the additional questions page of the registration process.
+* __Display Style__ - controls how Summit Event Questions are displayed on the registration page. You can select from display options to show the question full width, half width and third width.  If no width is selected, the default setting is half width. You can control this on each Summit Event Question record by utilizing the Display field. This feature will adjust on mobile devices to full width as well as adjust to browser size changes.
 
 ### Field Question Details Section
 There are several types of question fields which can be created and the type will dictate what fields you complete in the Field Question Details section and in the Record Lookup section.  If you are creating a Record Lookup field, you will only complete the Map to Field in the Field Question Details section.
@@ -58,7 +59,7 @@ There are several types of question fields which can be created and the type wil
 * __Picklist Values__ - Values that will display as choices in a picklist field.  Enter each item on its own line. 
 
 ### Record Lookup Section
-The record lookup section is only to be completed if looking up values from another object and field.   
+The record lookup section is only to be completed if looking up values from another object and field and returns the record ID of the selected record.   
 * __Lookup Object__ - object that contains the field with the data to be referenced
 * __Lookup Fields__ - fields that you want to show when the registrant searches for an item.
 * __Lookup Where Clause__ - using SOQL statement syntax, you can limit the records available for search in your lookup field.  The API name of the field should be referenced.  The WHERE clause follows field expression syntax. A fieldExpression is defined as follows: WHERE <fieldAPIName> <comparisonOperator> <value>.  Valid comparison operators include the following: =, !=, <, <=, >, >=, LIKE, IN, NOT IN, INCLUDES, and EXCLUDES. 
@@ -66,5 +67,8 @@ The record lookup section is only to be completed if looking up values from anot
 * __Lookup Secondary Value Field__ - This is required if using the Lookup Object feature.  The API name for the field to land manual, registrant inputs when the registrant opts out of looking up a record.
 * __Lookup Secondary Input Link Text__ - The link text that invites a user not to use the record lookup but rather fill in a value manually.
 * __Lookup Secondary Input Question__ - If the lookup query is opted out of these instructions will appear below a blank text box for manual entry.
-  
+
+ 
+#Troubleshooting
+* __Receive error message__ "Question setup issue(s): Map to field: Field Your_Custom_Field__c is not accessible by guest user.Map To Field: Field Your_Custom_Field__c is not accessible by guest user.  Solution:  Give guest user edit access to field.  See [Troubleshooting](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/troubleshoot.md} for details on guest user access.
 
