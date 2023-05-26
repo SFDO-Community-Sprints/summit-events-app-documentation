@@ -48,7 +48,7 @@ Once your domain has been registered continue:
 ![](../images/Site%20URL%20Capture.png)
 
 ### Set Custom Settings
-Since each installation can have a different site URL, we need to define that URL for the event application to use as its root web presence. This is used for feed URLs, allowing external sites to access it, among other things.
+Since each installation can have a different site URL, we need to define that URL for the event application to use as its root web presence. This is used for feed URLs, allowing external sites to access it, among other things. [Learn more about other custom settings](../advanced-features/custom-settings.md).
 
 1. In Setup go to User Custom Code -> Custom Settings.
 
