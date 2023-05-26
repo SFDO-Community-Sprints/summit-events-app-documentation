@@ -78,5 +78,6 @@ __Solution:__  Give guest user edit access to field.  See [Troubleshooting](http
  
 __Lookup field displays, but no information shows for search or selection__
  
-__Possible solutions:__ 1) Review the information in the Lookup Where Clause field and verify that records match this criteria.  2) Make sure the type of record is included in the [Sharing rules](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/#set-sharing-rules).
+__Possible solutions:__ 1) Review the information in the Lookup Where Clause field and verify that records match this criteria.  2) Make sure the type of record is included in the [Sharing rules](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/#set-sharing-rules).  Account sharing rule example: 
+![](SampleAccountSharingRules.png)
 
