@@ -1,6 +1,7 @@
 ---
 title: Custom Questions
 parent: Advanced Features
+has_children: true
 ---
 
 # Registrant and Guest Questions
