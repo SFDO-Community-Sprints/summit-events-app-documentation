@@ -7,13 +7,15 @@ parent: Standard Features
 
 # Private Events Overview
 
-Creating a Private Event blocks it from appearing on event lists/calendars. This allows for control over access to the event registration link since anyone with the link can register for the event. You can make the event private at both the Event and Event Instance levels, but setting it as private at the Event level overrides the Event Instance privacy setting.
+The Private Event feature blocks the event instance from appearing on event lists/calendars. You have one of two options when using the feature:
 
-To create a Private Event, go to the Summit Events tab and select New.
-<br>**Remember that you can make the event private on this page, but making the Event private will override subsequent Event instances' privacy settings.*
+If some event instances will be private, mark Private at the Event Instance level as shown in the following screen shot:
 
-![Private Event Checkbox](images/Private_Events_Add_New_Event.png)
+![Private Event Instance Level Checkbox](images/Private_Events_Event_Instance_Level.png)
 
+If all the event instances will be private, mark Private at the Additonal Configuration section in the Event page as shown in the following screen shot:
+
+![Private Event Event Level Checkbox](images/Private_Events_Additional_Configurations_Page.png)
 
 
   
