@@ -69,6 +69,7 @@ The record lookup section is only to be completed if looking up values from anot
 * __Lookup Secondary Input Question__ - If the lookup query is opted out of these instructions will appear below a blank text box for manual entry.
 
  
-#Troubleshooting
-* __Receive error message__ "Question setup issue(s): Map to field: Field Your_Custom_Field__c is not accessible by guest user.Map To Field: Field Your_Custom_Field__c is not accessible by guest user.  Solution:  Give guest user edit access to field.  See [Troubleshooting](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/troubleshoot.md} for details on guest user access.
+# Troubleshooting
+__Receive error message:__ "Question setup issue(s): Map to field: Field Your_Custom_Field__c is not accessible by guest user.Map To Field: Field Your_Custom_Field__c is not accessible by guest user. 
+__Solution:__  Give guest user edit access to field.  See [Troubleshooting](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/troubleshoot.md} for details on guest user access.
 
