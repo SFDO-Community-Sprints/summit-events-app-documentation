@@ -93,6 +93,6 @@ There are some additional considerations to make Summit Events more personalized
 * **Create a Custom Template**
     - A custom template will allow for the registration form and pages to be branded for your organization/institution.
     - The "General SLDS" is standard and will allow for a professional looking form, but you may want more branding.
-    - You can follow these instructions on [how to create a custom template]()
+    - You can follow these instructions on [how to create a custom template](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-templates/)
 
 
