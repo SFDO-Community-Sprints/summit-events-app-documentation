@@ -18,6 +18,8 @@ Lookup Picklist
 * Best for when you want registrant to pick from a list of predefined values.
 
 
+Fields that Control Behavior
+
 Lookup Object - object that contains the field with the data to be referenced
 Lookup Fields - fields that you want to show when the registrant searches for an item.
 Lookup Where Clause - using SOQL statement syntax, you can limit the records available for search in your lookup field. The API name of the field should be referenced. The WHERE clause follows field expression syntax. A fieldExpression is defined as follows: WHERE . Valid comparison operators include the following: =, !=, <, <=, >, >=, LIKE, IN, NOT IN, INCLUDES, and EXCLUDES.  
@@ -29,14 +31,12 @@ Lookup Secondary Input Link Text (for use with Lookup only) - The link text that
 Lookup Secondary Input Question (for use with Lookup only)- If the lookup query is opted out of these instructions will appear below a blank text box for manual entry.
 
 Lookup Example
-[Sreenshot]
+![](images/Lookup-Screen2.PNG)
 
 Lookup Picklist Example
 Setup
-![](images/Lookup_Picklist-Screen1.PNG)
-![](images/Lookup_Picklist-Screen2.PNG)
+![](images/Lookup_Picklist.PNG)
 
 Display
-
 ![](images/Lookup_Picklist-Screen3.PNG)
 
