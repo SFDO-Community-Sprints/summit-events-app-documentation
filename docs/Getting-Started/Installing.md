@@ -104,23 +104,23 @@ Salesforce Winter '20 and Spring '20 releases severely limited Guest User access
 
 
 #### Apply Permission Sets
-There are two permission sets provided in this application.  These permission sets should be cloned so that changes can be made to them as needed by your organization:  
+There are two permission sets provided in this application.  These permission sets should be leveraged to ensure functionality persists between upgrades.  
 1. Summit Events Admin - allows users to create and maintain events
-2. Summit Events Registrant - allows unauthenticated users to register for an event by giving the guest user access
+2. Summit Events Registrant - allows unauthenticated users and authenticated users in a community to register for an event
 
-Once the permission sets have been cloned, they can be applied to users.  See [Cloning Permission Sets](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/#cloning-a-permission-set) section for details on cloning a permission set.
+ An additional permission set for the Guest User and Authenticated Users should be created to account for any custom fields being created. 
 
 
 **Summit Events Admin:** Apply to admin users that need to create and maintain events.
-* Note: Users who are not system administrators but who will administer Summit Events will need this permission set. You do not need to add the Permission Set at this time, but follow the steps bulleted below if/when you need a user to administer Summit Events.
+   > Note: Users who are not system administrators but who will administer Summit Events will need this permission set. You do not need to add the Permission Set at this time, but follow the steps bulleted below if/when you need a user to administer Summit Events. It is recommended that the Summit Event Admin permission set is cloned so appropriate configurations can be made to reduce/expand access to various fields.
 
 1. In Setup under Users, click on Permission Sets.
-2. Click on Summit Events Admin.
+2. Click on Summit Events Admin or your cloned Summit Events Admin permission set.
 3. Click on the “Manage Assignments” button.
 4. Click the checkbox next to the user who will administer Summit Events and click the “Add Assignments” button.
 
-**Summit Events Registrant:** This permission set needs to be applied to the Guest User profile of your site for the public to be able to access to registration forms (see below).
-
+**Summit Events Registrant:** This permission set needs to be applied to the Guest User profile of your site for the public to be able to access to registration forms. In addition, a custom permission set should be created to control for additional access based on event configurations.
+   > Note: Cloning the Summit Event Registrant permissions set and only applying the cloned version may cause issues when upgrading the package.
 
 #### Apply Summit Events Registrant permission set to the Guest User of your site
 
@@ -138,18 +138,16 @@ Once the permission sets have been cloned, they can be applied to users.  See [C
 ![](../images/Guest%20User%20Config%202.png)
 ![](../images/Guest%20User%20Config%203.png)
 
-### Cloning a Permission Set
-1. Clone a Permission Set(s)
-2. Click the Gear and select Setup.
-3. From the Quick Find search textbox, enter Permission Sets. 
-4. Under the Action column, click Clone for the first Permission Set Label name that you want to clone.
-5. Enter a new Label name, API Name and Description for the clone permission set.
-6. Click Save.
+### Creating a Custom Permission Set for the Guest User
+We've updated the following documentation where users should no longer clone the Summit Event Registrant permission set, particularly associated to the Guest User. This change is to ensure Summit Events App works seamless with any upgrade and the Guest User always has the appropriate access to recieve event registrations.
 
-Once you've cloned the Permission set, you'll need to edit your custom permission set so it has the following new permissions:
-- Give read-access to all fields within the Summit Events object
-- Give read and create access to the Summit Events Fees object and assign read-access to all of the fields within the Summit Events Fees object.
-- Give read access to the Summit Events Question object and assign read-access to all fields within the Summit Events object.
+1. Create a new [Permissions Set](https://help.salesforce.com/s/articleView?id=sf.perm_sets_create.htm&type=5)
+2. Label the permission set to align with the Summit Event Registration for Guest Users - example: Summit Events Custom Registrant
+3. Go to Object Settings and grant "READ" access on the Account object. No additional fields needed.
+
+Once you've create the Custom Permission set, apply it to the Guest User as mentioned earlier. With this custom permission set, you'll be able to grant appropriate access to any additional objects or fields being utilized for Summit Events as well as the following:
+- Avoid disruptions and limit additional configurations during upgrades
+- Leverage Summit Event Questions and the Lookup options for improved data integrity
 
 Congrats! At this point you should have a functioning Summit Events Package.
 
