@@ -24,6 +24,4 @@ There is a field on the event object called Payment Gateway. As SEA user you can
 
 Since SEA uses an encrypted cookie to maintain the state of your registration you can utilize that information (as the key is available to code outside the package for decryption within the org) to carry on with code outside of SEA and still know the user's registration id. This will let you query for fees and know how to report back the success of your payment. 
 
-If your gateway code is professionally written it will receipt the transaction on the SEA payment object when the transaction is complete and send you back to the confirmation page. At this point SEA will see that all fees have been satisfied and end registration. 
-
-[custom questions section](../image/Preview_Event_Web_Form.png).
+If your gateway code is professionally written it will receipt the transaction on the SEA payment object when the transaction is complete and send you back to the confirmation page. At this point SEA will see that all fees have been satisfied and end registration.
