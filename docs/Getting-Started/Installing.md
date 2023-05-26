@@ -103,7 +103,7 @@ Salesforce Winter '20 and Spring '20 releases severely limited Guest User access
 ![](../images/Sharing%20Settings%20Config.png)
 
 
-#### Apply Permission Sets
+### Apply Permission Sets
 There are two permission sets provided in this application.  These permission sets should be leveraged to ensure functionality persists between upgrades.  
 1. Summit Events Admin - allows users to create and maintain events
 2. Summit Events Registrant - allows unauthenticated users and authenticated users in a community to register for an event
@@ -138,7 +138,7 @@ There are two permission sets provided in this application.  These permission se
 ![](../images/Guest%20User%20Config%202.png)
 ![](../images/Guest%20User%20Config%203.png)
 
-### Creating a Custom Permission Set for the Guest User
+#### Creating a Custom Permission Set for the Guest User
 We've updated the following documentation where users should no longer clone the Summit Event Registrant permission set, particularly associated to the Guest User. This change is to ensure Summit Events App works seamless with any upgrade and the Guest User always has the appropriate access to recieve event registrations.
 
 1. Create a new [Permissions Set](https://help.salesforce.com/s/articleView?id=sf.perm_sets_create.htm&type=5)
