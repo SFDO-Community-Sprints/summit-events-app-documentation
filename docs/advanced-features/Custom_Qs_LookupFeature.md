@@ -22,9 +22,8 @@ Lookup Example
 Lookup Picklist Example
 Setup
 ![](images/Lookup%20Picklist-Screen1.PNG)
-![](images/Lookup_Picklist-Screen2.PNG)
+![](images/LookupVPicklist-Screen2.PNG)
 
 Display
 ![](images/Lookup_Picklist-Screen3.PNG)
 
-docs/advanced-features/images/Lookup_Picklist-Screen1.PNG
