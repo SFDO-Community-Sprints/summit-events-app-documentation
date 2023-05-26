@@ -12,7 +12,7 @@ Summit Events makes it easy to send an automated email to your registrant based 
 
 Starting from the existing Summit Events Event record, locate the Summit Events Emails related list and click the New button.  Depending upon how your system is configured, the related list may be found in the Related List Quick Links area at the top of the event, if that is the case, hover over the link to access the New button.  If it is found along the right-side of the event screen or bottom of the event page with other related lists, click on the drop-down arrow and choose New. When creating a new email from the event, the event name populates automatically.
 
-![creating a new Summit Events email](../images/image-create-new-SEA-email.png)
+![creating a new Summit Events email](../images/create-new-SEA-email.png)
 
 ### 2. Provide an Org Email
 
@@ -22,13 +22,13 @@ This feature is based on utilizing an [Organization-Wide Email address](https://
 
 This feature currently leverages the [Classic Salesforce Letterhead](https://help.salesforce.com/s/articleView?id=sf.creating_letterheads.htm&type=5) template builder which can be found in the Setup menu and typing "letterhead" in the quick search menu. Once you have a classic letterhead created, from the drop down selection on "Select Classic Letterhead", select an approved Classic Letterhead. The selected letterhead is how your email will be wrapped. Hit "Save Letterhead Settings".
 
-![Save Letterhead Settings](../images/image-save-letterhead.png)
+![Save Letterhead Settings](../images/save-letterhead.png)
 
 ### 4. Select the appropriate Action and Sub Action Status
 
 Choose the Action Status value of "Registered" from the Action Status drop-down. Registered is being selected as it is the default status when an individual submits their registration and it is common practice for the person to receive an email when they complete the registration process. Sub Action Status is optional.  No Sub Action Statuses are being used for this event so this is left blank.
 
-![Selecting Action Status for an email](..images/image-registered-status.png)
+![Selecting Action Status for an email](..images/registered-status.png)
 
 ### 5. Enter the Subject
 
