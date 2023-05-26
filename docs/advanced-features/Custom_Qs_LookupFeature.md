@@ -5,7 +5,8 @@ grand_parent: Advanced Features
 ---
 
 
-This page covers more detail related to the Lookup features of custom questions.
+This page covers more detail related to the Lookup features of custom questions. 
+*Note if you do not see Lookup Picklist as an option in the Question Type Field, you may need to add Lookup Picklist as a value to the Summit Events Question Object's Question Type field.
 
 There are two types of ways to present fields to the registrant which will lookup to existing records in your Salesforce org.  Lookup and Lookup Picklist.  The difference in the two methods are the following:
 
