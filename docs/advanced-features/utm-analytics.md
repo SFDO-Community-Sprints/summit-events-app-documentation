@@ -4,7 +4,7 @@ parent: Advanced Features
 ---
 
 # Analytics utilizing utm Parameters
-Events are shared beyond just email and marketers are wanting to understand the path taken to get to an event link to measure ROI, particularly for paid media. Google Analyitics will aggregate much of the data with the appropriate configuration to understand volume and traffic. With Summit Events, additional fields can be leveraged as part of Google Tag Manager and utilizing Google Analytics, the utm parameters generated will surface onto the registration record for more granular analtics in Salesforce to understand the registrats path to registering.
+Events invitations are shared in a variety of ways and marketers are wanting to understand the paths taken to get to an event link to measure ROI through their various campaigns. Google Analyitics will aggregate much of the data with the appropriate configuration to understand volume, traffic and campaign related information. With Summit Events, additional fields can be leveraged to support campaign analytics surfacing values onto the registration record for more granular analytics in Salesforce to understand the registrats path to registering.
 
 ## Fields Utilized for Google Tag Manager
 On the Summit Events Record, the Event Manager can set values on the below fields to be utilized in Google Tag Manager (GTM). When utizling GTM, the value on these fields should populate for additional segementation and analytics with Google Analytics. The following fields are utilized as a part of the data layer and the [Google Tag Manager code](https://developers.google.com/tag-platform/tag-manager/web/datalayer) will need to be in your custom template.
