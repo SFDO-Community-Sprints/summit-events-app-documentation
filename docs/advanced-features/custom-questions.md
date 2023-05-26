@@ -23,7 +23,7 @@ To create a new field on the Summit Events registration object:
 2. Search for and select the Summit Events registration object.
 3. Follow the process to create the new field.
 4. Note the API name of your newly created field, you will need this later.  
-5. Give access to the question to the Guest User.   See the section labeled “Custom Questions - Guest User Access “
+5. Give access to the question to the Guest User.   See the section labeled “Custom Questions - Guest User Access“
 
 ## Create a new question on your Summit Event 
 This is what tells the registration form to display the question.  
@@ -34,7 +34,6 @@ To create a new question for use on your Summit Event:
 4. Save the new question.  Repeat this process for each additional question needed.
 
 ![](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Advanced-Features/images/AdvancedQs-ExamplesScreenshot.PNG)
-![](../images/AdvancedQs-ExamplesScreenshot.PNG)
 
 ### Information Section
 * __Summit Events Question Name__ - the backend name for the question.
