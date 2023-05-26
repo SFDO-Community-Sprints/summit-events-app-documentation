@@ -74,4 +74,9 @@ The record lookup section is only to be completed if looking up values from anot
 __Receive error message:__ "Question setup issue(s): Map to field: Field Your_Custom_Field__c is not accessible by guest user.Map To Field: Field Your_Custom_Field__c is not accessible by guest user.
  
 __Solution:__  Give guest user edit access to field.  See [Troubleshooting](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/troubleshoot.md} for details on guest user access.
+ 
+ 
+__Lookup field displays, but no information shows for search or selection__
+ 
+__Possible solutions:__ 1) Review the information in the Lookup Where Clause field and verify that records match this criteria.  2) Make sure the type of record is included in the Sharing rules.
 
