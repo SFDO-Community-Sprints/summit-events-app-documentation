@@ -33,7 +33,7 @@ This key gets built upon install of SEA. It is unique to your org. You can adjus
 Country picklists that appear in SEA can be default to a country of your choice by entering the exact country name in the Default Country setting. This setting is optional but is helpful if you want to default to a certain region and make it easier for locals to register.
 
 ### Managed Package:
-If you installed the managed package version of SEA than this checkbox will be auto checked. Since SEA is Open-Source the code is maintained in such a way that anyone could deploy it to their site as unmanaged code. When SEA is deployed as unmanaged code this would not be checked. It is recommended that for enterprise use you always install SEA as manage package for security confidence and some Salesforce.org limits increased.
+If you installed the managed package version of SEA than this checkbox will be auto checked. Since SEA is Open-Source the code is maintained in such a way that anyone could deploy it to their site as unmanaged code. When SEA is deployed as unmanaged code this would not be checked. It is recommended that for enterprise user you always install SEA as a manage package for security confidence and some Salesforce.org limits increased.
 
 ### Trigger Settings
 SEA comes packaged with some triggers. There may be times you wish to disable these triggers when troubleshooting issues in an org. SEA convienently makes that possible in Custom Settings. Checking the "Turn off" checkbox will stop the SEA trigger on the object affected.
