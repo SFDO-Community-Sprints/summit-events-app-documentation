@@ -25,7 +25,7 @@ There are two types of ways to present fields to the registrant which will looku
 
 
 
-# Fields that Control Behavior
+## Fields that Control Behavior
 * Lookup Object - object that contains the field with the data to be referenced
 * Lookup Fields - fields that you want to show when the registrant searches for an item.
 * Lookup Where Clause - using SOQL statement syntax, you can limit the records available for search in your lookup field. The API name of the field should be referenced. The WHERE clause follows field expression syntax. A fieldExpression is defined as follows: WHERE . Valid comparison operators include the following: =, !=, <, <=, >, >=, LIKE, IN, NOT IN, INCLUDES, and EXCLUDES.  
