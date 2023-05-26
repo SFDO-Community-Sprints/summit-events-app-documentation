@@ -17,3 +17,21 @@ How to get to SEA's custom settings:
 You should see a view similar to this:
 ![Summit Events Custom Setting](images/Custom-Settings_SEA.png)
 
+## Fields and Settings
+
+**Location:**
+
+**Community Base URL:**
+
+**Cookie Encryption Key:**
+
+**Default Country:**
+
+**Managed Package:**
+
+**Turn off Appointment Trigger:**
+
+**Turn off Lead Trigger:**
+
+**Turn off Registration Trigger:**
+
