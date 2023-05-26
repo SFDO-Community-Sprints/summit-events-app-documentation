@@ -108,9 +108,6 @@ There are two permission sets provided in this application.  These permission se
 1. Summit Events Admin - allows users to create and maintain events
 2. Summit Events Registrant - allows unauthenticated users and authenticated users in a community to register for an event
 
- An additional permission set for the Guest User and Authenticated Users should be created to account for any custom fields being created. 
-
-
 **Summit Events Admin:** Apply to admin users that need to create and maintain events.
    > Note: Users who are not system administrators but who will administer Summit Events will need this permission set. You do not need to add the Permission Set at this time, but follow the steps bulleted below if/when you need a user to administer Summit Events. It is recommended that the Summit Event Admin permission set is cloned so appropriate configurations can be made to reduce/expand access to various fields.
 
@@ -148,6 +145,8 @@ We've updated the following documentation where users should no longer clone the
 Once you've create the Custom Permission set, apply it to the Guest User as mentioned earlier. With this custom permission set, you'll be able to grant appropriate access to any additional objects or fields being utilized for Summit Events as well as the following:
 - Avoid disruptions and limit additional configurations during upgrades
 - Leverage Summit Event Questions and the Lookup options for improved data integrity
+
+
 
 Congrats! At this point you should have a functioning Summit Events Package.
 
