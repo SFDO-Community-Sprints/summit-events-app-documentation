@@ -17,6 +17,7 @@ There are two types of ways to present fields to the registrant which will looku
 # Lookup Picklist
 * Presents the field as a drop-down of values from which they can select one option.
 * Best for when you want registrant to pick from a list of predefined values.
+* Best for returning a small number of records (e.g. under 100)
 
 *Note if you do not see Lookup Picklist as an option in the Question Type Field, you may need to add Lookup Picklist as a value to the Summit Events Question Object's Question Type field.*
 
