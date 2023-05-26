@@ -28,6 +28,8 @@ There are two types of ways to present fields to the registrant which will looku
 * Lookup Secondary Input Link Text (for use with Lookup only) - The link text that invites a user not to use the record lookup but rather fill in a value manually.
 * Lookup Secondary Input Question (for use with Lookup only)- If the lookup query is opted out of these instructions will appear below a blank text box for manual entry.
 
+#Examples
+
 __Lookup Example - Setup__
 ![Lookup Example Screen](images/Lookup%20Picklist.PNG)
 
