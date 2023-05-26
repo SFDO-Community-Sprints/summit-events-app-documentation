@@ -7,13 +7,13 @@ parent: Standard Features
 
 # Private Events Overview
 
-**The Private Event feature blocks the event instance from appearing on event lists/calendars. You have one of two options when using the feature:**
+**The Private Event feature blocks the event instance from appearing on event lists/calendars. You have two options when using the feature:**
 
-**If some event instances will be private, mark Private at the Event Instance level as shown in the following screen shot:**
+**If some event instances will be private, toggle the Private checkbox at the Event Instance level as shown in the following screen shot:**
 
 ![Private Event Instance Level Checkbox](images/Private_Events_Event_Instance_Level.png)
 
-**If all the event instances will be private, mark Private at the Additonal Configuration section in the Event page as shown in the following screen shot:**
+**If all the event instances will be private, mark the Private checkbox at the Additonal Configuration section in the Event page as shown in the following screen shot:**
 
 ![Private Event Event Level Checkbox](images/Private_Events_Additional_Configurations_Page.png)
 
