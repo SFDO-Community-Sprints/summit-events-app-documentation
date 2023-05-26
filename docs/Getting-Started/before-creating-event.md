@@ -70,7 +70,7 @@ Here are the picklist fields that need to be reviewed and personalized for your 
 * Add Record Types and custom page layouts on objects such as "Summit Events Host" and Summit Events to provide custom page layouts and picklist values to users based on their departments or roles in the organization
   + Example - add custom Record Types of "Admissions" and "Advancement" on the Summit Events object so each area sees fields and picklist values that are relevant to their department instead of showing them all fields and field values.
 
-![Selecting a record type](/images/1.2%20-%20Record%20type.png)
+![Selecting a record type](images/1.2%20-%20Record%20type.png)
 
    Optional: If you will only be using one record type, you can skip the step of selecting the record type each time by using these instructions to [set a default record type](https://help.salesforce.com/articleView?id=user_recordtype.htm&type=5).
 
