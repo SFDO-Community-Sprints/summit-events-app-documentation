@@ -21,7 +21,8 @@ There are two types of ways to present fields to the registrant which will looku
 # Fields that Control Behavior
 * Lookup Object - object that contains the field with the data to be referenced
 * Lookup Fields - fields that you want to show when the registrant searches for an item.
-* Lookup Where Clause - using SOQL statement syntax, you can limit the records available for search in your lookup field. The API name of the field should be referenced. The WHERE clause follows field expression syntax. A fieldExpression is defined as follows: WHERE . Valid comparison operators include the following: =, !=, <, <=, >, >=, LIKE, IN, NOT IN, INCLUDES, and EXCLUDES.  ![Where Clause](images/WhereClauseExample.PNG)
+* Lookup Where Clause - using SOQL statement syntax, you can limit the records available for search in your lookup field. The API name of the field should be referenced. The WHERE clause follows field expression syntax. A fieldExpression is defined as follows: WHERE . Valid comparison operators include the following: =, !=, <, <=, >, >=, LIKE, IN, NOT IN, INCLUDES, and EXCLUDES.  
+![Where Clause](images/WhereClauseExample.PNG)
     
 * Lookup Results Icon (optional and for use with Lookup only) - Defaults to the standard account icon. Override the icon by entering the name of any standard icon found here https://www.lightningdesignsystem.com/icons/#standard
 * Lookup Secondary Value Field (for use with Lookup only) - This is required if using the Lookup Object feature. The API name for the field to land manual, registrant inputs when the registrant opts out of looking up a record.
