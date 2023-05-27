@@ -17,7 +17,7 @@ The Private Event feature blocks the event instance from appearing on event list
 
 ![Private Event Instance Level Checkbox](images/Private_Events_Event_Instance_Level.png)
 
-Need help getting started creating a basic event? Get started here: 
+Need help getting started creating a basic event? Get started here: [Create a Basic Event](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/create-basic-event)
 
 
   
