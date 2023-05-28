@@ -52,14 +52,14 @@ To create a new question for use on your Summit Event:
 * __Display Style__ - controls how Summit Event Questions are displayed on the registration page. You can select from display options to show the question full width, half width and third width.  If no width is selected, the default setting is half width. You can control this on each Summit Event Question record by utilizing the Display field. This feature will adjust on mobile devices to full width as well as adjust to browser size changes.
 
 ### Field Question Details Section
-There are several types of question fields which can be created and the type will dictate what fields you complete in the Field Question Details section and in the Record Lookup section.  If you are creating a Record Lookup field, you will only complete the Map to Field in the Field Question Details section.
+There are several types of question fields which can be created and the type will dictate what fields you complete in the Field Question Details section and in the Record Lookup section.  If you are creating a Record Lookup field, you will only complete the Map to Field in the Field Question Details section.  
 * __Map to Field__ - the Summit Event Registration object field to which this field should map.  Enter the API field name of the field you created here.  The API field name should end in __c.
 * __Text Limit__ - determines the character limit on a text field.  This should never be longer than the field length of the Summit Event Registration object field where the data will be stored.
 * __Existing Picklist Values__ - there are a number of predefined existing picklist fields that can be referenced.  Choose one of them if appropriate.
 * __Picklist Values__ - Values that will display as choices in a picklist field.  Enter each item on its own line. 
 
 ### Record Lookup Section
-The record lookup section is only to be completed if looking up values from another object and field and returns the record ID of the selected record.   
+The record lookup section is only to be completed if looking up values from another object and field and returns the record ID of the selected record.  See [Lookup and Lookup Picklist](Custom_Qs_LookupFeature.md) for detailed setup information.
 * __Lookup Object__ - object that contains the field with the data to be referenced
 * __Lookup Fields__ - fields that you want to show when the registrant searches for an item.
 * __Lookup Where Clause__ - using SOQL statement syntax, you can limit the records available for search in your lookup field.  The API name of the field should be referenced.  The WHERE clause follows field expression syntax. A fieldExpression is defined as follows: WHERE <fieldAPIName> <comparisonOperator> <value>.  Valid comparison operators include the following: =, !=, <, <=, >, >=, LIKE, IN, NOT IN, INCLUDES, and EXCLUDES. 
@@ -68,7 +68,6 @@ The record lookup section is only to be completed if looking up values from anot
 * __Lookup Secondary Input Link Text__ - The link text that invites a user not to use the record lookup but rather fill in a value manually.
 * __Lookup Secondary Input Question__ - If the lookup query is opted out of these instructions will appear below a blank text box for manual entry.
 
- See [Lookup and Lookup Picklist](Custom_Qs_LookupFeature.md) for detailed information on using these features.
  
  
 # Troubleshooting
