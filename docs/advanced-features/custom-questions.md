@@ -17,11 +17,11 @@ Some considerations to keep in mind when creating custom questions:
  <iframe width="560" height="315" src="https://www.youtube.com/embed/IsFGoQRQOQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## Create new question field on Summit Events registration object
+## Create new question field on Summit Events Registration object
 This is where the answer the registrant provides will be stored.  
-To create a new field on the Summit Events registration object:
+To create a new field on the Summit Events Registration object:
 1. From Setup, select the Object Manager tab.
-2. Search for and select the Summit Events registration object.
+2. Search for and select the Summit Events Registration object.
 3. Follow the process to create the new field.
 4. Note the API name of your newly created field, you will need this later.  
 5. Give access to the question to the Guest User.   See the section labeled “Custom Questions - Guest User Access“
