@@ -1,5 +1,5 @@
 ---
-title: Gemerated-Itinerary
+title: Generated-Itinerary
 parent: Appointments-options
 ---
 
