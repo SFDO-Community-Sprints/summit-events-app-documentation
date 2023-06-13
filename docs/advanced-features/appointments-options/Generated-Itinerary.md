@@ -1,5 +1,5 @@
 ---
-title: Generated-Itinerary
+title: Generated Itinerary
 parent: Advanced Features
 has_children: true
 ---
