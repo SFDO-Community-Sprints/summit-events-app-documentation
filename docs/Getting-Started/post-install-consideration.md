@@ -66,7 +66,7 @@ Summit Events is delivered with sample values for institution/organization based
 
 
 **Summit Events Questions object**
-* Exisiting Picklist Values *(Note: this will be based on any custom picklist fields on the Summit Events Registration object)*
+* Existing Picklist Values *(Note: this will be based on any custom picklist fields on the Summit Events Registration object)*
 
 
 ---to be continued---
