@@ -11,7 +11,7 @@ There may be times when you want to create an event and allow for registration b
 2. Hide some of but not all of the Event Instances tied to a particular Event record when you want some events in the series to appear to the public and others to not.
 
 
-1) If all the event instances will be private, check the Private Event checkbox at the Event Level in the Additonal Configuration section as shown in the following screen shot:
+1) If all the event instances will be private, check the Private Event checkbox at the Event level in the Additonal Configuration section as shown in the following screen shot:
 
 ![Private Event Event Level Checkbox](images/Private_Events_Additional_Configurations_Page.png)
 
