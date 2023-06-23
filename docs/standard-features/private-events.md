@@ -3,8 +3,6 @@ title: Private Events
 parent: Standard Features
 ---
 
-*This page is still needing some content. If you're interested in contributing to the Summit Events App and want to help provide support by creating this page, comment below and let us know!*
-
 # Private Events Overview
 
 The Private Event feature blocks the event instance from appearing on event lists/calendars. You have two options when using the feature:
