@@ -81,7 +81,3 @@ Navigate to the registration page and confirm registration fields are displaying
 - To add questions to an event registration form, see [Standard Registration Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/standard-reg-questions/).
 
 - To generate a confirmation email for the event, see [Creating an Event Email](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/).
-
-# Creating and Event Overview Video 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TXChqCFTTGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br/>
