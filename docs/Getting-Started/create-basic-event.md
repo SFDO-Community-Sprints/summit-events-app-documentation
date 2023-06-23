@@ -3,7 +3,7 @@ title: Creating a Basic Event
 parent: Getting Started
 nav_order: 4
 ---
-</br>
+
 
 ![CreateBasicEventOverviewImage](images/CreateBasicEvent_Overview.png)  
 <br/>
