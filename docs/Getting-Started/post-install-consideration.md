@@ -11,7 +11,7 @@ This content is a work in progress. If you're interested in contributing to the 
 After you install Summit Events in your org there are some additional considerations you'll want to make to ensure there is alignment with your organization. Before you begin, be sure that you've completed all of the steps to [Install and Configure](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/) Summmit Events.
 
 ## Page Layout Considerations
-The Summit Events App was original created for Higher Education institutions. You'll notice there are some fields that are specifically related to Admissions, like "Applicant Type". Based on your organization/institution, you may want to remove fields from the page layout to avoid confustion from your Users. We add the most commonly used fields that highlight exisiting functionality to the page layouts on install for visibility.
+The Summit Events App was originally created for Higher Education institutions. You'll notice there are some fields that are specifically related to Admissions, like "Applicant Type". Based on your organization/institution, you may want to remove fields from the page layout to avoid confustion from your Users. We add the most commonly used fields that highlight exisiting functionality to the page layouts on install for visibility.
 
 Here are some suggested fields to review based on some industry intentions:
 * Applicant Type
