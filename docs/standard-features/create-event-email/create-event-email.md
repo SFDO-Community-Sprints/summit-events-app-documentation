@@ -48,6 +48,9 @@ Please note that if the Summit Events Email record includes an Action Sub status
 
 Note: this text area field allows value that has no more than 1000 characters. 
 
+![BCC Feature](../images/BCCFeature.png)
+
+
 ### 8. Save the new email
 
 These are all the fields we need to complete for our simple event.  For information about all of the fields, see the Field list below.
