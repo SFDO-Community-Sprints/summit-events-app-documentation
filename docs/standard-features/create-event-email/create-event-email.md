@@ -28,7 +28,7 @@ This feature currently leverages the [Classic Salesforce Letterhead](https://hel
 
 Choose the Action Status value of "Registered" from the Action Status drop-down. Registered is being selected as it is the default status when an individual submits their registration and it is common practice for the person to receive an email when they complete the registration process. Sub Action Status is optional.  No Sub Action Statuses are being used for this event so this is left blank.
 
-![Selecting Action Status for an email](..images/registered-status.png)
+![Selecting Action Status for an email](../images/registered-status.png)
 
 ### 5. Enter the Subject
 
