@@ -3,7 +3,7 @@ title: Creating a Basic Event
 parent: Getting Started
 nav_order: 4
 ---
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TXChqCFTTGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 
 ![CreateBasicEventOverviewImage](images/CreateBasicEvent_Overview.png)  
