@@ -42,7 +42,9 @@ Note: Only fields on the Summit Event Registration objects can be merged into th
 
 ### 7. Provide a BCC Email (optional)
 
-The BCC Email field can be utilized for any addtional email addresses that should be blind carbon copied on each sent message. When entering multiple email addresses, a comma should be used to separate the email addresses.  The blind carbon copied individuals will receive a copy of each message sent and is not a dynamic field.  
+On the registration record, an Event Manager can manually add a(n) email(s) to the BCC Transactional Emails field on the Summit Events Registration record while selecting a corresponding status on the BCC Transactional Email Status field to allow for unique individuals to be added on triggered email communications to that specific registrant. A higher education use case may involve adding a coach or faculty member on a confirmation email that has the registrant’s itinerary on it as a reminder/notification.
+
+Please note that if the Summit Events Email record includes an Action Sub status the Email will not send. This functionality is limited to Summit Event Registration field Status and Summit Events Email field Action Status matching. An enhancement request has been entered for the functionality to send regardless of Summit Events Email field Action Sub status.
 
 Note: this text area field allows value that has no more than 1000 characters. 
 
