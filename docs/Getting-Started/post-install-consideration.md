@@ -76,19 +76,19 @@ Summit Events is delivered with sample values for institution/organization based
 There are some additional considerations to make Summit Events more personalized for your Organization/Institution. Consider the following and check out the provided resources:
 
 * **Changing field Display Names**
-    - Changing the field display name to better match your organizations jargon may be helpful to users.
+    - Changing the field display name to better match your organization's jargon may be helpful to users.
     - The following instructions [how to change field label for managed package fields](https://www.greytrix.com/blogs/salesforce/2017/10/06/how-to-rename-the-field-label-in-salesforce-for-managed-package/).
-    - **Note:** Doing this may create challenges in leverage some of the documentation, so be mindful on what fields you're updating.
+    - **Note:** Doing this may create challenges in leveraging some of the documentation, so be mindful on what fields you're updating.
 * **Creating Record Type and Custom Page Layouts**
     - Create Record Type and Custom Page layouts can help guide users based on their specific use cases. 
     - In Higher Education, you may have different layouts for Admissions and Advancements based on their needs and processes.
     - You can leverage Salesforce resources on [how to create Record Types](https://trailhead.salesforce.com/en/content/learn/projects/customize-a-salesforce-object/create-record-types).
 * **Add the Summit Events Calendar to your website**
-    - There are a couple ways to do this and it may depend on your organization/institutions website resources.
+    - There are a couple of ways to do this and it may depend on your organization's/institution's website resources.
     - You can following these instructions on getting the full calendar to a web page - [Insturctions Need]()
-    - You can follow these insturction for more advanced calendaring functionality leverage the Summit Events Feed - [Insturctions Need]()
+    - You can follow these instructions for more advanced calendaring functionality and leverage the Summit Events Feed - [Instructions Need]()
 * **Setup Contact and Lead Matching** 
-    - Ideally, you'll want Event Registrants to be added to your Salesforce org in a meaningful way. You may want to create and match Leads and/or Contacts. Review the following to create a process that supports your organizations/institution:
+    - Ideally, you'll want Event Registrants to be added to your Salesforce org in a meaningful way. You may want to create and match Leads and/or Contacts. Review the following to create a process that supports your organization/institution:
       - [Contact and Lead Matching/Creation](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/contact-and-lead-matching/)
 * **Create a Custom Template**
     - A custom template will allow for the registration form and pages to be branded for your organization/institution.
