@@ -5,4 +5,4 @@ has_children: true
 ---
 
 
-Work in progress more information coming soon!
+*This content is a work in progress. More information coming soon!*
