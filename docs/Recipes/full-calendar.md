@@ -3,5 +3,4 @@ title: Calendar
 parent: Recipes
 ---
 
-
-*More details to come!*
+*This content is a work in progress. More Information coming soon*
