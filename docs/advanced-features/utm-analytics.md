@@ -3,7 +3,7 @@ title: UTM Analytics
 parent: Advanced Features
 ---
 
-# Analytics utilizing utm Parameters
+# Analytics Utilizing UTM Parameters
 Events invitations are shared in a variety of ways and marketers are wanting to understand the paths taken to get to an event link to measure ROI through their various campaigns. Google Analyitics will aggregate much of the data with the appropriate configuration to understand volume, traffic and campaign related information. With Summit Events, additional fields can be leveraged to support campaign analytics surfacing values onto the registration record for more granular analytics in Salesforce to understand the registrats path to registering.
 
 ## Fields Utilized for Google Tag Manager
@@ -31,15 +31,15 @@ When utilizing Google Analtics (GA) for campaign analytics, Summit Events captur
 > [The definition for each of these parameters can be found here.](https://support.google.com/analytics/answer/10917952?hl=en#zippy=%2Cin-this-article)
 
 ## Expectations and Walk-Through
-Below is an example of how this may look, only looking at Summit Events and the experience inside of Salesforce. For more information about Google Analytics and collecting Campaign Analytics, please [refer to their documentation](https://support.google.com/analytics/answer/1033863?hl=en&ref_topic=1032998&sjid=9325373783481558763-NA#)
+Below is an example of how this may look, only looking at Summit Events and the experience inside of Salesforce. For more information about Google Analytics and collecting Campaign Analytics, please [refer to their documentation](https://support.google.com/analytics/answer/1033863?hl=en&ref_topic=1032998&sjid=9325373783481558763-NA#).
 > To test this, utilize [Google's Demo and Tools Campaign URL Builder](https://ga-dev-tools.google/ga4/campaign-url-builder/).
 
-* Start by creating an Event and an Event Instance
-* Capture the URL form the Register link and input into the Campaign URL Builder
+* Start by creating an Event and an Event Instance.
+* Capture the URL form the Register link and input into the Campaign URL Builder.
   > ![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/014c29b2-8891-47b2-a2d8-6dd2b225af53)
-* The URL will generate and you can use that to start a new registration
+* The URL will generate and you can use that to start a new registration.
   > ![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/848ad20c-93a0-4b43-b630-5b7719d3a50d)
-* Complete the registration process. The utm are recorded when the registrant hit's Submit or Next on the first page. If there are additional pages associated to the registration, once they pass the first page, the URL removes the parameters in the URL and the values are captured on the registration record, which will be in a started status until the registrant hits "Submit".
+* Complete the registration process. The utm are recorded when the registrant hits the Submit or Next on the first page. If there are additional pages associated to the registration, once they pass the first page, the URL removes the parameters in the URL and the values are captured on the registration record, which will be in a started status until the registrant hits "Submit".
 * Initial Page: 
   > ![GA Summit Events](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/5eb00f01-1c6f-478f-bea7-75a625e7c939)
 * Second Page after "Next": 

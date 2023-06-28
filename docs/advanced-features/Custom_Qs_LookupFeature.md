@@ -1,5 +1,5 @@
 ---
-title: Lookup and Lookup Picklist question types
+title: Lookup and Lookup Picklist Question Types
 parent: Custom Questions
 grand_parent: Advanced Features
 ---
@@ -7,6 +7,7 @@ grand_parent: Advanced Features
 
 This page covers more detail related to the Lookup features of custom questions. 
 
+# Lookup and Lookup Picklist Question Types
 
 There are two types of ways to present fields to the registrant which will lookup to existing records in your Salesforce org.  Lookup and Lookup Picklist.  The difference in the two methods are the following:
 
@@ -17,7 +18,7 @@ There are two types of ways to present fields to the registrant which will looku
 # Lookup Picklist
 * Presents the field as a drop-down of values from which they can select one option.
 * Best for when you want registrant to pick from a list of predefined values.
-* Best for returning a small number of records (e.g. under 100)
+* Best for returning a small number of records (e.g. under 100).
 
 *Note if you do not see Lookup Picklist as an option in the Question Type Field, you may need to add Lookup Picklist as a value to the Summit Events Question Object's Question Type field.*
 
@@ -27,15 +28,15 @@ There are two types of ways to present fields to the registrant which will looku
 
 
 ## Fields that Control Behavior
-* Lookup Object - object that contains the field with the data to be referenced
-* Lookup Fields - fields that you want to show when the registrant searches for an item.
-* Lookup Where Clause - using SOQL statement syntax, you can limit the records available for search in your lookup field. The API name of the field should be referenced. The WHERE clause follows field expression syntax. A fieldExpression is defined as follows: WHERE . Valid comparison operators include the following: =, !=, <, <=, >, >=, LIKE, IN, NOT IN, INCLUDES, and EXCLUDES.  
+* **Lookup Object** - object that contains the field with the data to be referenced.
+* **Lookup Fields** - fields that you want to show when the registrant searches for an item.
+* **Lookup Where Clause** - using SOQL statement syntax, you can limit the records available for search in your lookup field. The API name of the field should be referenced. The WHERE clause follows field expression syntax. A fieldExpression is defined as follows: WHERE . Valid comparison operators include the following: =, !=, <, <=, >, >=, LIKE, IN, NOT IN, INCLUDES, and EXCLUDES.  
 ![Where Clause](images/WhereClauseExample.PNG)
     
-* Lookup Results Icon (optional and for use with Lookup only) - Defaults to the standard account icon. Override the icon by entering the name of any standard icon found here https://www.lightningdesignsystem.com/icons/#standard
-* Lookup Secondary Value Field (for use with Lookup only) - This is required if using the Lookup Object feature. The API name for the field to land manual, registrant inputs when the registrant opts out of looking up a record.
-* Lookup Secondary Input Link Text (for use with Lookup only) - The link text that invites a user not to use the record lookup but rather fill in a value manually.
-* Lookup Secondary Input Question (for use with Lookup only)- If the lookup query is opted out of these instructions will appear below a blank text box for manual entry.
+* **Lookup Results Icon (optional and for use with Lookup only)** - Defaults to the standard account icon. Override the icon by entering the name of any standard icon found here https://www.lightningdesignsystem.com/icons/#standard
+* **Lookup Secondary Value Field (for use with Lookup only)** - This is required if using the Lookup Object feature. The API name for the field to land manual, registrant inputs when the registrant opts out of looking up a record.
+* **Lookup Secondary Input Link Text (for use with Lookup only)** - The link text that invites a user not to use the record lookup but rather fill in a value manually.
+* **Lookup Secondary Input Question (for use with Lookup only)**- If the lookup query is opted out of these instructions will appear below a blank text box for manual entry.
 
 
 # Examples

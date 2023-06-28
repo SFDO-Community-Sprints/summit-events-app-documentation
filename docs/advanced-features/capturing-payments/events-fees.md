@@ -18,11 +18,11 @@ The Event Fee and Event Fee Additional fields can be useful for internal process
 
 ![event fee registratin](../images/sea_label_eventfee.png)
 
-Event Fee Allocation and Additional Allocation allows your organization to designate where event fees should be allocated when fees are processed. This is an optional feature that can be left blank if not needed. See image above
+Event Fee Allocation and Additional Allocation allows your organization to designate where event fees should be allocated when fees are processed. This is an optional feature that can be left blank if not needed. See image above.
 
 Go to Labels, to set up:
-* Event Fee Label - appears on the Submit Registration page
-* Event Fee Submit List Label - appears on the first page of registration and the Submit Registration page - appears on the Submit Registration page
-* Event Fee Total Label - appears on the Submit Registration page
+* Event Fee Label - appears on the Submit Registration page.
+* Event Fee Submit List Label - appears on the first page of registration and the Submit Registration page - appears on the Submit Registration page.
+* Event Fee Total Label - appears on the Submit Registration page.
 
 ![event fee submit registration](../images/sea_submit_registration_eventfee.png)
