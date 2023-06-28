@@ -1,5 +1,5 @@
 ---
-title: Calendar
+title: Calendar-Demo
 parent: Recipes
 nav_exclude: true
 ---

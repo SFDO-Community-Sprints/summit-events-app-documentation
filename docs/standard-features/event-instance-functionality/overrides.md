@@ -15,7 +15,7 @@ Leveraging overrides is as simple as inputting a value in a field that ends in "
 
 
 ## Expectations and Examples
-You should expect that the ovveride fields utilized will update on the registration page layout as well as map appproiately to the registration record. Below is an example of how the registration page will change based on an Instance Override. In the example below, there is a single Event record with 2 Instance records. You'll be able to see this as part of the Registration Views.
+You should expect that the override fields utilized will update on the registration page layout as well as map appropriately to the registration record. Below is an example of how the registration page will change based on an Instance Override. In the example below, there is a single Event record with 2 Instance records. You'll be able to see this as part of the Registration Views.
 
 | |Admin View | Registrant View |
 |:-----|:-----------------|:------|

@@ -9,13 +9,13 @@ grand_parent: Project Info
 Below are repositories associated to Summit Events and how the are to be utilized for the overall project development.
 
 
-## [Summit Events Repo](https://github.com/SFDO-Community/Summit-Events-App)
+## Summit Events Repo
 The Summit Events App is a part of the Salesforce Open Source Commons, which means that Salesforce.org is the direct owner of the repository. This repository is the primary development repo and will have the latest features and updates, so it will commonly be ahead of the packaged release. This is intentional for meaningful testing and community collaboration.
 
-The Summit Events App repo will be the primary source for development utilizing the follow:
-- Main Branch (currently labeled Master) = Latest updates on all contributions and feature developments prior to a new package or release.
-- Branches = Updates/Developments from contributors or bug fixes to be submitted via pull rquest
-- Issues = Capturing bugs and Feature Request after they've been shared in the Trailblazer Community.
+The [Summit Events App Repo](https://github.com/SFDO-Community/Summit-Events-App) will be the primary source for development utilizing the follow:
+- <b>Main Branch</b> (currently labeled Master) = Latest updates on all contributions and feature developments prior to a new package or release.
+- <b>Branches</b> = Updates/Developments from contributors or bug fixes to be submitted via pull request.
+- <b>Issues</b> = Capturing bugs and Feature Request after they've been shared in the Trailblazer Community.
 
 
 ### [Development/Review of Branches](https://github.com/SFDO-Community/Summit-Events-App/branches)
@@ -31,14 +31,14 @@ This process will allow the Summit Events App Team to test and approve developme
 **NOTE**: When something is packaged, it’ll be there that way forever! We will always be mindful of this when approving pull requests.
 
 ### [Issues on Summit Events Repo](https://github.com/SFDO-Community/Summit-Events-App/issues)
-Issues are intended to capture bugs as well as feature request. There are pre-built forms with guidance on what to capture. The following are expectations with Issues
-- Issues will get reviewed regularly by the primary project team
-- They will be reviewed, at minimum, during standing Summit Events Team meetings, which happen monthly.
+Issues are intended to capture bugs as well as feature request. There are pre-built forms with guidance on what to capture. The following are expectations with Issues:
+- Issues will get reviewed regularly by the primary project team.
+- They will be reviewed, at minimum, during standing Summit Events Team meetings, which happens monthly.
 - Summit Event Users are encouraged to engage in the [Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE) to ask questions about expected functionality as well as feature requests before submitting a formal issue.
 
 
 ## [SFDO Community Sprint Summit Events Repo](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation)
-The Summit Events App has regularly been represented at the SFDO Open Source Community Sprints since March 2020. Because Summit Events is a part of the Salesforce Open Source Commons, we want to sure that collaboration on documentation is easy to access, particularly during the Community Sprints.
+The Summit Events App has regularly been represented at the SFDO Open Source Community Sprints since March 2020. Because Summit Events is a part of the Salesforce Open Source Commons, we want to make sure that collaboration on documentation is easy to access, particularly during the Community Sprints.
 
 This Repo will capture all of the documentation related to Summit Events based on the latest packaged release. The repo [leverages Github Pages](https://sfdo-community-sprints.github.io/summit-events-app-documentation/) for a more user friendly experience, which you're likely experiencing right now.
 

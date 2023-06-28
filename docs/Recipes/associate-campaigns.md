@@ -8,26 +8,26 @@ This recipe is intended to all Event Manager align their Campaigns Members with 
 
 ## Prerequisites
 For this recipe to work, please ensure you've meet the following prerequisites:
-- Summit Events App is installed
-- Contact or Lead Matching is enabled and configured
-- You have access to Campaign and Campaign Members
+- Summit Events App is installed.
+- Contact or Lead Matching is enabled and configured.
+- You have access to Campaign and Campaign Members.
 
 ## What's Included
 - Fields
-  - Campaign (Summit Event Object)
-  - Campaign Override (Summit Events Instance Object)
+  - Campaign (Summit Event Object).
+  - Campaign Override (Summit Events Instance Object).
 - Flow
-  - Auto-Launch Flow: "summit_Campaign_Flow_Recipe"
+  - Auto-Launch Flow: "summit_Campaign_Flow_Recipe".
 
 ## Installable Unlocked Package
 You can install this recipe. With this being an unlocked package, you can edit it and make all appropriate updates to meet your needs.
 
-- Sandbox: https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000rM5DAAU
-- Production: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000rM5DAAU
+- Sandbox: [https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000rM5DAAU](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000rM5DAAU)
+- Production: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000rM5DAAU](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000rM5DAAU)
 
 ## Setup
 Once installed, you need to take the following actions:
-- Ensure all prerequisites have been completed
+- Ensure all prerequisites have been completed.
 - Update the *Lightning Record Page* on the Summit Events Object. Add the field "Campaign" to the layout.
    > Note: The Summit Events Object leverages dynamic page layouts, so be sure to update the Lightning Record Page versus the Page Layout
 - Update the *Page Layout* on the Summit Events Instance Object. Add the field "Campaign Override" to the layout. Because this is an override, it's recommended that you add it to the Override section.

@@ -4,11 +4,13 @@ parent: Standard Features
 nav_order: 2
 ---
 
+# Additional Questions
+
 ## Registrant Additional Questions
 These standard questions allow for asking up to 5 additional questions during the registration process.  Use cases might be to ask for a T-Shirt size or about dietary restrictions. These fields have specific preconfigured field types (e.g. text, picklist, etc.). The standard questions are configured on the Summit Events event pages and appear below standard questions on the registration form. You can select which ones you want to display, if the field should be required, you can even change the label of the question. These may be all that is needed for most of your events. If you have more advanced needs, Summit Events also provides the ability to create your own [custom questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-questions/).
 
 
-# Create an Additional Question
+## Create an Additional Question
 
 1. From the Summit Event record, navigate to the Add’l Configuration & Options section.  
 2. In the Additional Question 1 section, select the appropriate Type from the list of options in ”Add Info Question Type 1” field.  Selecting a "Question Type" automatically enables the field for display on the registration form.

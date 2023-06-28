@@ -10,7 +10,7 @@ The Instance is often described as the record an individual is selecting as part
 
 ## Create an Event Instance
 
-- Create a new Event Instance from the parent Event record
-- Set the Instance title, Start Date and Time, End Date and Time
-- Set the Capacity to something greater than "0" and status as "Active"
+- Create a new Event Instance from the parent Event record.
+- Set the Instance title, Start Date and Time, End Date and Time.
+- Set the Capacity to something greater than "0" and status as "Active".
 

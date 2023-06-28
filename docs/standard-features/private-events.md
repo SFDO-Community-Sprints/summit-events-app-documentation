@@ -22,15 +22,8 @@ There may be times when you want to create an event and allow for registration b
 _Note: The private setting does not prevent those from registering that have access to the registration link.  The private setting simply removes the appearance of the Event/Event Instance from the Summit Event Feed and Calendar._
 
 **Need help getting started creating a basic event? Get started here: [Creating a Basic Event](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/create-basic-event)**
+<br>
+<br>
+<br>
 
-
-  
-
-
-
-
-
-
-
-
-Contributor Acknowledgement: Stefania DeArment
+*Contributor Acknowledgement: Stefania DeArment*
