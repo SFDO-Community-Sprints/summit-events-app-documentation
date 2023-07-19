@@ -17,8 +17,8 @@ Starting with the Capacity field, you'll need to indicate the number of total pe
 
 ### Capacity Control
 There are two options with Capacity Control:
-1) Registrant plus Guests
-1) Individual Registrant
+1. Registrant plus Guests.
+2. Individual Registrant.
 
 The selected the value will control the number represented on the "Current Available Capacity" field. The selected value will look at the neccessary rollup field to determine what the available capacity is. Let's break down each of the values:
 

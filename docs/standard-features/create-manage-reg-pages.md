@@ -7,6 +7,7 @@ parent: Standard Features
 
 *This page will capture how to expose a page to a registrant.*
 
+# Creating and Managing Registration Pages
 
 ## Page Progression
 ![image](https://user-images.githubusercontent.com/60475518/168514622-f5af25de-3cf4-48f0-86aa-5f07f2ec2d40.png)

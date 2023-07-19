@@ -23,12 +23,10 @@ The event host feature, is a backend feature which allows the event manager to c
 
 ![Create Event Appointment Type Record_Screen](../images/EventHost_CreateAppointmentRecordP1.PNG)
 <br>
-<br>
-<br>
-<br>
 
 
 ## Summit Event Host Detail (Field Informaton)
+
 **Summit Event Host Name**: An identification number of each event host. It is a standard Salesforce field and displays in a format of HOST-{0000}. The system will automatically generate and assign a number to this field once an event host is created. No need for any user input and this field cannot be edited.
 
 **Summit Event Instance**: The event instance that the event host belongs to. It is a lookup field that relates to the Summit Event Instance object. As mentioned above, the value must be matched with a record in the Summit Event Instance object. When you hover the cursor over to the Summit Event Instance field on the View page, a mini page of the event instance will show up.

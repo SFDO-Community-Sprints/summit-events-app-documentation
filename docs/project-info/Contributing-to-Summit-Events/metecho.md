@@ -13,17 +13,17 @@ Metecho is a Heroku app that works with the Summit Events GitHub repository.  It
 
 ## Instructions for Creating a Summit Events Dev Org  using Metecho
 ### Pre-requisites: 
-* [Github Account](https://github.com/) 
-* Contributor access to the [Summit Events App Github Repository](https://github.com/SFDO-Community-Sprints/Summit-Events-App)
+* [Github Account](https://github.com/) is required.
+* Contributor access to the [Summit Events App Github Repository](https://github.com/SFDO-Community-Sprints/Summit-Events-App).
  > Go to GitHub [Teams page](https://github.com/orgs/SFDO-Community/teams/summit-read-only-for-metecho):, then start a discussion here to request access. Someone from the team will set up your access and notify you. 
 
 ### Log into Metecho
-1. [Metecho](https://metecho.herokuapp.com/projects)
-1. Log in using your GitHub account
+1. Visit [Metecho](https://metecho.herokuapp.com/projects).
+1. Log in using your GitHub account.
 1. Authorize Metecho & Salesforce to access your GitHub account.
-1. Agree to the terms of service.
+1. Agree to the Terms of Service.
 1. Once you log in, you should see the GitHub repository for Summit Events.
-1. Click on the Summit Events App icon to go into the Summit Events Metecho
+1. Click on the Summit Events App icon to go into the Summit Events Metecho.
 > Note: You do have to be a contributor to the Summit Events repository to see the option. If you don’t see the repository, please verify that you have Contributor level access to the GitHub repository. See pre-requisites above for how to request access.
 
 ### Development, Testing and Learning
@@ -37,7 +37,7 @@ In Metecho, you can either create a scratch org to test the application or learn
 
 #### Creating a Branch & Scratch Org
 1. From the main menu, you can see other scratch orgs that have been created.
-1. To create a new scratch org, click "Task" tab and select "Create a Task" 
+1. To create a new scratch org, click "Task" tab and select "Create a Task".
 1. Give your Task a name and description, which will label your branch and articulating what you're goal is.
 1. Once the task is created, select "Assign" on the Developer window.
 1. Assign yourself as the Developer and hit "save".
@@ -53,7 +53,7 @@ In Metecho, you can either create a scratch org to test the application or learn
 1. Click “View org”.
 
 ### Adding Collaborators
-Best practice: the "Developer" is the person working on the change, and the "Tester" should be someone else that can review, validate and approve the change meets requirements.
+<b>Best practice</b>: the "Developer" is the person working on the change, and the "Tester" should be someone else that can review, validate and approve the change meets requirements.
 
 1. Click “Add or Remove Collaborators” to find the people who will be working with you on this project. It will show everyone who is authorized to use Metecho and the names displayed are GitHub usernames. 
 1. Check the box next to the names of your collaborators, then click “Save”.
@@ -72,7 +72,7 @@ Best practice: the "Developer" is the person working on the change, and the "Tes
 1. Fill in all of the requested fields on the Submit this task for testing screen, then click “Submit Task for Testing”.
 1. The Tester you designated for this Task will receive an email with their notes and a link to the Metecho task so they can create their own scratch org that includes your changes.  
 > Be sure to clearly articulate what you want the person testing to test so they can make appropriate comments related to those changes.
-> NOTE: The Tester CANNOT make changes in their org for retrieval
+> NOTE: The Tester CANNOT make changes in their org for retrieval.
 
 ### Reviewing and Testing Changes as a Tester
 1. While in the Task, click the “Create Org” button in the Tester window to create a new scratch org with the related changes.
@@ -83,5 +83,5 @@ Best practice: the "Developer" is the person working on the change, and the "Tes
 
 ### Approved/Rejected Changes
 1. If Approved, it will now appear in the Commit History. 
-1. This will create a pull request that Project team will review, and approve the change to move into the master project Git Repository.
-1. If Rejected, it will go back to the Developer with comments and revert back to the "Make changes in Dev Org"
+1. This will create a pull request that the Project team will review, and approve the change to move into the master project Git Repository.
+1. If Rejected, it will go back to the Developer with comments and revert back to the "Make changes in Dev Org".

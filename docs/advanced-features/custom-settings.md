@@ -9,10 +9,10 @@ Custom Settings are where global attributes are stored that can be accessed by t
 
 How to get to SEA's custom settings:
 
-1. Go to the Gear icon in your Salesforce org and select Setup
-2. In the Quick Find box type: Custom Setting
-3. Select the Custom Settings menu item
-4. Click the "Manage" link next to the label "Summit Events Settings"
+1. Go to the Gear icon in your Salesforce org and select Setup.
+2. In the Quick Find box type: Custom Setting.
+3. Select the Custom Settings menu item.
+4. Click the "Manage" link next to the label "Summit Events Settings".
 
 You should see a view similar to this:
 ![Summit Events Custom Setting](images/Custom-Settings_SEA.png)
@@ -20,7 +20,7 @@ You should see a view similar to this:
 ## Settings
 
 ### Location
-This value will be prepoluated by Salesforce
+This value will be prepoluated by Salesforce.
 
 ### Community Base URL
 This is the default URL of a community SEA is installed. You must chose one default community URL from amongst your Community or Force.com sites in your org (Setup->Sites). SEA can be installed in any community by simply applying the right permission set to the guest user of a community, however some default context is needed for generating links to one community.

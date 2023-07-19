@@ -4,16 +4,16 @@ parent: Getting Started
 nav_order: 4
 ---
 
+# Creating a Basic Event
 
 ![CreateBasicEventOverviewImage](images/CreateBasicEvent_Overview.png)  
 <br/>
-The first step in setting up a brand new event is to create a Summit Event record and an Event Instance record.  Summit Events are parent records to Summit Event Instance records.  You cannot have a summit event instance without it being tied to a parent summit event record.  Summit event instance records inherit much of the information from the parent Summit Event record.  This document covers the fields needed when creating a basic event.
+The first step in setting up a brand new event is to create a Summit Event record and an Event Instance record.  Summit Events are parent records to Summit Event Instance records.  You cannot have a Summit Event instance without it being tied to a parent Summit Event record.  Summit Event instance records inherit much of the information from the parent Summit Event record.  This document covers the fields needed when creating a basic event.
 <br/>
 <br/>
-<br/>
-# Creating a Basic Event
 
-## Create the Event
+
+### Create the Event
 
 Navigate to the Summit Events Application in the App Selector.
 
@@ -42,7 +42,7 @@ Fill out the following fields on the Summit Event record.  Many of the fields li
 **Save** Summit Event record.
 
 ## Create the Related Event Instance
-Navigate to the Summit Event Instance Related List on the Event record and create a New Summit Event Instance
+Navigate to the Summit Event Instance Related List on the Event record and create a New Summit Event Instance.
 
 ![CreateBasicEventInstanceButton](images/CreateBasicEvent_NewInstanceButton.png)
 
@@ -75,7 +75,7 @@ On the newly created Event Instance record,  click the *Register* link under the
 Navigate to the registration page and confirm registration fields are displaying and editable.  
 ![CreateBasicEventInstanceRegistrationPage](images/CreateBasicEvent_EventInstanceScreen3.png)
 
-**Congratulations, you've just created a basic event!**
+***Congratulations, you've just created a basic event!***
 
 ## Additional Features
 - To add questions to an event registration form, see [Standard Registration Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/standard-reg-questions/).

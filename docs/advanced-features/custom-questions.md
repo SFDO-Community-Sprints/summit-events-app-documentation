@@ -4,31 +4,31 @@ parent: Advanced Features
 has_children: true
 ---
 
-# Registrant and Guest Questions
+# Custom Questions
+
+## Registrant and Guest Questions
 Summit Events comes with [standard questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/standard-reg-questions/) and [additional questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/standard-reg-questions/) that can be asked during the registration process.  These fields have specific preconfigured field types (e.g. text, picklist, etc.).   The standard questions are configured on the Summit Events event pages.  You can select which ones you want to display, if the field should be required, you can even change the label of the question.    These may be all that is needed for most of your events.  If you have more advanced needs, Summit Events also provides the ability to create your own custom questions.   This page covers creating custom questions.
 
-# Custom Questions
+## Custom Questions
 Some considerations to keep in mind when creating custom questions:
 * A field is needed on the Summit Events Registration object to house the information entered by the registrant.
 * A matching question is needed on the Summit Event that references the field on the Summit Events Registration Object.  Care should be used to make sure that the fields accept the same type of data.  For example, you would not write text to a number field.
 * If creating a Lookup Field, a sharing rule needs to be set up to the object used for the lookup.   Sharing rules can also limit the types of records that are available during lookup.  For example, you may only want to include Accounts that have a specific record type or that are coded in some manner.
-* The guest user must have read permission on the Lookup object as well as to the fields on the lookup-to object (In our example, Account) to any fields that are listed as “Lookup fields”
+* The guest user must have read permission on the Lookup object as well as to the fields on the lookup-to object (In our example, Account) to any fields that are listed as “Lookup fields”.
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/IsFGoQRQOQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Create new question field on Summit Events Registration object
-This is where the answer the registrant provides will be stored.  
-To create a new field on the Summit Events Registration object:
+This is where the answer the registrant provides will be stored. To create a new field on the Summit Events Registration object:
 1. From Setup, select the Object Manager tab.
 2. Search for and select the Summit Events Registration object.
 3. Follow the process to create the new field.
 4. Note the API name of your newly created field, you will need this later.  
-5. Give access to the question to the Guest User.   See the section labeled “Custom Questions - Guest User Access“
+5. Give access to the question to the Guest User.   See the section labeled “Custom Questions - Guest User Access“.
 
 ## Create a new question on your Summit Event 
-This is what tells the registration form to display the question.  
-To create a new question for use on your Summit Event:
+This is what tells the registration form to display the question. To create a new question for use on your Summit Event:
 1. Once you have created your Summit Event record, navigate to the Summit Events Questions related list.  
 2. Click the New button and add the new question. 
 3. Complete the appropriate fields in the sections for the type of information you want to capture.
@@ -60,10 +60,12 @@ There are several types of question fields which can be created and the type wil
 
 ### Record Lookup Section
 The record lookup section is only to be completed if looking up values from another object and field and returns the record ID of the selected record.  See [Lookup and Lookup Picklist](Custom_Qs_LookupFeature.md) for detailed setup information.
-* __Lookup Object__ - object that contains the field with the data to be referenced
+* __Lookup Object__ - object that contains the field with the data to be referenced.
 * __Lookup Fields__ - fields that you want to show when the registrant searches for an item.
-* __Lookup Where Clause__ - using SOQL statement syntax, you can limit the records available for search in your lookup field.  The API name of the field should be referenced.  The WHERE clause follows field expression syntax. A fieldExpression is defined as follows: WHERE <fieldAPIName> <comparisonOperator> <value>.  Valid comparison operators include the following: =, !=, <, <=, >, >=, LIKE, IN, NOT IN, INCLUDES, and EXCLUDES. 
-* __Lookup Results Icon (optional)__ - Defaults to the standard account icon. Override the icon by entering the name of any standard icon found here https://www.lightningdesignsystem.com/icons/#standard
+* __Lookup Where Clause__ - using SOQL statement syntax, you can limit the records available for search in your lookup field.  The API name of the field should be referenced.  The WHERE clause follows field expression syntax. A fieldExpression is defined as follows: 
+> WHERE <fieldAPIName> <comparisonOperator> <value>.  Valid comparison operators include the following: =, !=, <, <=, >, >=, LIKE, IN, NOT IN, INCLUDES, and EXCLUDES. 
+* __Lookup Results Icon (optional)__ - Defaults to the standard account icon. Override the icon by entering the name of any standard icon found here:
+https://www.lightningdesignsystem.com/icons/#standard
 * __Lookup Secondary Value Field__ - This is required if using the Lookup Object feature.  The API name for the field to land manual, registrant inputs when the registrant opts out of looking up a record.
 * __Lookup Secondary Input Link Text__ - The link text that invites a user not to use the record lookup but rather fill in a value manually.
 * __Lookup Secondary Input Question__ - If the lookup query is opted out of these instructions will appear below a blank text box for manual entry.
@@ -73,11 +75,14 @@ The record lookup section is only to be completed if looking up values from anot
 # Troubleshooting
 __Receive error message:__ "Question setup issue(s): Map to field: Field Your_Custom_Field__c is not accessible by guest user.Map To Field: Field Your_Custom_Field__c is not accessible by guest user.
  
-__Solution:__  Give guest user edit access to field.  See [Troubleshooting](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/troubleshoot.md} for details on guest user access.
+- __Solution:__  Give guest user edit access to field.  See [Troubleshooting](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/blob/main/docs/Getting-Started/troubleshoot.md) for details on guest user access.
  
  
 __Lookup field displays, but no information shows for search or selection__
  
-__Possible solutions:__ 1) Review the information in the Lookup Where Clause field and verify that records match this criteria.  2) Make sure the type of record is included in the [Sharing rules](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/#set-sharing-rules).  Account sharing rule example: 
+- __Possible solutions below:__ 
+1. Review the information in the Lookup Where Clause field and verify that records match this criteria.  
+
+2. Make sure the type of record is included in the [Sharing rules](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/#set-sharing-rules).  Account sharing rule example: 
 ![](images/SampleAccountSharingRules.png)
 

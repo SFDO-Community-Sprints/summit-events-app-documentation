@@ -21,13 +21,13 @@ If your org does not already have a Salesforce “Site,” which is used to disp
 
 1. In Setup, go to User Interface -> Sites and Domains -> Sites.
 
-2. Determine the name you want to use for the Site (it will be in the form of [site.force.com]) and click the “Check Availability” button to see whether or not it is available. Note: Each Site must be unique.
+2. Determine the name you want to use for the Site (it will be in the form of [site.force.com]) and click the “Check Availability” button to see whether or not it is available. <b>Note:</b> Each Site must be unique.
 
 3. Click on the "Register My Salesforce Site Domain" button.
 
 ![](../images/Site%20Setup.png)
 
-Once your domain has been registered continue:
+<b>Once your domain has been registered continue:</b>
 
 1. Click the "New" button next to the site header.
 
@@ -35,8 +35,8 @@ Once your domain has been registered continue:
     * Site Label: Summit Events
     * Site Name: Summit_Events
     * Active Site Home Page:
-        * Select the magnifying glass look-up icon and in the dialog select "SummitEvents"
-    * Leave all other settings at their defaults and text areas blank
+        * Select the magnifying glass look-up icon and in the dialog select "SummitEvents".
+    * Leave all other settings at their defaults and text areas blank.
 
 3. Click "Save".
 
@@ -69,11 +69,11 @@ Once you hit "Save" the "New" button will be replaced with "Edit." (You will nee
 ### Set Sharing Rules
 Salesforce Winter '20 and Spring '20 releases severely limited Guest User access to objects to ensure security. The Summit Events application requires the Guest User profile used by the event registrant to be able to read and upsert to the solution’s custom objects. To comply with these new security requirements, we need to create a sharing rule. Code has also been adjusted to allow for the required upserts. The following instructions will help you set up the required sharing rule. Unfortunately, we are not able to automate these steps yet due to limitations in SFDX.
 
-#### Set Sharing Object Access
+### Set Sharing Object Access:
 
 1. In Setup, type "Sharing" in the quick-find box in Setup and click on "Sharing Settings".
 
-2. In the Organization-Wide Defaults section, scroll down to ensure that Summit Events is set to Public Read/Write. If it is, go to step 6.
+2. In the Organization-Wide Defaults section, scroll down to ensure that Summit Events is set to Public Read/Write. If it is, <b>go to step 6.</b>
 
 3. If Summit Events is not set to Public Read/Write, click the "Edit" button.
 
@@ -105,8 +105,8 @@ Salesforce Winter '20 and Spring '20 releases severely limited Guest User access
 
 ### Apply Permission Sets
 There are two permission sets provided in this application.  These permission sets should be leveraged to ensure functionality persists between upgrades.  
-1. Summit Events Admin - allows users to create and maintain events
-2. Summit Events Registrant - allows unauthenticated users and authenticated users in a community to register for an event
+1. <b>Summit Events Admin</b> - allows users to create and maintain events
+2. <b>Summit Events Registrant</b> - allows unauthenticated users and authenticated users in a community to register for an event
 
 **Summit Events Admin:** Apply to admin users that need to create and maintain events.
    > Note: Users who are not system administrators but who will administer Summit Events will need this permission set. You do not need to add the Permission Set at this time, but follow the steps bulleted below if/when you need a user to administer Summit Events. It is recommended that the Summit Event Admin permission set is cloned so appropriate configurations can be made to reduce/expand access to various fields.
@@ -135,19 +135,19 @@ There are two permission sets provided in this application.  These permission se
 ![](../images/Guest%20User%20Config%202.png)
 ![](../images/Guest%20User%20Config%203.png)
 
-#### Creating a Custom Permission Set for the Guest User
+### Creating a Custom Permission Set for the Guest User
 We've updated the following documentation where users should no longer clone the Summit Event Registrant permission set, particularly associated to the Guest User. This change is to ensure Summit Events App works seamless with any upgrade and the Guest User always has the appropriate access to recieve event registrations.
 
-1. Create a new [Permissions Set](https://help.salesforce.com/s/articleView?id=sf.perm_sets_create.htm&type=5)
-2. Label the permission set to align with the Summit Event Registration for Guest Users - example: Summit Events Custom Registrant
+1. Create a new [Permissions Set](https://help.salesforce.com/s/articleView?id=sf.perm_sets_create.htm&type=5).
+2. Label the permission set to align with the Summit Event Registration for Guest Users - <b>Example: Summit Events Custom Registrant.</b>
 3. Go to Object Settings and grant "READ" access on the Account object. No additional fields needed.
 
 Once you've create the Custom Permission set, apply it to the Guest User as mentioned earlier. With this custom permission set, you'll be able to grant appropriate access to any additional objects or fields being utilized for Summit Events as well as the following:
-- Avoid disruptions and limit additional configurations during upgrades
-- Leverage Summit Event Questions and the Lookup options for improved data integrity
+- Avoid disruptions and limit additional configurations during upgrades.
+- Leverage Summit Event Questions and the Lookup options for improved data integrity.
 
 
 
-Congrats! At this point you should have a functioning Summit Events Package.
+## Congrats! At this point, you should have a functioning Summit Events Package.
 
 

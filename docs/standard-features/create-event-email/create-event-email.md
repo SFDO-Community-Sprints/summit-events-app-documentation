@@ -5,7 +5,8 @@ has_children: true
 ---
 
 
-## Create an Event Email
+# Create an Event Email
+
 Summit Events makes it easy to send an automated email to your registrant based on their registration status. This feature is a transactional-based feature, meaning that it sends emails based on changes to the registrant's status to the email provided. It is not intended for bulk messaging.  For example, the Director of Career Services could use this feature to send an email to the registrant when they register for her career services event.  Let's take a look at the steps it takes to create the email message.  This post will cover the basic features that will work for most simple events.  
 
 ### 1. Click the "New" button
@@ -46,7 +47,7 @@ On the registration record, an Event Manager can manually add a(n) email(s) to t
 
 Please note that if the Summit Events Email record includes an Action Sub status the Email will not send. This functionality is limited to Summit Event Registration field Status and Summit Events Email field Action Status matching. An enhancement request has been entered for the functionality to send regardless of Summit Events Email field Action Sub status.
 
-Note: this text area field allows value that has no more than 1000 characters. 
+*Note: this text area field allows value that has no more than 1000 characters.* 
 
 ![BCC Feature](../images/BCCFeature.png)
 
@@ -95,7 +96,7 @@ This field has the following picklist values:
 
 **Email Content**: The content of the email. For advanced users, you can put the API names of the Salesforce fields so that the email content can be dynamic based on the registration information. 
 
-**Org Email**: The email address that the email is sent from. This value will populate automatically when an email address is selected from the drop-down menu on "Select Organization Wide Email".  Also see Salesforce's documentation on [Organization-Wide Email Addresses] (https://help.salesforce.com/s/articleView?id=sf.orgwide_email.htm&type=5)
+**Org Email**: The email address that the email is sent from. This value will populate automatically when an email address is selected from the drop-down menu on "Select Organization Wide Email".  Also see Salesforce's documentation on [Organization-Wide Email Addresses](https://help.salesforce.com/s/articleView?id=sf.orgwide_email.htm&type=5)
 
 **BCC Email**: Blind carbon copy. If you enter multiple email addresses, you will use a comma to separate the email addresses. The text area allows value that has no more than 1000 characters. 
 

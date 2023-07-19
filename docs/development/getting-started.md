@@ -4,9 +4,9 @@ nav_order: 7
 has_children: true
 ---
 
-# Developers Wanted
+# 💻 Developers Wanted! 💻
 
-Are you a developer? Great! How about lending a hand on the Summit Events App? We sure could
+Are you a developer? Great! How about lending a hand on the Summit Events App 🤔? We sure could
 use you as many hands make light work. Here is how you get tapped in to the project:
 
 - [Watch and star our GitHub repository](https://github.com/SFDO-Community/Summit-Events-App).

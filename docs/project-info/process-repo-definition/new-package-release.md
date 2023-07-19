@@ -4,6 +4,8 @@ parent: Process and Repo Definitions
 grand_parent: Project Info
 ---
 
+*This page is still a work in progress. If you’re interested in contributing to the Summit Events App and want to help provide support by creating this page, comment below and let us know!*
+
 # Making a new Package/Release:
 To create a new package accessible in the [Open Source Commons](https://install.salesforce.org/products/SummitEventsApp/latest), the following 3 questions need to be answered:
 - Do we have the minimum viable documentation for all new elements being packaged?
