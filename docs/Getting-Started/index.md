@@ -6,4 +6,4 @@ has_children: true
 # Getting Started with the Summit Events App
 
 Thank you for choosing Summit Events!  This documentation will help you get started using the product.
-
+_Have questions?_ For quickest response to your questions, post them on the SEA Trailblazer community page:  [SEA Trailblazer Community]{https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE?tab=discussion&sort=LAST_MODIFIED_DATE_DESC)
