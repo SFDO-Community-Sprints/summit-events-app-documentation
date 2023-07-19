@@ -1,0 +1,41 @@
+---
+title: 0.30.0.1
+parent: Release Notes
+---
+
+# Version 0.30.0.1 Release Notes
+
+These release notes are broken down into multiple parts, Functional Features, Updates and Bug Fixes and Technical Features, Updates and Bug Fixes 
+> - **Important Items and Upgrade Action Steps** are things you should read to determine if your org needs to take an action prior to upgrading or what post upgrade steps need to be taken.
+> - **Known Issues** highlights issues we recognize not functioning as expected and will be working to fix in the next release.
+> - **Functional Features, Updates and Bug Fixes** captures everything in the release that have a direct impact on the Registrant or Event Manager experience. These are features or functionality utilized and noticed as part of the Summit Events App
+> -  **Technical Features, Updates and Bug Fixes** captures everything in the release that are withing the codebase. They impact the functionality and features of the Summit Events App, but aren't likely noticeable from an Admin or Event Manager perspective.
+> - **Issues Closed** is a comprehesive list of Github issues (Bugs and Feature Requests) that are closed as part of this release.
+
+
+## Important Items and Upgrade Action Steps
+Below are important items to note prior to upgrading to 0.30.0.1.
+
+### Guest User Access
+
+There were several updates in this package that impact the Summit Event Registant Permission Set and access needed for the Guest User. Below outlines what access is needed to avoid disruption as well as a new standard for Summit Evnets App and how to configure and manage Guest User Access.
+- The Guest User is required to have READ access to the Account Object. No additional field access necessary.
+  - A lookup to the Account Object on the Summit Event Record prompted this update.  
+- It is recommended and encouraged that [upon installation or prior to upgrading](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/#creating-a-custom-permission-set-for-the-guest-user), you create a custom permission set, granting READ access to the Account Object and add that to the Guest User. While previous documentation encourages cloning the Guest Permission set, we’re adjusting those instructions to create a custom permission set (not clone) in addition tothe Guest User having the packaged permission set (Summit Event Registrant). This will allow for a more seamless upgrade process while then allow you to manage your own customization on a single permission set. 
+  - While in the code base, the Summit Event Registrant has READ access to the Account object. Upon install we found that the permission was removed, likely due to Salesforce Security protocols being enforced.
+
+### Page Layouts and Picklists to Update
+
+
+---
+## Known Issues
+
+
+---
+## Functional Features, Updates and Bug Fixes
+
+---
+## Technical Features, Updates and Bug Fixes
+
+---
+## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
