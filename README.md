@@ -3,9 +3,6 @@
 ![Summit Events App Badge fv](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/123771828/1649e5b5-98fc-4e45-aab8-9ab321a2b9a2)
 
 
-# Project Name
-### The Summit Events App
-
 # Project Overview
 The Summit Events App is a sustainable open source community events app that serves a broad variety of needs for EDUs and NGOs. The event solution has the flexibility needed to offer events of different types: paid, free, group, guests, and individual. The solution will include the full life cycle of the event: registration, receipting, confirmation, reporting and web faced exposure. This solution facilitates a Salesforce connected campus and will be compatible with Salesforce.org’s Data Architectures.
 
