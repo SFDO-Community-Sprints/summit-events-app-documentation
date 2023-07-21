@@ -13,7 +13,7 @@ Additional Configuration and Options offers additional functionality and expande
 
 ## Configuration Option Fields
 
-| Option        | Field Type | Purpose/Behavior |
+| Field        | Field Type | Purpose/Behavior |
 | :---          |:----| :---             |
 | Close Event Days Before | Number | The amount of days before the event that you want the registration to close (e.g. accept no new registrations).  If this field is left blank, it will act as a zero and close the day of the Instance Start Date. |
 | Allow Other Attendees | Checkbox | Used in conjunction with Max Other Attendees. When checked, it gives the primary registrant the opportunity to enter the number of additional guests coming with them. <br/> ![Add'l Guests Reg Screen](images/Addtl_Guests.png) <br/> Using this option, does not require any additional details about the other attendees. If additional details about the registrants guests are needed, the [guest registration process with custom questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-questions/#custom-questions-1) should be used. |
