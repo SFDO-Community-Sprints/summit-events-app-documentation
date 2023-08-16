@@ -7,14 +7,14 @@ parent: Standard Features
 
 There may be times when you want to create an event and allow for registration but not have that event appear on the standard Summit Event's feed and calendar.  For example, you might have an event where you want to invite select individuals only by sending them the registration link in an email invitation.  The Private Event feature blocks the event instance from appearing on the standard Summit Events public feeds and calendars. There are two options when using the feature:
 
-1. Hide all of the Event Instances tied to a particular Event record when you want all of the events in the series private.
-2. Hide some Event Instances in the series when you only want some events in the series to appear to the public.
+* Hide all of the Event Instances tied to a particular Event record when you want all of the events in the series private.
+* Hide some Event Instances in the series when you only want some events in the series to appear to the public.
 
-Option 1: If all the event instances will be private, check the Private Event checkbox at the Event level in the Additonal Configuration section as shown in the following screen shot:
+**Option 1:** If all the event instances will be private, check the Private Event checkbox at the Event level in the Additonal Configuration section as shown in the following screen shot:
 
 ![Private Event Event Level Checkbox](images/Private_Events_Additional_Configurations_Page.png)
 
-Option 2:  If some event instances will be private, do not check the Private Event checkbox at the Event Level in the Additonal Configuration section and instead toggle the Private Instance checkbox at the Event Instance level as shown in the following screen shot:
+**Option 2:**  If some event instances will be private, do not check the Private Event checkbox at the Event Level in the Additonal Configuration section and instead toggle the Private Instance checkbox at the Event Instance level as shown in the following screen shot:
 
 ![Private Event Instance Level Checkbox](images/Private_Events_Event_Instance_Level.png)
 
