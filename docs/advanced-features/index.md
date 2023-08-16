@@ -7,4 +7,4 @@ has_children: true
 # Advanced Features of Summit Events App
 
 
-Here are some really cool features you can use in SEA.
+Once your basic event is setup, advanced features let you extend the capabilities of your event. The topics below provide more details about these advanced features.
