@@ -36,9 +36,6 @@ This documentation provides an overview of contact matching in Salesforce and ho
 6. Make sure the new Picklist item is added to Salesforce Duplicate Rule.
 
 
-
-
-
 ### Contact Creation Options
 10. Choose the action to take when a match is found or not found:
     - Create a new contact: Automatically create a new contact record in Salesforce when no match is found.
@@ -66,7 +63,7 @@ If you want additional field values to be added to the Contact record you can us
 ### Custom Metadata for Field Mapping
 By default there are standard fields that are mapped from the registration record and written to the Contact record when a match is found.  See "Field Values Automatically Added to Contacts when Matching Rule Creates New Contact" section for details.  In addition to this, ummit Events allows custom field mapping between the registration and the Contact record. These mappings define how data flows from Summit Event to Salesforce.
 
-To map additional feilds follow these steps:
+Map additional feilds using Custom Metadata follow these steps:
 1. In setup, search for and select Custom Metadata Types.
 2. Click on the Label "Summit Events Contact Matching Mapping".
 3. Next, click on the Manage Summit Event Contact Matching Mappings button.
@@ -82,8 +79,7 @@ To map additional feilds follow these steps:
 - Contact Matching Method - set to "Admissions"
 - Matching Only - check if want to match on field only, not to write data to field.
 
-* Create a Custom Metadata record for each field value you want to be added to the Contact record.  Note that you have the option to either map values from the Summit Events Registration record or add hardcoded values that will be added to the Contact record.
-      + If you are mapping field values from Summit Events Registration make sure you use the field API name, not the field label.
+* Create a Custom Metadata record for each field value, beyond the standard mapped fields, you want to be added to the Contact record.  
 
 Here is an example of what the Custom Metadata records look like for Contacts:
 
