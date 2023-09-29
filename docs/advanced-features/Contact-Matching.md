@@ -26,6 +26,7 @@ This documentation provides an overview of contact matching in Salesforce and ho
 6. Activate the matching rule once you've configured it.
 
 ### Custom Metadata for Field Mapping
+
 7. Summit Events allows custom field mapping between Salesforce and the application. These mappings define how data flows from Summit Event to Salesforce.
 
 8. Custom metadata types define which fields should be matched and transferred to the contact record.
