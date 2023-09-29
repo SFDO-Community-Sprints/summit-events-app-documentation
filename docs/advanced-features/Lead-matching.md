@@ -4,8 +4,19 @@ parent: Contact and Lead Matching
 grand_parent: Advanced Features
 ---
 
+# Lead Matching Documentation
 
-# Lead Matching Rules in Summit Events
+## Introduction
+This documentation provides an overview of lead matching in Salesforce and how it is configured within the Summit Event application.
+
+## Setting Up Lead Matching
+
+### Salesforce Duplicate Rules
+To set up Lead matching, we leverage standard Salesforce functionality, specifically Salesforce Duplicate Rules.
+
+In the Summit Event application, navigate to the “Contact and Lead Matching” tab to configure contact matching.
+
+You have the option to use an advanced contact creation rule with custom Apex logic or use Salesforce Duplicate Rules.
 
 Lead Matching Rules in Summit Events utilize native Salesforce Duplicate Rules and Custom Matching Rules. This allows an organization to create their own matching logic. You can learn more about this at [Salesforce Duplicate Rule and Matching Rule documentation](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_duplicate_rule.htm).
 
