@@ -34,130 +34,66 @@ This guide is intended to help you set up a Guest Registration Page that accepts
 ![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/4bb82c91-a38f-4374-a7fb-db520c4e0a2b)
 
 
-## Step 3: Create Guest Registration Questions
+## Create Guest Registration Questions
 
-10. To create questions for the Guest Registration Page, click on "Event Question Registration."
+1. To create questions for the Guest Registration Page, you'll be leveraging the "Summit Events Question" object
 
-11. Name your question and select "Guest" as the registrant type.
+2. While on your event record, create a new Summit Events Question record.
 
-12. Choose a field type; for example, you can use "Text Area."
+3. Name your question so you understand the intention of this question. Starting with "Guest" may help support that if and when you need to make updates.
 
-13. Label the question, e.g., "First Name."
+4.  Select the "Registration Type" and select "Guest". This will ensure this is asked on the Guest Registration page.
 
-14. Indicate whether the question is required or not.
+5. Choose a field type; for example, you can use "Textbox."
 
-15. Add instructions, help text, and a default value if needed.
+6. Label the question, e.g., "First Name."
 
-16. Set the display order (e.g., "10"), which helps control the order of questions.
+7. Indicate whether the question is required or not.  Be sure to require questions that impact your event.
 
-17. Map the question to the correct field by specifying the namespace and field name (e.g., "registrants.first_name").
+8. Add instructions, help text, and a default value if needed.
 
-18. Click "Save" to create the question.
+9. Set the display order (e.g., "10"), which helps control the order of questions as they are presented to the registrant.
 
-19. You can add more questions following the same process, such as last name, email, or any other relevant information.
+10. Map the question to the correct field by specifying the namespace and field name (e.g., "summit__Registrant_First_Name__c"). You can map to any field on the Summit Events Registration record as long as the field types match.
 
-## Step 4: Review and Test
+Note: Since you're creating an additional registration record, you'll want to always create First Name, Last Name and Email as those are standard questions for all registrants.
 
-20. Review the Guest Registration Page by refreshing the page.
+11. Click "Save" to create the question.
 
-21. Observe the changes you made, including the number of guests allowed, button labels, and question labels.
+12. You can add more questions following the same process, such as last name, email, or any other relevant information.
 
-22. Test the registration process to ensure it works as expected. Fill out the registration form and submit it.
+Admin perspective:
+![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/40bedaa9-590d-4dbe-80c7-efab871e304b)
 
-## Step 5: Manage Guest Registrations
-
-23. After attendees register with guests, you can view the registrations in your event.
-
-24. Hosted registrations will be linked to the main registrant, showing who brought additional guests.
-
-25. Remember that guests will not receive email confirmations.
-
-26. You can view hosted registrations and their statuses under "Guest Host."
-
-**Conclusion**
-
-This guide outlines how to set up a Guest Registration Page in WEBVTT for your event. Customize the registration questions, manage guest registrations, and make your event registration process smoother for both attendees and organizers. If you have any questions or need further assistance, feel free to ask.
-
-From: Ryan Blake <ryan.blake@cloud4good.com>
-Sent: Wednesday, September 20, 2023 2:55 PM
-To: Whitig, Donna <dlw265@psu.edu>; Dahlberg, Thaddaeus B. <thad.dahlberg@stthomas.edu>; Walter, Michael A. <mawalter@stthomas.edu>
-Subject: Re: ChatGPT and SEA documentation writing
- 
-Pretty much exactly what you said.  As a follow up prompt say, can you give me it in markdown so I can added it to Github.
+Registrant Perspective:
+![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/e82f21f7-7899-458e-a483-8f0d97b453f8)
 
 
 
-Ryan Blake
-Solutions Engineer Team Lead | Cloud for Good 
-ryan.blake@cloud4good.com | 1 (855) 536-1251 | www.cloud4good.com
-From: Whitig, Donna <dlw265@psu.edu>
-Sent: Wednesday, September 20, 2023 1:52 PM
-To: Ryan Blake <ryan.blake@cloud4good.com>; Dahlberg, Thaddaeus B. <thad.dahlberg@stthomas.edu>; Walter, Michael A. <mawalter@stthomas.edu>
-Subject: Re: ChatGPT and SEA documentation writing
- 
-Okay, I did absolutely no clean out, feeding in with the prompt "Clean up and create how to document" and this is what it spit out (in grey highlight).  So maybe do minimum cleanup.  I think they are good starting points for someone then to watch the video and just update the documentation.  What instructions would you think I would give it to have it create mark down code?
+## Review and Test
 
-Step 1: Accessing Guest Registration
+1. After you've setup the fields you'd like to capture for guests, review the Guest Registration Page from the registrant experience. You can do this by going to an instance and selecting "Admin Open Registration".
 
-Log in to your WEBVTT account.
-Navigate to the event you want to set up the Guest Registration Page for.
-Step 2: Configure Guest Registration
+2. Observe the changes you made, including the number of guests allowed, button labels, and question labels.
 
-Click on the "Guest Registration" tab within your event.
+3. We suggest that you test the registration process to ensure it works as expected. You can also delete the test registration records to ensure it doesn't impact capacity.
 
-To display the Guest Registration Page, ensure that the "Display Guest Registration" option is enabled.
+## Manage Guest Registrations
 
-Set the maximum number of additional guests each attendee can bring. For example, if each attendee can bring up to three guests, input "3" in the "Max Amount" field.
+1. After attendees register with guests, you can view the registrations in your event.
 
-Customize the label for the "Add" button. For example, you can use a fun label like "Joining Me Right."
+2. Hosted registrations will be linked to the main registrant, showing who brought additional guests.
 
-Optionally, provide a message for when no registrations have been added, like "You'll make friends at the event."
+3. You can view hosted registrations and their statuses under "Guest Host."
 
-Specify the "Registration Page Title."
+*NOTE: Guest Registrants will NOT receive email confirmations.
 
-Click the "Save" button to save your settings.
+The initial registration with a "Hosted Registration":
+![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/20204523-54d3-42d6-acee-dbb4293b6f60)
 
-Step 3: Create Guest Registration Questions
+The registration record of the guest, which reflects who the "Guest Host" is:
+![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/4ba6af4b-ff9d-42d4-a2c2-7b6a1d914496)
 
-To create questions for the Guest Registration Page, click on "Event Question Registration."
-
-Name your question and select "Guest" as the registrant type.
-
-Choose a field type; for example, you can use "Text Area."
-
-Label the question, e.g., "First Name."
-
-Indicate whether the question is required or not.
-
-Add instructions, help text, and a default value if needed.
-
-Set the display order (e.g., "10"), which helps control the order of questions.
-
-Map the question to the correct field by specifying the namespace and field name (e.g., "registrants.first_name").
-
-Click "Save" to create the question.
-
-You can add more questions following the same process, such as last name, email, or any other relevant information.
-
-Step 4: Review and Test
-
-Review the Guest Registration Page by refreshing the page.
-
-Observe the changes you made, including the number of guests allowed, button labels, and question labels.
-
-Test the registration process to ensure it works as expected. Fill out the registration form and submit it.
-
-Step 5: Manage Guest Registrations
-
-After attendees register with guests, you can view the registrations in your event.
-
-Hosted registrations will be linked to the main registrant, showing who brought additional guests.
-
-Remember that guests will not receive email confirmations.
-
-You can view hosted registrations and their statuses under "Guest Host."
-
-Conclusion
-
-This guide outlines how to set up a Guest Registration Page in WEBVTT for your event. Customize the registration questions, manage guest registrations, and make your event registration process smoother for both attendees and organizers. If you have any questions or need further assistance, feel free to ask
-
+## Items of Note
+* If you don't want to capture a full registration, but just want to know how many people are coming with the initial registration, leverage the "Allow Other Attendees" and "Max Other Attendees" on the "Add'l Configuration & Options" Tab. This might be utilized for Tours where you're wanting to control capacity, but only need the individual registration information
+* Lookup and Lookup Picklist are currently unavailable for Guest registrants
