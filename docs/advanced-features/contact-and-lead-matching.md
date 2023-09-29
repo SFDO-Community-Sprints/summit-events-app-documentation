@@ -1,6 +1,7 @@
 ---
 title: Contact and Lead Matching
 parent: Advanced Features
+has_children: true
 ---
 
 *These pages are a work in progress and still needing reviewing/ additional content. If you're interested in contributing to the Summit Events App and want to help provide support by creating this page, comment below and let us know!*
