@@ -72,15 +72,15 @@ To map additional feilds follow these steps:
 3. Next, click on the Manage Summit Event Contact Matching Mappings button.
 4. Click the New button, to add a new mapping.
 8. Enter the information to be mapped.
-9. Label - Label for custom metadata entery
-10. Source Type - set to "Field"
-11. Soure Object - set to "summit__Summit_Events_Registration__c"
-12. Source Value - the api name of the field on the summit__Summit_Events_Registration__c registration object.
-13. Contact Field API Name - the api Name of the feild on the Contact object where the value will be stored/mapped.
-14. Summit Events Contact Matching Mapping Name - ????
-15. Protected Component - ????
-16. Contact Matching Method - set to "Admissions"
-17. Matching Only - check if want to match on field only, not to write data to field.
+- Label - Label for custom metadata entery
+- Source Type - set to "Field"
+- Soure Object - set to "summit__Summit_Events_Registration__c"
+- Source Value - the api name of the field on the summit__Summit_Events_Registration__c registration object.
+- Contact Field API Name - the api Name of the feild on the Contact object where the value will be stored/mapped.
+- Summit Events Contact Matching Mapping Name - ????
+- Protected Component - ????
+- Contact Matching Method - set to "Admissions"
+- Matching Only - check if want to match on field only, not to write data to field.
 
 * Create a Custom Metadata record for each field value you want to be added to the Contact record.  Note that you have the option to either map values from the Summit Events Registration record or add hardcoded values that will be added to the Contact record.
       + If you are mapping field values from Summit Events Registration make sure you use the field API name, not the field label.
