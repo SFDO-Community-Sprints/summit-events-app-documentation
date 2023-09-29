@@ -114,8 +114,8 @@ If we've enabled the field to display on our form, the new items will appear as 
 
 
 If you have additional requirements around questions, see below:
-- [Additional Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-questions/)
-- [Custom Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/additional-reg-questions/)
+- [Additional Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/additional-reg-questions/)
+- [Custom Questions](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-questions/)
 
 
 _Updated 05/12/2022_
