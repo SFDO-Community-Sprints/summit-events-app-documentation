@@ -7,14 +7,14 @@ grand_parent: Advanced Features
 # Contact Matching Documentation
 
 ## Introduction
-This documentation provides an overview of contact matching in Salesforce and how it is configured within the Some Event application.
+This documentation provides an overview of contact matching in Salesforce and how it is configured within the Summit Event application.
 
 ## Setting Up Contact Matching
 
 ### Salesforce Duplicate Rules
 1. To set up contact matching, we leverage standard Salesforce functionality, specifically Salesforce Duplicate Rules.
 
-2. In the Some Event application, navigate to the "Contact and Lead Matching" tab to configure contact matching.
+2. In the Summit Event application, navigate to the "Contact and Lead Matching" tab to configure contact matching.
 
 3. You have the option to use an advanced contact creation rule with custom Apex logic or use Salesforce Duplicate Rules.
 
@@ -26,7 +26,7 @@ This documentation provides an overview of contact matching in Salesforce and ho
 6. Activate the matching rule once you've configured it.
 
 ### Custom Metadata for Field Mapping
-7. Some Event allows custom field mapping between Salesforce and the application. These mappings define how data flows from Some Event to Salesforce.
+7. Summit Events allows custom field mapping between Salesforce and the application. These mappings define how data flows from Summit Event to Salesforce.
 
 8. Custom metadata types define which fields should be matched and transferred to the contact record.
 
@@ -48,4 +48,4 @@ This documentation provides an overview of contact matching in Salesforce and ho
 14. Verify that custom field mappings and data transfers work as expected.
 
 ## Conclusion
-This documentation covers the setup and configuration of contact matching in the Some Event application using Salesforce Duplicate Rules and custom metadata for field mapping. Testing the feature helps ensure that records are matched and data is transferred accurately.
+This documentation covers the setup and configuration of contact matching in the Summit Event application using Salesforce Duplicate Rules and custom metadata for field mapping. Testing the feature helps ensure that records are matched and data is transferred accurately.
