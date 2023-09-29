@@ -14,8 +14,12 @@ Utilize these fields in your email to allow individuals to add the event to thei
 * summit__Add_To_Outlook_Web_Calendar__c
 * summit__Add_To_Yahoo_Calendar__c
 
-Example of an Email:
-![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/d795cfe6-937b-40cd-9d81-d87a40f08c3d)
+Example of an Summit Events Email record:
+![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/38d86086-77e3-476b-9f68-cdd8f0031073)
+
+Example of the received email:
+![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/f2559d8c-012c-4684-aadf-603908217440)
+
 
 *NOTE: The calendar invite will give the timezone of the event.  So if the event instance is set to a Central Time Zone for 12 PM, but the registrant is in the Pacific Time Zone, there calendar invite will save and reflect 10 AM*
 
