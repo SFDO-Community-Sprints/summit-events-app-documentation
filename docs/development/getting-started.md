@@ -20,7 +20,7 @@ SEA uses tooling developed by Salesforce.org called CumulusCI. With this tooling
 
 ## Create a Scratch Org With SEA Installed
 
-As stated earlier getting SEA into a scratch org is essential. A causal video of some of this process [was added to our documentation](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/development/developing-with-cumulusci/), but here are the steps to doing creating a scratch org with SEA installed:
+As stated earlier getting SEA into a scratch org is essential. A causal video of some of this process [was added to our documentation](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/development/developing-with-cumulusci/), but here are the steps to creating a scratch org with SEA installed:
 
 1. Fork the [SEA repository](https://github.com/SFDO-Community/Summit-Events-App) onto your computer. [Some instructions on Forking from GitHub](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 
