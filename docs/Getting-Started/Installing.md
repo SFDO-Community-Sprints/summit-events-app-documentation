@@ -100,7 +100,8 @@ Salesforce Winter '20 and Spring '20 releases severely limited Guest User access
 
 *Note:  The guest user gets created when the site is created and is named after the site name so your guest user may be named slightly different for example it may be called “Event Guest User”. There is usually only one guest user for the site so it’s pretty safe to assume the one you see is the one for which you should assign the Guest Registrant permissions set.*
 
-![](../images/Sharing%20Settings%20Config.png)
+![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/3fbbe72a-53f5-490a-a5a5-d6259175d664)
+
 
 
 ### Apply Permission Sets
