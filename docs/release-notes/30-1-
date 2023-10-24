@@ -1,9 +1,9 @@
 ---
-title: 0.30.0.1
+title: 0.31.0.1
 parent: Release Notes
 ---
 
-# Version 0.30.0.1 Release Notes
+# Version 0.31.0.1 Release Notes
 
 These release notes are broken down into multiple parts, Functional Features, Updates and Bug Fixes and Technical Features, Updates and Bug Fixes 
 > - **Important Items and Upgrade Action Steps** are things you should read to determine if your org needs to take an action prior to upgrading or what post upgrade steps need to be taken.
@@ -16,20 +16,35 @@ These release notes are broken down into multiple parts, Functional Features, Up
 ## Important Items and Upgrade Action Steps
 Below are important items to note prior to upgrading to 0.30.0.1 as well as post installation.
 
-### Guest User Access (This was also mentioned in the 0.29.0.1 Release Notes)
+### Guest User Access Reminder (This was also mentioned in the 0.29.0.1 Release Notes)
 
-There were several updates in the previous package that impacted the Summit Event Registant Permission Set and access needed for the Guest User. Below outlines what access is needed to avoid disruption as well as a new standard for Summit Evnets App and how to configure and manage Guest User Access.
+There were several updates in the previous updates impacting the Summit Event Registant Permission Set and access needed for the Guest User. Below outlines what access is needed to avoid disruption as well as a new standard for Summit Evnets App and how to configure and manage Guest User Access.
 - The Guest User is required to have READ access to the Account Object. No additional field access necessary.
   - A lookup to the Account Object on the Summit Event Record prompted this update.  
 - It is recommended and encouraged that [upon installation or prior to upgrading](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/#creating-a-custom-permission-set-for-the-guest-user), you create a custom permission set, granting READ access to the Account Object and add that to the Guest User. While previous documentation encourages cloning the Guest Permission set, we’re adjusting those instructions to create a custom permission set (not clone) in addition tothe Guest User having the packaged permission set (Summit Event Registrant). This will allow for a more seamless upgrade process while then allow you to manage your own customization on a single permission set. 
   - While in the code base, the Summit Event Registrant has READ access to the Account object. Upon install we found that the permission was removed, likely due to Salesforce Security protocols being enforced.
 
-### Page Layouts and Picklists to Update Post Installation
-The following Lightning Layouts and Page Layouts need to be updated to expose new fields that leverage some new functionality/updates. Below we're sharing the API name, which has a matching label:
+### Page Layouts and Picklists to Update Post Installation/Upgrade
+The following Lightning Layouts and Page Layouts need to be updated to expose new fields leveraging some new functionality/updates. Below we're sharing the API name, which has a matching label:
 
 - Layout: Summit Events Lightning Record Page Layout
   - Edit Lightning Record Pages and add the following fields:
-  - Add Do_not_show_receive_text_question__c to the Standard Options & Labels tab 
+  - Add Add_Info_Question_Pick_List_Long_1__c to the Add'l Configuration & Options tab
+  - Add Add_Info_Question_Pick_List_Long_2__c to the Add'l Configuration & Options tab
+  - Add Add_Info_Question_Pick_List_Long_3__c to the Add'l Configuration & Options tab
+  - Add Add_Info_Question_Pick_List_Long_4__c to the Add'l Configuration & Options tab
+  - Add Add_Info_Question_Pick_List_Long_5__c to the Add'l Configuration & Options tab
+  - Add Event_Fees_Received_Label__c to the Event Fees tab
+  - Add Event_Payment_Due_Description__c to the Event Fees tab
+  - Add Event_Payment_Due_Heading_Label__c to the Event Fees tab
+  - Add Event_Payment_Received_Description__c to the Event Fees tab
+  - Add Event_Payment_Received_Heading_Label__c to the Event Fees tab
+  - Add Guest_Unsaved_Cancel_Label__c to the Guest Registration tab
+  - Add Guest_Unsaved_Continue_Label__c to the Guest Registration tab
+  - Add Guest_Unsaved_Modal_Text__c to the Guest Registration tab
+
+- Layout: Summit Events Question
+  - Add Picklist_Values_Long__c to the page layout
 
 ---
 ## Known Issues
@@ -37,11 +52,12 @@ Unknown during this release.  Please post in the [Trailblazer Community](https:/
 
 ---
 ## Functional Features, Updates and Bug Fixes
-### Standard Phone Question Experience
-- When utilizing the standard "Ask Phone" question, when mobile was a part of the selected option, it would always ask as additional question on if the registrant was willing to recieve SMS. The additional question is now able to be removed! An additional checkbox field has been added to the Summit Events object called "Do not show receive text question". When this checkbox is set to true, it will remove the additional question and the registrant will only be asked to give their mobile number.
-  - As a reminder, you can now only ask mobile, but may need add the picklist values of "Ask mobile" and "Ask mobile and require", which will automatically map to the Summit Event Registration record field of "Registrant Mobile".
+### Long Text Fields for Picklist Options (resolved [#495](https://github.com/SFDO-Community/Summit-Events-App/issues/495) and [#446](https://github.com/SFDO-Community/Summit-Events-App/issues/446))
+- When utilizing Additional Questions (on the Summit Events object) and Custom Questions, when the field type is picklist, users were limmited to a picklist that consisted of 255 character.  At times, a Lookup or Lookup Picklist isn't a viable option, so users opted to add their values to the picklist option fields. With this update additional LONG TEXT fields were added to extend the amount of characters that can be utilized in the additional and custom question picklists. Current users do not need to migrate their picklist values while still leveraging the new long text field.  
 
-
+### Guest Registration Screen Confirming input validation (resolved [#514](https://github.com/SFDO-Community/Summit-Events-App/issues/514)
+- When utilizing Guest Registration, a user may enter information and miss hitting the button to formally add their guest.  While in the last release, this is [highlighted to the registrant ](https://github.com/SFDO-Community/Summit-Events-App/issues/502), the registrant may actually want to move forward without adding what they type. Previously a user would have to delete all felds, now the registrant is provided with a pop-up asking if they really want to move forward without submitting what they entered.
+ 
 ---
 ## Technical Features, Updates and Bug Fixes
 ### Spelling and Language Errors
