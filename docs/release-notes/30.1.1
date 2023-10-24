@@ -1,0 +1,83 @@
+---
+title: 0.30.0.1
+parent: Release Notes
+---
+
+# Version 0.30.0.1 Release Notes
+
+These release notes are broken down into multiple parts, Functional Features, Updates and Bug Fixes and Technical Features, Updates and Bug Fixes 
+> - **Important Items and Upgrade Action Steps** are things you should read to determine if your org needs to take an action prior to upgrading or what post upgrade steps need to be taken.
+> - **Known Issues** highlights issues we recognize not functioning as expected and will be working to fix in the next release.
+> - **Functional Features, Updates and Bug Fixes** captures everything in the release that have a direct impact on the Registrant or Event Manager experience. These are features or functionality utilized and noticed as part of the Summit Events App
+> -  **Technical Features, Updates and Bug Fixes** captures everything in the release that are withing the codebase. They impact the functionality and features of the Summit Events App, but aren't likely noticeable from an Admin or Event Manager perspective.
+> - **Issues Closed** is a comprehesive list of Github issues (Bugs and Feature Requests) that are closed as part of this release.
+
+
+## Important Items and Upgrade Action Steps
+Below are important items to note prior to upgrading to 0.30.0.1 as well as post installation.
+
+### Guest User Access (This was also mentioned in the 0.29.0.1 Release Notes)
+
+There were several updates in the previous package that impacted the Summit Event Registant Permission Set and access needed for the Guest User. Below outlines what access is needed to avoid disruption as well as a new standard for Summit Evnets App and how to configure and manage Guest User Access.
+- The Guest User is required to have READ access to the Account Object. No additional field access necessary.
+  - A lookup to the Account Object on the Summit Event Record prompted this update.  
+- It is recommended and encouraged that [upon installation or prior to upgrading](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/#creating-a-custom-permission-set-for-the-guest-user), you create a custom permission set, granting READ access to the Account Object and add that to the Guest User. While previous documentation encourages cloning the Guest Permission set, we’re adjusting those instructions to create a custom permission set (not clone) in addition tothe Guest User having the packaged permission set (Summit Event Registrant). This will allow for a more seamless upgrade process while then allow you to manage your own customization on a single permission set. 
+  - While in the code base, the Summit Event Registrant has READ access to the Account object. Upon install we found that the permission was removed, likely due to Salesforce Security protocols being enforced.
+
+### Page Layouts and Picklists to Update Post Installation
+The following Lightning Layouts and Page Layouts need to be updated to expose new fields that leverage some new functionality/updates. Below we're sharing the API name, which has a matching label:
+
+- Layout: Summit Events Lightning Record Page Layout
+  - Edit Lightning Record Pages and add the following fields:
+  - Add Do_not_show_receive_text_question__c to the Standard Options & Labels tab 
+
+---
+## Known Issues
+Unknown during this release.  Please post in the [Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE?tab=discussion&sort=LAST_MODIFIED_DATE_DESC) should you be experiencing any issues with this release.
+
+---
+## Functional Features, Updates and Bug Fixes
+### Standard Phone Question Experience
+- When utilizing the standard "Ask Phone" question, when mobile was a part of the selected option, it would always ask as additional question on if the registrant was willing to recieve SMS. The additional question is now able to be removed! An additional checkbox field has been added to the Summit Events object called "Do not show receive text question". When this checkbox is set to true, it will remove the additional question and the registrant will only be asked to give their mobile number.
+  - As a reminder, you can now only ask mobile, but may need add the picklist values of "Ask mobile" and "Ask mobile and require", which will automatically map to the Summit Event Registration record field of "Registrant Mobile".
+
+
+---
+## Technical Features, Updates and Bug Fixes
+### Spelling and Language Errors
+- Several spelling errors have been updated.  While they did not impact the experience of the application, these updates provide clarity.
+
+### Front-End User Experience for Guest Registration Page
+- There were issues of the registrant missing or not recognizing the button at the bottom of the form to formally add their guest. This has been mitigated by turning the button blue when information has been added to a field.  So if all the fields are blank, the button will appear neutral. As the registrant enters information into a field and progresses to the next, during that transition the button will go from neutral to blue, calling out that they have something to take action on.
+
+### Registrantion Counts on the Instance
+- With the addition of the Guest Registration process, the Roll-Up fields "Primary Registrants" were miscalculating. Because the Guest Registration process create a registration record, it was identify those similarly to the primary registrant. This impacted users ability to set the "Capacity Control" field to "Individual Registrants" without negatively impacting the Current Available Capacity. With this update, users should be able to set the Capacity Control to Individual Registrants and it will only count the number of primary registration, not the additional registration created by the registrant.
+  - Example:  The user sets the event capacity to 100, which is only impacted by the individual registrations, so Capacity Control is set to "Individual Registrants". Registrants are allowed to add 2 additional guests leveraging Custom Questions (which creates an additional registration). When the registrants registers themselves, and adds information for 2 additional guests, the "Count of Attendees" Roll-Up field on the instance will reflect 3, Primary Attendees will reflect 1 and the Current Available Capacity will show 99.
+
+### Summit Events Email Merge Fields
+- There was an issue with the merge fields not recognizing the namespace on all of the fields.  This has been updated to now respect the namespace when used in transactional email [field merge functionality](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/create-event-email/#6-enter-the-email-content). This should not impact any emails already existing as incidentally it will still respect non-namespaced field merge api names.
+
+### REST API Update
+- In the previous release, there was an additional feed type created called “parameterKey”. When used in a feed url it displays all available parameters that can be sent to a feed with a short description and available options to filter on. We've added a new parameter for Location Type, "locationtype" which will filter events on the location type set on the event or in the override field on the instance. This will allow for more dynamic filtering when utilizing the feed on a front-end website.
+  - Example of how to view the paramterkey feed type: …my.salesforce-sites.com/services/apexrest/summit/summiteventsfeed?feedType=parameterkey
+
+### Payment Page Error Fix
+- There was an issue with Payment Page reflecting in the normal page flow when Payments are setup. As a reminder, collecting payments takes additional development post installation, but Summit Events is setup to collect and manage payments. Now the Payment page, when set, will work correctly for registrants. During this process registrants will essentially jump out of the package to an external, user created page, for payment processing. This is how it was intended to work and the bugs that existed have been cleared.
+
+### Security and Licensing
+- Additional security has been added to maintain encrypted data. Summit Events App now uses secure, strict site cookies to maintain encrypted data to preserve registration information to the guest user.
+
+
+
+---
+## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
+- #487: [BUG] Event feed close before days not working
+- #489: [Help Text] Help text wording structure 
+- #490: [Help Text] Type-o in Help Text for Private Event checkbox
+- #494: [FEATURE] Location Filter for "Location Type Override" 
+- #497: [BUG] Checkbox for "Registrant Receive Texts" appears as required even if the Phone field is optional.
+- #499: [BUG] External payment page not working in payment page flow.
+- #502: Guest Registration functionality needs to be more user friendly.   I have suggestions on how to make this screen better.
+- #504: [BUG] Capacity Control doesn't respect hosted registrants
+- #505: [BUG] Email field inserts don't respect namespace
+- #506: [FEATURE] Use secure, site strict cookies
