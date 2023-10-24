@@ -60,30 +60,23 @@ Unknown during this release.  Please post in the [Trailblazer Community](https:/
  
 ---
 ## Technical Features, Updates and Bug Fixes
-### Spelling and Language Errors
-- Several spelling errors have been updated.  While they did not impact the experience of the application, these updates provide clarity.
+### Class Year Validation
+- 
 
-### Front-End User Experience for Guest Registration Page
-- There were issues of the registrant missing or not recognizing the button at the bottom of the form to formally add their guest. This has been mitigated by turning the button blue when information has been added to a field.  So if all the fields are blank, the button will appear neutral. As the registrant enters information into a field and progresses to the next, during that transition the button will go from neutral to blue, calling out that they have something to take action on.
+### Missing Validation context to Additional Questions
+- 
 
-### Registrantion Counts on the Instance
-- With the addition of the Guest Registration process, the Roll-Up fields "Primary Registrants" were miscalculating. Because the Guest Registration process create a registration record, it was identify those similarly to the primary registrant. This impacted users ability to set the "Capacity Control" field to "Individual Registrants" without negatively impacting the Current Available Capacity. With this update, users should be able to set the Capacity Control to Individual Registrants and it will only count the number of primary registration, not the additional registration created by the registrant.
-  - Example:  The user sets the event capacity to 100, which is only impacted by the individual registrations, so Capacity Control is set to "Individual Registrants". Registrants are allowed to add 2 additional guests leveraging Custom Questions (which creates an additional registration). When the registrants registers themselves, and adds information for 2 additional guests, the "Count of Attendees" Roll-Up field on the instance will reflect 3, Primary Attendees will reflect 1 and the Current Available Capacity will show 99.
+### Missing City from Zipcode input
+- 
 
-### Summit Events Email Merge Fields
-- There was an issue with the merge fields not recognizing the namespace on all of the fields.  This has been updated to now respect the namespace when used in transactional email [field merge functionality](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/create-event-email/#6-enter-the-email-content). This should not impact any emails already existing as incidentally it will still respect non-namespaced field merge api names.
+### Text Box and Text Area reversed
+- 
 
-### REST API Update
-- In the previous release, there was an additional feed type created called “parameterKey”. When used in a feed url it displays all available parameters that can be sent to a feed with a short description and available options to filter on. We've added a new parameter for Location Type, "locationtype" which will filter events on the location type set on the event or in the override field on the instance. This will allow for more dynamic filtering when utilizing the feed on a front-end website.
-  - Example of how to view the paramterkey feed type: …my.salesforce-sites.com/services/apexrest/summit/summiteventsfeed?feedType=parameterkey
+### Event Registration Forumla Update
+- 
 
-### Payment Page Error Fix
-- There was an issue with Payment Page reflecting in the normal page flow when Payments are setup. As a reminder, collecting payments takes additional development post installation, but Summit Events is setup to collect and manage payments. Now the Payment page, when set, will work correctly for registrants. During this process registrants will essentially jump out of the package to an external, user created page, for payment processing. This is how it was intended to work and the bugs that existed have been cleared.
-
-### Security and Licensing
-- Additional security has been added to maintain encrypted data. Summit Events App now uses secure, strict site cookies to maintain encrypted data to preserve registration information to the guest user.
-
-
+### Payment Confirmation Calculation update
+- 
 
 ---
 ## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
