@@ -43,7 +43,7 @@ If your org does not already have a Salesforce “Site,” which is used to disp
     * Leave all other settings at their defaults and text areas blank.
 
 3. Click "Save".
-![](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/images/Site%20Configuration.png)
+![](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/images/SummitEventsSiteConfig.PNG)
 
 5. Upon save, you will see the Site under the Sites section. Click the "Activate" button at the top of the page.
 
