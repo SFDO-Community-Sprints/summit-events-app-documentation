@@ -144,6 +144,6 @@ Once you've create the Custom Permission set, apply it to the Guest User as outl
 
 
 ## Congrats! At this point, you should have a functioning Summit Events Package. 
-Check out [Post-Installation Considerations](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/post-install-consideration/) for additional considerations you’ll want to make to ensure there is alignment with your organization
+Check out [Post-Installation Considerations](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/post-install-consideration/) for additional considerations you’ll want to make to ensure there is alignment with your organization.
 
 
