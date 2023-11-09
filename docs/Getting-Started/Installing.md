@@ -35,16 +35,16 @@ If your org does not already have a Salesforce “Site,” which is used to disp
     * Site Label: Summit Events
     * Site Name: Summit_Events
     * Active Site Home Page:
-        * Select the magnifying glass look-up icon and in the dialog select "SummitEvents".
+        * Select the magnifying glass look-up icon and search for and select SummitEvents.
     * Leave all other settings at their defaults and text areas blank.
 
 3. Click "Save".
-
-4. Upon save, you will see the Site under the Sites section. Click the "Activate" at the top of the page.
-
-5. In that same section, right-click on the Site URL link and copy the URL to your clipboard. You will need the Site URL in the next stage of post-installation set-up steps.
-
 ![](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/images/Site%20Configuration.png)
+
+5. Upon save, you will see the Site under the Sites section. Click the "Activate" button at the top of the page.
+
+6. From Setup, search for sites.  From the list of sites, find the Summit Events site.  In the Site URL column, right-click on the Site URL link and copy the URL to your clipboard. You will need the Site URL in the next stage of post-installation set-up steps.
+
 ![](../images/Site%20URL%20Capture.png)
 
 ### Set Custom Settings
