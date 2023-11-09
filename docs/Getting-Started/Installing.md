@@ -16,7 +16,7 @@ There are a few steps after you install the SEA managed package to getting your 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ph1LAh6FoQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Confirm Summit Events is Installed ###
+### Confirm Summit Events is Installed
 1. From Setup, search for and select Installed Packages.
 2. Confirm you see Summit Events App as one of the installed packages.
 
@@ -143,6 +143,7 @@ Once you've create the Custom Permission set, apply it to the Guest User as outl
 
 
 
-## Congrats! At this point, you should have a functioning Summit Events Package.
+## Congrats! At this point, you should have a functioning Summit Events Package. 
+Check out [Post-Installation Considerations](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/post-install-consideration/) for additional considerations you’ll want to make to ensure there is alignment with your organization
 
 
