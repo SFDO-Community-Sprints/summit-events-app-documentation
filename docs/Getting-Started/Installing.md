@@ -50,21 +50,17 @@ If your org does not already have a Salesforce “Site,” which is used to disp
 ### Set Custom Settings
 Since each installation can have a different site URL, we need to define that URL for the event application to use as its root web presence. This is used for feed URLs, allowing external sites to access it, among other things. [Learn more about other custom settings](../advanced-features/custom-settings.md).
 
-1. In Setup go to User Custom Code -> Custom Settings.
+1. In Setup searcch for Custom Settings.
 
-2. Click on the "Manage" link for the custom setting "Summit Events Settings".
+2. Click on the "Manage" link next to the custom setting "Summit Events Settings".
 
-3. Click "New" button just before the "Default Organization Level Value." NOTE: There are two "New" buttons on the page, which can be confusing. You will know you are on the wrong one if you are asked to assign a user or a profile. You will know you are on the right one if you only need to enter the URL in the following step.
+3. Click "New" button at the top of the page just before the "Default Organization Level Value." NOTE: There are two "New" buttons on the page, which can be confusing. You will know you are on the wrong one if you are asked to assign a user or a profile. You will know you are on the right one if you only need to enter the URL in the following step.
 
-4. Use the URL you copied from the “Create a site record” section (step 5 above) and enter it into the Community Base URL field.
+4. Paste the URL you copied from the “Create a site record” section (step 6 above) and enter it into the Community Base URL field.
 
 5. Click the "Save" button.
 
 Once you hit "Save" the "New" button will be replaced with "Edit." (You will need to click the Edit button to make future adjustments to this setting.)
-
-![Custom Setting 1](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/images/Custom%20Settings%201.png)
-![](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/images/Custom%20Settings%202.png)
-![](../images/Custom%20Settings%203.png)
 
 ### Set Sharing Rules
 Salesforce Winter '20 and Spring '20 releases severely limited Guest User access to objects to ensure security. The Summit Events application requires the Guest User profile used by the event registrant to be able to read and upsert to the solution’s custom objects. To comply with these new security requirements, we need to create a sharing rule. Code has also been adjusted to allow for the required upserts. The following instructions will help you set up the required sharing rule. Unfortunately, we are not able to automate these steps yet due to limitations in SFDX.
@@ -73,7 +69,7 @@ Salesforce Winter '20 and Spring '20 releases severely limited Guest User access
 
 1. In Setup, type "Sharing" in the quick-find box in Setup and click on "Sharing Settings".
 
-2. In the Organization-Wide Defaults section, scroll down to ensure that Summit Events is set to Public Read/Write. If it is, <b>go to step 6.</b>
+2. In the Organization-Wide Defaults section, find Summit Events (towards the bottom) verify it is set to Public Read/Write. If it is, <b>skip to step 6.</b>
 
 3. If Summit Events is not set to Public Read/Write, click the "Edit" button.
 
