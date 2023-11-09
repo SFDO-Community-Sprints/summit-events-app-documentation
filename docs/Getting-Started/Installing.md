@@ -16,6 +16,10 @@ There are a few steps after you install the SEA managed package to getting your 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ph1LAh6FoQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### Confirm Summit Events is Installed ###
+1. From Setup, search for and select Installed Packages.
+2. Confirm you see Summit Events App as one of the installed packages.
+
 ### Create a site subdomain
 If your org does not already have a Salesforce “Site,” which is used to display public visual force pages, you will need to set up one. If your org has one set up, you may use the existing Site.
 
