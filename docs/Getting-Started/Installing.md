@@ -108,40 +108,34 @@ There are two permission sets provided in this application.  These permission se
 **Summit Events Admin:** Apply to admin users that need to create and maintain events.
    > Note: Users who are not system administrators but who will administer Summit Events will need this permission set. You do not need to add the Permission Set at this time, but follow the steps bulleted below if/when you need a user to administer Summit Events. It is recommended that the Summit Event Admin permission set is cloned so appropriate configurations can be made to reduce/expand access to various fields.
 
-1. In Setup under Users, click on Permission Sets.
+1. In Setup search for and select Permission Sets.
 2. Click on Summit Events Admin or your cloned Summit Events Admin permission set.
 3. Click on the “Manage Assignments” button.
 4. Click the checkbox next to the user who will administer Summit Events and click the “Add Assignments” button.
 
 **Summit Events Registrant:** This permission set needs to be applied to the Guest User profile of your site for the public to be able to access to registration forms. In addition, a custom permission set should be created to control for additional access based on event configurations.
-   > Note: Cloning the Summit Event Registrant permissions set and only applying the cloned version may cause issues when upgrading the package.
 
-#### Apply Summit Events Registrant permission set to the Guest User of your site
-
-1. In Setup, go to User Interface -> Sites and Domains -> Sites.
-2. Under the Sites section, click on the words Summit Events in the "Site Label" field.
-3. Click on the "Public Access Settings" button at the top of the site definition page.
-4. On the Summit Events Profile page, click the View Users button.
-5. Under the Full Name column, click on the Site Guest User name (which is a link).
-6. On your Summit Events Site Guest User page, scroll down to Permission Set Assignment and click the “Edit Assignments” button.
-7. In the Available Permission Sets section, click on Summit Events Registrant and click the “Add” button. This will move it into the Enabled Permission Sets section.
-8. Click the “Save” button.
-
-![](../images/Site%20Label%20Reference.png)
-![](../images/Guest%20User%20Config%201.png)
-![](../images/Guest%20User%20Config%202.png)
-![](../images/Guest%20User%20Config%203.png)
-
-### Creating a Custom Permission Set for the Guest User
-We've updated the following documentation where users should no longer clone the Summit Event Registrant permission set, particularly associated to the Guest User. This change is to ensure Summit Events App works seamless with any upgrade and the Guest User always has the appropriate access to recieve event registrations.
+### Create a Custom Permission Set for the Guest User
+This custom permission set allows you to add additional permissions for the guest user without worrying about issues during upgrades.  This permission set combined with the packaged Summit Events Registration permission set gives your organization the most flexibility.  It ensures Summit Events App works seamless with any upgrade and the Guest User always has the appropriate access to recieve event registrations.
 
 1. Create a new [Permissions Set](https://help.salesforce.com/s/articleView?id=sf.perm_sets_create.htm&type=5).
 2. Label the permission set to align with the Summit Event Registration for Guest Users - <b>Example: Summit Events Custom Registrant.</b>
 3. Go to Object Settings and grant "READ" access on the Account object. No additional fields needed.
 
-Once you've create the Custom Permission set, apply it to the Guest User as mentioned earlier. With this custom permission set, you'll be able to grant appropriate access to any additional objects or fields being utilized for Summit Events as well as the following:
+Once you've create the Custom Permission set, apply it to the Guest User as outlined below. With this custom permission set, you'll be able to grant appropriate access to any additional objects or fields being utilized for Summit Events as well as the following:
 - Avoid disruptions and limit additional configurations during upgrades.
 - Leverage Summit Event Questions and the Lookup options for improved data integrity.
+
+#### Apply Summit Events Registrant permission set and the custom permission set you created to the Guest User of your site
+
+1. In Setup, Search for and select Sites.
+2. Under the Sites section, click on the words Summit Events in the "Site Label" field.
+3. Click on the "Public Access Settings" button at the top of the site definition page.
+4. On the Summit Events Profile page, click the Assigned Users button.
+5. Under the Full Name column, click on the Site Guest User name (Site Guest User, Summit Events - which is a link).
+6. On the Summit Events Site Guest User page, scroll down to Permission Set Assignment and click the “Edit Assignments” button.
+7. In the Available Permission Sets section, click on Summit Events Registrant and click the “Add” button.  Repeat this process for the new custom permission set you created. This will move them both into the Enabled Permission Sets section.
+8. Click the “Save” button.
 
 
 
