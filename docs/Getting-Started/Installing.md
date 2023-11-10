@@ -54,13 +54,13 @@ If your org does not already have a Salesforce “Site,” which is used to disp
 ### Set Custom Settings
 Since each installation can have a different site URL, we need to define that URL for the event application to use as its root web presence. This is used for feed URLs, allowing external sites to access it, among other things. [Learn more about other custom settings](../advanced-features/custom-settings.md).
 
-1. In Setup searcch for Custom Settings.
+1. From Setup, search for Custom Settings.
 
 2. Click on the "Manage" link next to the custom setting "Summit Events Settings".
 
-3. Click "New" button at the top of the page just before the "Default Organization Level Value." NOTE: There are two "New" buttons on the page, which can be confusing. You will know you are on the wrong one if you are asked to assign a user or a profile. You will know you are on the right one if you only need to enter the URL in the following step.
+3. Click the "New" button at the top of the page just before the "Default Organization Level Value." NOTE: There are two "New" buttons on the page, which can be confusing. You will know you are on the wrong one if you are asked to assign a user or a profile. You will know you are on the right one if you only need to enter the URL in the following step.
 
-4. Paste the URL you copied from the “Create a site record” section (step 6 above) and enter it into the Community Base URL field.
+4. Paste the URL you copied from the “Create a site record” section (step 6 above) into the Community Base URL field.
 
 5. Click the "Save" button.
 
@@ -83,7 +83,7 @@ Salesforce Winter '20 and Spring '20 releases severely limited Guest User access
 
 6. Under the "Sharing Rules" header (just below the Organization-Wide Default section), scroll down to the "Summit Events Sharing Rules" section and click the “New” button.
 
-7. In the "Step 1: Rule Name" section, under Label field, enter "Guest User Read Access" and click tab. This will automatically populate the Rule Name field with "Guest_User_Read_Access."
+7. In the "Step 1: Rule Name" section, under Label field, enter "Guest User Read Access" and then use the tab key to tab to the next field. This will automatically populate the Rule Name field with "Guest_User_Read_Access."
 
 8. In the "Step 2: Select your rule type" section, select the "Guest user access, based on criteria" radio button.
 
@@ -92,7 +92,7 @@ Salesforce Winter '20 and Spring '20 releases severely limited Guest User access
 > * Operator = "not equal to"
 > * Value = null (type the word 'null' for the value).
 
-10. In the "Step 4: Select the users to share with" section, click the Share With drop-down arrow and select the *Event Site Guest User, Summit Events Site Guest User, in our example.
+10. In the "Step 4: Select the users to share with" section, click the Share With drop-down arrow and select the *Event Site Guest User*, which is named Summit Events Site Guest User in our example.
 
 11. Set Access Level to "Read Only".
 
@@ -117,22 +117,22 @@ There are two permission sets provided in this application.  These permission se
 3. Click on the “Manage Assignments” button.
 4. Click the checkbox next to the user who will administer Summit Events and click the “Add Assignments” button.
 
-**Summit Events Registrant:** This permission set needs to be applied to the Guest User profile of your site for the public to be able to access to registration forms. In addition, a custom permission set should be created to control for additional access based on event configurations.
+**Summit Events Registrant:** This permission set needs to be applied to the Guest User profile of your site for the public to be able to access to registration forms. In addition, a custom permission set should be created to give additional access based on event configurations.
 
 ### Create a Custom Permission Set for the Guest User
 This custom permission set allows you to add additional permissions for the guest user without worrying about issues during upgrades.  This permission set combined with the packaged Summit Events Registration permission set gives your organization the most flexibility.  It ensures Summit Events App works seamless with any upgrade and the Guest User always has the appropriate access to recieve event registrations.
 
 1. Create a new [Permissions Set](https://help.salesforce.com/s/articleView?id=sf.perm_sets_create.htm&type=5).
-2. Label the permission set to align with the Summit Event Registration for Guest Users - <b>Example: Summit Events Custom Registrant.</b>
+2. Label the permission set to align with the Summit Event Registration for Guest Users - <b>Example: Summit Events Registrant Custom.</b>
 3. Go to Object Settings and grant "READ" access on the Account object. No additional fields needed.
 
 Once you've create the Custom Permission set, apply it to the Guest User as outlined below. With this custom permission set, you'll be able to grant appropriate access to any additional objects or fields being utilized for Summit Events as well as the following:
 - Avoid disruptions and limit additional configurations during upgrades.
 - Leverage Summit Event Questions and the Lookup options for improved data integrity.
 
-#### Apply Summit Events Registrant permission set and the custom permission set you created to the Guest User of your site
+### Apply Summit Events Registrant permission set and the custom permission set you created to the Guest User of your site
 
-1. In Setup, Search for and select Sites.
+1. From Setup, Search for and select Sites.
 2. Under the Sites section, click on the words Summit Events in the "Site Label" field.
 3. Click on the "Public Access Settings" button at the top of the site definition page.
 4. On the Summit Events Profile page, click the Assigned Users button.
