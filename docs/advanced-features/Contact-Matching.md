@@ -29,7 +29,7 @@ This documentation provides an overview of contact matching in Salesforce and ho
 
 ### Add the Custom Rule Name as a Picklist value in the Contact Creation Rule feild of the Summit Event object.
 1. From Setup, search for the Summit Event object
-2. In the Fields and Relationships area, search for and select the Contact Creation Rule field.
+2. In the Fields and Relationships area, search for and select the Contact Creation Duplicate Rule field.
 3. Click the New button to add a New piclist value.
 4. Copy and Paste the name of your newly created duplicate rule here and save your changes.
 5. Under Picklist options, click on Change next to the controlling field "Contact Matching Rule".  
@@ -61,7 +61,7 @@ When a new Contact is created by the Contact Matching Rule the following fields 
 If you want additional field values to be added to the Contact record you can use the "Custom Metadata Contact Matching Method" on Summit Events to do this.  Custom Metadata Types is the Salesforce tool that allows an admin to create field mappings that are read by the code in the managed package - for details take a look at [More Info On Custom Metadata Types](https://help.salesforce.com/articleView?id=custommetadatatypes_about.htm&type=5).
 
 ### Custom Metadata for Field Mapping
-By default there are standard fields that are mapped from the registration record and written to the Contact record when a match is found.  See "Field Values Automatically Added to Contacts when Matching Rule Creates New Contact" section for details.  In addition to this, ummit Events allows custom field mapping between the registration and the Contact record. These mappings define how data flows from Summit Event to Salesforce.
+By default there are standard fields that are mapped from the registration record and written to the Contact record when a match is found.  See "Field Values Automatically Added to Contacts when Matching Rule Creates New Contact" section for details.  In addition to this, Summit Events allows custom field mapping between the registration and the Contact record. These mappings define how data flows from Summit Event to Salesforce.
 
 Map additional feilds using Custom Metadata follow these steps:
 1. In setup, search for and select Custom Metadata Types.
