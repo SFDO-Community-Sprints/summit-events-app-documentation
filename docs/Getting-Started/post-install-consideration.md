@@ -11,7 +11,7 @@ nav_order: 2
 After you install Summit Events in your org there are some additional considerations you'll want to make to ensure there is alignment with your organization. Before you begin, be sure that you've completed all of the steps to [Install and Configure](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/) Summit Events.
 
 ## Page Layout Considerations
-The Summit Events App was originally created for Higher Education institutions. You'll notice there are some fields that are specifically related to Admissions, like "Applicant Type". Based on your organization/institution, you may want to remove fields from the page layout to avoid confusion from your Users. We add the most commonly used fields that highlight existing functionality to the page layouts on install for visibility.
+The Summit Events App was originally created for Higher Education institutions. You'll notice there are some fields that are specifically related to Admissions, like "Applicant Type". Based on your organization/institution, you may want to remove fields from the page layout to avoid confusion from your Users. We add the most commonly used fields that highlight existing functionality to the page layouts on install for visibility.  You can modify these to add or remove fields so that the page displays fields that make sense for your organization.
 
 Here are some suggested fields to review based on some industry intentions:
 * Applicant Type
@@ -94,5 +94,7 @@ There are some additional considerations to make Summit Events more personalized
     - A custom template will allow for the registration form and pages to be branded for your organization/institution.
     - The "General SLDS" is standard and will allow for a professional looking form, but you may want more branding.
     - You can follow these instructions on [how to create a custom template](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-templates/).
+ 
+**Check out [Before Creating an Event](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/before-creating-event/)** to continue getting your Summit Event App configured.
 
 
