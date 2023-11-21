@@ -130,6 +130,11 @@ Once you've create the Custom Permission set, apply it to the Guest User as outl
 - Avoid disruptions and limit additional configurations during upgrades.
 - Leverage Summit Event Questions and the Lookup options for improved data integrity.
 
+   > We recommend assigning users to the standard permission sets since they can change with each release as new features become available in Summit Events (SEA).
+    Cloning the existing permission sets to create custom permission sets could result in users not having access to features or functionality when the standard SEA
+    permission sets change. If you need to add additional permissions we recommend that you create a custom permission set to house those permissions and assign that
+    permission set in addition to the standard permission set.
+
 ### Apply Summit Events Registrant permission set and the custom permission set you created to the Guest User of your site
 
 1. From Setup, Search for and select Sites.
