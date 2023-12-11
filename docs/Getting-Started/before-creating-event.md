@@ -54,9 +54,10 @@ We deliver sample values for the picklist fields, but you will want to edit thes
   - Presentation Location *(should match "Building" on the Summit Events object)*
   - Participation Type
 
-<ins>ummit Events Questions object</ins>
+<ins>Summit Events Questions object</ins>
 * Existing Picklist Values *(Note: this will be based on any custom picklist fields on the Summit Events Registration object)*
-<b>---To be continued. Please check back later!---</b>
+
+---To be continued-work in progress. Please check back later!---
 
 
 ## Review Page Layouts
@@ -91,7 +92,8 @@ There are some additional considerations to make Summit Events more personalized
     - A custom template will allow for the registration form and pages to be branded for your organization/institution.
     - The "General SLDS" is standard and will allow for a professional looking form, but you may want more branding.
     - You can follow these instructions on [how to create a custom template](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-templates/).
-* Add the Summit Events calendar to your website using the instructions on [Adding Event Calendar to Your Web Page](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/How-to-add-the-Event-Calendar-to-Any-Web-Page).
+* **Add Summit Events Calendar to Website**
+* Optionally, you can choose to add the Summit Events calendar to your website using the instructions on [Adding Event Calendar to Your Web Page](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/How-to-add-the-Event-Calendar-to-Any-Web-Page).
 
 __Future__
 
