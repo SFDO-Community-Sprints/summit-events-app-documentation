@@ -93,7 +93,7 @@ There are some additional considerations to make Summit Events more personalized
     - The "General SLDS" is standard and will allow for a professional looking form, but you may want more branding.
     - You can follow these instructions on [how to create a custom template](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-templates/).
 * **Add Summit Events Calendar to Website**
-* Optionally, you can choose to add the Summit Events calendar to your website using the instructions on [Adding Event Calendar to Your Web Page](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/How-to-add-the-Event-Calendar-to-Any-Web-Page).
+    - Optionally, you can choose to add the Summit Events calendar to your website using the instructions on [Adding Event Calendar to Your Web Page](https://github.com/SFDO-Community-Sprints/Summit-Events-App/wiki/How-to-add-the-Event-Calendar-to-Any-Web-Page).
 
 __Future__
 
