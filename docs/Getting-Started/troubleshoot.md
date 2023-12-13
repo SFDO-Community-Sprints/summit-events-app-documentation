@@ -22,3 +22,7 @@ Verify that the Event Instance's Event Status field is set to Active.
 
 ### Event Instance Date Time Formatted field on Summit Events Registration object does not get updated if a change is made to the date or time of the event after initial creation.
 This is a known issue which may be corrected in an upcoming release.  To track the progress of the known issue see: [Issue Tracker](https://github.com/SFDO-Community/Summit-Events-App/issues/525)
+
+### Open Registration Checkbox field on Summit Events Instance Object Inconsistency.
+The Open Registration checkbox field on the Summit Events Instance object isn’t calculating the same way the Registrant will experience. With this release there is improved confidence in what the registrant experiences than what may display on the Instance to the Event Manager. The registrant experiences what the Event Manager would expect, causing confusion as to why an event may appear open based on the Open Registration checkbox field, but isn’t (or vice versa) within the Event Manager or Admin perspective of Salesforce.  See issue for additional information about how to reproduce and suggested work around. [Issue Tracker](https://github.com/SFDO-Community/Summit-Events-App/issues/541)
+
