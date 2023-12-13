@@ -20,5 +20,5 @@ Verify that the Event Instance's Event Status field is set to Active.
 
 # Known Issues
 
-## Event Instance Date Time Formatted field on Summit Events Registration object does not get updated if a change is made to the date or time of the event after initial creation.
+### Event Instance Date Time Formatted field on Summit Events Registration object does not get updated if a change is made to the date or time of the event after initial creation.
 This is a known issue which may be corrected in an upcoming release.  To track the progress of the known issue see: [Issue Tracker](https://github.com/SFDO-Community/Summit-Events-App/issues/525)
