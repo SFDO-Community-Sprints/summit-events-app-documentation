@@ -3,7 +3,7 @@ title: Troubleshooting
 nav_order: 10
 ---
 
-*This page is intended to capture common troubleshooting issues with the Summit Events App.  Have something to contribute, comment below and we'll add it to this page.*  __Can't find what you are looking for here?  Have suggestions for improvements?__  Post your question on the SEA Trailblazer community page:  [SEA Trailblazer Community]([EA Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE)
+*This page is intended to capture common troubleshooting issues with the Summit Events App.  Have something to contribute, comment below and we'll add it to this page.*  __Can't find what you are looking for here?  Have suggestions for improvements?__  Post your question on the SEA Trailblazer community page:  [SEA Trailblazer Community](EA Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE)
 
 
 # Registration Pages
