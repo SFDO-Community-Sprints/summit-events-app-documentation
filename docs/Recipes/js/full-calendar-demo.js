@@ -74,7 +74,8 @@ const initCalendar = function () {
         eventDisplay: "auto",
         eventTextColor: "#000",
         eventContent: function (info) {
-            let wrap = document.createElement("div");
+            let wrap = document.createElement("a");
+            wrap.href = info.event.url;
             let titleWrap = document.createElement("span");
             eventCount++;
             let toolTipId = 'tool-tip-' + eventCount;
@@ -108,7 +109,9 @@ const initCalendar = function () {
         },
         eventMouseEnter: function (info) {
             let desc = info.event.extendedProps.description;
-            tippy(info.el, {animate: "fade", content: desc});
+            if(desc) {
+                tippy(info.el, {animate: "fade", content: desc});
+            }
         },
         windowResize: function () {
             this.changeView(getCalView());
