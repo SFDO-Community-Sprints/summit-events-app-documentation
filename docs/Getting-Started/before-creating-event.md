@@ -63,7 +63,7 @@ We deliver sample values for the picklist fields, but you will want to edit thes
 ## Review Page Layouts
 The Summit Events App was originally created for Higher Education institutions. You'll notice there are some fields that are specifically related to Admissions, like "Applicant Type". Based on your organization/institution, you may want to remove fields from the page layout to avoid confusion from your Users. We add the most commonly used fields that highlight existing functionality to the page layouts on install for visibility.  You can modify these to add or remove fields so that the page displays fields that make sense for your organization.  *We include all fields for an object on the page layout so you know everything that is included.  You likely will not use all of these fields, so you should customize the page layouts so your users only see the fields you will be using.
 
-Additionly, you will want to dd the Summit Events Registrant" related list to the Contact page layout so your users can easily see the events for which your contacts have registered.
+Additionly, you will want to add the "Summit Events Registrant" related list to the Contact page layout so your users can easily see the events for which your contacts have registered.
 
 For support in creating new or editing your page layouts, we encourage you to review Salesforce documentation: [How to create and edit page layouts](https://help.salesforce.com/articleView?id=customize_layoutcreate.htm&type=5)
 
