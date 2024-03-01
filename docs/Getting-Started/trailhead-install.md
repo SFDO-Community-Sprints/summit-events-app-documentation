@@ -34,7 +34,8 @@ You should receive an email with a reset your password link.
 
   1. Navigate to [https://summitevt.org/install](https://summitevt.org/install).
   2. Click on “Base Plan - View Details”
-  3. Log in using your newly reset credentials
-  4. MetaDEPLOY (a Salesforce.org product) will ask for a lot of permissions you will need to accept.
-  5. Click “Install” (Agree to the terms of service which I know you read!) 
+  3. Click on "Log In to Install" and choose Production or Developer Org
+  4. Log in using your newly reset credentials
+  5. MetaDEPLOY (a Salesforce.org product) will ask for a lot of permissions you will need to accept by clicking "Allow".
+  6. Click “Install” (Agree to the terms of service which I know you read!) 
   <p>The Summit Events App will now be installed into your SEA playground org.</p>
