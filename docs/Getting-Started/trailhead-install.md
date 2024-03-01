@@ -8,7 +8,7 @@ nav_order: 2
 
 ### Create a playground org for Summit Events app 
 
-  1. Log in to [trailhead.salesforce.org](https://trailhead.salesforce.com/today).
+  1. Log in to [https://trailhead.salesforce.org](https://trailhead.salesforce.com/today)
   2. In the upper right corner of the page, activate the dropdown and select “Hands-on orgs”
   3. Create a playground org and name it “Summit Events Playground”
   4. Click “Create”
@@ -32,7 +32,7 @@ You should receive an email with a reset your password link.
 ### Installing SEA in your playground org
 
 
-  1. Navigate to [https://summitevt.org/install](https://summitevt.org/install).
+  1. Navigate to [https://summitevt.org/install](https://summitevt.org/install)
   2. Click on “Base Plan - View Details”
   3. Click on "Log In to Install" and choose Production or Developer Org
   4. Log in using your newly reset credentials
