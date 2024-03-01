@@ -40,7 +40,7 @@ You should receive an email with a reset your password link.
   6. Click “Install” (Agree to the terms of service which I know you read!) 
   <p>The Summit Events App will now be installed into your SEA playground org.</p>
 
-###Next Steps
+### Next Steps
 Now that you have Summit Events installed, you will want to:
 1. Review the [Before Creating an Event documentation](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/before-creating-event/) to do the base configuration needed to get started creating events.
 2. Review the [Creating a Basic Event documenation](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/create-basic-event/) to help get you on your way to creating your first event!
