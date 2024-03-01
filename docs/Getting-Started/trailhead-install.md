@@ -27,7 +27,7 @@ Hopefully your playground org is done being created. Now we are going to take st
 
 You should receive an email with a reset your password link.
 
-<i>When you reset take note of your username and password for the next steps. </i>
+<i><font color="red">When you reset take note of your username and password for the next steps.</font> </i>
 
 ### Installing SEA in your playground org
 
