@@ -1,5 +1,5 @@
 ---
-title: Installing SEA
+title: Installing SEA in a Sandbox or Production Org
 parent: Getting Started
 nav_order: 1
 ---
@@ -8,7 +8,7 @@ nav_order: 1
 
 The Summit Events App (SEA) is a managed package and has been security reviewed by Salesforce. Installation, along with many other great Salesforce.org Open Source Commons applications, is done through Salesforce.org's [MetaDeploy installer](https://github.com/SFDO-Tooling/MetaDeploy).
 
-[Install the latest managed pacakge](https://install.salesforce.org/products/SummitEventsApp/latest){: .btn .btn-green }{:target="_blank"}
+[Install the latest managed pacakge](https://install.salesforce.org/products/SummitEventsApp/latest){: .btn .btn-green }{:target="_blank"}.  Make sure you are logged into the correct Salesforce org before you begin the installation process (Sandbox vs. Production).
 
 ## Post Installation Instructions
 
