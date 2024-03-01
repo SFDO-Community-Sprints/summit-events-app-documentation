@@ -36,6 +36,14 @@ document.addEventListener('DOMContentLoaded', function (event) {
         imageModal.style.display = "none";
     }
 
+    let currentDate = new Date();
+    let currentYear = currentDate.getFullYear();
+
+    // Find the element with the id "currentYear"
+    document.querySelectorAll(".currentYear").forEach(function (currentYearElement) {
+        currentYearElement.textContent = currentYear.toString();
+    });
+
     setIframeVideo();
 });
 
