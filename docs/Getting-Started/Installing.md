@@ -1,5 +1,5 @@
 ---
-title: Installing SEA in a Sandbox or Production Org
+title: Install SEA in a Sandbox or Production
 parent: Getting Started
 nav_order: 1
 ---
