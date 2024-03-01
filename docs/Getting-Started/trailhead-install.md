@@ -39,3 +39,8 @@ You should receive an email with a reset your password link.
   5. MetaDEPLOY (a Salesforce.org product) will ask for a lot of permissions you will need to accept by clicking "Allow"
   6. Click “Install” (Agree to the terms of service which I know you read!) 
   <p>The Summit Events App will now be installed into your SEA playground org.</p>
+
+###Next Steps
+Now that you have Summit Events installed, you will want to review the [Before Creating an Event documentation](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/before-creating-event/) to do the base configuration needed to get started creating events.
+
+
