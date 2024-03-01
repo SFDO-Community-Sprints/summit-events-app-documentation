@@ -6,18 +6,15 @@ nav_order: 2
 
 # Installing the Summit Events App in a Trailhead org
 
-### Create a playground org for Summit Events app
- <span style="font-size: 18px;">  <ol>
-    <li>Log in to <a href="https://trailhead.salesforce.com/today" target="_blank">trailhead.salesforce.com/today</a></li>
-    <li>In the upper right corner of the page, activate the dropdown and select “Hands-on orgs”</li>
-    <li>Create a playground org and name it “Summit Events Playground”</li>
-    <li>Click “Create”</li>
-  </ol></span>
+### Create a playground org for Summit Events app 
 
-  <p>It will take a few minutes to create the new org, so let's get on with the presentation!</p>
+  1. Log in to https://trailhead.salesforce.com/today
+  2. In the upper right corner of the page, activate the dropdown and select “Hands-on orgs”
+  3. Create a playground org and name it “Summit Events Playground”
+  4. Click “Create”
+     
+<p>It will take a few minutes to create the new org, so let's get on with the presentation!</p>
 
-</body>
-</html>
 
 
 ### Getting login information for your SEA playground
@@ -34,10 +31,10 @@ You should receive an email with a reset your password link.
 
 ### Installing SEA in your playground org
 
- <span style="font-size: 18px;">  <ol>
-    <li> Navigate to https://summitevt.org/install </a></li>
-    <li> Click on “Base Plan - View Details”  </a></li>
-    <li> Log in using your newly reset credentials  </a></li>
-    <li> MetaDEPLOY (a Salesforce.org product) will ask for a lot of permissions you will need to accept.  </a></li>
-    <li> Click “Install” (Agree to the terms of service which I know you read!) </a></li>
-    <li> The Summit Events App will now be installed into your SEA playground org.  </a></li>
+
+  1. Navigate to https://summitevt.org/install
+  2. Click on “Base Plan - View Details”
+  3. Log in using your newly reset credentials
+  4. MetaDEPLOY (a Salesforce.org product) will ask for a lot of permissions you will need to accept.
+  5. Click “Install” (Agree to the terms of service which I know you read!) 
+  <p>The Summit Events App will now be installed into your SEA playground org.</p>
