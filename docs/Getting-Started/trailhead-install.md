@@ -9,7 +9,7 @@ nav_order: 2
 ### Create a playground org for Summit Events app 
 
   1. Log in to [https://trailhead.salesforce.org](https://trailhead.salesforce.com/today)
-  2. In the upper right corner of the page, activate the dropdown and select “Hands-on orgs”
+  2. In the upper right corner of the page, activate the dropdown and select “Hands-On Orgs”
   3. Create a playground org and name it “Summit Events Playground”
   4. Click “Create”
      
