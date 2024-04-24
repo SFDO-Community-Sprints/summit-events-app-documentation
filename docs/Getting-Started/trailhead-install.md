@@ -6,6 +6,8 @@ nav_order: 2
 
 # Installing the Summit Events App in a Trailhead org
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jo368GJVl5w?si=QYc0NuJq1kdK1qDN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### Create a playground org for Summit Events app 
 
   1. Log in to [https://trailhead.salesforce.org](https://trailhead.salesforce.com/today)
