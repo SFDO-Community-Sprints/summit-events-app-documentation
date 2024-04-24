@@ -7,8 +7,8 @@ parent: Standard Features
 
 There may be times when you want to create an event and allow for registration but prefer not to have that event appear on the standard Summit Event's feed and calendar.  For example, you might have an event where you only want to invite select individuals by sending them the registration link in an email invitation.  The Private Event feature blocks the event instance from appearing on the standard Summit Events public feeds and calendars. There are two options when using the feature:
 
-* Option 1: Hide all of the Event Instances tied to a particular Event record when you want all of the events in the series private.
-* Option 2: Hide some Event Instances in the series when you only want some events in the series to appear to the public.
+* **Option 1:** Hide all of the Event Instances tied to a particular Event record when you want all of the events in the series private.
+* **Option 2:** Hide some Event Instances in the series when you only want some events in the series to appear to the public.
 
 **Option 1:** If all the event instances will be private, check the Private Event checkbox at the Event level in the Additonal Configuration section as shown in the following screen shot:
 
