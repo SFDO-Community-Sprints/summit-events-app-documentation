@@ -49,4 +49,4 @@ Now that you have Summit Events installed, you will want to:
 2. Review the [Creating a Basic Event documenation](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/create-basic-event/) to help get you on your way to creating your first event!
 
 
-<i>Documentation Credit: Stefania DeArment</i>
+<i>Documentation and video credit: Stefania DeArment</i>
