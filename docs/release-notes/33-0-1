@@ -28,10 +28,18 @@ The following Lightning Layouts and Page Layouts need to be updated to expose ne
 
 ---
 ## Functional Features, Updates and Bug Fixes
-- 
+
+### Custom Questions can better handle default values (Resolves [#548](https://github.com/SFDO-Community/Summit-Events-App/issues/548))
+
+### Calender can be filtered with various URL Parameters (Resolves [#554](https://github.com/SFDO-Community/Summit-Events-App/issues/554))
 
 ---
 ## Technical Features, Updates and Bug Fixes
+
+### Cancellation Page has been c (Resolves [#545](https://github.com/SFDO-Community/Summit-Events-App/issues/545))
+
+### Additional Header will only appear with Additional Questions (Resolves [#553](https://github.com/SFDO-Community/Summit-Events-App/issues/553))
+
 
 ---
 ## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
