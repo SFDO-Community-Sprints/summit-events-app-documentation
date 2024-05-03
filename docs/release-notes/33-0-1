@@ -14,12 +14,9 @@ These release notes are broken down into multiple parts, Functional Features, Up
 
 
 ## Important Items and Upgrade Action Steps
-Below are important items to note prior to upgrading to 0.31.0.1 as well as post installation.
 
-### Guest User Access Reminder (This was also mentioned in the [0.29.0.1](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/release-notes/0-29-0-1/) Release Notes)
+* No signifigant items or actions steps related to this release.
 
-- Please read the recommendation around [creating a custom permissions set](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installing/#creating-a-custom-permission-set-for-the-guest-user). 
-  
 ### Page Layouts and Picklists to Update Post Installation/Upgrade
 The following Lightning Layouts and Page Layouts need to be updated to expose new fields leveraging some new functionality/updates. Below we're sharing the API name, which has a matching label:
 
@@ -27,13 +24,19 @@ The following Lightning Layouts and Page Layouts need to be updated to expose ne
 
 ---
 ## Known Issues
+* The QR Code generation on the Summit Event Instance no longer renders.
 
 ---
 ## Functional Features, Updates and Bug Fixes
+- 
 
 ---
 ## Technical Features, Updates and Bug Fixes
 
 ---
 ## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
-- [#521](https://github.com/SFDO-Community/Summit-Events-App/issues/521): Align Time Zone with the Date the Event is being held.
+- [#545](https://github.com/SFDO-Community/Summit-Events-App/issues/545): Cancellation Page error and not working as expected.
+- [#548](https://github.com/SFDO-Community/Summit-Events-App/issues/548): Default Values for Picklists isn't working on Custom Questions.
+- [#553](https://github.com/SFDO-Community/Summit-Events-App/issues/553): "Additional Information" header on registration page appears when it shouldn't.
+- [#554](https://github.com/SFDO-Community/Summit-Events-App/issues/554): Filtering the calendar with audience URL parameters isn't working as expected.
+
