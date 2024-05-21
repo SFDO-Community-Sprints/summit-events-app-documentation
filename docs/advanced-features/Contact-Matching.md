@@ -8,6 +8,7 @@ grand_parent: Advanced Features
 
 ## Introduction
 This documentation provides an overview of contact matching in Salesforce and how it is configured within the Summit Event application.
+**IMPORTANT: Currently Summit Events contact matching feature DOES NOT support person accounts.  If your instance uses person accounts, do not enable contact matching.  Person accounts will be addressed in a future release.**
 
 ## Setting Up Contact Matching
 
