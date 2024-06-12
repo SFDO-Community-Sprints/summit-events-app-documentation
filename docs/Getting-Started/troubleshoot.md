@@ -12,6 +12,9 @@ nav_order: 10
 
 Add access to Your_Custom_Field__c to the guest user.  To do this, navigate to Setup and search for Permission Sets.  Click on the Summit Events Registrant permission set or the custom permission set you created.  Edit the permission set.  Go to the Object Settings and select the object that contains the field (e.g. Summit Events Registrant).  Edit the permissions and give Edit Access to the field.
 
+## Registration not showing fields despite being configured
+Check that the event end date and time is a future date & time otherwise the “event instance close date & time”  will indicate the instance is closed, which will cause the registration page not showing any fields for guest to register the event. 
+
 ## Calendar Page
 **Event not showing on Calendar: Event instance setup but is not displaying on standard Summit Events Calendar.**
 
