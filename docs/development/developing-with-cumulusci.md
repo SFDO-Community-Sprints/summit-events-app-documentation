@@ -20,7 +20,7 @@ The best way to get up to speed about CumulusCI is to complete their convenient 
 ## Contributing development using CumulusCI
 
 1. Install CumulusCI and its requirements.
-    * [https://cumulusci.readthedocs.io/en/latest/get_started.html](https://cumulusci.readthedocs.io/en/latest/get_started.html)
+    * [https://cumulusci.readthedocs.io/en/latest/get_started.html](https://cumulusci.readthedocs.io/en/latest/get-started.html)
 2. Clone or fork and clone [https://github.com/SFDO-Community/Summit-Events-App.git](https://github.com/SFDO-Community/Summit-Events-App.git)
     * Clone if you have attended an OSC Sprint.
     * Fork and clone your fork if you are an outside community contributor.
