@@ -39,7 +39,8 @@ Using the Subject field, enter a meaningful subject for the email. This is what 
 
 Using the rich text editor, enter the details of the email into the Email Content Field.  This is what will appear in the body of the email message.  API names of the Salesforce fields can be used within the email so content can be dynamic based on the registration information. These are also sometimes referred to as merge field names.  A system administrator can help find the API names for fields. Additional documentation with API names is in progress. 
 
-Note: Only fields on the Summit Event Registration object can be merged into the email content. All API field names should be encompassed with merge brackets, often seen in the classic email template builder. Example: {!summit__First_Name__c}.  Formula feilds can be created on the Summit Event Registration object to reference fields from related objects such as the Event or Event Instance if needed.
+#### Merge Fields
+Merge fields can be used in the email template to merge in data about the event and registrant.   Only fields on the Summit Event Registration object can be merged into the email content.  The Sumit Event Registration object contains formula fields to many of the frequently referenced fields from the Event and Event Instance.  If needed, additional formula feilds can be created on the Summit Event Registration object to reference fields from related objects such as the Event or Event Instance.  When adding merge feilds, it is the API name of the feild that is used.   All API field names should be encompassed with merge brackets, often seen in the classic email template builder. Example: {!summit__First_Name__c}. 
 
 ### 7. Provide a BCC Email (optional)
 
