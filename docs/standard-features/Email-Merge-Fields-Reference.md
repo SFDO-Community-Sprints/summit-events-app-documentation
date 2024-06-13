@@ -18,6 +18,7 @@ For your convenience, below is a reference of some of the more used merge feilds
 | summit__Event_Instance_Start_Time__c | The start time of the event instance | {!summit__Event_Instance_Start_Time__c} |
 | summit__Event_Instance_End_Time__c | The end time of the event instance | {!summit__Event_Instance_End_Time__c} |
 | summit__Event_Instance_Date_Time_Formatted__c | Formatted date/time of instance: Tuesday, August 27, 2025, 5:00 PM - 7:00 PM EST | {!summit__Event_Instance_Date_Time_Formatted__c} |
+| summit__Location_Address__c | Location address | {!summit__Location_Address__c} |
 | summit__Event_Registration_Requested_Date__c | Date person registered | {!summit__Event_Registration_Requested_Date__c} |
 | summit__Event_Registration_Cancel_Link__c | Link that registrant can use to cancel registration | {!summit__Event_Registration_Cancel_Link__c} |
 | summit__Add_To_Calendar_Link__c | General add to calendar link for event instance | {!summit__Add_To_Calendar_Link__c} |
