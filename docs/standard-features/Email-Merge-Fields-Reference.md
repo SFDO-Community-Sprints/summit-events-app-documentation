@@ -1,7 +1,7 @@
 ---
 title: Event Email Merge Fields Reference
-parent: Standard Features
-has_children: true
+parent: Creating an Event Email
+grand_parent: Standard Features
 ---
 
 Merge fields can be used in the email template to merge in data about the event and registrant.   Only fields on the Summit Event Registration object can be merged into the email content.  The Summit Event Registration object contains formula fields to many of the frequently referenced fields from the Event and Event Instance.  If needed, additional formula feilds can be created on the Summit Event Registration object to reference fields from related objects such as the Event or Event Instance.  When adding merge feilds, it is the API name of the feild that is used.   All API field names should be encompassed with merge brackets, often seen in the classic email template builder. Example: {!summit__First_Name__c}.
