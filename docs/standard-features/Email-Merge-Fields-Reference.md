@@ -11,8 +11,8 @@ For your convenience, below is a reference of some of the more used merge feilds
 
 | API Name  | Description |  Merge Syntax (copy to email template) |
 |:---|:---|:---|
-| summit__First_Name__c | Registrant First Name |  {!summit__First_Name__c} |
-|  summit__Last_Name__c |  Registrant Last Name |  {!summit__Last_Name__c} |
+| summit__Registrant_First_Name__c | Registrant First Name |  {!summit__Registrant_First_Name__c} |
+|  summit__Registrant_Last_Name__c |  Registrant Last Name |  {!summit__Registrant_Last_Name__c} |
 | summit__Event_Name__c | The name of the Event | {!summit__Event_Name__c} |
 | summit__Event_Instance_Title__c | The instance Title | {!summit__Event_Instance_Title__c} |
 | summit__Event_Instance_Start_Time__c | The start time of the event instance | {!summit__Event_Instance_Start_Time__c} |
