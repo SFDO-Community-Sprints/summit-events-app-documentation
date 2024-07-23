@@ -6,6 +6,14 @@ nav_order: 10
 *This page is intended to capture common troubleshooting issues with the Summit Events App.  Have something to contribute, comment below and we'll add it to this page.*  __Can't find what you are looking for here?  Have suggestions for improvements?__  Post your question on the SEA Trailblazer community page:  [SEA Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/groups/0F94S000000kHi2SAE)
 
 
+## Post installation Errors/Issues
+
+** Installed Summit Events but when go to registration screen, see Authorization Required force.com page
+<img width="554" alt="image" src="https://github.com/user-attachments/assets/51960dc7-dc13-41b1-b3eb-101dc830b983">
+
+Make sure that the guest user has permissions to Summit Events as outlined in the Install SEA in Sandbox or Production page of the documenation site.
+
+
 ## Registration Pages
 
 **Receive error message: "Question setup issue(s): Map to field: Field Your_Custom_Field__c is not accessible by guest user.Map To Field: Field Your_Custom_Field__c is not accessible by guest user.**
