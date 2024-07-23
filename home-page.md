@@ -24,12 +24,12 @@ The Summit Events App is a sustainable open source community events app that ser
 [7]: <https://www.stthomas.edu> "University of St. Thomas"
 [8]: <https://github.com/SFDO-Community/Summit-Events-App/blob/master/docs/files/USTEvent_DOCS.zip> "Old Event Documentation"
 
-## Getting Started
+## Getting Started 
 
 *Note: In the Salesforce Winter '20 release Guest User access is severely restricted. There are new instructions in the "Scratch Org Installation"
 to address this new security.*
 * [Scratch Org Installation][1] & [Contributing to the Project](https://github.com/SFDO-Community/Summit-Events-App/wiki/Contributing-to-Summit-Events)
-* [Installing (and Upgrading) in Production, Sandbox, or Dev org][2]
+* [Installing (and Upgrading) in Production, Sandbox, or Dev org](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/)
 * [Setting it up in Production, Sandbox, or Dev Orgs][3]
 * [CumulusCI Notes][4]
 * [GIT Notes][5]
