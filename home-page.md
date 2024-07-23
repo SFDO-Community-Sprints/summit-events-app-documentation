@@ -29,11 +29,16 @@ The Summit Events App is a sustainable open source community events app that ser
 *Note: In the Salesforce Winter '20 release Guest User access is severely restricted. There are new instructions in the "Scratch Org Installation"
 to address this new security.*
 * [Scratch Org Installation][1] & [Contributing to the Project](https://github.com/SFDO-Community/Summit-Events-App/wiki/Contributing-to-Summit-Events)
-* [Installing (and Upgrading) in Production, Sandbox, or Dev org][2]
 * [Setting it up in Production, Sandbox, or Dev Orgs][3]
 * [CumulusCI Notes][4]
 * [GIT Notes][5]
 * [License][6]
+
+## Installing and Upgrading in Production Org
+If you are ready to install Summit Events in your production org, you can find the latest version [here](https://install.salesforce.org/products/SummitEventsApp/latest).
+Also see: 
+* [Installing (and Upgrading) in Production, Sandbox, or Dev org][2]
+
 
 ## Creating and Event Demo Video 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TXChqCFTTGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
