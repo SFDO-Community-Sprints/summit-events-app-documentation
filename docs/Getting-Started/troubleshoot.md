@@ -11,7 +11,7 @@ nav_order: 10
 ** Installed Summit Events but when go to registration screen, see Authorization Required force.com page
 <img width="554" alt="image" src="https://github.com/user-attachments/assets/51960dc7-dc13-41b1-b3eb-101dc830b983">
 
-Make sure that the guest user has permissions to Summit Events as outlined in the Install SEA in Sandbox or Production page of the documenation site.
+This is usually due to the guest user not having proper permissons to either a custom field referenced on the registration form or was not setup initially with the proper permissions.  Make sure that the guest user has permissions to Summit Events as outlined in the Install SEA in Sandbox or Production page of the documenation site.  Make sure that the registrant custom permission set is given access any new feilds that were created for the registration process.
 
 
 ## Registration Pages
