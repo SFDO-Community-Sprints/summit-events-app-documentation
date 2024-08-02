@@ -13,6 +13,18 @@ nav_order: 10
 
 This is usually due to the guest user not having proper permissons to either a custom field referenced on the registration form or was not setup initially with the proper permissions.  Make sure that the guest user has permissions to Summit Events as outlined in the Install SEA in Sandbox or Production page of the documenation site.  Make sure that the registrant custom permission set is given access any new feilds that were created for the registration process.
 
+## Email Related
+
+**Registration confirmation emails not being sent**
+
+Verify that a confirmation email is associated with the event and that it is configured to be sent when the Status field is set to Registered.  See [Create an Event Email](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/standard-features/create-event-email/create-event-email/) for more information.
+
+**New Status or Substatus values not appearing for selection when setting up email content**
+
+The new values need to be added to the status/substatus fields on both the Summmit_Events_Registration object and the Summit_Events_Email objects.  Verify that the picklist values appear in both objects.
+If a new substatus does not appear on the registration page, verify that you have properly configured the dependency.  The substatus field has a dependency on the status field.  
+For more information on dependent picklists see: [https://help.salesforce.com/s/articleView?id=sf.fields_editing_field_dependencies.htm&type=5](https://help.salesforce.com/s/articleView?id=sf.fields_editing_field_dependencies.htm&type=5)
+
 
 ## Registration Pages
 
@@ -20,13 +32,15 @@ This is usually due to the guest user not having proper permissons to either a c
 
 Add access to Your_Custom_Field__c to the guest user.  To do this, navigate to Setup and search for Permission Sets.  Click on the Summit Events Registrant permission set or the custom permission set you created.  Edit the permission set.  Go to the Object Settings and select the object that contains the field (e.g. Summit Events Registrant).  Edit the permissions and give Edit Access to the field.
 
-## Registration not showing fields despite being configured
+**Registration not showing fields despite being configured.**
 Check that the event end date and time is a future date & time otherwise the “event instance close date & time”  will indicate the instance is closed, which will cause the registration page not showing any fields for guest to register the event. 
+
 
 ## Calendar Page
 **Event not showing on Calendar: Event instance setup but is not displaying on standard Summit Events Calendar.**
 
 Verify that the Event Instance's Event Status field is set to Active.
+
 
 ## Known Issues
 
