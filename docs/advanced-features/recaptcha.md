@@ -19,19 +19,25 @@ Add Goolgle reCAPTCHA to your event registration page to ensure the people signi
   * Note: _ReCAPTCHA is based on **your** Google account. You have to have a Google account in order to enable this for your Salesforce org.****_
 * Enter a label and leave score-based (v3) checked.   
 *  _Note: This is the most advanced version confirming that you are not a bot that doesn't require the user to do anything. If ReCAPTCHA v3 is active, it evaluates all the information it can get about that person: IP address, where they are coming from and several other environmental variables of which the user is not necessarily aware. Google then compares that information to its database and gives you a score of 0-1. The higher the score, the more likely you are to be a real person._
-   
-  ![image](https://github.com/user-attachments/assets/4c778d8d-b024-4873-aff5-b52e872ccbaa)
+
 * Add your registration domain. Most often, if you go back to your registration page, you want the "address" from the first dot to the .com before the hash. Likely salesforce-sites.com.
 *  _Note: If you set up this as an Experience site, the domain would be different._
 
-![image](https://github.com/user-attachments/assets/01e3ca9f-1036-4b99-ac4b-3f1ede9fcdfd)
-
-![image](https://github.com/user-attachments/assets/79665f1e-551b-4e58-bc33-f70650f05f22)
-
 * Name your Project, then click "Submit."
-
-![image](https://github.com/user-attachments/assets/a6e3f8d7-4063-413f-a9b4-882273c7a3c0)
 
 **Congratulations, you now have your new keys! Leave this tab open and go back to your Salesforce org. Now we have to use those keys to let Google talk to Salesforce.**
 
 ## STEP 2: Add reCAPTCHA keys to your Custom Settings
+* Keep Google open in one tab.
+*  Go to your org and go to Setup > Custom Settings
+*   Summit Events Settings > Manage > Edit
+* Populate the "reCAPTCHA Site Key" field with the "Site Key" from your Google tab. 
+* Populate the "reCAPTCHA Secret Key" field with the "Secret Key" from your Google tab. 
+* Populate the "reCAPTCHA v3 Score" field with a value between "0" and "1."
+*  The lower the score, the more likely a user is a bot.
+*  We recommend starting with "0.5" and adjust from there, as necessary.
+* Click "Save."
+
+![image](https://github.com/user-attachments/assets/b8a44ee4-02fe-414c-830f-e9d022162dd4)
+![Picture2](https://github.com/user-attachments/assets/575e2cf8-39f1-4e67-80d1-0c1f3c31051e)
+
