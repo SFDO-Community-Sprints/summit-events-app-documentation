@@ -9,7 +9,7 @@ _Documentation in progress_
 ## Step-by-Step Guide
 
 ## The Issue:
-Your event tickets/paces are being "taken" by bots.
+Your event registrations are being "taken" by bots.
 
 ## The Resolution:
 Add Goolgle reCAPTCHA to your event registration page to ensure the people signing up for your event are **actual people** and not bots.
