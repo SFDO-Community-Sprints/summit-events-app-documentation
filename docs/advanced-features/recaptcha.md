@@ -20,7 +20,7 @@ Add Goolgle reCAPTCHA to your event registration page to ensure the people signi
 * Enter a label and leave score-based (v3) checked.
   * Note: _This is the most advanced version confirming that you are not a bot that doesn't require the user to do anything. If ReCAPTCHA v3 is active, it evaluates all the information it can get about that person: IP address, where they are coming from and several other environmental variables of which the user is not necessarily aware. Google then compares that information to its database and gives you a score of 0-1. The higher the score, the more likely you are to be a real person._
 
-* Add your registration domain. Most often, if you go back to your registration page, you want the "address" from the first dot to the .com before the hash. Likely salesforce-sites.com.
+* Add your registration domain. It is likely "salesforce-sites.com"
   * _Note: If you set up this as an Experience site, the domain would be different._
 
 * Name your Project, then click "Submit."
