@@ -32,6 +32,6 @@ Add Goolgle reCAPTCHA to your event registration page to ensure the people signi
 
 ![image](https://github.com/user-attachments/assets/a6e3f8d7-4063-413f-a9b4-882273c7a3c0)
 
-**Congratulations, you not have your new keys! Leave this tab open and go back to your Salesforce org. Now we have to use those keys to let Google talk to Salesforce.**
+**Congratulations, you now have your new keys! Leave this tab open and go back to your Salesforce org. Now we have to use those keys to let Google talk to Salesforce.**
 
 ## STEP 2: Add reCAPTCHA keys to your Custom Settings
