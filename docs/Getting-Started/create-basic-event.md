@@ -35,9 +35,10 @@ Fill out the following fields on the Summit Event record.  Many of the fields li
 | Summit Event | Event Confirmation Title| Page Details | Title on the confirmation page after the registration was submitted. |
 | Summit Event | Event Confirmation Description | Page Details | Additional details on the confirmation page.|
 
-![CreateBasicEventScreen1](images/CreateBasicEvent_Screen1.png)
-![CreateBasicEventScreen2](images/CreateBasicEvent_Screen2.png)
-![CreateBasicEventScreen3](images/CreateBasicEvent_Screen3.png)
+![Registration Event Details Tab](https://github.com/user-attachments/assets/3abb31be-eb6a-475e-bddd-5cd77126eada)
+---
+![Registration Event Details Tab 2](https://github.com/user-attachments/assets/1d564429-bc97-4db9-8857-2a8d1ca0df49)
+![Registration Event Page Details Tab](https://github.com/user-attachments/assets/1a695541-69c2-45da-82d7-085ef3566365)
 
 **Save** Summit Event record.
 
