@@ -3,7 +3,6 @@ title: Google Recaptcha v3
 parent: Advanced Features
 has_children: false
 ---
-_Documentation in progress_
 
 # Adding reCAPTCHA to an Event Page
 ## Step-by-Step Guide
