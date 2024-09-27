@@ -29,28 +29,31 @@ Add Goolgle reCAPTCHA to your event registration page to ensure the people signi
 
 ## STEP 2: Add reCAPTCHA keys to your Custom Settings
 * Keep Google open in one tab.
-*  Go to your org and go to Setup > Custom Settings
-*   Summit Events Settings > Manage > Edit
+ * Go to your org and go to Setup > Custom Settings
+  * Summit Events Settings > Manage > Edit
 * Populate the "reCAPTCHA Site Key" field with the "Site Key" from your Google tab. 
 * Populate the "reCAPTCHA Secret Key" field with the "Secret Key" from your Google tab. 
 * Populate the "reCAPTCHA v3 Score" field with a value between "0" and "1."
-*  The lower the score, the more likely a user is a bot.
-*  We recommend starting with "0.5" and adjust from there, as necessary.
+ * The lower the score, the more likely a user is a bot.
+  * We recommend starting with "0.5" and adjust from there, as necessary.
 * Click "Save."
-
-![image](https://github.com/user-attachments/assets/b8a44ee4-02fe-414c-830f-e9d022162dd4)
-
-![Picture2](https://github.com/user-attachments/assets/575e2cf8-39f1-4e67-80d1-0c1f3c31051e)
 
 ## STEP 3: Populate reCAPTCHA fields on your Event record
 * In the Summit Events App, find your event and click on the "Add'l Configuration & Options" tab.
 * Populate the two reCAPTCHA fields
-*  "reCAPTCHA"
-*  "reCAPTCHA v3 Score Fail Text"
+ * "reCAPTCHA"
+ * "reCAPTCHA v3 Score Fail Text"
 
 ![Screenshot 2024-09-27 at 1 05 03 PM](https://github.com/user-attachments/assets/36122ff0-e691-4474-a029-b7f34e4a6c0c)
 
-## STEP 4: Add Google to Remote Site Settings
-* In your Salesforce Org
-*  Setup > Remote Site Settings
-*   Click "New"
+## STEP 4: Add Google Data to Remote Site Settings
+In your Salesforce Org
+* Setup > Remote Site Settings
+ * Click "New"
+  * Populate the following fields as below:
+   * "Remote Site Name" = Google_reCaptcha
+   * "Remote Site URL" = https://www.google.com
+   * "Description" = This is the reCaptcha site.
+   * "Active" = true
+* Click "Save"
+
