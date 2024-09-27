@@ -17,11 +17,11 @@ Add Goolgle reCAPTCHA to your event registration page to ensure the people signi
 ## STEP 1: Get reCAPTCHA Keys from Google
 * Go to [Google ReCAPTCHA](http://www.google.com/recaptcha/admin/create)
   * Note: _ReCAPTCHA is based on **your** Google account. You have to have a Google account in order to enable this for your Salesforce org.****_
-* Enter a label and leave score-based (v3) checked.   
-*  _Note: This is the most advanced version confirming that you are not a bot that doesn't require the user to do anything. If ReCAPTCHA v3 is active, it evaluates all the information it can get about that person: IP address, where they are coming from and several other environmental variables of which the user is not necessarily aware. Google then compares that information to its database and gives you a score of 0-1. The higher the score, the more likely you are to be a real person._
+* Enter a label and leave score-based (v3) checked.
+ * _Note: This is the most advanced version confirming that you are not a bot that doesn't require the user to do anything. If ReCAPTCHA v3 is active, it evaluates all the information it can get about that person: IP address, where they are coming from and several other environmental variables of which the user is not necessarily aware. Google then compares that information to its database and gives you a score of 0-1. The higher the score, the more likely you are to be a real person._
 
 * Add your registration domain. Most often, if you go back to your registration page, you want the "address" from the first dot to the .com before the hash. Likely salesforce-sites.com.
-*  _Note: If you set up this as an Experience site, the domain would be different._
+  * _Note: If you set up this as an Experience site, the domain would be different._
 
 * Name your Project, then click "Submit."
 
@@ -30,7 +30,7 @@ Add Goolgle reCAPTCHA to your event registration page to ensure the people signi
 ## STEP 2: Add reCAPTCHA keys to your Custom Settings
 * Keep Google open in one tab.
  * Go to your org and go to Setup > Custom Settings
-  * Summit Events Settings > Manage > Edit
+    * Summit Events Settings > Manage > Edit
 * Populate the "reCAPTCHA Site Key" field with the "Site Key" from your Google tab. 
 * Populate the "reCAPTCHA Secret Key" field with the "Secret Key" from your Google tab. 
 * Populate the "reCAPTCHA v3 Score" field with a value between "0" and "1."
@@ -51,9 +51,9 @@ In your Salesforce Org
 * Setup > Remote Site Settings
  * Click "New"
   * Populate the following fields as below:
-   * "Remote Site Name" = Google_reCaptcha
-   * "Remote Site URL" = https://www.google.com
-   * "Description" = This is the reCaptcha site.
-   * "Active" = true
+    * "Remote Site Name" = Google_reCaptcha
+    * "Remote Site URL" = https://www.google.com
+    * "Description" = This is the reCaptcha site.
+    * "Active" = true
 * Click "Save"
 
