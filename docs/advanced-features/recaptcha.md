@@ -39,5 +39,18 @@ Add Goolgle reCAPTCHA to your event registration page to ensure the people signi
 * Click "Save."
 
 ![image](https://github.com/user-attachments/assets/b8a44ee4-02fe-414c-830f-e9d022162dd4)
+
 ![Picture2](https://github.com/user-attachments/assets/575e2cf8-39f1-4e67-80d1-0c1f3c31051e)
 
+## STEP 3: Populate reCAPTCHA fields on your Event record
+* In the Summit Events App, find your event and click on the "Add'l Configuration & Options" tab.
+* Populate the two reCAPTCHA fields
+*  "reCAPTCHA"
+*  "reCAPTCHA v3 Score Fail Text"
+
+![Screenshot 2024-09-27 at 1 05 03 PM](https://github.com/user-attachments/assets/36122ff0-e691-4474-a029-b7f34e4a6c0c)
+
+## STEP 4: Add Google to Remote Site Settings
+* In your Salesforce Org
+*  Setup > Remote Site Settings
+*   Click "New"
