@@ -49,7 +49,7 @@ Add Goolgle reCAPTCHA to your event registration page to ensure the people signi
 ## STEP 4: Add Google Data to Remote Site Settings
 In your Salesforce Org
 * Setup > Remote Site Settings
- * Click "New"
+ * Click "New Remote Site"
   * Populate the following fields as below:
     * "Remote Site Name" = Google_reCaptcha
     * "Remote Site URL" = https://www.google.com
