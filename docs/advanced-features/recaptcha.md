@@ -4,7 +4,7 @@ parent: Advanced Features
 has_children: false
 ---
 
-# Adding ReCAPTCHA to an Event Page
+# Adding reCAPTCHA to an Event Page
 ## Step-by-Step Guide
 
 ## The Issue:
