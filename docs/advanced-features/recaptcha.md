@@ -34,7 +34,7 @@ Add Goolgle reCAPTCHA to your event registration page to ensure the people signi
 * Populate the "reCAPTCHA Site Key" field with the "Site Key" from your Google tab. 
 * Populate the "reCAPTCHA Secret Key" field with the "Secret Key" from your Google tab. 
 * Populate the "reCAPTCHA v3 Score" field with a value between "0" and "1."
- * The lower the score, the more likely a user is a bot.
+  * The lower the score, the more likely a user is a bot.
   * We recommend starting with "0.5" and adjust from there, as necessary.
 * Click "Save."
 
@@ -57,3 +57,11 @@ In your Salesforce Org
     * "Active" = true
 * Click "Save"
 
+## STEP 5: Test
+In the Summit Events App:
+* Find your Summit Events Event record > Instance.
+* Click on the "Register" link found on the Instance record. This will bring you to the Instance's Event Registration page.
+* Register for your event.
+* Verify your guest is registered by reviewing the Summit Event Registration records for the chosen Instance.
+
+## SUCCESS! You have now added reCAPTCHA to your Event Registration page!
