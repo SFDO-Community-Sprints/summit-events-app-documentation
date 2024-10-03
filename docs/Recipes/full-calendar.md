@@ -3,7 +3,7 @@ title: Calendar
 parent: Recipes
 ---
 
-# Showing a Calendar on an External Web Site
+# Showing a Calendar on an External Website
 
 The Summit Events App (SEA) has a robust REST API feed that allows you to get general information about the events you have created outside of your salesforce org. One use for the SEA feed is to connect it to an open-source calendar solution called [FullCalendar](https://fullcalendar.io/) to create a dynamic and interactive calendar of SEA Events anywhere on the Web. An example of this can be [found right here on our documentation site](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Recipes/full-calendar-demo/).
 
