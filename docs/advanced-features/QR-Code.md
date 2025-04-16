@@ -25,3 +25,6 @@ In order for the QR Code to display properly in Summit Events, the URL of the si
    Leave the remainder of the default settings.
    
 5. Save the new Trusted URL.
+
+For more information on Trusted URLS see: https://help.salesforce.com/s/articleView?id=xcloud.security_trusted_urls_manage.htm&type=5
+
