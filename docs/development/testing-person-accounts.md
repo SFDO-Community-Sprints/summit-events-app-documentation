@@ -39,6 +39,7 @@ Instructions:
 2. Use the provided URL to install the package.
 3. Choose **Install for Admins Only**.
 4. Open the Setup Menu and go to Installed Apps, verifying **Summit Events** has been installed.
+
 ---
 
 ## 🛠 Step 2: App Setup
