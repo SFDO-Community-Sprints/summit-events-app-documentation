@@ -22,9 +22,9 @@ Create a new org from one of the options below:
 
 | Org Type | Link | Person Accounts Enabled |
 |----------|------|--------------------------|
-| Standard Dev Org | https://developer.salesforce.com/free-trials | ❌ No |
-| Education Cloud Dev Org | https://developer.salesforce.com/free-trials/comparison/education-cloud | ✅ Yes |
-| Nonprofit Cloud Dev Org | https://developer.salesforce.com/free-trials/comparison/nonprofit-cloud | ✅ Yes |
+| Standard Dev Org | [https://developer.salesforce.com/free-trials](https://developer.salesforce.com/free-trials) | ❌ No |
+| Education Cloud Dev Org | [https://developer.salesforce.com/free-trials/comparison/education-cloud](https://developer.salesforce.com/free-trials/comparison/education-cloud) | ✅ Yes |
+| Nonprofit Cloud Dev Org | [https://developer.salesforce.com/free-trials/comparison/nonprofit-cloud](https://developer.salesforce.com/free-trials/comparison/nonprofit-cloud) | ✅ Yes |
 
 You may wish to test across org types to evaluate Person Account behaviors and validate that existing functionality (e.g., Lead and Contact matching) continues to work as expected.
 
