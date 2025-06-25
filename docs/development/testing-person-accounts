@@ -1,3 +1,9 @@
+---
+title: Testing Person Accounts
+nav_order: 10
+has_children: false
+---
+
 # 🧪 Summit Events App Testing Guide  
 **Focus: Person Account Matching + Core Event Functionality**
 
