@@ -37,7 +37,7 @@ You will receive an install URL the day of testing.
 Instructions:
 
 1. Log in to your developer org at `login.salesforce.com`.
-2. Use the provided URL to install the package.
+2. The URL to install will be provided by the testing team. **Do NOT use the URL on the linked page below**
 3. Choose **Install for Admins Only**.
 4. Open the **Setup Menu** and navigate to **Installed Packages** to verify that **Summit Events** is listed.
 
