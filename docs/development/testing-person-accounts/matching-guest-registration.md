@@ -1,3 +1,8 @@
+---
+title: Matching Guest Registrations
+parent: Testing Person Accounts
+---
+
 # ✅ Test Case: Matching Guest Registration
 
 ---
