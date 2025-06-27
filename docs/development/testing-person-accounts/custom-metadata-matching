@@ -1,3 +1,8 @@
+---
+title: Custom Metadata Matching "On" and "Off"
+parent: Testing Person Accounts
+---
+
 # ✅ Test Case: Custom Metadata Person Matching ON vs. OFF
 
 ---
@@ -5,7 +10,7 @@
 ## 🎯 Purpose
 
 Validate how Summit Events uses Custom Metadata-driven field mapping for Person Account matching. Confirm that:
-- Custom Metadata matching influences which fields are used for duplicate checks
+- Custom Metadata matching influences which fields are used for duplicate checks (NO ADDITIONAL CONFIGURATION NEEDED FOR THIS TEST)
 - System behavior changes when Custom Metadata is turned ON vs. OFF
 
 ---
@@ -84,9 +89,8 @@ Save the Event.
   - Email: maria.g@otherdomain.com
 
 ✅ **Expected Result:**
-- System evaluates additional fields defined in the Custom Metadata configuration (e.g. student IDs, phone)
-- If a match exists per metadata mapping, the existing Person Account should be used
-- If no match is found, a new Person Account is created
+- Person Account is created/linked
+- Registration is linked
 
 ---
 
