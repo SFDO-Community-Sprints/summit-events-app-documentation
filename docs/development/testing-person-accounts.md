@@ -1,6 +1,7 @@
 ---
 title: Testing Person Accounts
 parent: Developers Wanted
+has_children: yes
 ---
 
 # 🧪 Summit Events App Testing Guide  
