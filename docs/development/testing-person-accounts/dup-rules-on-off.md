@@ -1,3 +1,8 @@
+---
+title: Duplicate Rules "Alerts" On and Off
+parent: Testing Person Accounts
+---
+
 # ✅ Test Case: Duplicate Rules "Alerts" On and Off
 
 ---
