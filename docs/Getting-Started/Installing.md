@@ -141,7 +141,7 @@ Once you've create the Custom Permission set, apply it to the Guest User as outl
 1. From Setup, Search for and select Sites.
 2. Under the Sites section, click on the words Summit Events in the "Site Label" field.
 3. Click on the "Public Access Settings" button at the top of the site definition page.
-4. On the Summit Events Profile page, click the Assigned Users button.
+4. On the Summit Events Profile page, click the View Users button.
 5. Under the Full Name column, click on the Site Guest User name (Site Guest User, Summit Events - which is a link).
 6. On the Summit Events Site Guest User page, scroll down to Permission Set Assignment and click the “Edit Assignments” button.
 7. In the Available Permission Sets section, click on Summit Events Registrant and click the “Add” button.  Repeat this process for the new custom permission set you created. This will move them both into the Enabled Permission Sets section.
