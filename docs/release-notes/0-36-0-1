@@ -24,8 +24,80 @@ These release notes are broken down into multiple parts, Functional Features, Up
 ---
 ## Functional Features, Updates and Bug Fixes
 
+### Required Appointment
+
+**[BUG] - Required Appointment Error · [Issue #533](https://github.com/SFDO-Community/Summit-Events-App/issues/533)**
+
+- **Issue** – “…when you land on the page, there is a red start to show it's required, and one is able to select it and progress forward. Should it not be selected, it highlights to show it's required when the registrant attempts to move forward...”
+- **Resolution** – The issue was resolved with the release. The validation only appears if the registrant navigates from the Page without completing the required appointment.
+- **Post Deploy Instructions** – No action is required by an Administrator to see the improved functionality.
+
+### Registration QR image
+
+**[BUG] Registration QR image broken · [Issue #562](https://github.com/SFDO-Community/Summit-Events-App/issues/562)**
+
+- **Issue** – The QR code did not display as intended due to Google decommissioning a product.
+- **Resolution** – Rebuilt the Registration QR Code field on the Summit Events Instance object using a solution from [api.qrserver.com](https://api.qrserver.com).
+- **Post Deploy Instructions** – The field will update without any action from an Administrator. The site `https://api.qrserver.com` should be added as a New Trusted URL within **Setup > Trusted URLs**.
+
+### Convert Registrant Date of Birth field to a Registrant Birthdate Text field
+
+**Enhancement · [Issue #580](https://github.com/SFDO-Community/Summit-Events-App/issues/580)**
+
+- **Enhancement** – The field `Registrant Date of Birth Text` was added to the Summit Events Registration object. Via code, the Registrant Date of Birth field is transformed to a text input into the Registrant Birthdate Text field in `yyyy-mm-dd` format.  
+  This allows for a duplicate matching rule on Contact if the organization has a similar text field on Contact, bypassing a Salesforce limitation of not creating a Matching Rule based on a date field.
+- **Post Deploy Instructions** –  
+  - Create a record on the Summit Events Contact Matching Mapping with **Custom Metadata Types** to create a matching rule with this field.
+  - Update object-specific Matching Rules as needed.
+
+## Add Order By ability for custom questions
+
+**Enhancement · [Issue #582](https://github.com/SFDO-Community/Summit-Events-App/issues/582)**
+
+- **Enhancement** – Added `Lookup Order By` field on the Summit Events Questions Page Layout object for more flexibility to display values. Previously, results were only ordered alphabetically.  
+  Example: Ordering of Terms for a university use case using `Lookup Where Clause` and `Lookup Order By` fields.
+- **Post Deploy Instructions** – Add `Lookup Order By` field to the Summit Events Questions object Page Layout.
+
+
 ---
 ## Technical Features, Updates and Bug Fixes
 
+### Enhancement to One registration per event adding No-Show status to free registration
+
+**[FEATURE] · [Issue #586](https://github.com/SFDO-Community/Summit-Events-App/issues/586)**
+
+- **Enhancement** – Added the Registration Status of “No-Show” to allow registrants to bypass the Event Registration Email Restriction of “One registration per instance” or “One registration per event.”  
+  The Status of “No-Show” joins the Status values of “Started” or “Cancelled” in allowing exceptions.
+- **Post Deploy Instructions** – No action is required by an Administrator to see the improved functionality.
+
+### Move new Accessibility and Dietary need fields above the Address fields
+
+**Enhancement · [Issue #592](https://github.com/SFDO-Community/Summit-Events-App/issues/592)**
+
+- **Enhancement** – The new Accessibility and Dietary need fields were created and initially placed after Mailing address and accommodations. They have now been moved before the mailing address and accommodations section.
+- **Post Deploy Instructions** – No action is required by an Administrator to see the improved functionality.
+
+### Letterheads not generating correct links to header and footer images
+
+**[BUG] · [Issue #593](https://github.com/SFDO-Community/Summit-Events-App/issues/593)**
+
+- **Issue** – The letterheads were not generating correct links to the headers and footers.
+- **Resolution** – Before the code update, the workaround was to edit the `Letterhead_HTML` field on the `Summit_Events_Email` object and manually add `https://` to the image links in the generated template.
+- **Post Deploy Instructions** – With the code update, no action is required by an Administrator to see the improved functionality.
+
+### The `summit__Event_Instance_Date_Time_Formatted__c` field is not being populated for Hosted Guest Summit Events Registration records · [Issue #597](https://github.com/SFDO-Community/Summit-Events-App/issues/586)
+
+- **Issue** – The `summit__Event_Instance_Date_Time_Formatted__c` field was not being populated for Hosted Guest Summit Events Registration records.  
+  This field is populated via code upon the creation of the Summit Events Registration for non-guest registrations. At St. Thomas, formula fields are used for details sent via communication in case a record is reparented to a new Instance.
+- **Resolution** – The field now populates for Registrant and Guests alike upon Summit Events Registration record creation.
+- **Post Deploy Instructions** – No action is required by an Administrator to see the improved functionality.
 ---
 ## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
+- [Issue #533](https://github.com/SFDO-Community/Summit-Events-App/issues/533)
+- [Issue #562](https://github.com/SFDO-Community/Summit-Events-App/issues/562)
+- [Issue #580](https://github.com/SFDO-Community/Summit-Events-App/issues/580)
+- [Issue #582](https://github.com/SFDO-Community/Summit-Events-App/issues/582)
+- [Issue #586](https://github.com/SFDO-Community/Summit-Events-App/issues/586)
+- [Issue #592](https://github.com/SFDO-Community/Summit-Events-App/issues/592)
+- [Issue #593](https://github.com/SFDO-Community/Summit-Events-App/issues/593)
+
