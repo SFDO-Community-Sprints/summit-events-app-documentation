@@ -1,0 +1,31 @@
+---
+title: 0.36.0.1
+parent: Release Notes
+---
+
+# Version 0.36.0.1 Release Notes 
+
+These release notes are broken down into multiple parts, Functional Features, Updates and Bug Fixes and Technical Features, Updates and Bug Fixes 
+> - **Important Items and Upgrade Action Steps** are things you should read to determine if your org needs to take an action prior to upgrading or what post upgrade steps need to be taken.
+> - **Known Issues** highlights issues we recognize not functioning as expected and will be working to fix in the next release.
+> - **Functional Features, Updates and Bug Fixes** captures everything in the release that have a direct impact on the Registrant or Event Manager experience. These are features or functionality utilized and noticed as part of the Summit Events App
+> -  **Technical Features, Updates and Bug Fixes** captures everything in the release that are withing the codebase. They impact the functionality and features of the Summit Events App, but aren't likely noticeable from an Admin or Event Manager perspective.
+> - **Issues Closed** is a comprehesive list of Github issues (Bugs and Feature Requests) that are closed as part of this release.
+
+
+## Important Items and Upgrade Action Steps
+
+---
+### Page Layouts and Picklists to Update Post Installation/Upgrade
+
+---
+## Known Issues
+
+---
+## Functional Features, Updates and Bug Fixes
+
+---
+## Technical Features, Updates and Bug Fixes
+
+---
+## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
