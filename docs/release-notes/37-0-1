@@ -3,7 +3,7 @@ title: 0.37.0.1 - Important Update
 parent: Release Notes
 ---
 
-# Version 0.36.0.1 Release Notes
+# Version 0.37.0.1 Release Notes
 
 These release notes are broken down into multiple parts, Functional Features, Updates and Bug Fixes and Technical Features, Updates and Bug Fixes  
 > - **Important Items and Upgrade Action Steps** are things you should read to determine if your org needs to take an action prior to upgrading or what post upgrade steps need to be taken.  
@@ -40,11 +40,4 @@ Steps are identified as part of each release item. Please review and take approp
 
 ---
 ## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
-- [#533](https://github.com/SFDO-Community/Summit-Events-App/issues/533): Required Appointment Validation  
-- [#562](https://github.com/SFDO-Community/Summit-Events-App/issues/562): Registration QR Image Fix  
-- [#580](https://github.com/SFDO-Community/Summit-Events-App/issues/580): Registrant Date of Birth Text Field  
-- [#582](https://github.com/SFDO-Community/Summit-Events-App/issues/582): Order By for Custom Questions  
-- [#586](https://github.com/SFDO-Community/Summit-Events-App/issues/586): No-Show Status for Registration Restrictions  
-- [#592](https://github.com/SFDO-Community/Summit-Events-App/issues/592): Accessibility/Dietary Field Placement  
-- [#593](https://github.com/SFDO-Community/Summit-Events-App/issues/593): Letterhead URL Generation Fix  
-- [#597](https://github.com/SFDO-Community/Summit-Events-App/issues/597): Event Instance Date/Time for Hosted Guests
+
