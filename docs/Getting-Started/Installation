@@ -1,0 +1,127 @@
+---
+title: Install SEA in a Sandbox or Production
+parent: Getting Started
+nav_order: 1
+---
+
+# Installing the Summit Events App
+
+The Summit Events App (SEA) is a managed package and has been security reviewed by Salesforce. Installation, along with many other great Salesforce.org Open Source Commons applications, is done through Salesforce.org's [MetaDeploy installer](https://github.com/SFDO-Tooling/MetaDeploy).
+
+[Install the latest managed pacakge](https://install.salesforce.org/products/SummitEventsApp/latest){: .btn .btn-green }{:target="_blank"}.  
+_IMPORTANT:  Confirm you are logged into the correct Salesforce org where you want to install Summit Events before you begin the installation process (Sandbox vs. Production)._
+
+## Post Installation Instructions
+
+There are a few steps after you install the SEA managed package to getting your Salesforce org configured to run SEA. Following along with this helpful post installation video and/org follow the steps below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ph1LAh6FoQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Confirm Summit Events is Installed
+1. From Setup, search for and select Installed Packages.
+2. Confirm you see Summit Events App as one of the installed packages.
+
+### Create a site subdomain
+If your org does not already have a Salesforce “Site,” which is used to display public visual force pages, you will need to set up one. If your org has one set up, you may use the existing Site.
+
+1. In Setup, go to User Interface -> Sites and Domains -> Sites.
+
+2. Determine the name you want to use for the Site (it will be in the form of [site.force.com]) and click the “Check Availability” button to see whether or not it is available. <b>Note:</b> Each Site must be unique.
+
+3. Click on the "Register My Salesforce Site Domain" button.
+
+![](../images/Site%20Setup.png)
+
+<b>Once your domain has been registered continue:</b>
+
+1. Click the "New" button next to the site header.
+
+2. Enter the following data in the form (label, name, and homepage can be adjust to whatever makes sense for your site):
+    * Site Label: Summit Events
+    * Site Name: Summit_Events
+    * Active Site Home Page:
+        * Select the magnifying glass look-up icon and search for and select SummitEvents.
+    * Leave all other settings at their defaults and text areas blank.
+
+3. Click "Save".
+![](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/images/SummitEventsSiteConfig.PNG)
+
+5. Upon save, you will see the Site under the Sites section. Click the "Activate" button at the top of the page.
+
+6. From Setup, search for sites.  From the list of sites, find the Summit Events site.  In the Site URL column, right-click on the Site URL link and copy the URL to your clipboard. You will need the Site URL in the next stage of post-installation set-up steps.
+
+![](../images/Site%20URL%20Capture.png)
+
+### Set Custom Settings
+Since each installation can have a different site URL, we need to define that URL for the event application to use as its root web presence. This is used for feed URLs, allowing external sites to access it, among other things. [Learn more about other custom settings](../advanced-features/custom-settings.md).
+
+1. From Setup, search for Custom Settings.
+
+2. Click on the "Manage" link next to the custom setting "Summit Events Settings".
+
+3. Click the "New" button at the top of the page just before the "Default Organization Level Value." NOTE: There are two "New" buttons on the page, which can be confusing. You will know you are on the wrong one if you are asked to assign a user or a profile. You will know you are on the right one if you only need to enter the URL in the following step.
+
+4. Paste the URL you copied from the “Create a site record” section (step 6 above) into the Community Base URL field.
+
+5. Click the "Save" button.
+
+Once you hit "Save" the "New" button will be replaced with "Edit." (You will need to click the Edit button to make future adjustments to this setting.)
+
+### Sharing Rules -The 37-0-1 Release removes the need for sharing rules.
+If you are on a release prior to 37-0-01, upgrade to the latest release {link to release} and delete the legacy sharing rule.
+To delete the sharing rule:
+In Setup, type “Sharing” in the quick-find box in Setup and click on “Sharing Settings”.
+In the Manage sharing settings for box, select Summit Events.
+In the Summit Events Sharing Rules section, click the Del button to delete the sharing rule.
+<img width="1407" height="690" alt="image" src="https://github.com/user-attachments/assets/f7d1a123-bc00-49d1-83ce-d273616e98c8" />
+
+
+
+### Apply Permission Sets
+There are two permission sets provided in this application.  These permission sets should be leveraged to ensure functionality persists between upgrades.  
+1. <b>Summit Events Admin</b> - allows users to create and maintain events
+2. <b>Summit Events Registrant</b> - allows unauthenticated users and authenticated users in a community to register for an event
+
+**Summit Events Admin:** Apply to admin users that need to create and maintain events.
+   > Note: Users who are not system administrators but who will administer Summit Events will need this permission set. You do not need to add the Permission Set at this time, but follow the steps bulleted below if/when you need a user to administer Summit Events. It is recommended that the Summit Event Admin permission set is cloned so appropriate configurations can be made to reduce/expand access to various fields.
+
+1. In Setup search for and select Permission Sets.
+2. Click on Summit Events Admin or your cloned Summit Events Admin permission set.
+3. Click on the “Manage Assignments” button.
+4. Click the checkbox next to the user who will administer Summit Events and click the “Add Assignments” button.
+
+**Summit Events Registrant:** This permission set needs to be applied to the Guest User profile of your site for the public to be able to access to registration forms. In addition, a custom permission set should be created to give additional access based on event configurations.
+
+### Create a Custom Permission Set for the Guest User
+This custom permission set allows you to add additional permissions for the guest user without worrying about issues during upgrades.  This permission set combined with the packaged Summit Events Registration permission set gives your organization the most flexibility.  It ensures Summit Events App works seamless with any upgrade and the Guest User always has the appropriate access to recieve event registrations.
+
+1. Create a new [Permissions Set](https://help.salesforce.com/s/articleView?id=sf.perm_sets_create.htm&type=5).
+2. Label the permission set to align with the Summit Event Registration for Guest Users - <b>Example: Summit Events Registrant Custom.</b>
+3. Go to Object Settings and grant "READ" access on the Account object. No additional fields needed.
+
+Once you've create the Custom Permission set, apply it to the Guest User as outlined below. With this custom permission set, you'll be able to grant appropriate access to any additional objects or fields being utilized for Summit Events as well as the following:
+- Avoid disruptions and limit additional configurations during upgrades.
+- Leverage Summit Event Questions and the Lookup options for improved data integrity.
+
+   > We recommend assigning users to the standard permission sets since they can change with each release as new features become available in Summit Events (SEA).
+    Cloning the existing permission sets to create custom permission sets could result in users not having access to features or functionality when the standard SEA
+    permission sets change. If you need to add additional permissions we recommend that you create a custom permission set to house those permissions and assign that
+    permission set in addition to the standard permission set.
+
+### Apply Summit Events Registrant permission set and the custom permission set you created to the Guest User of your site
+
+1. From Setup, Search for and select Sites.
+2. Under the Sites section, click on the words Summit Events in the "Site Label" field.
+3. Click on the "Public Access Settings" button at the top of the site definition page.
+4. On the Summit Events Profile page, click the View Users button.
+5. Under the Full Name column, click on the Site Guest User name (Site Guest User, Summit Events - which is a link).
+6. On the Summit Events Site Guest User page, scroll down to Permission Set Assignment and click the “Edit Assignments” button.
+7. In the Available Permission Sets section, click on Summit Events Registrant and click the “Add” button.  Repeat this process for the new custom permission set you created. This will move them both into the Enabled Permission Sets section.
+8. Click the “Save” button.
+
+
+
+## Congrats! At this point, you should have a functioning Summit Events Package. 
+Check out [Post-Installation Considerations](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/before-creating-event/) for additional considerations you’ll want to make to ensure there is alignment with your organization.
+
+
