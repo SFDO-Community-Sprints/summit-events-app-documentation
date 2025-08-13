@@ -1,0 +1,50 @@
+---
+title: 0.37.0.1 - Important Update
+parent: Release Notes
+---
+
+# Version 0.36.0.1 Release Notes
+
+These release notes are broken down into multiple parts, Functional Features, Updates and Bug Fixes and Technical Features, Updates and Bug Fixes  
+> - **Important Items and Upgrade Action Steps** are things you should read to determine if your org needs to take an action prior to upgrading or what post upgrade steps need to be taken.  
+> - **Known Issues** highlights issues we recognize not functioning as expected and will be working to fix in the next release.  
+> - **Functional Features, Updates and Bug Fixes** captures everything in the release that have a direct impact on the Registrant or Event Manager experience. These are features or functionality utilized and noticed as part of the Summit Events App.  
+> - **Technical Features, Updates and Bug Fixes** captures everything in the release that is within the codebase. They impact the functionality and features of the Summit Events App, but aren't likely noticeable from an Admin or Event Manager perspective.  
+> - **Issues Closed** is a comprehensive list of GitHub issues (Bugs and Feature Requests) that are closed as part of this release.
+
+---
+## Important Items and Upgrade Action Steps
+
+Steps are identified as part of each release item. Please review and take appropriate actions once the upgrade is installed.
+
+### Guest User Permissions to Update Post Installation/Upgrade
+- With the latest update the Sharing Rule has become obsolete and not longer needed. This ensures the guest user only has contextual access to information. This was previously a require step during the setup and installation process, which is not longer needed. Follow the below steps to remove the Sharing Rule.
+  - Go to "Sharing Settings" in Setup
+  - Go to the "Summit Events Sharing Rules" where you should see the Sharing Rule for the Guest User initially created
+  - Select "Del" to remove the Sharing Rule, this will prompt a confirmation winow explaining that the Sharing Rules will be recalulated.
+  - After about 1 minute, refresh your page to verify that the Summit Events Sharing Rule has been removed.
+
+- As part of this update the Summit Event Regitration Permission Set has also been updated. If you've created a cloned permissions set, you're encouraged to remove that permission set or create a new one based on the latest update. The step to do this has changed and the Guest User no longer needs access to the Account object via Permissions Set. If you've already created custom fields for the Guest Users access, you can simply remove the Read access to the Guest User.  
+- Always be sure to follow [Guest User Best Practices](https://help.salesforce.com/s/articleView?id=platform.networks_guest_profile_best_practices.htm&type=5). Please reach out if you have questions or concerns.
+  
+### Page Layouts and Picklists to Update Post Installation/Upgrade
+
+---
+## Known Issues
+
+---
+## Functional Features, Updates and Bug Fixes
+
+---
+## Technical Features, Updates and Bug Fixes
+
+---
+## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
+- [#533](https://github.com/SFDO-Community/Summit-Events-App/issues/533): Required Appointment Validation  
+- [#562](https://github.com/SFDO-Community/Summit-Events-App/issues/562): Registration QR Image Fix  
+- [#580](https://github.com/SFDO-Community/Summit-Events-App/issues/580): Registrant Date of Birth Text Field  
+- [#582](https://github.com/SFDO-Community/Summit-Events-App/issues/582): Order By for Custom Questions  
+- [#586](https://github.com/SFDO-Community/Summit-Events-App/issues/586): No-Show Status for Registration Restrictions  
+- [#592](https://github.com/SFDO-Community/Summit-Events-App/issues/592): Accessibility/Dietary Field Placement  
+- [#593](https://github.com/SFDO-Community/Summit-Events-App/issues/593): Letterhead URL Generation Fix  
+- [#597](https://github.com/SFDO-Community/Summit-Events-App/issues/597): Event Instance Date/Time for Hosted Guests
