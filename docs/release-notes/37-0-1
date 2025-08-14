@@ -71,6 +71,15 @@ Follow these steps to remove the Sharing Rule:
 
 ---  
 ### Page Layouts and Picklists to Update Post Installation/Upgrade
+As noted above, add the "Files" related list to the Page Layout if it is not already there post upgrade
+- Ensure the **Files** Related List is Available
+  - The update adds the **Files** Related List to the Dynamic Page Layout by default.  
+  - If you use a custom layout:
+    - Go to the **Summit Events** object → **Page Layouts**.
+    - Add the **Files** Related List to the layout.  
+    - In your Lightning Page Layout, add the **Related List – Single** component for **Files**.
+
+<img width="946" height="227" alt="image" src="https://github.com/user-attachments/assets/0f8b9faa-95f7-438e-baa6-17baf54c47e1" />
 
 ---
 ## Known Issues
