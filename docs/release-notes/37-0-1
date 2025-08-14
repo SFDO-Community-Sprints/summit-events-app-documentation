@@ -5,91 +5,104 @@ parent: Release Notes
 
 # Version 0.37.0.1 Release Notes
 
-These release notes are broken down into multiple parts, Functional Features, Updates and Bug Fixes and Technical Features, Updates and Bug Fixes  
-> - **Important Items and Upgrade Action Steps** are things you should read to determine if your org needs to take an action prior to upgrading or what post upgrade steps need to be taken.  
-> - **Known Issues** highlights issues we recognize not functioning as expected and will be working to fix in the next release.  
-> - **Functional Features, Updates and Bug Fixes** captures everything in the release that have a direct impact on the Registrant or Event Manager experience. These are features or functionality utilized and noticed as part of the Summit Events App.  
-> - **Technical Features, Updates and Bug Fixes** captures everything in the release that is within the codebase. They impact the functionality and features of the Summit Events App, but aren't likely noticeable from an Admin or Event Manager perspective.  
-> - **Issues Closed** is a comprehensive list of GitHub issues (Bugs and Feature Requests) that are closed as part of this release.
+These release notes are organized into multiple parts: **Functional Features, Updates and Bug Fixes** and **Technical Features, Updates and Bug Fixes**.  
+
+> - **Important Items and Upgrade Action Steps** highlight actions your org may need to take before or after upgrading.  
+> - **Known Issues** lists items we are aware of that are not functioning as expected and are targeted for resolution in the next release.  
+> - **Functional Features, Updates and Bug Fixes** capture changes that directly impact the Registrant or Event Manager experience — features or functionality actively used in the Summit Events App.  
+> - **Technical Features, Updates and Bug Fixes** include updates within the codebase that affect functionality but may not be immediately visible to Admins or Event Managers.  
+> - **Issues Closed** is a complete list of GitHub issues (Bugs and Feature Requests) closed as part of this release.
 
 ---
+
 ## Important Items and Upgrade Action Steps 
 
-Steps are identified as part of each release item. Please review and take appropriate actions once or before the upgrade is installed. 
-
+Review the following items carefully and take the noted actions **before or after upgrading** as indicated.
 
 ### Make Images in Rich Text Fields Public **Before Upgrading**
-With this Summit Events update, the previous Sharing Rule is now obsolete and no longer utilized. This change ensures the guest user only has contextual access to information, improving overall security.
-However, this also means images in Rich Text Fields will no longer be accessible the way they were before. To avoid broken images in your active events, take the following steps **before you upgrade**:
-- Ensure the **Files** Related List is Available
+With this release, the **Guest User Sharing Rule** is no longer required, in line with Salesforce Guest User and Security Standards. This improves security by ensuring Guest Users only have contextual access to the information they need.  
+
+However, this change also means images in **Rich Text Fields** are no longer automatically accessible as before. To prevent broken images in your active events, follow these steps **before you upgrade**:
+
+- **Ensure the *Files* Related List is Available**
   - The update adds the **Files** Related List to the Dynamic Page Layout by default.  
   - If you use a custom layout:
     - Go to the **Summit Events** object → **Page Layouts**.
     - Add the **Files** Related List to the layout.  
     - In your Lightning Page Layout, add the **Related List – Single** component for **Files**.
 
-<img width="946" height="227" alt="image" src="https://github.com/user-attachments/assets/0f8b9faa-95f7-438e-baa6-17baf54c47e1" />
+<img width="946" height="227" alt="Files related list on Summit Events object page layout" src="https://github.com/user-attachments/assets/0f8b9faa-95f7-438e-baa6-17baf54c47e1" />
 
-- Make the Image Public
+- **Make the Image Public**
   - Upload the original image to a **Files** record.
   - Open the uploaded image.
   - At the top of the page, click **Public Link**.
   - Follow the prompts to create the public link, then click **Create Link**.
   - Open the public link in a new browser tab.
 
-<img width="447" height="371" alt="image" src="https://github.com/user-attachments/assets/e6ba49cf-f6c2-4001-9cfa-1d7f7bee4a12" />
+<img width="447" height="371" alt="Salesforce file record showing public link option" src="https://github.com/user-attachments/assets/e6ba49cf-f6c2-4001-9cfa-1d7f7bee4a12" />
 
+- **Replace the Image in the Rich Text Field**
+  - After creating the public link and opening it in a new tab:
+    - Right-click the image and choose **Copy Image**.
+    - In your Rich Text Field, right-click and choose **Paste**.  
+      > This ensures the image is publicly accessible.
 
-- Replace the Image in the Rich Text Field
-  - After creating the public link and opening the link in a new tab.
-  - Right-click the image and choose **Copy Image**.
-  - In your Rich Text Field, right-click and choose **Paste**.
-    > This ensures the image is publicly accessible.
+<img width="566" height="470" alt="Rich Text Field with pasted image from public link" src="https://github.com/user-attachments/assets/2d63b15e-104e-4f90-90c0-d3de106b5f5a" />
+<img width="623" height="501" alt="Summit Events rich text editor with image inserted" src="https://github.com/user-attachments/assets/61148241-5e05-4492-8dfd-8209979a9ac3" />
+<img width="532" height="358" alt="Event registration page showing publicly accessible image" src="https://github.com/user-attachments/assets/914e425f-2705-403f-971f-26276a3925ca" />
 
-<img width="566" height="470" alt="image" src="https://github.com/user-attachments/assets/2d63b15e-104e-4f90-90c0-d3de106b5f5a" />
-<img width="623" height="501" alt="image" src="https://github.com/user-attachments/assets/61148241-5e05-4492-8dfd-8209979a9ac3" />
-<img width="532" height="358" alt="image" src="https://github.com/user-attachments/assets/914e425f-2705-403f-971f-26276a3925ca" />
-
-
-
-- For Externally Hosted Images
+- **For Externally Hosted Images**
   - Ensure the external image is publicly accessible.
   - Right-click the external image, choose **Copy Image**, and paste it into the Rich Text Field.
 
+---
 
 ### Guest User Permissions to Update **After Upgrading**
-With the latest update, the Sharing Rule has become obsolete and should be removed. This ensures the guest user only has contextual access to information. This was previously a required step during setup and installation but is no longer needed.
+With this update, the **Guest User Sharing Rule** for the Summit Events object should be removed. This ensures Guest Users no longer have direct access to Summit Event records while still allowing the same registration functionality. This was previously required during setup and installation but is no longer needed.
 
-Follow these steps to remove the Sharing Rule:
+**To remove the Guest User Sharing Rule:**
 - Go to **Sharing Settings** in Setup.
 - Find **Summit Events Sharing Rules** and locate the Sharing Rule for the Guest User that was initially created.
 - Click **Del** to remove the Sharing Rule.  
-  > You will see a confirmation window explaining that the Sharing Rules will be recalculated.
+  > A confirmation window will explain that Sharing Rules will be recalculated.
 - Wait about 1 minute, then refresh the page to confirm the Summit Events Sharing Rule has been removed.
 
-- As part of this update the Summit Event Regitration permissions have been refined to provide more thorough security. We recognize that there is still a need to share some records with the guest user should you be leveraging Lookup Fields as part of the registration. In these situations, be sure to follow [Guest User Best Practices](https://help.salesforce.com/s/articleView?id=platform.networks_guest_profile_best_practices.htm&type=5) and scope the Permission Set and Sharing Rules accordingly. If you need assistance with this, please do not hesitate to reach out to the Summit Events Team.
+<img width="874" height="317" alt="Salesforce sharing settings page showing delete option for Guest User sharing rule" src="https://github.com/user-attachments/assets/e9b9d77b-b624-482a-952a-d2e5eeb6c793" />
 
----  
+- As part of this update, Summit Event Registration permissions have been refined for improved security. If your registration flow uses **Lookup Fields** that require sharing certain records with the Guest User, follow [Guest User Best Practices](https://help.salesforce.com/s/articleView?id=platform.networks_guest_profile_best_practices.htm&type=5) and scope the Permission Set and Sharing Rules accordingly. Contact the Summit Events Team if you need assistance.
+
+---
+
 ### Page Layouts and Picklists to Update Post Installation/Upgrade
-As noted above, add the "Files" related list to the Page Layout if it is not already there post upgrade
-- Ensure the **Files** Related List is Available
+As noted above, ensure the **Files** related list is present on your Page Layout after the upgrade.
+
+- **Ensure the *Files* Related List is Available**
   - The update adds the **Files** Related List to the Dynamic Page Layout by default.  
   - If you use a custom layout:
     - Go to the **Summit Events** object → **Page Layouts**.
     - Add the **Files** Related List to the layout.  
     - In your Lightning Page Layout, add the **Related List – Single** component for **Files**.
 
-<img width="946" height="227" alt="image" src="https://github.com/user-attachments/assets/0f8b9faa-95f7-438e-baa6-17baf54c47e1" />
+<img width="946" height="227" alt="Files related list visible in Summit Events object page layout" src="https://github.com/user-attachments/assets/0f8b9faa-95f7-438e-baa6-17baf54c47e1" />
 
 ---
+
 ## Known Issues
 
 ---
+
 ## Functional Features, Updates and Bug Fixes
 
 ---
+
 ## Technical Features, Updates and Bug Fixes
 
----
-## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
+### Improved Guest User Security Compliance
+The Summit Events App now uses a more secure approach for Guest User access, ensuring full compliance with **Salesforce Guest User and Security Standards**. As part of this update, the **Guest User Sharing Rule** on the Summit Events object is no longer required and should be removed. This change prevents Guest Users from having direct access to Summit Event records while preserving the same registration functionality as before.  
 
+> **Important:** Because this change also affects how images in Rich Text Fields are accessed, any images used in your event pages must be publicly accessible before upgrading. See the “Make Images in Rich Text Fields Public Before Upgrading” section above for detailed steps.
+
+---
+
+## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
