@@ -8,3 +8,5 @@ For named guests, custom questions should be created to gather the details about
 
 In the example below, a custom question has been created to capture the guests first name and mapped to the Registrant First Name field on the registration object.
 
+
+
