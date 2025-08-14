@@ -103,6 +103,10 @@ The Summit Events App now uses a more secure approach for Guest User access, ens
 
 > **Important:** Because this change also affects how images in Rich Text Fields are accessed, any images used in your event pages must be publicly accessible before upgrading. See the “Make Images in Rich Text Fields Public Before Upgrading” section above for detailed steps.
 
+### Deprecated Unused and Unmanaged Solutions
+The Parking Pass and Host Assignment classes have been deprecated. These were legacy components from when Summit Events originated at the University of St. Thomas and are no longer maintained or in use.
+
+
 ---
 
 ## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
