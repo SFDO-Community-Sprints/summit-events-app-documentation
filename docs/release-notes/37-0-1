@@ -15,17 +15,49 @@ These release notes are broken down into multiple parts, Functional Features, Up
 ---
 ## Important Items and Upgrade Action Steps 
 
-Steps are identified as part of each release item. Please review and take appropriate actions once the upgrade is installed.
+Steps are identified as part of each release item. Please review and take appropriate actions once or before the upgrade is installed. 
 
-### Guest User Permissions to Update Post Installation/Upgrade
-- With the latest update the Sharing Rule has become obsolete and no longer needed. This ensures the guest user only has contextual access to information. This was previously a require step during the setup and installation process, which is not longer needed. Follow the below steps to remove the Sharing Rule.
-  - Go to "Sharing Settings" in Setup
-  - Go to the "Summit Events Sharing Rules" where you should see the Sharing Rule for the Guest User initially created
-  - Select "Del" to remove the Sharing Rule, this will prompt a confirmation winow explaining that the Sharing Rules will be recalulated.
-  - After about 1 minute, refresh your page to verify that the Summit Events Sharing Rule has been removed.
+
+### Make Images in Rich Text Fields Public **Before Upgrading**
+With this Summit Events update, the previous Sharing Rule is now obsolete and no longer utilized. This change ensures the guest user only has contextual access to information, improving overall security.
+However, this also means images in Rich Text Fields will no longer be accessible the way they were before. To avoid broken images in your active events, take the following steps **before you upgrade**:
+- Ensure the **Files** Related List is Available
+  - The update adds the **Files** Related List to the Dynamic Page Layout by default.  
+  - If you use a custom layout:
+    - Go to the **Summit Events** object → **Page Layouts**.
+    - Add the **Files** Related List to the layout.  
+    - In your Lightning Page Layout, add the **Related List – Single** component for **Files**.
+
+- Make the Image Public
+  - Upload the original image to a **Files** record.
+  - Open the uploaded image.
+  - At the top of the page, click **Public Link**.
+  - Follow the prompts to create the public link, then click **Create Link**.
+
+- Replace the Image in the Rich Text Field
+  - After creating the public link, close the link dialog.
+  - Right-click the image and choose **Copy Image**.
+  - In your Rich Text Field, right-click and choose **Paste**.
+    > This ensures the image is publicly accessible.
+
+- For Externally Hosted Images
+  - Ensure the external image is publicly accessible.
+  - Right-click the external image, choose **Copy Image**, and paste it into the Rich Text Field.
+
+
+### Guest User Permissions to Update **After Upgrading**
+With the latest update, the Sharing Rule has become obsolete and should be removed. This ensures the guest user only has contextual access to information. This was previously a required step during setup and installation but is no longer needed.
+
+Follow these steps to remove the Sharing Rule:
+- Go to **Sharing Settings** in Setup.
+- Find **Summit Events Sharing Rules** and locate the Sharing Rule for the Guest User that was initially created.
+- Click **Del** to remove the Sharing Rule.  
+  > You will see a confirmation window explaining that the Sharing Rules will be recalculated.
+- Wait about 1 minute, then refresh the page to confirm the Summit Events Sharing Rule has been removed.
 
 - As part of this update the Summit Event Regitration permissions have been refined to provide more thorough security. We recognize that there is still a need to share some records with the guest user should you be leveraging Lookup Fields as part of the registration. In these situations, be sure to follow [Guest User Best Practices](https://help.salesforce.com/s/articleView?id=platform.networks_guest_profile_best_practices.htm&type=5) and scope the Permission Set and Sharing Rules accordingly. If you need assistance with this, please do not hesitate to reach out to the Summit Events Team.
-  
+
+---  
 ### Page Layouts and Picklists to Update Post Installation/Upgrade
 
 ---
