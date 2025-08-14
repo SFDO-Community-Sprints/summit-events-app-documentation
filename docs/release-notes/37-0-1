@@ -28,17 +28,29 @@ However, this also means images in Rich Text Fields will no longer be accessible
     - Add the **Files** Related List to the layout.  
     - In your Lightning Page Layout, add the **Related List – Single** component for **Files**.
 
+<img width="946" height="227" alt="image" src="https://github.com/user-attachments/assets/0f8b9faa-95f7-438e-baa6-17baf54c47e1" />
+
 - Make the Image Public
   - Upload the original image to a **Files** record.
   - Open the uploaded image.
   - At the top of the page, click **Public Link**.
   - Follow the prompts to create the public link, then click **Create Link**.
+  - Open the public link in a new browser tab.
+
+<img width="447" height="371" alt="image" src="https://github.com/user-attachments/assets/e6ba49cf-f6c2-4001-9cfa-1d7f7bee4a12" />
+
 
 - Replace the Image in the Rich Text Field
-  - After creating the public link, close the link dialog.
+  - After creating the public link and opening the link in a new tab.
   - Right-click the image and choose **Copy Image**.
   - In your Rich Text Field, right-click and choose **Paste**.
     > This ensures the image is publicly accessible.
+
+<img width="566" height="470" alt="image" src="https://github.com/user-attachments/assets/2d63b15e-104e-4f90-90c0-d3de106b5f5a" />
+<img width="623" height="501" alt="image" src="https://github.com/user-attachments/assets/61148241-5e05-4492-8dfd-8209979a9ac3" />
+<img width="532" height="358" alt="image" src="https://github.com/user-attachments/assets/914e425f-2705-403f-971f-26276a3925ca" />
+
+
 
 - For Externally Hosted Images
   - Ensure the external image is publicly accessible.
