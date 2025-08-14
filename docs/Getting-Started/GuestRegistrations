@@ -1,0 +1,10 @@
+
+
+Working with Guests
+
+There are two ways to handle guest registrations, named guests and unnamed guests.  For named guests, the registrant will enter the name of the guest at the time of registration.  With unnamed guests, the registrant will simply indicate the number of guests they are bringing.
+
+For named guests, custom questions should be created to gather the details about the guest who is attending.   For example, a Guest First Name field and Guest Last Name field along with any other information that needs to be collected about the guest.  
+
+In the example below, a custom question has been created to capture the guests first name and mapped to the Registrant First Name field on the registration object.
+
