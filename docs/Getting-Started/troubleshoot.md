@@ -13,6 +13,17 @@ nav_order: 10
 
 This is usually due to the guest user not having proper permissons to either a custom field referenced on the registration form or was not setup initially with the proper permissions.  Make sure that the guest user has permissions to Summit Events as outlined in the Install SEA in Sandbox or Production page of the documenation site.  Make sure that the registrant custom permission set is given access any new feilds that were created for the registration process.
 
+## Duplicate Rules Related
+
+**New Duplicate Rule not appearing for selection in Event's Contact Creation Duplicate Rule field.**
+
+Check that the value has been added to the Contact Creation Duplicate Rule field's picklist value on the Summit Events object and that the picklist value is named exactly as the rule is named.
+
+Check that the controlling field - Contact Matching Rule has been adjusted to include the new value.  This appears in the Picklists options section of the Contact Creation Duplicate Rule field.
+
+Also see: [Contact Matching Documentation](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/Contact-Matching/)
+
+
 ## Email Related
 
 **Registration confirmation emails not being sent**
