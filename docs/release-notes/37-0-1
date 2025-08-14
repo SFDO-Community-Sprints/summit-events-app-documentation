@@ -13,12 +13,12 @@ These release notes are broken down into multiple parts, Functional Features, Up
 > - **Issues Closed** is a comprehensive list of GitHub issues (Bugs and Feature Requests) that are closed as part of this release.
 
 ---
-## Important Items and Upgrade Action Steps
+## Important Items and Upgrade Action Steps 
 
 Steps are identified as part of each release item. Please review and take appropriate actions once the upgrade is installed.
 
 ### Guest User Permissions to Update Post Installation/Upgrade
-- With the latest update the Sharing Rule has become obsolete and not longer needed. This ensures the guest user only has contextual access to information. This was previously a require step during the setup and installation process, which is not longer needed. Follow the below steps to remove the Sharing Rule.
+- With the latest update the Sharing Rule has become obsolete and no longer needed. This ensures the guest user only has contextual access to information. This was previously a require step during the setup and installation process, which is not longer needed. Follow the below steps to remove the Sharing Rule.
   - Go to "Sharing Settings" in Setup
   - Go to the "Summit Events Sharing Rules" where you should see the Sharing Rule for the Guest User initially created
   - Select "Del" to remove the Sharing Rule, this will prompt a confirmation winow explaining that the Sharing Rules will be recalulated.
