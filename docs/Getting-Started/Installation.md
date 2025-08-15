@@ -66,9 +66,7 @@ Since each installation can have a different site URL, we need to define that UR
 Once you hit "Save" the "New" button will be replaced with "Edit." (You will need to click the Edit button to make future adjustments to this setting.)
 
 ### Sharing Rules - Release 37-0-1 removes the need for sharing rules.
-If you are upgrading to version 37-0-1 or greater, after the upgrade, delete the legacy sharing rule.
-
-[Instructions for deleting the Legacy Sharing Rules:](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/RemoveSharingRules/)
+If you are upgrading to version 37-0-1 or greater, follow the instructions in the version [37-0-01 release notes](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/release-notes/37-0-2/) to delete the legacy sharing rules.
 
 ### Apply Permission Sets
 There are two permission sets provided in this application.  These permission sets should be leveraged to ensure functionality persists between upgrades.  
