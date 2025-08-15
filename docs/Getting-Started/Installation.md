@@ -13,9 +13,7 @@ _IMPORTANT:  Confirm you are logged into the correct Salesforce org where you wa
 
 ## Post Installation Instructions
 
-There are a few steps after you install the SEA managed package to getting your Salesforce org configured to run SEA. Following along with this helpful post installation video and/org follow the steps below.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ph1LAh6FoQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+There are a few steps after you install the SEA managed package to getting your Salesforce org configured to run SEA.
 
 ### Confirm Summit Events is Installed
 1. From Setup, search for and select Installed Packages.
