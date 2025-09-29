@@ -7,7 +7,14 @@ permalink: /
 
 # What is Summit Events?
 
-The Summit Events App is a sustainable open source community events app that serves a broad variety of needs for EDUs and NGOs. The event solution has the flexibility needed to offer events of different types: paid, free, group, guests, and individual. The solution will include the full life cycle of the event: registration, receipting, confirmation, reporting and web faced exposure. This solution facilitates a Salesforce connected campus and will be compatible with Salesforce.org’s Data Architectures.
+What is Summit Events?
+
+
+Summit Events is an open-source, sustainable community events application designed to meet the diverse needs of educational institutions and nonprofit organizations. It provides flexible support for a wide range of event types, including paid or free events, group or individual registrations, and both guest and community-focused gatherings. 
+
+Summit Events covers the full event lifecycle, from registration and payment processing to confirmations, reporting, and public-facing event pages.  Built on the Salesforce platform, the app supports connected campus experiences and is fully compatible with Salesforce.org’s data architectures.
+
+
 
 ## Project information
 
