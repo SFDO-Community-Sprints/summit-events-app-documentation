@@ -48,7 +48,7 @@ to address this new security.*
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TXChqCFTTGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 
-*Copyright 2022, Salesforce.org. All rights reserved..
+*Copyright 2022, Salesforce.org. All rights reserved.
 Use of this source code is governed by a BSD Revised
 license that can be found in the [LICENSE file][6].*
 
