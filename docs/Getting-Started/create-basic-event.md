@@ -13,7 +13,7 @@ The first step in setting up a brand new event is to create a Summit Event recor
 <br/>
 <br/>
 
-[Creating a Basic Event Video: ](https://youtu.be/EYYIXMoYOoA?si=c3eezw8IUufPPCgc).
+[Watch the Creating a Basic Event Video](https://youtu.be/EYYIXMoYOoA?si=c3eezw8IUufPPCgc).
 
 
 ### Create the Event
