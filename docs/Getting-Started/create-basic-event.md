@@ -4,7 +4,6 @@ parent: Getting Started
 nav_order: 4
 ---
 
-Watch the video:  https://youtu.be/EYYIXMoYOoA?si=c3eezw8IUufPPCgc
 
 # Creating a Basic Event
 
@@ -13,6 +12,8 @@ Watch the video:  https://youtu.be/EYYIXMoYOoA?si=c3eezw8IUufPPCgc
 The first step in setting up a brand new event is to create a Summit Event record and an Event Instance record.  Summit Events are parent records to Summit Event Instance records.  You cannot have a Summit Event instance without it being tied to a parent Summit Event record.  Summit Event instance records inherit much of the information from the parent Summit Event record.  This document covers the fields needed when creating a basic event.
 <br/>
 <br/>
+
+[Creating a Basic Event Video: ](https://youtu.be/EYYIXMoYOoA?si=c3eezw8IUufPPCgc).
 
 
 ### Create the Event
