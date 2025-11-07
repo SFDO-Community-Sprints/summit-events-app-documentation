@@ -4,6 +4,8 @@ parent: Getting Started
 nav_order: 4
 ---
 
+Watch the video:  https://youtu.be/EYYIXMoYOoA?si=c3eezw8IUufPPCgc
+
 # Creating a Basic Event
 
 ![CreateBasicEventOverviewImage](images/CreateBasicEvent_Overview.png)  
