@@ -1,0 +1,77 @@
+# Suggested filename: docs/release-notes/38-0-1.md
+
+---
+title: 0.38.0.1 Pre-release
+parent: Release Notes
+---
+
+# Version 0.38.0.1 Pre-release Notes
+
+These release notes are broken down into multiple parts, Functional Features, Updates and Bug Fixes and Technical Features, Updates and Bug Fixes  
+> - **Important Items and Upgrade Action Steps** are things you should read to determine if your org needs to take an action prior to upgrading or what post upgrade steps need to be taken.  
+> - **Known Issues** highlights issues we recognize not functioning as expected and will be working to fix in the next release.  
+> - **Functional Features, Updates and Bug Fixes** captures everything in the release that have a direct impact on the Registrant or Event Manager experience. These are features or functionality utilized and noticed as part of the Summit Events App.  
+> - **Technical Features, Updates and Bug Fixes** captures everything in the release that is within the codebase. They impact the functionality and features of the Summit Events App, but aren't likely noticeable from an Admin or Event Manager perspective.  
+> - **Issues Closed** is a comprehensive list of GitHub issues (Bugs and Feature Requests) that are closed as part of this release.
+
+---
+
+## Important Items and Upgrade Action Steps
+
+This pre-release includes important backend query optimizations that improve reliability of payment completion and appointment handling. Please ensure testing is completed in sandbox environments before deploying to production.
+
+---
+
+## Known Issues
+* None known as part of this release at this time.
+
+---
+
+## Technical Features, Updates and Bug Fixes
+
+### Payment Completion Query Update
+Moved the payment query executed upon return from the payment gateway to the shared read query path.  
+Previously, some payments did not complete properly because the payment record could not be found after returning to the Summit Events App.  
+This change ensures payment records are located correctly and transactions complete successfully.  
+(*Implements improvements from PR626.*)
+
+*Post Deploy Instructions:*  
+No administrator action is required, but organizations should validate end-to-end payment flow in their sandbox or UAT environment.
+
+---
+
+### Appointment Auto-Add Query Handling
+The **auto-add appointment** process has been refactored to use shared read queries for improved data consistency.  
+Appointment types such as “Added,” “Added but not shown,” and “Added and required” are now correctly receipted and reflected as valid appointments.  
+(*Implements improvements from PR626.*)
+
+*Post Deploy Instructions:*  
+No administrator action is required.
+
+---
+
+### Appointment Registration ID Fix
+Corrected logic for assigning **Registration IDs** to appointments to ensure proper linkage between registration and appointment records.  
+(*Implements improvements from PR626.*)
+
+*Post Deploy Instructions:*  
+No action required.
+
+---
+
+### Unit Test Coverage for Auto-Added Appointments
+Added automated test coverage for the **auto-added appointments** process to validate query execution and data relationships in future releases.  
+(*Implements improvements from PR626.*)
+
+*Post Deploy Instructions:*  
+No action required.
+
+---
+
+## [Issues Closed](https://github.com/SFDO-Community/Summit-Events-App/issues?q=is%3Aissue+is%3Aclosed)
+No new issues were closed as part of this pre-release.
+
+---
+
+## Installation Info
+Please review the [installation guide](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/install) for package upgrade and deployment instructions.
