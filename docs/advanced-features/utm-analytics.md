@@ -35,7 +35,7 @@ Below is an example of how this may look, only looking at Summit Events and the 
 > To test this, utilize [Google's Demo and Tools Campaign URL Builder](https://ga-dev-tools.google/ga4/campaign-url-builder/).
 
 * Start by creating an Event and an Event Instance.
-* Capture the URL form the Register link and input into the Campaign URL Builder.
+* Capture the URL from the Register link and input into the Campaign URL Builder.
   > ![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/014c29b2-8891-47b2-a2d8-6dd2b225af53)
 * The URL will generate and you can use that to start a new registration.
   > ![image](https://github.com/SFDO-Community-Sprints/summit-events-app-documentation/assets/60475518/848ad20c-93a0-4b43-b630-5b7719d3a50d)
