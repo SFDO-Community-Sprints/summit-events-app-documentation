@@ -7,13 +7,14 @@ nav_order: 4
 
 # Creating a Basic Event
 
-![CreateBasicEventOverviewImage](images/CreateBasicEvent_Overview.png)  
 <br/>
 The first step in setting up a brand new event is to create a Summit Event record and an Event Instance record.  Summit Events are parent records to Summit Event Instance records.  You cannot have a Summit Event instance without it being tied to a parent Summit Event record.  Summit Event instance records inherit much of the information from the parent Summit Event record.  This document covers the fields needed when creating a basic event.
 <br/>
-<br/>
 
-[Watch the Creating a Basic Event Video](https://youtu.be/EYYIXMoYOoA?si=c3eezw8IUufPPCgc).
+
+![CreateBasicEventOverviewImage](images/CreateBasicEvent_Overview.png)  
+
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EYYIXMoYOoA?si=yo5C3nA6LqmBQbC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
