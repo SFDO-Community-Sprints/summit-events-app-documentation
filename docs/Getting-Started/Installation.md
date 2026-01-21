@@ -59,8 +59,10 @@ Since each installation can have a different site URL, we need to define that UR
 3. Click the "New" button at the top of the page just before the "Default Organization Level Value." NOTE: There are two "New" buttons on the page, which can be confusing. You will know you are on the wrong one if you are asked to assign a user or a profile. You will know you are on the right one if you only need to enter the URL in the following step.
 
 4. Paste the URL you copied from the “Create a site record” section (step 6 above) into the Community Base URL field.
+   
+5. In the Default Country field add United States or your Country if different.
 
-5. Click the "Save" button.
+6. Click the "Save" button.
 
 Once you hit "Save" the "New" button will be replaced with "Edit." (You will need to click the Edit button to make future adjustments to this setting.)
 
