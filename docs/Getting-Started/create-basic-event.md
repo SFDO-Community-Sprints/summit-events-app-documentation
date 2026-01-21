@@ -18,7 +18,8 @@ The first step in setting up a brand new event is to create a Summit Event recor
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EYYIXMoYOoA?si=yo5C3nA6LqmBQbC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
+<br/>
+<br/>
 
 ### Create the Event
 
