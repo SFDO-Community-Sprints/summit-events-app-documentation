@@ -19,7 +19,7 @@ The first step in setting up a brand new event is to create a Summit Event recor
 ![CreateBasicEventOverviewImage](images/CreateBasicEvent_Overview.png)  
 
 
-### Create an Event Record
+## Create an Event Record
 
 Navigate to the Summit Events Application in the App Selector.
 
