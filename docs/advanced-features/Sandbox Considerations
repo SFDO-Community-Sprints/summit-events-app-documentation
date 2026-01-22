@@ -1,0 +1,11 @@
+---
+title: Sandbox Considerations
+parent: Advanced Features
+has_children: false
+---
+
+# Refreshing Sandbox
+
+When you refresh a Sandbox and are testing the registration process, the Custom Settings URL needs to be changed to point to the Sandbox.
+[See the doucmentation about Custom Settings] (https://github.com/SFDO-Community/Summit-Events-App/wiki/0a-%E2%80%93-Setting-Up-Summit-Events-After-Installing-Package#set-custom-settings)
+
