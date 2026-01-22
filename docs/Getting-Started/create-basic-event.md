@@ -19,7 +19,7 @@ The first step in setting up a brand new event is to create a Summit Event recor
 ![CreateBasicEventOverviewImage](images/CreateBasicEvent_Overview.png)  
 
 
-### Create the Event
+### Create an Event Record
 
 Navigate to the Summit Events Application in the App Selector.
 
@@ -48,8 +48,8 @@ Fill out the following fields on the Summit Event record.  Many of the fields li
 
 **Save** Summit Event record.
 
-## Create the Related Event Instance
-Navigate to the Summit Event Instance Related List on the Event record and create a New Summit Event Instance.
+## Create an Event Instance Record
+The Event Instance record is the occurrance of your event.  Most events will have one but if your event is a series, it may have more than one.  Navigate to the Summit Event Instance Related List on the Event record and create a New Summit Event Instance.
 
 ![CreateBasicEventInstanceButton](images/CreateBasicEvent_NewInstanceButton.png)
 
