@@ -49,7 +49,10 @@ Fill out the following fields on the Summit Event record.  Many of the fields li
 **Save** Summit Event record.
 
 ## Create an Event Instance Record
-The Event Instance record is the occurrance of your event.  Most events will have one but if your event is a series, it may have more than one.  Navigate to the Summit Event Instance Related List on the Event record and create a New Summit Event Instance.
+The Event Instance record is the occurrance of your event.  Most events will have one but if your event is a series, it may have more than one.  
+
+Navigate to the Summit Event Instance Related List on the Event record.
+Click on the drop-down and choose New.
 
 ![CreateBasicEventInstanceButton](images/CreateBasicEvent_NewInstanceButton.png)
 
