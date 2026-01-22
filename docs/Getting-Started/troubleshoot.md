@@ -13,6 +13,11 @@ nav_order: 10
 
 This is usually due to the guest user not having proper permissons to either a custom field referenced on the registration form or was not setup initially with the proper permissions.  Make sure that the guest user has permissions to Summit Events as outlined in the Install SEA in Sandbox or Production page of the documenation site.  Make sure that the registrant custom permission set is given access any new feilds that were created for the registration process.
 
+**Clicking on the Register link on an Event Instance takes you back to the internal Domains page**
+Most likely the Community Base URL in the Custom Settings is incorrect.  Try to re-copy and paste the URL and resave the custom settings.  It may take a moment or two for caching.
+See [Custom Settings](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/advanced-features/custom-settings/)
+
+
 ## Duplicate Rules Related
 
 **New Duplicate Rule not appearing for selection in Event's Contact Creation Duplicate Rule field.**
