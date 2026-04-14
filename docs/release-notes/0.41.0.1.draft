@@ -1,0 +1,35 @@
+---
+title: "0.40.0.1"
+parent: Release Notes
+---
+
+# Version 0.40.0.1 Release Notes
+
+## Summit Events App – Release Notes
+### Version 0.41.0.1
+
+---
+
+### Bug Fixes
+
+**Contact Matching: "Matching Only" Flag Now Respected**
+Custom metadata contact matching mappings used in conjunction with matching rules were not honoring the "Matching Only" flag. As a result, fields marked as matching-only were being incorrectly copied into newly created contact records (leads/person accounts). Fields with the Matching Only designation are now properly excluded from created objects. *(Closes #640)*
+
+**QR Code Rendering Fixed in Transactional Emails**
+The QR code formula in the `Registrant_Id_QR_Code__c` field was not rendering correctly in transactional emails. This has been resolved and QR codes will now display as expected. *(Closes #641)*
+
+---
+
+### Improvements
+
+**Registration Address Field Text Limits Aligned to Salesforce Contact Fields**
+Summit Events Registration address field text limits have been aligned to match the corresponding Salesforce Contact field limits. Previously, mismatched limits could cause issues when Flows were involved. *(Closes #595)*
+
+---
+
+### Issues Closed
+
+- **#595** Should we align Summit Events Registration Address field text limits to Salesforce Contact field? It can create issues if Flows are involved.
+- **#640** [BUG] The Matching Only flag is not respected with the Summit Events Contact Matching Mappings within the Custom Metadata Types
+- **#641** [BUG] QR code not rendering in transactional emails
+- **#644** [BUG] Contact User Mapping to Registration Error
