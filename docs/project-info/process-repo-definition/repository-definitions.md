@@ -26,7 +26,7 @@ Branches are intended to capture project development prior to any updates being 
 - The Summit Events App Team will review the Pull Request, making appropriate comments and requests for changes/updates. 
 - Upon approval, the Summit Events Team will merge the pull request into the Main Branch. 
 
-This process will allow the Summit Events App Team to test and approve development prior to community feedback and testing. Once the feature or bug is in the Main Repo, we will have the ability to invite the community in testing new functionality and bugs fixes utilizing [Metecho](https://metecho.herokuapp.com/projects). This will streamline the use of Metecho allowing the user to simply create a new scratch org from the main page (no Epics or Tasks).
+[//]: # This process will allow the Summit Events App Team to test and approve development prior to community feedback and testing. Once the feature or bug is in the Main Repo, we will have the ability to invite the community in testing new functionality and bugs fixes utilizing [Metecho](https://metecho.herokuapp.com/projects). This will streamline the use of Metecho allowing the user to simply create a new scratch org from the main page (no Epics or Tasks).
 
 **NOTE**: When something is packaged, it’ll be there that way forever! We will always be mindful of this when approving pull requests.
 
