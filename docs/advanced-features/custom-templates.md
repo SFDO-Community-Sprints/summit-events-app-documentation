@@ -381,7 +381,7 @@ The Template field on Summit Events is a restricted picklist. The value must exa
 1. Setup → **Object Manager → Summit Events → Fields & Relationships**
 2. Click **Template**
 3. Scroll to **Values** → **New**
-4. Enter your Visualforce page name exactly (e.g. `Acme_SummitEvents`)
+4. Enter your Visualforce page name (API name) exactly (e.g. `Acme_SummitEvents`)
 5. Click **Save**
 
 ---
