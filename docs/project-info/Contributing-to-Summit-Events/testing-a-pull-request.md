@@ -23,7 +23,7 @@ A pull request is a way for someone to propose changes to a project. It's like t
 - Look at the actual changes or "diffs" on the "Files Changed" tab. Even if you don't understand the code, you may be able to get a sense of if a lot was changed.
 - Sometimes reviewing the "Commits" Tab will also inform you of changes made, capturing more of what it is you'll be looking to test.
 - Review the linked issues to understand "what" you're focused on reviewing and what the expectations are.
-- Try out the new features, bug fixes or changes locally on your own computer. You can do this by utilizing your own IDE with [CumulusCI](https://cumulusci.readthedocs.io/en/latest/get-started.html#work-on-an-existing-cumulusci-project) or if you're you're looking for a clicks, not code, type of experience, utilize [Metecho](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/project-info/Contributing-to-Summit-Events/metecho/). Follow the steps to "check out" the pull request which will allow you to test drive it. See if it works as expected.
+- Try out the new features, bug fixes or changes locally on your own computer. You can do this by utilizing your own IDE with [CumulusCI](https://cumulusci.readthedocs.io/en/latest/get-started.html#work-on-an-existing-cumulusci-project).
 - Consider how the changes might impact other parts of the project. If it changes one thing, what else could that affect? Try to think of possible side effects and test those scenerios as best you can.
 - Ask someone technical to review the changes. They can do a code review and let you know if it looks okay from a technical standpoint.
 
