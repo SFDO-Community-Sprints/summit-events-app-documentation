@@ -45,7 +45,7 @@ You should receive an email with a reset your password link.
 ### Next Steps
 
 Now that you have Summit Events installed, you will want to:
-1. Follow the [Post Installation Steps]https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installation/#post-installation-instructions.
+1. Follow the [Post Installation Steps](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/Installation/#post-installation-instructions).
 2. Review the [Before Creating an Event documentation](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/before-creating-event/) to do the base configuration needed to get started creating events.
 3. Review the [Creating a Basic Event documenation](https://sfdo-community-sprints.github.io/summit-events-app-documentation/docs/Getting-Started/create-basic-event/) to help get you on your way to creating your first event!
 
