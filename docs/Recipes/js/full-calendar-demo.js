@@ -1,3 +1,14 @@
+/*
+ * Summit Events App (SEA) calendar for FullCalendar 6 (LEGACY).
+ *
+ * This is the older calendar script. It is kept so that calendars already on websites keep working.
+ * New calendars should use full-calendar-demo-v7.js (FullCalendar 7). See the "Calendar" recipe in the documentation.
+ *
+ * This code is published under two names that must stay identical:
+ *   full-calendar-demo.js     the original name. Existing websites link to it, so it must not be removed.
+ *   full-calendar-demo-v6.js  the name used by the version 6 documentation pages.
+ * If you change one, change the other.
+ */
 let ready = (callback) => {
     if (document.readyState !== "loading") callback();
     else document.addEventListener("DOMContentLoaded", callback);

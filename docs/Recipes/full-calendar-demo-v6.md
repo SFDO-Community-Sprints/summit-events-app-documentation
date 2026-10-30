@@ -1,18 +1,17 @@
 ---
-title: Calendar-Demo-2026
+title: Calendar-Demo (v6, legacy)
 parent: Recipes
 nav_exclude: true
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/all/global.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/themes/classic/global.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/skeleton.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/themes/classic/theme.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/themes/classic/palette.min.css" rel="stylesheet">
+> **Legacy example.** This is the old calendar, built on FullCalendar version 6. It is kept for people who still use it.
+> For a new calendar, use the [current calendar recipe](../full-calendar/). You can see the current calendar working on the [calendar demo page](../full-calendar-demo/).
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
-<script src="https://cdn.jsdelivr.net/gh/SFDO-Community-Sprints/summit-events-app-documentation@main/docs/Recipes/js/full-calendar-demo-2026.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SFDO-Community-Sprints/summit-events-app-documentation@main/docs/Recipes/js/full-calendar-demo-v6.js"></script>
 
 <script>
 /*  feedURL:

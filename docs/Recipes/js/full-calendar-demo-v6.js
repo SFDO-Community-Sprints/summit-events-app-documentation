@@ -1,0 +1,291 @@
+/*
+ * Summit Events App (SEA) calendar for FullCalendar 6 (LEGACY).
+ *
+ * This is the older calendar script. It is kept so that calendars already on websites keep working.
+ * New calendars should use full-calendar-demo-v7.js (FullCalendar 7). See the "Calendar" recipe in the documentation.
+ *
+ * This code is published under two names that must stay identical:
+ *   full-calendar-demo.js     the original name. Existing websites link to it, so it must not be removed.
+ *   full-calendar-demo-v6.js  the name used by the version 6 documentation pages.
+ * If you change one, change the other.
+ */
+let ready = (callback) => {
+    if (document.readyState !== "loading") callback();
+    else document.addEventListener("DOMContentLoaded", callback);
+};
+
+ready(() => {
+    let urlParams = getUrlVars();
+    if (urlParams['audienceList']) {
+        audienceList = decodeURIComponent(urlParams['audienceList']).split(',');
+    }
+    initCalendar();
+});
+
+
+function getUrlVars() {
+    let vars = {};
+    window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+        function (m, key, value) {
+            vars[key] = value;
+        });
+    return vars;
+}
+
+const initCalendar = function () {
+    const calendarEl = document.getElementById(calendarDivId);
+
+    const audienceDD = document.getElementById(audienceDropDownId);
+
+    addCalendarStyles(calendarDivId);
+
+    if (feedURL.endsWith('/')) {
+        feedURL += 'services/apexrest/summit/summiteventsfeed';
+    } else {
+        feedURL += '/services/apexrest/summit/summiteventsfeed';
+    }
+
+    if (Object.keys(hardCodeAudience).length === 1) {
+        audienceDD.closest('.slds-col').style.display = 'none';
+    }
+
+    if (audienceDD) {
+        loadAudienceDD();
+    }
+
+    function getCalView() {
+        let initialView = "dayGridMonth";
+        if (window.innerWidth <= 900) {
+            initialView = "listMonth";
+        }
+        return initialView;
+    }
+
+    const calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: getCalView(),
+        handleWindowResize: true,
+        textColor: "#000",
+        contentHeight: "auto",
+        events: {
+            url: feedURL,
+            extraParams: function () {
+                return {feedType: "eventList", audience: getAudienceDDValue()};
+            },
+        },
+        eventDataTransform: function (rawEventData) {
+            return {
+                id: rawEventData.Id,
+                title: rawEventData.title,
+                url: rawEventData.eventUrl,
+                start: rawEventData.start.replace('Z', ''),
+                end: rawEventData.end.replace('Z', ''),
+                description: rawEventData.description,
+                className: rawEventData.className,
+                eventClosed: rawEventData.eventClosed.toString()
+            };
+        },
+        eventDisplay: "auto",
+        eventTextColor: "#000",
+        eventContent: function (info) {
+            let wrap = document.createElement("a");
+            wrap.href = info.event.url;
+            let titleWrap = document.createElement("span");
+            eventCount++;
+            let toolTipId = 'tool-tip-' + eventCount;
+            titleWrap.classList.add("summitEventsTitle");
+            if (info.event.extendedProps.eventClosed.toLowerCase() === 'false') {
+                titleWrap.innerHTML = info.event.title;
+                wrap.href = info.event.url;
+                wrap.target = "_blank";
+            }
+            if (info.event.extendedProps.eventClosed.toLowerCase() === 'true') {
+                titleWrap.innerHTML = info.event.title + "<br/><em>Event is closed.</em><br/>";
+            }
+            wrap.classList.add("SummitEventsItem");
+            wrap.classList.add(info.event.className);
+            let descWrap = document.createElement("span");
+            descWrap.classList.add("summitEventsDesc");
+            descWrap.innerHTML = info.event.extendedProps.description;
+            let timeWrap = document.createElement("span");
+            timeWrap.classList.add("summitEventsTimes");
+            let startTime = formatTimeString(info.event.start.toLocaleString());
+            let endTime = formatTimeString(info.event.end.toLocaleString());
+            timeWrap.innerHTML = startTime + " - " + endTime;
+            wrap.append(titleWrap);
+            if (info.view.type === "dayGridMonth") {
+                wrap.append(timeWrap);
+            } else {
+                wrap.append(descWrap);
+            }
+            let arrayOfDomNodes = [wrap];
+            return {domNodes: arrayOfDomNodes};
+        },
+        eventMouseEnter: function (info) {
+            let desc = info.event.extendedProps.description;
+            if(desc) {
+                tippy(info.el, {animate: "fade", content: desc});
+            }
+        },
+        windowResize: function () {
+            this.changeView(getCalView());
+            this.refetchEvents();
+        }
+    });
+    calendar.render();
+    if (audienceDD) {
+        audienceDD.addEventListener("change", function () {
+            eraseCookie("SummitEvents");
+            createCookie(
+                "SummitEvents",
+                '{"audience" : "' + getAudienceDDValue() + '"}',
+                ""
+            );
+            if (getAudienceDDValue() === "" && hideCalendarUntilAudience) {
+                calendarEl.style.visibility = "hidden";
+            } else {
+                calendarEl.style.visibility = "visible";
+            }
+            calendar.refetchEvents();
+        });
+    }
+
+    function getAudienceDDValue() {
+        if (Object.keys(hardCodeAudience).length === 1) {
+            return hardCodeAudience[Object.keys(hardCodeAudience)[0]];
+        }
+        let audienceDDValue = "";
+        if (audienceDD) {
+            audienceDDValue = audienceDD.value;
+        }
+        if (audienceDDValue === "Select...") {
+            audienceDDValue = "";
+        }
+        return audienceDDValue;
+    }
+
+    function loadAudienceDD() {
+        fetch(feedURL + "?feedType=audienceDD")
+            .then((resp) => resp.json())
+            .then(function (data) {
+                populateOptions(data, audienceDD);
+                if (SESettings != null) {
+                    if (SESettings.audience != null) {
+                        audienceDD.value = SESettings.audience;
+                    }
+                }
+                calendar.refetchEvents();
+                if (getAudienceDDValue() === "" && hideCalendarUntilAudience) {
+                    calendarEl.style.visibility = "hidden";
+                }
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+
+    function populateOptions(data, selector) {
+        selector.innerHTML = "";
+        let opt1 = document.createElement("option");
+        opt1.value = "";
+        opt1.text = "Select...";
+        selector.append(opt1);
+        if (Object.keys(hardCodeAudience).length > 0) {
+            data = hardCodeAudience;
+        }
+        let optionCount = 0;
+        for (const [key, value] of Object.entries(data)) {
+            if (!hideAudiences.includes(value)) {
+                if (audienceList.length === 0 || audienceList.includes(value)) {
+                    let opt2 = document.createElement("option");
+                    opt2.value = value;
+                    opt2.text = key;
+                    selector.append(opt2);
+                    optionCount++;
+                }
+            }
+        }
+        if (optionCount === 1) {
+            audienceDD.closest('.slds-col').style.display = 'none';
+        }
+    }
+
+}
+
+
+function getCalView() {
+    let initialView = 'dayGridMonth';
+    if (window.innerWidth <= 900) {
+        initialView = 'listMonth';
+    }
+    return initialView;
+}
+
+// Styles for the events inside each day of the month grid. They are scoped to the calendar
+// element so they cannot affect the rest of the page, and a page can override them with its own CSS.
+function addCalendarStyles(calendarId) {
+    if (!calendarId || document.getElementById('seaCalendarStyles')) {
+        return;
+    }
+    const scope = '#' + calendarId;
+    const style = document.createElement('style');
+    style.id = 'seaCalendarStyles';
+    style.textContent = [
+        // A line between events that fall on the same day.
+        scope + ' .fc-daygrid-event-harness + .fc-daygrid-event-harness {',
+        '    border-top: 1px solid #d1d5db;',
+        '    margin-top: 2px;',
+        '    padding-top: 2px;',
+        '}',
+        // Long titles wrap instead of being cut off, so a day grows to fit everything in it.
+        scope + ' .fc-daygrid-event { white-space: normal; }',
+        scope + ' .fc-daygrid-event .SummitEventsItem { white-space: normal; overflow-wrap: anywhere; min-width: 0; }'
+    ].join('\n');
+    document.head.append(style);
+}
+
+function formatTimeString(stringIn) {
+    let stringOut;
+    stringIn = stringIn.split(",");
+    stringIn = stringIn[stringIn.length - 1];
+    let last = stringIn.lastIndexOf(":");
+    stringOut = stringIn.substring(stringIn, last);
+    stringOut += stringIn.substring(last + 3, stringIn.length);
+    return stringOut;
+}
+
+
+function createCookie(name, value, days) {
+    let expires;
+    if (days) {
+        let date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = "; expires=" + date.toGMTString();
+    } else {
+        expires = "";
+    }
+    document.cookie =
+        encodeURIComponent(name) +
+        "=" +
+        encodeURIComponent(value) +
+        expires +
+        "; path=/";
+}
+
+function readCookie(name) {
+    let nameEQ = encodeURIComponent(name) + "=";
+    let ca = document.cookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === " ") c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0)
+            return decodeURIComponent(c.substring(nameEQ.length, c.length));
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name, "", -1);
+}
+
+const SESettings = JSON.parse(readCookie("SummitEvents"));
+

@@ -4,11 +4,17 @@ parent: Recipes
 nav_exclude: true
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
-<script src="https://cdn.jsdelivr.net/gh/SFDO-Community-Sprints/summit-events-app-documentation@main/docs/Recipes/js/full-calendar-demo.js"></script>
+This is the current Summit Events calendar. To put one on your own website, follow the [calendar recipe](../full-calendar/).
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/all/global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/themes/classic/global.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/skeleton.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/themes/classic/theme.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/themes/classic/palette.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tippy.js@6.3.7/animations/scale.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tippy.js@6.3.7/dist/tippy-bundle.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SFDO-Community-Sprints/summit-events-app-documentation@main/docs/Recipes/js/full-calendar-demo-v7.js"></script>
 
 <script>
 /*  feedURL:

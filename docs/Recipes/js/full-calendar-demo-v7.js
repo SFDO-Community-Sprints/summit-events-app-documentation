@@ -1,10 +1,11 @@
 /*
  * Summit Events App (SEA) calendar for FullCalendar 7.
  *
- * Plumbing between the SEA REST feed and FullCalendar 7. It is the FullCalendar 7 sibling of
- * full-calendar-demo.js, which targets FullCalendar 6. The page that loads this script defines the
- * same configuration variables as the version 6 script (feedURL, hideCalendarUntilAudience,
- * hardCodeAudience, hideAudiences, audienceDropDownId, calendarDivId, audienceList).
+ * Plumbing between the SEA REST feed and FullCalendar 7. It replaces the FullCalendar 6 script
+ * (full-calendar-demo-v6.js, also published as full-calendar-demo.js), which is kept only for calendars
+ * that already use it. The page that loads this script sets the same configuration variables as the
+ * older script (feedURL, hideCalendarUntilAudience, hardCodeAudience, hideAudiences, audienceDropDownId,
+ * calendarDivId, audienceList). Only feedURL is required.
  *
  * Differences from the version 6 script:
  *  - Written for the FullCalendar 7 API (toolbar is opt-in, windowResize is gone, themes are separate files).
