@@ -4,7 +4,7 @@ parent: Recipes
 nav_exclude: true
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js"></script>
+<script src="[full-calendar-demo.md](full-calendar-demo.md)https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
