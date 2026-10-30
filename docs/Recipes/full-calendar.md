@@ -102,7 +102,7 @@ const hideAudiences = ['Faculty/Staff','General Public'];
 Visitors see only the drop-down at first. The calendar appears after they pick an audience.
 
 ```javascript
-const hideCalendarUntilAudience = true;
+const hideCalendarUntilAudience = true; 
 ```
 
 ### Use different names for the calendar spots
