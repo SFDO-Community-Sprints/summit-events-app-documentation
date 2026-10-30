@@ -5,11 +5,14 @@ nav_exclude: true
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/all/global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/themes/classic/global.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/skeleton.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/themes/classic/theme.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@7.1.3/themes/classic/palette.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
-<script src="https://cdn.jsdelivr.net/gh/SFDO-Community-Sprints/summit-events-app-documentation@main/docs/Recipes/js/full-calendar-demo.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SFDO-Community-Sprints/summit-events-app-documentation@main/docs/Recipes/js/full-calendar-demo-2026.js"></script>
 
 <script>
 /*  feedURL:
