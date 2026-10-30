@@ -73,6 +73,8 @@
         const statusElement = createStatusElement(calendarElement);
         let calendar = null;
 
+        addCalendarStyles(calendarElement.id);
+
         if (singleHardCodedAudience !== null) {
             hideAudienceDropDown();
         }
@@ -87,6 +89,12 @@
             events: loadEvents,
             // loadEvents already tells the visitor when the feed fails, so mark the failure as handled.
             eventSourceFailure: function () {},
+            // Class names used by the styles added in addCalendarStyles().
+            listItemEventClass: "seaCalendarEvent",
+            listItemEventBeforeClass: function (info) {
+                // Month grid shows no bullet. The list view keeps its colored dot.
+                return info.view.type === "dayGridMonth" ? "seaCalendarBullet" : "";
+            },
             eventContent: renderEventContent,
             eventDidMount: attachTooltip,
             eventWillUnmount: removeTooltip,
@@ -332,12 +340,22 @@
                     times.textContent = timeText;
                     wrapper.append(times);
                 }
-            } else if (properties.description) {
-                wrapper.append(document.createElement("br"));
-                const description = document.createElement("span");
-                description.className = "summitEventsDesc";
-                description.textContent = properties.description;
-                wrapper.append(description);
+            } else {
+                // List view: the time comes first, then the title, the closed note and the description.
+                const timeText = formatTimeRange(info.event.start, info.event.end);
+                if (timeText !== "") {
+                    const times = document.createElement("span");
+                    times.className = "summitEventsTimes";
+                    times.textContent = timeText;
+                    wrapper.prepend(times, document.createElement("br"));
+                }
+                if (properties.description) {
+                    wrapper.append(document.createElement("br"));
+                    const description = document.createElement("span");
+                    description.className = "summitEventsDesc";
+                    description.textContent = properties.description;
+                    wrapper.append(description);
+                }
             }
             return { domNodes: [wrapper] };
         }
@@ -424,6 +442,29 @@
     }
 
     // ----- functions that do not depend on page state -----
+
+    // Styles for the event list inside each day. They are scoped to the calendar element so they
+    // cannot affect the rest of the page, and a page can override them with its own CSS.
+    function addCalendarStyles(calendarId) {
+        if (!calendarId || document.getElementById("seaCalendarStyles")) {
+            return;
+        }
+        const scope = "#" + calendarId;
+        const style = document.createElement("style");
+        style.id = "seaCalendarStyles";
+        style.textContent = [
+            // No bullet next to events in the month grid.
+            scope + " .seaCalendarBullet { display: none; }",
+            // A line between events that fall on the same day.
+            scope + " :has(> .seaCalendarEvent) + :has(> .seaCalendarEvent) > .seaCalendarEvent {",
+            "    border-top: 1px solid #d1d5db;",
+            "}",
+            scope + " .seaCalendarEvent { padding-block: 3px; }",
+            // Long titles wrap instead of being cut off, so a day grows to fit everything in it.
+            scope + " .SummitEventsItem { overflow-wrap: anywhere; }"
+        ].join("\n");
+        document.head.append(style);
+    }
 
     function buildFeedEndpoint(baseUrl) {
         return baseUrl.replace(/\/?$/, "/") + "services/apexrest/summit/summiteventsfeed";

@@ -26,6 +26,8 @@ const initCalendar = function () {
 
     const audienceDD = document.getElementById(audienceDropDownId);
 
+    addCalendarStyles(calendarDivId);
+
     if (feedURL.endsWith('/')) {
         feedURL += 'services/apexrest/summit/summiteventsfeed';
     } else {
@@ -205,6 +207,29 @@ function getCalView() {
         initialView = 'listMonth';
     }
     return initialView;
+}
+
+// Styles for the events inside each day of the month grid. They are scoped to the calendar
+// element so they cannot affect the rest of the page, and a page can override them with its own CSS.
+function addCalendarStyles(calendarId) {
+    if (!calendarId || document.getElementById('seaCalendarStyles')) {
+        return;
+    }
+    const scope = '#' + calendarId;
+    const style = document.createElement('style');
+    style.id = 'seaCalendarStyles';
+    style.textContent = [
+        // A line between events that fall on the same day.
+        scope + ' .fc-daygrid-event-harness + .fc-daygrid-event-harness {',
+        '    border-top: 1px solid #d1d5db;',
+        '    margin-top: 2px;',
+        '    padding-top: 2px;',
+        '}',
+        // Long titles wrap instead of being cut off, so a day grows to fit everything in it.
+        scope + ' .fc-daygrid-event { white-space: normal; }',
+        scope + ' .fc-daygrid-event .SummitEventsItem { white-space: normal; overflow-wrap: anywhere; min-width: 0; }'
+    ].join('\n');
+    document.head.append(style);
 }
 
 function formatTimeString(stringIn) {
