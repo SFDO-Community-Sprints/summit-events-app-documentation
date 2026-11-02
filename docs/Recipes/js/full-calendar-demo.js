@@ -8,20 +8,27 @@
  *   full-calendar-demo.js     the original name. Existing websites link to it, so it must not be removed.
  *   full-calendar-demo-v6.js  the name used by the version 6 documentation pages.
  * If you change one, change the other.
+ *
+ * Small fixes made to this legacy script. The look and the settings are unchanged.
+ *  - Events get their real id. The feed calls the field ID, and the script was reading Id.
+ *  - Removed a stray CSS class named "undefined" that was added to every event.
+ *  - Events are requested once when the page loads, not twice.
+ *  - An event with no end date no longer stops every event from showing.
+ *  - Using hardCodeAudience with a single audience, or a feed with a single audience, no longer stops the
+ *    calendar. It used to look for a container with the class slds-col that most pages do not have.
+ *  - The calendar starts correctly when this script is loaded with defer or added to the page late.
+ *  - A damaged "SummitEvents" cookie no longer causes errors.
+ *  - If the FullCalendar library fails to load, the console shows only that error, not a second confusing one.
+ *  - No longer depends on the eventCount variable, and removed the unused textColor option, which only
+ *    produced a console warning.
  */
 let ready = (callback) => {
     if (document.readyState !== "loading") callback();
     else document.addEventListener("DOMContentLoaded", callback);
 };
 
-ready(() => {
-    let urlParams = getUrlVars();
-    if (urlParams['audienceList']) {
-        audienceList = decodeURIComponent(urlParams['audienceList']).split(',');
-    }
-    initCalendar();
-});
-
+// The call that starts the calendar is at the very end of this file, after everything it uses has been
+// defined. Starting it from here would break when the script is loaded with defer, or added to the page late.
 
 function getUrlVars() {
     let vars = {};
@@ -46,12 +53,12 @@ const initCalendar = function () {
     }
 
     if (Object.keys(hardCodeAudience).length === 1) {
-        audienceDD.closest('.slds-col').style.display = 'none';
+        hideAudienceDropDown();
     }
 
-    if (audienceDD) {
-        loadAudienceDD();
-    }
+    // The audience the events were last requested for. It lets us skip a second request on load
+    // when the audience list arrives and the calendar is already showing the right events.
+    let lastRequestedAudience = null;
 
     function getCalView() {
         let initialView = "dayGridMonth";
@@ -64,21 +71,23 @@ const initCalendar = function () {
     const calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: getCalView(),
         handleWindowResize: true,
-        textColor: "#000",
         contentHeight: "auto",
         events: {
             url: feedURL,
             extraParams: function () {
-                return {feedType: "eventList", audience: getAudienceDDValue()};
+                lastRequestedAudience = getAudienceDDValue();
+                return {feedType: "eventList", audience: lastRequestedAudience};
             },
         },
         eventDataTransform: function (rawEventData) {
             return {
-                id: rawEventData.Id,
+                // The SEA feed names this field ID (capital I and D).
+                id: rawEventData.ID || rawEventData.Id,
                 title: rawEventData.title,
                 url: rawEventData.eventUrl,
                 start: rawEventData.start.replace('Z', ''),
-                end: rawEventData.end.replace('Z', ''),
+                // The end date is optional in SEA, so the feed can send an event without one.
+                end: rawEventData.end ? rawEventData.end.replace('Z', '') : undefined,
                 description: rawEventData.description,
                 className: rawEventData.className,
                 eventClosed: rawEventData.eventClosed.toString()
@@ -90,8 +99,6 @@ const initCalendar = function () {
             let wrap = document.createElement("a");
             wrap.href = info.event.url;
             let titleWrap = document.createElement("span");
-            eventCount++;
-            let toolTipId = 'tool-tip-' + eventCount;
             titleWrap.classList.add("summitEventsTitle");
             if (info.event.extendedProps.eventClosed.toLowerCase() === 'false') {
                 titleWrap.innerHTML = info.event.title;
@@ -102,15 +109,18 @@ const initCalendar = function () {
                 titleWrap.innerHTML = info.event.title + "<br/><em>Event is closed.</em><br/>";
             }
             wrap.classList.add("SummitEventsItem");
-            wrap.classList.add(info.event.className);
             let descWrap = document.createElement("span");
             descWrap.classList.add("summitEventsDesc");
             descWrap.innerHTML = info.event.extendedProps.description;
             let timeWrap = document.createElement("span");
             timeWrap.classList.add("summitEventsTimes");
             let startTime = formatTimeString(info.event.start.toLocaleString());
-            let endTime = formatTimeString(info.event.end.toLocaleString());
-            timeWrap.innerHTML = startTime + " - " + endTime;
+            // An event without an end date shows only its start time.
+            let timeText = startTime;
+            if (info.event.end) {
+                timeText += " - " + formatTimeString(info.event.end.toLocaleString());
+            }
+            timeWrap.innerHTML = timeText;
             wrap.append(titleWrap);
             if (info.view.type === "dayGridMonth") {
                 wrap.append(timeWrap);
@@ -132,6 +142,12 @@ const initCalendar = function () {
         }
     });
     calendar.render();
+
+    // Load the audience list only now that the calendar exists, because the list calls back into it.
+    if (audienceDD) {
+        loadAudienceDD();
+    }
+
     if (audienceDD) {
         audienceDD.addEventListener("change", function () {
             eraseCookie("SummitEvents");
@@ -173,7 +189,11 @@ const initCalendar = function () {
                         audienceDD.value = SESettings.audience;
                     }
                 }
-                calendar.refetchEvents();
+                // The calendar has already asked for events. Ask again only if the audience changed,
+                // which happens when a saved audience was just restored.
+                if (getAudienceDDValue() !== lastRequestedAudience) {
+                    calendar.refetchEvents();
+                }
                 if (getAudienceDDValue() === "" && hideCalendarUntilAudience) {
                     calendarEl.style.visibility = "hidden";
                 }
@@ -181,6 +201,15 @@ const initCalendar = function () {
             .catch(function (error) {
                 console.log(error);
             });
+    }
+
+    // Hides the audience drop-down. Some pages wrap it in a container with the class slds-col, others do not.
+    function hideAudienceDropDown() {
+        if (!audienceDD) {
+            return;
+        }
+        const container = audienceDD.closest('.slds-col') || audienceDD;
+        container.style.display = 'none';
     }
 
     function populateOptions(data, selector) {
@@ -205,7 +234,7 @@ const initCalendar = function () {
             }
         }
         if (optionCount === 1) {
-            audienceDD.closest('.slds-col').style.display = 'none';
+            hideAudienceDropDown();
         }
     }
 
@@ -287,5 +316,21 @@ function eraseCookie(name) {
     createCookie(name, "", -1);
 }
 
-const SESettings = JSON.parse(readCookie("SummitEvents"));
+const SESettings = (function () {
+    // A damaged cookie must not stop the calendar from starting.
+    try {
+        return JSON.parse(readCookie("SummitEvents"));
+    } catch (error) {
+        return null;
+    }
+})();
+
+// Start the calendar. This stays at the end of the file on purpose (see the note near the top).
+ready(() => {
+    let urlParams = getUrlVars();
+    if (urlParams['audienceList']) {
+        audienceList = decodeURIComponent(urlParams['audienceList']).split(',');
+    }
+    initCalendar();
+});
 
