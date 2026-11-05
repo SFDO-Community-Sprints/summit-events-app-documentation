@@ -20,7 +20,7 @@ This is the current Summit Events calendar. To put one on your own website, foll
 /*  feedURL:
     This should be the site URL of the salesforce site where Summit Events App is installed
  */
-let feedURL = "https://summit-events-ldo.my.salesforce-sites.com/";
+const feedURL = "https://summit-events-ldo.my.salesforce-sites.com/";
 
 /* HIDE CALENDAR OPTION:
    hideCalendarUntilAudience set to true will hide the calendar of events until an audience is selected.
