@@ -86,3 +86,83 @@
     font-style: italic;
     font-weight: bold;
 }
+
+/* Upcoming events box on the home page (see assets/js/upcoming-events.js) */
+.seaUpcomingEvents {
+    box-sizing: border-box;
+    margin: 0 0 1.5rem 0;
+    padding: 1rem 1.25rem;
+    border: 1px solid #d6d8de;
+    border-radius: 6px;
+    background: #f5f6fa;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+/* Wide screens: the box floats to the right and the page text wraps around it. */
+@media only screen and (min-width: 50rem) {
+    .seaUpcomingEvents {
+        float: right;
+        width: 18rem;
+        margin: 0 0 1rem 1.5rem;
+    }
+}
+
+.seaUpcomingEvents .seaUpcomingEventsHeading {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.125rem;
+    line-height: 1.3;
+}
+
+.seaUpcomingEvents .seaUpcomingEventsIntro {
+    margin: 0 0 0.75rem 0;
+    color: #5c5962;
+}
+
+.seaUpcomingEvents .seaUpcomingEventsList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.seaUpcomingEvents .seaUpcomingEventsItem {
+    margin: 0;
+    padding: 0.6rem 0;
+    border-top: 1px solid #d6d8de;
+}
+
+/* The documentation theme adds its own bullet before every list item. Events are not bulleted. */
+.seaUpcomingEvents .seaUpcomingEventsItem::before {
+    content: none;
+    display: none;
+}
+
+.seaUpcomingEvents .seaUpcomingEventsDate {
+    display: block;
+    font-weight: bold;
+}
+
+.seaUpcomingEvents .seaUpcomingEventsTime {
+    display: block;
+    color: #5c5962;
+}
+
+.seaUpcomingEvents .seaUpcomingEventsMoreItem {
+    color: #5c5962;
+}
+
+.seaUpcomingEvents .seaUpcomingEventsStatus {
+    margin: 0 0 0.5rem 0;
+}
+
+.seaVisuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

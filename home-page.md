@@ -5,6 +5,16 @@ description: "The Summit Events App is a sustainable open source community event
 permalink: /
 ---
 
+<aside id="seaUpcomingEvents" class="seaUpcomingEvents" aria-labelledby="seaUpcomingEventsHeading">
+    <h2 id="seaUpcomingEventsHeading" class="seaUpcomingEventsHeading">Upcoming events</h2>
+    <p class="seaUpcomingEventsIntro">Ask Me Anything office hours and other community sessions hosted by the Summit Events team.</p>
+    <div class="seaUpcomingEventsBody" aria-live="polite">
+        <p class="seaUpcomingEventsStatus">Loading events...</p>
+        <noscript><p class="seaUpcomingEventsStatus">Turn on JavaScript in your browser to see the upcoming events.</p></noscript>
+    </div>
+</aside>
+<script src="{{ site.site_root }}/assets/js/upcoming-events.js"></script>
+
 # What is Summit Events?
 
 What is Summit Events?
