@@ -12,6 +12,8 @@
  * Behavior:
  *  - Each request waits up to 8 seconds and is tried one more time. If the feed still cannot be reached the box
  *    says so and offers a "Try again" button. No saved copy of the events is kept.
+ *  - Requests are sent without a Referer header. The Salesforce site has at times left requests that come
+ *    from another website unanswered, while the same request without a Referer works.
  *  - Closed events are not listed. Events with the same title and start time are listed once.
  *  - Event text is inserted as text, never as HTML, and only web addresses that start with https or http
  *    become links.
@@ -290,7 +292,8 @@
                 controller.abort();
             }, REQUEST_TIMEOUT_MS);
             try {
-                const response = await fetch(url, { signal: controller.signal });
+                // No Referer: the Salesforce site sometimes holds requests that come from another site and never answers them.
+                const response = await fetch(url, { signal: controller.signal, referrerPolicy: "no-referrer" });
                 if (!response.ok) {
                     throw new Error("The event feed answered with HTTP " + response.status + ".");
                 }

@@ -11,6 +11,8 @@
  *  - Written for the FullCalendar 7 API (toolbar is opt-in, windowResize is gone, themes are separate files).
  *  - Every request to the SEA feed has a timeout and one retry, so a stalled connection cannot leave the
  *    page blank without explanation.
+ *  - Requests to the SEA feed are sent without a Referer header. The Salesforce site has at times left
+ *    requests that come from another website unanswered, while the same request without a Referer works.
  *  - The last good audience list and event feed are saved in localStorage. Saved data is shown
  *    immediately and refreshed in the background. If the feed cannot be reached the saved copy stays on screen.
  *  - A status line tells the visitor when events are loading, when saved events are shown, and offers a retry.
@@ -487,7 +489,8 @@
                 controller.abort();
             }, REQUEST_TIMEOUT_MS);
             try {
-                const response = await fetch(url, { signal: controller.signal });
+                // No Referer: the Salesforce site sometimes holds requests that come from another site and never answers them.
+                const response = await fetch(url, { signal: controller.signal, referrerPolicy: "no-referrer" });
                 if (!response.ok) {
                     throw new Error("The event feed answered with HTTP " + response.status + ".");
                 }

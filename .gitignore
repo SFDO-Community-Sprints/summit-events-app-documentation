@@ -30,3 +30,5 @@ out
 # CumulusCI
 /test_results.*
 /.playwright-mcp/
+ai-logs/
+.playwright-mcp/
