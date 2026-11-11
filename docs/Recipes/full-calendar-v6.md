@@ -180,6 +180,7 @@ At the end of the script, we have some regular HTML elements. These can go anywh
 <p id="fullCalendarView"></p>
 ```
 
+
 ### Additional Important Setup
 
 Your SEA feed needs to be visible to the external site you are showing your calendar. This is a security setting called a CORS setting. CORS rules are the guidelines that determine how a browser, and a server can communicate and share resources across different domains using HTTP headers. You can find your CORS settings at Setup -> CORS. You need to make sure the domain name of the external site you wish to access the SEA feed from is added to your CORS rules in Salesforce. So, for example, if you were hosting your calendar script on google.com you would want to add https://google.com to your CORS rules.
